@@ -271,3 +271,8 @@ For questions about AUGMANITAI integration:
 ---
 
 Built with AUGMANITAI by Andreas Ehstand (ORCID 0009-0006-3773-7796)
+
+
+---
+
+*Bound by the **Ethical Disclaimer §1–§20** ([`DISCLAIMER.md`](../DISCLAIMER.md)) and the repository licenses ([`LICENSE`](../LICENSE)). Contact and provider: [`IMPRESSUM.md`](../IMPRESSUM.md).*

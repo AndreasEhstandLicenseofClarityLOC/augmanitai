@@ -341,3 +341,8 @@ This implementation uses the AUGMANITAI framework by Andreas Ehstand:
 - Cache uses sparse matrix representation for memory efficiency
 - All state transitions validate trigger conditions
 - Expansion patterns implement work-stealing for parallelization readiness
+
+
+---
+
+*Bound by the **Ethical Disclaimer §1–§20** ([`DISCLAIMER.md`](../../DISCLAIMER.md)) and the repository licenses ([`LICENSE`](../../LICENSE)). Contact and provider: [`IMPRESSUM.md`](../../IMPRESSUM.md).*

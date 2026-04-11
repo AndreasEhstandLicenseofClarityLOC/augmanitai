@@ -65,3 +65,8 @@ To extend this example:
 - **System prompts for specialization**: Role-specific instructions guide agent behavior
 - **Async/await patterns**: AutoGen's async architecture for scalable multi-agent workflows
 - **Mock clients for development**: Testing group chat logic without API costs or latency
+
+
+---
+
+*Bound by the **Ethical Disclaimer §1–§20** ([`DISCLAIMER.md`](../../DISCLAIMER.md)) and the repository licenses ([`LICENSE`](../../LICENSE)). Contact and provider: [`IMPRESSUM.md`](../../IMPRESSUM.md).*

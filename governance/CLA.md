@@ -88,3 +88,8 @@ You agree to notify the Maintainer of any facts or circumstances of which You be
 4. Sign electronically via the project's CLA-assistant integration when submitting your first Pull Request.
 
 You will only need to sign this once. Your signed ICLA will be on file for all future Contributions to the Project.
+
+
+---
+
+*Bound by the **Ethical Disclaimer §1–§20** ([`DISCLAIMER.md`](../DISCLAIMER.md)) and the repository licenses ([`LICENSE`](../LICENSE)). Contact and provider: [`IMPRESSUM.md`](../IMPRESSUM.md).*

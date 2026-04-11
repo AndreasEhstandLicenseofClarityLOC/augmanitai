@@ -374,3 +374,8 @@ suggestion_presented Event
 - A2A: `../a2a/`
 - ANP: `../anp/`
 - Bridges: `../bridges/`
+
+
+---
+
+*Bound by the **Ethical Disclaimer §1–§20** ([`DISCLAIMER.md`](../../DISCLAIMER.md)) and the repository licenses ([`LICENSE`](../../LICENSE)). Contact and provider: [`IMPRESSUM.md`](../../IMPRESSUM.md).*

@@ -415,3 +415,8 @@ This implementation uses the AUGMANITAI framework by Andreas Ehstand:
 - Relationship strength is normalized (0.72-0.96)
 - Centrality metrics computed during initialization
 - Graph is fully connected with no isolated nodes
+
+
+---
+
+*Bound by the **Ethical Disclaimer §1–§20** ([`DISCLAIMER.md`](../../DISCLAIMER.md)) and the repository licenses ([`LICENSE`](../../LICENSE)). Contact and provider: [`IMPRESSUM.md`](../../IMPRESSUM.md).*

@@ -136,3 +136,8 @@ Each release is accompanied by:
 | Add a new `list_terms_by_year()` API function                 | MINOR        |
 | Change default return type of `lookup()` from dict to dataclass | MAJOR      |
 | Speed up `search()` with a better index (same results)        | PATCH        |
+
+
+---
+
+*Bound by the **Ethical Disclaimer §1–§20** ([`DISCLAIMER.md`](../DISCLAIMER.md)) and the repository licenses ([`LICENSE`](../LICENSE)). Contact and provider: [`IMPRESSUM.md`](../IMPRESSUM.md).*

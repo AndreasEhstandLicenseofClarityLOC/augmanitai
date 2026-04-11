@@ -18,7 +18,7 @@
 AUGMANITAI is **purely descriptive linguistic-terminological research** into phenomena observable at the human–AI interface. It is **not normative**, makes **no recommendations for action**, and is **not a diagnostic, medical, psychological, legal, or screening instrument**.
 
 - **§1 Descriptive, not normative.** Naming a phenomenon is not an endorsement, recommendation, or evaluation of the described behavior.
-- **§11 Independent research.** No external funding, no sponsorship, **non-peer-reviewed working-paper status.**
+- **§11 Independent research.** No external funding, no sponsorship, **longitudinal n=1 terminological priority deposit (non-peer-reviewed per §11).**
 - **§13 No efficacy claims.** Not a substitute for professional advice (medical, psychological, legal, financial).
 - **§7 18+ only.** The contents are intended exclusively for adult users.
 - **§16 ISO-inspired, not ISO-certified.** The framework is informed by ISO 704 / ISO 1087 / ISO 30042; it is not an ISO-certified deliverable.
@@ -173,6 +173,12 @@ Vulnerabilities and security concerns: see [SECURITY.md](governance/SECURITY.md)
 - **Roadmap:** [governance/ROADMAP.md](governance/ROADMAP.md)
 - **Versioning:** [governance/VERSIONING.md](governance/VERSIONING.md) (SemVer adapted for terminology)
 - **Release policy:** [governance/RELEASE-POLICY.md](governance/RELEASE-POLICY.md)
+
+## Legal
+
+- [**IMPRESSUM**](IMPRESSUM.md) — Anbieter-Angaben gemäß § 5 TMG / provider information per § 5 German Telemedia Act
+- [**DISCLAIMER.md**](DISCLAIMER.md) — Ethical Disclaimer §1–§20 (bilingual DE/EN)
+- [**LICENSE**](LICENSE) — CC BY-NC-ND 4.0 (data) · Apache-2.0 (code); see [`licensing/LICENSE-summary.md`](licensing/LICENSE-summary.md)
 
 ## Related work
 

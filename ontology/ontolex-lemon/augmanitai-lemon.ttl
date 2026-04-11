@@ -22,7 +22,7 @@
 # Lexicon Definition
 aug:AugmanitaiLexicon a ontolex:Lexicon ;
     rdfs:label "AUGMANITAI Lexicon"@en ;
-    dct:description "Multilingual lexical resource for terminology of human-AI interaction phenomena in English, German, Mandarin Chinese, Hindi, and Arabic. Descriptive linguistic research, not normative (§1). Non-peer-reviewed working-paper (§11). Informed by ISO 1087 / ISO 30042 — ISO-inspired, not ISO-certified (§16). Restricted applications per §20 (see DISCLAIMER.md in repository root): must not be used as diagnostic label, medical/psychological classification, legal categorization, HR screening, credit scoring, insurance assessment, surveillance, or profiling mechanism."@en ;
+    dct:description "Multilingual lexical resource for terminology of human-AI interaction phenomena in English, German, Mandarin Chinese, Hindi, and Arabic. Descriptive linguistic research, not normative (§1). Longitudinal n=1 terminological priority deposit (non-peer-reviewed per §11). Informed by ISO 1087 / ISO 30042 — ISO-inspired, not ISO-certified (§16). Restricted applications per §20 (see DISCLAIMER.md in repository root): must not be used as diagnostic label, medical/psychological classification, legal categorization, HR screening, credit scoring, insurance assessment, surveillance, or profiling mechanism."@en ;
     dct:language "en", "de", "zh", "hi", "ar" ;
     dct:creator "Andreas Ehstand" ;
     dct:date "2026-04-10"^^xsd:date ;

@@ -13,8 +13,8 @@ compliance status for AUGMANITAI.
 All organization names, contacts, and signatures are placeholders. Downstream
 operators must supply their own identifiers and key material.
 
-Descriptive linguistic research, not normative (§1). Non-peer-reviewed
-working-paper (§11). ISO-inspired, not ISO-certified (§16). Restricted
+Descriptive linguistic research, not normative (§1). Longitudinal n=1
+priority deposit, non-peer-reviewed per §11. ISO-inspired, not ISO-certified (§16). Restricted
 applications per §20. See DISCLAIMER.md in the repository root.
 
 Usage:

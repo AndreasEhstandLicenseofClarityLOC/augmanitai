@@ -220,3 +220,8 @@ Agent responds with signed presentation of Issuer Credential.
 - A2A: `../a2a/`
 - AG-UI: `../ag-ui/`
 - Bridges: `../bridges/`
+
+
+---
+
+*Bound by the **Ethical Disclaimer §1–§20** ([`DISCLAIMER.md`](../../DISCLAIMER.md)) and the repository licenses ([`LICENSE`](../../LICENSE)). Contact and provider: [`IMPRESSUM.md`](../../IMPRESSUM.md).*

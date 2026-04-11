@@ -90,3 +90,8 @@ These mechanisms allow downstream users to verify the integrity and authorship o
 ## Questions?
 
 See `../governance/CONTRIBUTING.md` and `../governance/GOVERNANCE.md` for general questions. For licensing-specific questions, open a GitHub Issue with the `licensing` label (for public questions) or use the private contact channel in `../governance/SECURITY.md` (for commercial inquiries or sensitive matters).
+
+
+---
+
+*Bound by the **Ethical Disclaimer §1–§20** ([`DISCLAIMER.md`](../DISCLAIMER.md)) and the repository licenses ([`LICENSE`](../LICENSE)). Contact and provider: [`IMPRESSUM.md`](../IMPRESSUM.md).*

@@ -183,3 +183,8 @@ xmllint --xpath '//descrip[@type="definition"]/text()' augmanitai-tbx.xml
 - The export uses martif[@type="TBX-Core"] to indicate strict TBX-Core compliance
 - All term definitions are in English; multilingual definitions can be added via langSet/tig/descrip extensions
 - License field universally set to CC BY-NC-ND 4.0 per AUGMANITAI project specification
+
+
+---
+
+*Bound by the **Ethical Disclaimer §1–§20** ([`DISCLAIMER.md`](../../../DISCLAIMER.md)) and the repository licenses ([`LICENSE`](../../../LICENSE)). Contact and provider: [`IMPRESSUM.md`](../../../IMPRESSUM.md).*

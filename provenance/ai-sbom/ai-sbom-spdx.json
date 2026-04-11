@@ -4,7 +4,7 @@
   "SPDXID": "SPDXRef-DOCUMENT",
   "name": "AUGMANITAI 1000-Term Compendium — Dataset SBOM (structural demonstration)",
   "documentNamespace": "https://doi.org/10.5281/zenodo.19481331/sbom/spdx-3.0/augmanitai-v1.0",
-  "_note": "STRUCTURAL DEMONSTRATION ONLY. AUGMANITAI is a terminology DATASET, not an AI system. No training, no inference, no regulatory conformance claims apply to AUGMANITAI itself. This SBOM documents the dataset's files and licenses for supply-chain transparency; it does not assert any ISO certification, EU AI Act conformity, or performance metrics. Descriptive linguistic research, not normative (§1). Non-peer-reviewed working-paper (§11). ISO-inspired, not ISO-certified (§16). Restricted applications per §20. See DISCLAIMER.md in the repository root.",
+  "_note": "STRUCTURAL DEMONSTRATION ONLY. AUGMANITAI is a terminology DATASET, not an AI system. No training, no inference, no regulatory conformance claims apply to AUGMANITAI itself. This SBOM documents the dataset's files and licenses for supply-chain transparency; it does not assert any ISO certification, EU AI Act conformity, or performance metrics. Descriptive linguistic research, not normative (§1). Longitudinal n=1 terminological priority deposit (non-peer-reviewed per §11). ISO-inspired, not ISO-certified (§16). Restricted applications per §20. See DISCLAIMER.md in the repository root.",
   "creationInfo": {
     "created": "2026-04-10T00:00:00Z",
     "creators": [
@@ -29,7 +29,7 @@
           "referenceLocator": "10.5281/zenodo.19481331"
         }
       ],
-      "description": "1000 terms describing phenomena at the human-AI interface. Descriptive linguistic research, not normative (§1). Non-peer-reviewed working-paper (§11). Informed by ISO 704 / ISO 1087 / ISO 30042 (ISO-inspired, not ISO-certified — §16). Restricted applications per §20.",
+      "description": "1000 terms describing phenomena at the human-AI interface. Descriptive linguistic research, not normative (§1). Longitudinal n=1 terminological priority deposit (non-peer-reviewed per §11). Informed by ISO 704 / ISO 1087 / ISO 30042 (ISO-inspired, not ISO-certified — §16). Restricted applications per §20.",
       "originator": "Person: Andreas Ehstand (orcid:0009-0006-3773-7796)"
     },
     {

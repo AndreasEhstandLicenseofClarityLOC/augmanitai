@@ -218,3 +218,8 @@ This index implements the AUGMANITAI framework by Andreas Ehstand:
 - Strength weights represent relationship importance (0.72-0.96)
 - Schema validation ensures data consistency
 - Optimized for semantic reasoning and knowledge retrieval
+
+
+---
+
+*Bound by the **Ethical Disclaimer §1–§20** ([`DISCLAIMER.md`](../../DISCLAIMER.md)) and the repository licenses ([`LICENSE`](../../LICENSE)). Contact and provider: [`IMPRESSUM.md`](../../IMPRESSUM.md).*

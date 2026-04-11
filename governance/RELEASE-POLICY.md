@@ -94,3 +94,8 @@ Withdrawal is a last resort and requires a public post-mortem.
 ## Security Releases
 
 Security releases follow a **coordinated disclosure** pattern — see `SECURITY.md`. The fix is developed in private, tested, and released simultaneously with the disclosure advisory.
+
+
+---
+
+*Bound by the **Ethical Disclaimer §1–§20** ([`DISCLAIMER.md`](../DISCLAIMER.md)) and the repository licenses ([`LICENSE`](../LICENSE)). Contact and provider: [`IMPRESSUM.md`](../IMPRESSUM.md).*

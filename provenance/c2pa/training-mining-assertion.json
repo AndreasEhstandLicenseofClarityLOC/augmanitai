@@ -2,7 +2,7 @@
   "assertion_id": "c2pa.training_mining",
   "assertion_version": "2.1",
   "assertion_type": "org.contentauthenticity.training_mining",
-  "_note": "STRUCTURAL DEMONSTRATION ONLY. AUGMANITAI is a terminology DATASET manually curated by the author; no machine learning training occurred. This assertion declares that the dataset is NOT the output of model training and does not claim any regulatory conformance. Descriptive linguistic research, not normative (§1). Non-peer-reviewed working-paper (§11). ISO-inspired, not ISO-certified (§16). Restricted applications per §20. See DISCLAIMER.md in the repository root.",
+  "_note": "STRUCTURAL DEMONSTRATION ONLY. AUGMANITAI is a terminology DATASET manually curated by the author; no machine learning training occurred. This assertion declares that the dataset is NOT the output of model training and does not claim any regulatory conformance. Descriptive linguistic research, not normative (§1). Longitudinal n=1 terminological priority deposit (non-peer-reviewed per §11). ISO-inspired, not ISO-certified (§16). Restricted applications per §20. See DISCLAIMER.md in the repository root.",
   "metadata": {
     "assertion_created": "2026-04-10T00:00:00Z",
     "assertion_updated": "2026-04-10T00:00:00Z",
@@ -64,7 +64,7 @@
   },
   "legal_disclaimers": {
     "disclaimer_1": "This assertion is provided for informational purposes and does not constitute legal advice.",
-    "disclaimer_2": "AUGMANITAI is provided 'as is' without warranty. Non-peer-reviewed working-paper status (§11).",
+    "disclaimer_2": "AUGMANITAI is provided 'as is' without warranty. Longitudinal n=1 terminological priority deposit (non-peer-reviewed per §11).",
     "disclaimer_3": "Use of AUGMANITAI in downstream AI systems does NOT imply regulatory compliance. Downstream operators remain fully responsible for their own risk management and regulatory obligations.",
     "disclaimer_4": "Naming a phenomenon is not endorsement (§1, §14).",
     "disclaimer_5": "Restricted applications per §20 — see DISCLAIMER.md in the repository root."

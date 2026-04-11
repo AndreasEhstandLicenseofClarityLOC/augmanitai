@@ -60,3 +60,8 @@ To extend this example:
 - **Offline integration**: Mock LLM for demonstration without API keys
 - **Multi-step reasoning**: Separating parsing, retrieval, and formatting concerns
 - **AUGMANITAI API**: Using `AugmanitaiDB.search()` for terminology lookup
+
+
+---
+
+*Bound by the **Ethical Disclaimer §1–§20** ([`DISCLAIMER.md`](../../DISCLAIMER.md)) and the repository licenses ([`LICENSE`](../../LICENSE)). Contact and provider: [`IMPRESSUM.md`](../../IMPRESSUM.md).*

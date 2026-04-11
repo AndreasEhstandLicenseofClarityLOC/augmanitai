@@ -178,3 +178,8 @@ The augmanitai-lemon.ttl file is valid Turtle syntax conforming to:
 - **Language**: Turtle (RDF/N3)
 - **Encoding**: UTF-8
 - **Line Endings**: LF
+
+
+---
+
+*Bound by the **Ethical Disclaimer §1–§20** ([`DISCLAIMER.md`](../../DISCLAIMER.md)) and the repository licenses ([`LICENSE`](../../LICENSE)). Contact and provider: [`IMPRESSUM.md`](../../IMPRESSUM.md).*

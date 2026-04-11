@@ -97,3 +97,8 @@ This trademark policy may be updated as the project grows. Changes will be annou
 ## Contact
 
 For trademark-related questions: private contact channel in `../governance/SECURITY.md`.
+
+
+---
+
+*Bound by the **Ethical Disclaimer §1–§20** ([`DISCLAIMER.md`](../DISCLAIMER.md)) and the repository licenses ([`LICENSE`](../LICENSE)). Contact and provider: [`IMPRESSUM.md`](../IMPRESSUM.md).*

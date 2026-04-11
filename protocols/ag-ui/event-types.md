@@ -518,3 +518,8 @@ Events are captured for:
 - Interaction pattern discovery
 - UX optimization
 - Error rate tracking
+
+
+---
+
+*Bound by the **Ethical Disclaimer §1–§20** ([`DISCLAIMER.md`](../../DISCLAIMER.md)) and the repository licenses ([`LICENSE`](../../LICENSE)). Contact and provider: [`IMPRESSUM.md`](../../IMPRESSUM.md).*

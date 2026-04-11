@@ -9,8 +9,8 @@
 > operator could use when attaching provenance metadata to **their own**
 > artifacts — they are not operational credentials, SBOMs, or manifests.
 >
-> Descriptive linguistic research, not normative (§1). Non-peer-reviewed
-> working-paper (§11). ISO-inspired, not ISO-certified (§16). Restricted
+> Descriptive linguistic research, not normative (§1). Longitudinal n=1
+> priority deposit, non-peer-reviewed per §11. ISO-inspired, not ISO-certified (§16). Restricted
 > applications per §20. See `DISCLAIMER.md` in the repository root.
 
 ## What is in this folder

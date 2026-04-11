@@ -225,3 +225,9 @@ if __name__ == "__main__":
             await asyncio.Event().wait()
 
     asyncio.run(main())
+
+# ---
+# Bound by the Ethical Disclaimer §1–§20 (DISCLAIMER.md) and the repository
+# licenses. Contact and provider information: IMPRESSUM.md. AUGMANITAI is a
+# longitudinal n=1 terminological priority deposit (non-peer-reviewed per §11).
+# Restricted applications per §20 — see DISCLAIMER.md in the repository root.

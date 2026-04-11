@@ -463,3 +463,8 @@ const framed = await jsonld.frame(doc, frame);
 - Frame ensures consistent document structure across applications
 - Example document demonstrates all major property types and containers
 - Context supports both expanded and compacted JSON-LD forms
+
+
+---
+
+*Bound by the **Ethical Disclaimer §1–§20** ([`DISCLAIMER.md`](../../DISCLAIMER.md)) and the repository licenses ([`LICENSE`](../../LICENSE)). Contact and provider: [`IMPRESSUM.md`](../../IMPRESSUM.md).*

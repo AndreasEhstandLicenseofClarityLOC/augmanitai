@@ -33,3 +33,8 @@ This must use your real name and a reachable email address — anonymous contrib
 AUGMANITAI accepts contributions under EITHER the DCO or a signed Individual Contributor License Agreement (ICLA, see `CLA.md`). For most code contributions, DCO is sufficient. For major terminology contributions that will be formally attributed in the compendium, a signed ICLA is preferred.
 
 See `CONTRIBUTING.md` for the full contribution workflow.
+
+
+---
+
+*Bound by the **Ethical Disclaimer §1–§20** ([`DISCLAIMER.md`](../DISCLAIMER.md)) and the repository licenses ([`LICENSE`](../LICENSE)). Contact and provider: [`IMPRESSUM.md`](../IMPRESSUM.md).*

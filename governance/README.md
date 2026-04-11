@@ -39,3 +39,8 @@ Do NOT open a public issue. See `SECURITY.md` for the private reporting channel.
 ## Questions about licensing?
 
 See the `../licensing/` directory for the full license texts and the dual-license explanation.
+
+
+---
+
+*Bound by the **Ethical Disclaimer §1–§20** ([`DISCLAIMER.md`](../DISCLAIMER.md)) and the repository licenses ([`LICENSE`](../LICENSE)). Contact and provider: [`IMPRESSUM.md`](../IMPRESSUM.md).*

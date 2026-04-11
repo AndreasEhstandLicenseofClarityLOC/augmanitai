@@ -138,3 +138,8 @@ All tool responses include graceful error messages when:
 - Malformed request parameters
 
 JSON Schema validation ensures request integrity before processing.
+
+
+---
+
+*Bound by the **Ethical Disclaimer §1–§20** ([`DISCLAIMER.md`](../../DISCLAIMER.md)) and the repository licenses ([`LICENSE`](../../LICENSE)). Contact and provider: [`IMPRESSUM.md`](../../IMPRESSUM.md).*

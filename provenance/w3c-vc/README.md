@@ -10,8 +10,8 @@
 > revocation status list, and all quality numbers are literal
 > placeholders.
 >
-> Descriptive linguistic research, not normative (§1). Non-peer-reviewed
-> working-paper (§11). ISO-inspired, not ISO-certified (§16). Restricted
+> Descriptive linguistic research, not normative (§1). Longitudinal n=1
+> priority deposit, non-peer-reviewed per §11. ISO-inspired, not ISO-certified (§16). Restricted
 > applications per §20. See `DISCLAIMER.md` in the repository root.
 
 ## What a Verifiable Credential is (briefly)

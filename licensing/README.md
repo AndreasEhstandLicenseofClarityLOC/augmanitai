@@ -66,3 +66,8 @@ See the "Commercial Licensing" section of `LICENSE-summary.md` for how to contac
 
 - Public questions: open a GitHub Issue with the `licensing` label
 - Private or commercial inquiries: use the contact channel in `../governance/SECURITY.md`
+
+
+---
+
+*Bound by the **Ethical Disclaimer §1–§20** ([`DISCLAIMER.md`](../DISCLAIMER.md)) and the repository licenses ([`LICENSE`](../LICENSE)). Contact and provider: [`IMPRESSUM.md`](../IMPRESSUM.md).*

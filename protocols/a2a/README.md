@@ -177,3 +177,8 @@ Responses include structured error information when operations fail:
 - ANP Implementation: `../anp/`
 - AG-UI Implementation: `../ag-ui/`
 - Protocol Bridges: `../bridges/`
+
+
+---
+
+*Bound by the **Ethical Disclaimer §1–§20** ([`DISCLAIMER.md`](../../DISCLAIMER.md)) and the repository licenses ([`LICENSE`](../../LICENSE)). Contact and provider: [`IMPRESSUM.md`](../../IMPRESSUM.md).*

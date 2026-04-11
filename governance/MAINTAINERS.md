@@ -51,3 +51,8 @@ Maintainers are expected to:
 3. Never merge their own non-trivial changes without second review once the team is larger than 2
 4. Be transparent about conflicts of interest when reviewing proposals
 5. Sign commits and releases (GPG or Sigstore) for supply-chain integrity
+
+
+---
+
+*Bound by the **Ethical Disclaimer §1–§20** ([`DISCLAIMER.md`](../DISCLAIMER.md)) and the repository licenses ([`LICENSE`](../LICENSE)). Contact and provider: [`IMPRESSUM.md`](../IMPRESSUM.md).*

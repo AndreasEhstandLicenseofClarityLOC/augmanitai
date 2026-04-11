@@ -9,8 +9,8 @@ terminology DATASET, not a trained model or AI system. Running this script
 does NOT produce a regulatory-compliant SBOM and does NOT assert any ISO
 certification, EU AI Act conformity, or performance metrics for AUGMANITAI.
 
-Descriptive linguistic research, not normative (§1). Non-peer-reviewed
-working-paper (§11). ISO-inspired, not ISO-certified (§16). Restricted
+Descriptive linguistic research, not normative (§1). Longitudinal n=1
+priority deposit, non-peer-reviewed per §11. ISO-inspired, not ISO-certified (§16). Restricted
 applications per §20. See DISCLAIMER.md in the repository root.
 
 Usage:

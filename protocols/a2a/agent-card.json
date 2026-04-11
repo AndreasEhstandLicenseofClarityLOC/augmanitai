@@ -2,7 +2,7 @@
   "@context": "https://google.github.io/A2A/v1/schema/agent-card.jsonld",
   "type": "AgentCard",
   "name": "AUGMANITAI",
-  "description": "Terminology reference for phenomena at the human-AI interface. Exposes a subset of AUGMANITAI core terms covering linguistic evolution, knowledge extraction, cognitive processes, measurement metrics, systemic effects, and terminological phenomena. Bilingual (EN/DE). Descriptive linguistic research, not normative (§1). Non-peer-reviewed working-paper status (§11). Informed by ISO 704 / ISO 1087 / ISO 30042 (ISO-inspired, not ISO-certified — §16). Restricted applications per §20. See DISCLAIMER.md.",
+  "description": "Terminology reference for phenomena at the human-AI interface. Exposes a subset of AUGMANITAI core terms covering linguistic evolution, knowledge extraction, cognitive processes, measurement metrics, systemic effects, and terminological phenomena. Bilingual (EN/DE). Descriptive linguistic research, not normative (§1). Longitudinal n=1 terminological priority deposit (non-peer-reviewed per §11). Informed by ISO 704 / ISO 1087 / ISO 30042 (ISO-inspired, not ISO-certified — §16). Restricted applications per §20. See DISCLAIMER.md.",
   "version": "1.0.0",
   "author": {
     "name": "Andreas Ehstand",
@@ -81,7 +81,7 @@
     ],
     "languages": ["en", "de"],
     "isoInformedBy": "ISO 704, ISO 1087, ISO 30042 (ISO-inspired, not ISO-certified — §16)",
-    "peerReviewStatus": "non-peer-reviewed working-paper (§11)",
+    "peerReviewStatus": "longitudinal n=1 terminological priority deposit (non-peer-reviewed per §11)",
     "restrictedApplications": "Must not be used as diagnostic label, medical/psychological classification, legal categorization, HR screening, credit scoring, insurance assessment, surveillance, or profiling mechanism (§20). See DISCLAIMER.md.",
     "interoperability": {
       "mcp": "1.0",

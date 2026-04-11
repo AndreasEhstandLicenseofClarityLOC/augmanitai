@@ -310,3 +310,8 @@ If you have questions about governance, decision-making, or your role in the pro
 
 Last Updated: April 2026  
 AUGMANITAI Project Lead: Andreas Ehstand
+
+
+---
+
+*Bound by the **Ethical Disclaimer §1–§20** ([`DISCLAIMER.md`](../DISCLAIMER.md)) and the repository licenses ([`LICENSE`](../LICENSE)). Contact and provider: [`IMPRESSUM.md`](../IMPRESSUM.md).*

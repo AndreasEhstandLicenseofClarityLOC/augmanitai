@@ -72,3 +72,8 @@ To enhance this example:
 - **Tool integration**: Wrapping external functionality (AUGMANITAI) for agent use
 - **Task definition**: Clear expected outputs guide agent behavior
 - **Mock LLM patterns**: Offline execution for testing and demos
+
+
+---
+
+*Bound by the **Ethical Disclaimer §1–§20** ([`DISCLAIMER.md`](../../DISCLAIMER.md)) and the repository licenses ([`LICENSE`](../../LICENSE)). Contact and provider: [`IMPRESSUM.md`](../../IMPRESSUM.md).*

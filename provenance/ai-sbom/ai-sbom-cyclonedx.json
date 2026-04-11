@@ -3,7 +3,7 @@
   "specVersion": "1.6",
   "serialNumber": "urn:uuid:augmanitai-cdx-demo-2026-04-10",
   "version": 1,
-  "_note": "STRUCTURAL DEMONSTRATION ONLY. AUGMANITAI is a terminology DATASET, not an AI system. This CycloneDX BOM documents the dataset for supply-chain transparency; it does not assert any ISO certification, EU AI Act conformity, or ML performance metrics. Descriptive linguistic research, not normative (§1). Non-peer-reviewed working-paper (§11). ISO-inspired, not ISO-certified (§16). Restricted applications per §20. See DISCLAIMER.md in the repository root.",
+  "_note": "STRUCTURAL DEMONSTRATION ONLY. AUGMANITAI is a terminology DATASET, not an AI system. This CycloneDX BOM documents the dataset for supply-chain transparency; it does not assert any ISO certification, EU AI Act conformity, or ML performance metrics. Descriptive linguistic research, not normative (§1). Longitudinal n=1 terminological priority deposit (non-peer-reviewed per §11). ISO-inspired, not ISO-certified (§16). Restricted applications per §20. See DISCLAIMER.md in the repository root.",
   "metadata": {
     "timestamp": "2026-04-10T00:00:00Z",
     "tools": [
@@ -18,7 +18,7 @@
       "bom-ref": "augmanitai@1.0",
       "name": "AUGMANITAI 1000-Term Compendium",
       "version": "1.0",
-      "description": "Structured terminology dataset for phenomena at the human-AI interface. Descriptive linguistic research, not normative (§1). Non-peer-reviewed working-paper (§11). Informed by ISO 704 / ISO 1087 / ISO 30042 — ISO-inspired, not ISO-certified (§16).",
+      "description": "Structured terminology dataset for phenomena at the human-AI interface. Descriptive linguistic research, not normative (§1). Longitudinal n=1 terminological priority deposit (non-peer-reviewed per §11). Informed by ISO 704 / ISO 1087 / ISO 30042 — ISO-inspired, not ISO-certified (§16).",
       "licenses": [
         {
           "license": {

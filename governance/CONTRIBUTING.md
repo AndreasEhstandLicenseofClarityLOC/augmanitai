@@ -201,3 +201,8 @@ See [licensing/LICENSE-summary.md](../licensing/LICENSE-summary.md) for details.
 ---
 
 Thank you for contributing to AUGMANITAI. Your work advances academic terminology worldwide.
+
+
+---
+
+*Bound by the **Ethical Disclaimer §1–§20** ([`DISCLAIMER.md`](../DISCLAIMER.md)) and the repository licenses ([`LICENSE`](../LICENSE)). Contact and provider: [`IMPRESSUM.md`](../IMPRESSUM.md).*

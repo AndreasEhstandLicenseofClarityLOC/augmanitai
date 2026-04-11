@@ -1,0 +1,121 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "A2A TaskRequest",
+  "description": "Google Agent-to-Agent Protocol task request message for AUGMANITAI",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "type": "string",
+      "const": "https://google.github.io/A2A/v1/schema/task-request.jsonld",
+      "description": "JSON-LD context URI"
+    },
+    "type": {
+      "type": "string",
+      "const": "TaskRequest",
+      "description": "Message type indicator"
+    },
+    "id": {
+      "type": "string",
+      "description": "Unique request identifier (UUID v4)"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp when request was created"
+    },
+    "version": {
+      "type": "string",
+      "const": "1.0",
+      "description": "A2A protocol version"
+    },
+    "sourceAgent": {
+      "type": "object",
+      "properties": {
+        "agentId": {
+          "type": "string",
+          "description": "Unique identifier of requesting agent"
+        },
+        "name": {
+          "type": "string",
+          "description": "Human-readable agent name"
+        }
+      },
+      "required": ["agentId"]
+    },
+    "targetAgent": {
+      "type": "object",
+      "properties": {
+        "agentId": {
+          "type": "string",
+          "const": "augmanitai",
+          "description": "Target agent must be AUGMANITAI"
+        },
+        "name": {
+          "type": "string",
+          "const": "AUGMANITAI",
+          "description": "Target agent name"
+        }
+      },
+      "required": ["agentId"]
+    },
+    "task": {
+      "type": "object",
+      "properties": {
+        "action": {
+          "type": "string",
+          "enum": [
+            "term_lookup",
+            "term_search",
+            "term_relate",
+            "term_validate_drift",
+            "list_domains"
+          ],
+          "description": "Action to perform on AUGMANITAI"
+        },
+        "parameters": {
+          "type": "object",
+          "description": "Action-specific parameters (see individual action schemas)",
+          "minProperties": 0
+        }
+      },
+      "required": ["action"],
+      "additionalProperties": true
+    },
+    "context": {
+      "type": "object",
+      "description": "Execution context and preferences",
+      "properties": {
+        "language": {
+          "type": "string",
+          "enum": ["en", "de"],
+          "default": "en",
+          "description": "Preferred language for responses"
+        },
+        "includeExamples": {
+          "type": "boolean",
+          "default": true,
+          "description": "Include usage examples in responses"
+        },
+        "domainFilter": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Optional domain filters for search/relate operations"
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Additional metadata about the request"
+    }
+  },
+  "required": [
+    "@context",
+    "type",
+    "id",
+    "timestamp",
+    "sourceAgent",
+    "targetAgent",
+    "task"
+  ],
+  "additionalProperties": false
+}

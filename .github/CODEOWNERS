@@ -1,0 +1,42 @@
+# AUGMANITAI CODEOWNERS
+#
+# This file defines who must review changes to which parts of the repository.
+# The format is https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+#
+# Until a Steering Committee and Domain Stewards are appointed (see MAINTAINERS.md),
+# the Lead Maintainer is the code owner for everything.
+
+# Default: Lead Maintainer owns everything
+*                                   @AndreasEhstand
+
+# Terminology data — the heart of the project
+augmanitai-python/augmanitai/data/  @AndreasEhstand
+augmanitai-npm/src/data/            @AndreasEhstand
+augmanitai-ontology.ttl             @AndreasEhstand
+augmanitai-skos.ttl                 @AndreasEhstand
+terminology-modules/                @AndreasEhstand
+
+# Ontology and validation
+ontology-extensions/                @AndreasEhstand
+ontology-validation/                @AndreasEhstand
+ontology-exports/                   @AndreasEhstand
+
+# Protocols and interoperability
+protocols/                          @AndreasEhstand
+well-known/                         @AndreasEhstand
+crawler-config/                     @AndreasEhstand
+
+# Compliance and provenance (sensitive — legal review)
+eu-ai-act/                          @AndreasEhstand
+provenance/                         @AndreasEhstand
+licensing/                          @AndreasEhstand
+governance/                         @AndreasEhstand
+
+# Deploy and infrastructure
+deploy/                             @AndreasEhstand
+api-mock/                           @AndreasEhstand
+
+# Documentation
+handbook/                           @AndreasEhstand
+README.md                           @AndreasEhstand
+*.md                                @AndreasEhstand

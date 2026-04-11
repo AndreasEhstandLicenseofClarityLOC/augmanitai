@@ -1,0 +1,202 @@
+{
+  "checkpoint_schema": {
+    "version": "1.0.0",
+    "framework": "AUGMANITAI",
+    "checkpoint_type": "state_persistence",
+    "description": "Schema for persisting and recovering workflow state checkpoints"
+  },
+  "checkpoint_structure": {
+    "query_checkpoint": {
+      "fields": [
+        "query_id",
+        "query_text",
+        "query_type",
+        "start_node",
+        "end_node",
+        "max_depth",
+        "results",
+        "visited_nodes",
+        "status",
+        "error_message",
+        "timestamp"
+      ],
+      "critical_fields": ["query_id", "status", "results"],
+      "recovery_fields": ["visited_nodes", "query_type"]
+    },
+    "reasoning_checkpoint": {
+      "fields": [
+        "reasoning_id",
+        "query",
+        "current_node",
+        "visited_nodes",
+        "path",
+        "relationships_traversed",
+        "findings",
+        "confidence_score",
+        "status",
+        "timestamp"
+      ],
+      "critical_fields": ["reasoning_id", "findings", "confidence_score"],
+      "recovery_fields": ["current_node", "visited_nodes", "relationships_traversed"]
+    },
+    "aggregation_checkpoint": {
+      "fields": [
+        "aggregation_id",
+        "query",
+        "agent_results",
+        "aggregated_findings",
+        "consensus_score",
+        "contradictions",
+        "final_answer",
+        "status",
+        "timestamp"
+      ],
+      "critical_fields": ["aggregation_id", "aggregated_findings", "final_answer"],
+      "recovery_fields": ["agent_results", "consensus_score"]
+    },
+    "traversal_checkpoint": {
+      "fields": [
+        "traversal_id",
+        "start_node",
+        "strategy",
+        "max_hops",
+        "current_frontier",
+        "explored",
+        "discovered_paths",
+        "discovered_subgraphs",
+        "status",
+        "timestamp"
+      ],
+      "critical_fields": ["traversal_id", "discovered_paths", "explored"],
+      "recovery_fields": ["current_frontier", "strategy"]
+    },
+    "validation_checkpoint": {
+      "fields": [
+        "validation_id",
+        "entities_to_validate",
+        "relationships_to_validate",
+        "validation_results",
+        "schema_violations",
+        "is_valid",
+        "status",
+        "timestamp"
+      ],
+      "critical_fields": ["validation_id", "schema_violations", "is_valid"],
+      "recovery_fields": ["validation_results", "entities_to_validate"]
+    },
+    "analysis_checkpoint": {
+      "fields": [
+        "analysis_id",
+        "metrics_requested",
+        "graph_metrics",
+        "node_centrality",
+        "relationship_distribution",
+        "domain_analysis",
+        "anomalies_detected",
+        "status",
+        "timestamp"
+      ],
+      "critical_fields": ["analysis_id", "graph_metrics", "anomalies_detected"],
+      "recovery_fields": ["metrics_requested", "domain_analysis"]
+    },
+    "synthesis_checkpoint": {
+      "fields": [
+        "synthesis_id",
+        "focus_nodes",
+        "related_concepts",
+        "connecting_relationships",
+        "synthesis_findings",
+        "conceptual_frameworks",
+        "emergent_patterns",
+        "status",
+        "timestamp"
+      ],
+      "critical_fields": ["synthesis_id", "synthesis_findings", "emergent_patterns"],
+      "recovery_fields": ["focus_nodes", "connecting_relationships"]
+    }
+  },
+  "checkpoint_management": {
+    "storage_strategy": "hierarchical",
+    "persistence_format": "json",
+    "compression": "gzip",
+    "retention_policy": {
+      "completed_checkpoints": "indefinite",
+      "failed_checkpoints": "30_days",
+      "intermediate_checkpoints": "7_days"
+    },
+    "versioning": {
+      "enabled": true,
+      "max_versions_per_workflow": 10,
+      "cleanup_strategy": "keep_latest_n"
+    }
+  },
+  "recovery_procedures": {
+    "query_recovery": {
+      "strategy": "resume_from_latest_checkpoint",
+      "retry_limit": 3,
+      "timeout_seconds": 300
+    },
+    "reasoning_recovery": {
+      "strategy": "resume_with_visited_nodes_preserved",
+      "retry_limit": 2,
+      "timeout_seconds": 600
+    },
+    "aggregation_recovery": {
+      "strategy": "replay_agent_results",
+      "retry_limit": 1,
+      "timeout_seconds": 120
+    }
+  },
+  "checkpoint_validation": {
+    "schema_validation": true,
+    "data_type_checking": true,
+    "field_completeness": "critical_fields_required",
+    "timestamp_validation": true,
+    "state_consistency_checks": [
+      "status_is_valid",
+      "visited_nodes_subset_of_all_nodes",
+      "relationships_reference_valid_nodes"
+    ]
+  },
+  "checkpoint_examples": {
+    "successful_query": {
+      "query_id": "q_001",
+      "query_text": "Find entities in knowledge_synthesis domain",
+      "query_type": "domain",
+      "status": "completed",
+      "results_count": 8,
+      "visited_nodes_count": 8,
+      "timestamp": "2026-04-10T10:30:00Z"
+    },
+    "successful_reasoning": {
+      "reasoning_id": "r_001",
+      "query": "How does RKE enable COD?",
+      "current_node": "rke",
+      "findings_count": 5,
+      "confidence_score": 0.85,
+      "timestamp": "2026-04-10T10:31:00Z"
+    },
+    "successful_aggregation": {
+      "aggregation_id": "a_001",
+      "query": "What are the mechanisms of knowledge synthesis?",
+      "aggregated_findings_count": 12,
+      "consensus_score": 0.88,
+      "status": "complete",
+      "timestamp": "2026-04-10T10:32:00Z"
+    }
+  },
+  "monitoring": {
+    "metrics_tracked": [
+      "checkpoint_creation_rate",
+      "checkpoint_recovery_success_rate",
+      "average_checkpoint_size_bytes",
+      "average_state_transition_time_seconds",
+      "error_rate_by_checkpoint_type"
+    ],
+    "alerting_thresholds": {
+      "recovery_failure_rate": 0.1,
+      "checkpoint_size_exceeded_mb": 100,
+      "state_transition_timeout_exceeded_seconds": 900
+    }
+  }
+}

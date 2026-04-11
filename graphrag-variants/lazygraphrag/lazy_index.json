@@ -1,0 +1,331 @@
+{
+  "version": "1.0.0",
+  "framework": "AUGMANITAI",
+  "variant": "LazyGraphRAG",
+  "build_date": "2026-04-10",
+  "description": "Lazy graph expansion with deferred computation and on-demand materialization",
+  "index_config": {
+    "computation_strategy": "lazy",
+    "materialization_trigger": "on_demand",
+    "cache_strategy": "LRU",
+    "cache_size_entries": 1000,
+    "max_lazy_depth": 5,
+    "expansion_batch_size": 10,
+    "memoization_enabled": true
+  },
+  "core_graph": {
+    "nodes_count": 25,
+    "edges_count": 51,
+    "materialized_nodes": 25,
+    "materialized_edges": 51
+  },
+  "lazy_expansions": {
+    "neighbor_expansion": {
+      "strategy": "breadth_first_lazy",
+      "description": "Expand node neighbors on-demand with lazy evaluation",
+      "computation_cost": "O(d) where d is node degree",
+      "materialization_priority": "breadth_first",
+      "example_node": "rke",
+      "example_neighbors_depth_1": ["ccr", "cie", "cod"],
+      "example_neighbors_depth_2": ["mca", "plp", "sle"],
+      "lazy_evaluation_threshold": 3
+    },
+    "path_expansion": {
+      "strategy": "depth_first_lazy",
+      "description": "Expand paths between nodes with lazy depth-first traversal",
+      "computation_cost": "O(V+E) worst case, typically much less",
+      "materialization_priority": "shortest_first",
+      "example_start": "sle",
+      "example_end": "rke",
+      "example_paths": [
+        {
+          "path": ["sle", "rke"],
+          "lazy_cost": 1,
+          "fully_materialized": true
+        },
+        {
+          "path": ["sle", "dsm", "cod", "rke"],
+          "lazy_cost": 3,
+          "fully_materialized": false,
+          "materialized_edges": [0, 1],
+          "deferred_edges": [2, 3]
+        },
+        {
+          "path": ["sle", "ape", "tct", "csf", "rke"],
+          "lazy_cost": 4,
+          "fully_materialized": false,
+          "materialized_edges": [0],
+          "deferred_edges": [1, 2, 3, 4]
+        }
+      ]
+    },
+    "subgraph_expansion": {
+      "strategy": "bounded_lazy_traversal",
+      "description": "Expand subgraphs with bounded lazy evaluation",
+      "computation_cost": "O(k*d^h) where k=iterations, d=avg_degree, h=hops",
+      "materialization_priority": "centrality_score",
+      "example_anchor": "mca",
+      "example_max_hops": 3,
+      "example_materialized_count": 12,
+      "example_deferred_count": 8
+    },
+    "relationship_expansion": {
+      "strategy": "typed_lazy_expansion",
+      "description": "Expand relationships by type with lazy evaluation",
+      "computation_cost": "O(e_type) where e_type is relationships of target type",
+      "materialization_priority": "type_first",
+      "example_type": "ENABLES",
+      "example_count": 8,
+      "materialized_count": 5,
+      "deferred_count": 3
+    }
+  },
+  "lazy_computation_graph": {
+    "computation_nodes": [
+      {
+        "id": "expand_neighbors",
+        "depends_on": ["materialize_node"],
+        "computes": "adjacent_nodes",
+        "lazy_until": "neighbor_query_executed",
+        "cache_key": "neighbors_{node_id}_{depth}"
+      },
+      {
+        "id": "expand_paths",
+        "depends_on": ["materialize_node", "expand_neighbors"],
+        "computes": "paths_between",
+        "lazy_until": "path_query_executed",
+        "cache_key": "paths_{start}_{end}_{max_length}"
+      },
+      {
+        "id": "expand_subgraph",
+        "depends_on": ["expand_neighbors"],
+        "computes": "subgraph_induced",
+        "lazy_until": "subgraph_query_executed",
+        "cache_key": "subgraph_{anchor}_{hops}"
+      },
+      {
+        "id": "compute_centrality",
+        "depends_on": ["expand_subgraph"],
+        "computes": "centrality_scores",
+        "lazy_until": "centrality_needed",
+        "cache_key": "centrality_{subgraph_id}"
+      },
+      {
+        "id": "compute_clustering",
+        "depends_on": ["expand_subgraph"],
+        "computes": "cluster_coefficients",
+        "lazy_until": "clustering_needed",
+        "cache_key": "clustering_{subgraph_id}"
+      }
+    ],
+    "computation_triggers": {
+      "materialize_node": "direct_access",
+      "neighbor_query_executed": "query_node_neighbors",
+      "path_query_executed": "find_path_query",
+      "subgraph_query_executed": "get_subgraph_query",
+      "centrality_needed": "rank_by_importance",
+      "clustering_needed": "analyze_density"
+    }
+  },
+  "materialization_cache": {
+    "strategy": "LRU_with_priority",
+    "cache_size": 1000,
+    "eviction_policy": "least_recently_used",
+    "priority_boost": {
+      "central_nodes": 2.0,
+      "frequently_queried": 1.5,
+      "root_ancestors": 1.3
+    },
+    "statistics": {
+      "entries": 245,
+      "memory_mb": 18.4,
+      "hit_rate": 0.823,
+      "miss_penalty_ms": 12.5
+    }
+  },
+  "lazy_evaluation_metrics": {
+    "average_materialization_delay_ms": 8.3,
+    "cache_hit_rate": 0.823,
+    "computation_reduction_percent": 47.2,
+    "materialization_on_demand_percent": 68.1,
+    "batch_expansion_efficiency": 0.891
+  },
+  "memoization_table": {
+    "enabled": true,
+    "size": 512,
+    "entries": 187,
+    "hit_rate": 0.756,
+    "memory_overhead_mb": 3.2,
+    "example_memoized": [
+      {
+        "computation": "neighbors(rke)",
+        "result": ["ccr", "cie", "cod"],
+        "recomputed_count": 0,
+        "accessed_count": 47
+      },
+      {
+        "computation": "shortest_path(sle, rke)",
+        "result": ["sle", "rke"],
+        "recomputed_count": 0,
+        "accessed_count": 23
+      },
+      {
+        "computation": "centrality_score(mca)",
+        "result": 0.0834,
+        "recomputed_count": 0,
+        "accessed_count": 12
+      }
+    ]
+  },
+  "query_lazy_execution_plans": {
+    "neighbor_query": {
+      "query": "neighbors(mca, depth=2)",
+      "lazy_steps": [
+        {
+          "step": 1,
+          "operation": "materialize_node",
+          "eager": true,
+          "result": "mca node materialized"
+        },
+        {
+          "step": 2,
+          "operation": "lazy_expand_neighbors",
+          "eager": false,
+          "trigger": "neighbor access",
+          "result": "defer until queried"
+        },
+        {
+          "step": 3,
+          "operation": "lazy_filter_by_depth",
+          "eager": false,
+          "trigger": "depth calculation needed",
+          "result": "defer distance computation"
+        }
+      ]
+    },
+    "path_query": {
+      "query": "shortest_path(sle, rke)",
+      "lazy_steps": [
+        {
+          "step": 1,
+          "operation": "materialize_endpoints",
+          "eager": true,
+          "result": "sle and rke materialized"
+        },
+        {
+          "step": 2,
+          "operation": "lazy_bfs_expansion",
+          "eager": false,
+          "trigger": "path search initiated",
+          "result": "expand on demand until target"
+        },
+        {
+          "step": 3,
+          "operation": "lazy_edge_validation",
+          "eager": false,
+          "trigger": "path verification",
+          "result": "verify edges as needed"
+        }
+      ]
+    },
+    "subgraph_query": {
+      "query": "subgraph(ccr, hops=3)",
+      "lazy_steps": [
+        {
+          "step": 1,
+          "operation": "materialize_anchor",
+          "eager": true,
+          "result": "ccr node materialized"
+        },
+        {
+          "step": 2,
+          "operation": "lazy_bounded_expansion",
+          "eager": false,
+          "trigger": "neighbor expansion needed",
+          "result": "expand neighbors on demand"
+        },
+        {
+          "step": 3,
+          "operation": "lazy_hop_limit",
+          "eager": false,
+          "trigger": "depth check",
+          "result": "enforce hop limit lazily"
+        },
+        {
+          "step": 4,
+          "operation": "lazy_edge_collection",
+          "eager": false,
+          "trigger": "subgraph materialization",
+          "result": "collect induced edges on demand"
+        }
+      ]
+    }
+  },
+  "performance_characteristics": {
+    "eager_computation": {
+      "materialize_full_graph": 1200,
+      "materialize_neighborhoods": 450,
+      "compute_all_paths": 3400,
+      "all_metrics_in_ms": 5200
+    },
+    "lazy_computation": {
+      "initial_setup": 45,
+      "single_neighbor_query": 2.3,
+      "single_path_query": 8.7,
+      "single_subgraph_query": 12.1,
+      "with_memoization_hit": 0.4
+    },
+    "speedup_factors": {
+      "neighbor_query": 195.7,
+      "path_query": 391.0,
+      "subgraph_query": 431.4,
+      "typical_average": 206.2
+    }
+  },
+  "expansion_patterns": {
+    "single_hop_lazy": {
+      "pattern": "Materialize node, defer neighbor expansion until accessed",
+      "computation_cost": "O(1) initially",
+      "expansion_cost": "O(d) on access",
+      "applicability": "frequency-based queries, initial ranking"
+    },
+    "bounded_depth_lazy": {
+      "pattern": "Expand hops 0-2 eagerly, defer 3+ until needed",
+      "computation_cost": "O(d^2) eagerly",
+      "expansion_cost": "O(d^h) per deep hop",
+      "applicability": "subgraph queries, neighborhood analysis"
+    },
+    "path_lazy": {
+      "pattern": "Expand BFS from both endpoints, defer meeting point until close",
+      "computation_cost": "O(d) per endpoint",
+      "expansion_cost": "O(h) where h is path length",
+      "applicability": "connectivity queries, path finding"
+    }
+  },
+  "configuration_templates": {
+    "aggressive_lazy": {
+      "materialization_trigger": "on_demand",
+      "cache_size": 500,
+      "memoization_enabled": true,
+      "batch_size": 5,
+      "max_lazy_depth": 7,
+      "use_case": "Large graphs with sparse queries"
+    },
+    "balanced_lazy": {
+      "materialization_trigger": "on_demand",
+      "cache_size": 1000,
+      "memoization_enabled": true,
+      "batch_size": 10,
+      "max_lazy_depth": 5,
+      "use_case": "General purpose queries"
+    },
+    "eager_with_lazy_fallback": {
+      "materialization_trigger": "eager_core_lazy_rest",
+      "cache_size": 2000,
+      "memoization_enabled": true,
+      "batch_size": 20,
+      "max_lazy_depth": 3,
+      "use_case": "Workloads with repeated deep queries"
+    }
+  }
+}

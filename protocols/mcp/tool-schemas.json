@@ -1,0 +1,195 @@
+{
+  "tools": {
+    "lookup_term": {
+      "name": "lookup_term",
+      "description": "Look up a specific AUGMANITAI term by ID or abbreviation",
+      "input": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "properties": {
+          "term_id": {
+            "type": "string",
+            "description": "Term ID (e.g., 'sle-001') or abbreviation (e.g., 'SLE')",
+            "minLength": 1,
+            "maxLength": 20
+          }
+        },
+        "required": ["term_id"],
+        "additionalProperties": false
+      },
+      "output": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique term identifier"
+          },
+          "name_en": {
+            "type": "string",
+            "description": "English name"
+          },
+          "name_de": {
+            "type": "string",
+            "description": "German name"
+          },
+          "abbreviation": {
+            "type": "string",
+            "description": "Term abbreviation"
+          },
+          "definition_en": {
+            "type": "string",
+            "description": "English definition"
+          },
+          "definition_de": {
+            "type": "string",
+            "description": "German definition"
+          },
+          "domain": {
+            "type": "string",
+            "enum": [
+              "linguistic_dynamics",
+              "knowledge_extraction",
+              "cognitive_processes",
+              "measurement_metrics",
+              "systemic_effects",
+              "terminological_phenomena"
+            ]
+          },
+          "examples": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "iso_alignment": {
+            "type": ["string", "null"]
+          },
+          "error": {
+            "type": "string",
+            "description": "Error message if term not found"
+          }
+        }
+      }
+    },
+    "search_terms": {
+      "name": "search_terms",
+      "description": "Search AUGMANITAI terms by name, definition, or domain",
+      "input": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "Search term (case-insensitive, full-text)",
+            "minLength": 1,
+            "maxLength": 100
+          }
+        },
+        "required": ["query"],
+        "additionalProperties": false
+      },
+      "output": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": { "type": "string" },
+            "name_en": { "type": "string" },
+            "name_de": { "type": "string" },
+            "abbreviation": { "type": "string" },
+            "definition_en": { "type": "string" },
+            "definition_de": { "type": "string" },
+            "domain": { "type": "string" },
+            "examples": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "minItems": 0,
+        "description": "Array of matching terms"
+      }
+    },
+    "get_related": {
+      "name": "get_related",
+      "description": "Get related terms by domain and semantic similarity",
+      "input": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "properties": {
+          "term_id": {
+            "type": "string",
+            "description": "Term ID or abbreviation",
+            "minLength": 1,
+            "maxLength": 20
+          }
+        },
+        "required": ["term_id"],
+        "additionalProperties": false
+      },
+      "output": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "properties": {
+          "primary": {
+            "type": "object",
+            "description": "The primary term object"
+          },
+          "domain": {
+            "type": "string",
+            "description": "Semantic domain of the term"
+          },
+          "related_count": {
+            "type": "integer",
+            "description": "Number of related terms in same domain"
+          },
+          "related_terms": {
+            "type": "array",
+            "items": { "type": "object" },
+            "description": "Array of terms in same domain"
+          },
+          "error": {
+            "type": "string",
+            "description": "Error message if term not found"
+          }
+        }
+      }
+    },
+    "list_domains": {
+      "name": "list_domains",
+      "description": "List all AUGMANITAI domains and term counts",
+      "input": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "output": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "properties": {
+          "domains": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": { "type": "string" },
+                  "abbreviation": { "type": "string" },
+                  "name_en": { "type": "string" }
+                }
+              }
+            }
+          },
+          "total_domains": {
+            "type": "integer"
+          },
+          "total_terms": {
+            "type": "integer"
+          }
+        },
+        "required": ["domains", "total_domains", "total_terms"]
+      }
+    }
+  }
+}

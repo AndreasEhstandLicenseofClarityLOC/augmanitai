@@ -1,0 +1,79 @@
+{
+  "index_metadata": {
+    "framework": "AUGMANITAI",
+    "version": "1.0.0",
+    "build_date": "2026-04-10",
+    "creator": "Andreas Ehstand",
+    "orcid": "0009-0006-3773-7796",
+    "license": "CC BY-NC-ND 4.0"
+  },
+  "coverage": {
+    "total_entities": 25,
+    "total_relationships": 51,
+    "total_text_units": 30,
+    "entity_types": 9,
+    "relationship_types": 11,
+    "communities": 8
+  },
+  "entity_distribution": {
+    "Core Concept": 10,
+    "Phenomenon": 5,
+    "Practice": 3,
+    "Framework": 3,
+    "Capability": 2,
+    "Process": 2,
+    "Challenge": 2,
+    "Mechanism": 2,
+    "Methodology": 1,
+    "Pattern": 1,
+    "Constraint": 1
+  },
+  "relationship_distribution": {
+    "ENABLES": 7,
+    "DEPENDS_ON": 3,
+    "PRECEDES": 2,
+    "GENERATES": 2,
+    "FACILITATES": 3,
+    "ENHANCES": 4,
+    "REQUIRES": 4,
+    "SUPPORTS": 5,
+    "CONTRIBUTES_TO": 3,
+    "CAUSES": 1,
+    "CRITICAL_FOR": 1
+  },
+  "community_structure": {
+    "base_communities": 5,
+    "hierarchical_communities": 3,
+    "total_community_nodes": 25,
+    "average_community_size": 6.4
+  },
+  "graph_metrics": {
+    "network_density": 0.174,
+    "average_degree": 4.08,
+    "diameter": 5,
+    "avg_clustering_coefficient": 0.382,
+    "modularity": 0.654
+  },
+  "coverage_analysis": {
+    "core_concepts_coverage": "100%",
+    "domain_coverage": {
+      "linguistic_dynamics": "4/4 concepts",
+      "meta_cognitive": "8/8 concepts",
+      "knowledge_synthesis": "8/8 concepts",
+      "interaction_dynamics": "7/7 concepts",
+      "organizational": "3/3 concepts"
+    }
+  },
+  "indexing_performance": {
+    "embedding_time_seconds": 12.4,
+    "community_detection_time_seconds": 3.2,
+    "report_generation_time_seconds": 28.7,
+    "total_indexing_time_seconds": 44.3
+  },
+  "quality_metrics": {
+    "relationship_coverage": 0.86,
+    "semantic_coherence": 0.92,
+    "community_quality": 0.88,
+    "report_completeness": 0.95
+  }
+}

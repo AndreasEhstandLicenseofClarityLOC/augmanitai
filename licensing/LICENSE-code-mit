@@ -1,0 +1,66 @@
+AUGMANITAI Code License (MIT) — Alternative
+============================================
+
+SPDX-License-Identifier: MIT
+
+This file provides an ALTERNATIVE MIT-licensed option for AUGMANITAI code
+components that maintainers may choose to dual-license. The PRIMARY code
+license is Apache 2.0 (see LICENSE-code-apache). MIT is offered as a
+lightweight alternative for isolated utility scripts or snippets where a
+patent grant is not material.
+
+Copyright (c) 2025-2026 Andreas Ehstand
+ORCID: 0009-0006-3773-7796
+
+Canonical license text: https://opensource.org/license/mit
+
+Summary of the MIT License
+--------------------------
+
+Permission is granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to
+deal in the Software without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, sublicense,
+and/or sell copies of the Software, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included
+in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, express
+or implied, including but not limited to the warranties of merchantability,
+fitness for a particular purpose and non-infringement. In no event shall
+the authors or copyright holders be liable for any claim, damages or other
+liability, whether in an action of contract, tort or otherwise, arising
+from, out of or in connection with the software or the use or other
+dealings in the software.
+
+When does MIT apply vs. Apache 2.0?
+-----------------------------------
+
+By default, assume ALL AUGMANITAI code is Apache 2.0. MIT applies only to
+files that explicitly declare MIT in their SPDX header. A file is MIT-only
+if it contains:
+
+    SPDX-License-Identifier: MIT
+
+at the top. Otherwise it is Apache 2.0.
+
+Why offer both?
+---------------
+
+MIT is simpler and has no explicit patent grant. Apache 2.0 is more robust
+for larger projects because of its patent grant and defensive termination.
+For small utility snippets (e.g., one-file helper scripts contributed by
+third parties who prefer MIT), MIT is acceptable.
+
+==============================================================================
+NOTE TO PROJECT MAINTAINERS
+==============================================================================
+The MIT license text is a widely used open-source license template published
+by the Open Source Initiative. This file contains a standard summary. The
+authoritative text is available at:
+
+    https://opensource.org/license/mit
+
+The `fetch_licenses.sh` helper script in this directory will populate
+`LICENSE-code-mit-canonical.txt` with the canonical text.

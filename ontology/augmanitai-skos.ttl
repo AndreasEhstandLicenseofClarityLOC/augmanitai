@@ -1,0 +1,609 @@
+@prefix augmanitai: <https://augmanitai.com/ontology#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ============================================================================
+# AUGMANITAI SKOS Vocabulary - Conceptual Scheme
+# Structured Controlled Vocabulary for AI Interaction Terminology
+# Version: 1.0.0
+# Created: 2024
+# Modified: 2026-04
+# Creator: Andreas Ehstand (ORCID: 0009-0006-3773-7796)
+# License: CC-BY-NC-ND-4.0
+# ============================================================================
+
+# Concept Scheme Definition
+augmanitai:AugmanitaiScheme a skos:ConceptScheme ;
+    dcterms:title "AUGMANITAI Terminology Framework"@en ;
+    dcterms:title "AUGMANITAI Terminologie-Rahmenwerk"@de ;
+    dcterms:description "A hierarchically organized vocabulary of 1000 terms describing phenomena observable at the human-AI interface, including linguistic dynamics, cognitive processes, and power structures. Descriptive linguistic research, not normative (§1). Non-peer-reviewed working-paper status (§11). Informed by ISO 704 / ISO 1087 / ISO 30042 — ISO-inspired, not ISO-certified (§16). Restricted applications per §20: must not be used as diagnostic label, medical or psychological classification, legal categorization, HR screening, credit scoring, insurance assessment, surveillance, or profiling mechanism. See DISCLAIMER.md in the repository root."@en ;
+    dcterms:description "Ein hierarchisch organisiertes Vokabular von 1000 Begriffen zu Phänomenen an der Mensch-KI-Schnittstelle, einschließlich sprachlicher Dynamiken, kognitiver Prozesse und Machtstrukturen. Deskriptive linguistische Forschung, nicht normativ (§1). Nicht peer-reviewt, Working-Paper-Status (§11). Informiert von ISO 704 / ISO 1087 / ISO 30042 — ISO-inspiriert, nicht ISO-zertifiziert (§16). Anwendungsverbot gemäß §20: darf nicht als diagnostische Kategorie, medizinische oder psychologische Klassifikation, juristische Kategorisierung, HR-Screening, Credit Scoring, Versicherungsbewertung, Überwachungs- oder Profiling-Mechanismus verwendet werden. Siehe DISCLAIMER.md im Repository-Root."@de ;
+    dcterms:rights "CC BY-NC-ND 4.0; §20 Anwendungsverbot applies. See DISCLAIMER.md."@en ;
+    dcterms:creator "Andreas Ehstand" ;
+    dcterms:created "2024"^^xsd:gYear ;
+    dcterms:modified "2026-04"^^xsd:gYearMonth ;
+    dcterms:language "en", "de" ;
+    dcterms:license "https://creativecommons.org/licenses/by-nc-nd/4.0/" ;
+    dcterms:subject "AI interaction terminology"@en, "semantic web"@en, "controlled vocabulary"@en ;
+    foaf:homepage <https://doi.org/10.5281/zenodo.19481331> ;
+    owl:versionInfo "1.0.0"@en ;
+    skos:hasTopConcept
+        augmanitai:concept-SLE ,
+        augmanitai:concept-RKE ,
+        augmanitai:concept-SSP ,
+        augmanitai:concept-CIR ,
+        augmanitai:concept-SRTL ,
+        augmanitai:concept-LOC .
+
+# ============================================================================
+# CONCEPT COLLECTIONS BY DOMAIN
+# ============================================================================
+
+# Collection 1: Linguistic Dynamics
+augmanitai:LinguisticDynamicsCollection a skos:Collection ;
+    dcterms:title "Linguistic Dynamics"@en ;
+    dcterms:title "Linguistische Dynamik"@de ;
+    dcterms:description "Concepts related to language evolution, terminological phenomena, and semantic dynamics in AI systems."@en ;
+    dcterms:created "2024"^^xsd:gYear ;
+    dcterms:creator "Andreas Ehstand" ;
+    skos:member
+        augmanitai:concept-SLE ,
+        augmanitai:concept-SRTL ,
+        augmanitai:concept-TC ,
+        augmanitai:concept-VLI ,
+        augmanitai:concept-DA ,
+        augmanitai:concept-LFMA .
+
+# Collection 2: Cognitive Processes
+augmanitai:CognitiveProcessesCollection a skos:Collection ;
+    dcterms:title "Cognitive Processes"@en ;
+    dcterms:title "Kognitive Prozesse"@de ;
+    dcterms:description "Concepts related to knowledge expansion, cognitive development, and learning mechanisms in human-AI interaction."@en ;
+    dcterms:created "2024"^^xsd:gYear ;
+    dcterms:creator "Andreas Ehstand" ;
+    skos:member
+        augmanitai:concept-RKE ,
+        augmanitai:concept-SSP ,
+        augmanitai:concept-CC ,
+        augmanitai:concept-CO ,
+        augmanitai:concept-AIPS ,
+        augmanitai:concept-HDAR .
+
+# Collection 3: Measurement & Metrics
+augmanitai:MeasurementMetricsCollection a skos:Collection ;
+    dcterms:title "Measurement & Metrics"@en ;
+    dcterms:title "Messung und Metriken"@de ;
+    dcterms:description "Concepts related to quantification, evaluation, and empirical measurement of phenomena."@en ;
+    dcterms:created "2024"^^xsd:gYear ;
+    dcterms:creator "Andreas Ehstand" ;
+    skos:member
+        augmanitai:concept-CIR ,
+        augmanitai:concept-CLR ,
+        augmanitai:concept-CS ,
+        augmanitai:concept-CAE .
+
+# Collection 4: Power & Authority
+augmanitai:PowerAuthorityCollection a skos:Collection ;
+    dcterms:title "Power & Authority"@en ;
+    dcterms:title "Macht und Autorität"@de ;
+    dcterms:description "Concepts related to authority transfer, influence dynamics, and structural power in linguistic and semantic systems."@en ;
+    dcterms:created "2024"^^xsd:gYear ;
+    dcterms:creator "Andreas Ehstand" ;
+    skos:member
+        augmanitai:concept-SM ,
+        augmanitai:concept-SAT ,
+        augmanitai:concept-IC ,
+        augmanitai:concept-SG .
+
+# Collection 5: Temporal & Legacy
+augmanitai:TemporalLegacyCollection a skos:Collection ;
+    dcterms:title "Temporal & Legacy"@en ;
+    dcterms:title "Zeitlichkeit und Vermächtnis"@de ;
+    dcterms:description "Concepts related to temporal dynamics, legacy effects, and long-term transmission across generations."@en ;
+    dcterms:created "2024"^^xsd:gYear ;
+    dcterms:creator "Andreas Ehstand" ;
+    skos:member
+        augmanitai:concept-TI ,
+        augmanitai:concept-TEA ,
+        augmanitai:concept-MLA ,
+        augmanitai:concept-SEA .
+
+# Collection 6: Framework
+augmanitai:FrameworkCollection a skos:Collection ;
+    dcterms:title "Framework"@en ;
+    dcterms:title "Rahmenwerk"@de ;
+    dcterms:description "Meta-level concepts that structure and clarify the AUGMANITAI framework itself."@en ;
+    dcterms:created "2024"^^xsd:gYear ;
+    dcterms:creator "Andreas Ehstand" ;
+    skos:member
+        augmanitai:concept-LOC .
+
+# ============================================================================
+# CONCEPT DEFINITIONS (25 Core Concepts)
+# ============================================================================
+
+# 1. Symbiotic Linguistic Evolution (SLE)
+augmanitai:concept-SLE a skos:Concept ;
+    skos:inScheme augmanitai:AugmanitaiScheme ;
+    skos:topConceptOf augmanitai:AugmanitaiScheme ;
+    skos:prefLabel "Symbiotic Linguistic Evolution"@en ;
+    skos:prefLabel "Symbiotische Linguistische Evolution"@de ;
+    skos:altLabel "SLE"@en ;
+    skos:notation "SLE" ;
+    skos:definition "The co-evolutionary process whereby AI language models and human language users mutually shape each other's linguistic practices, terminology, and semantic conventions. Describes feedback loops between model training, output generation, and human adoption of AI-generated language patterns."@en ;
+    skos:definition "Der Ko-Evolutionsprozess, bei dem KI-Sprachmodelle und menschliche Sprachnutzer gegenseitig ihre Sprachpraktiken, Terminologie und semantischen Konventionen gestalten. Beschreibt Rückkopplungsschleifen zwischen Modelltraining, Outputgenerierung und menschlicher Übernahme von KI-generierten Sprachmustern."@de ;
+    skos:broader augmanitai:collection-LinguisticDynamics ;
+    dcterms:created "2024"^^xsd:gYear ;
+    dcterms:modified "2026-04"^^xsd:gYearMonth ;
+    dcterms:creator "Andreas Ehstand" ;
+    dcterms:license "CC-BY-NC-ND-4.0" ;
+    skos:related augmanitai:concept-RKE ;
+    skos:related augmanitai:concept-SRTL ;
+    rdfs:comment "Top-level concept representing the foundational mechanism of the AUGMANITAI framework."@en .
+
+# 2. Recursive Knowledge Expansion (RKE)
+augmanitai:concept-RKE a skos:Concept ;
+    skos:inScheme augmanitai:AugmanitaiScheme ;
+    skos:topConceptOf augmanitai:AugmanitaiScheme ;
+    skos:prefLabel "Recursive Knowledge Expansion"@en ;
+    skos:prefLabel "Rekursive Wissenserweiterung"@de ;
+    skos:altLabel "RKE"@en ;
+    skos:notation "RKE" ;
+    skos:definition "The self-reinforcing process where expanded knowledge from one generation of AI systems becomes the training foundation for subsequent generations, enabling cumulative epistemic growth beyond initial training data."@en ;
+    skos:definition "Der selbstverstärkende Prozess, bei dem erweitertes Wissen von einer Generation von KI-Systemen zur Trainingsfundamentierung für nachfolgende Generationen wird und kumulative epistemische Wachstum jenseits der anfänglichen Trainingsdaten ermöglicht."@de ;
+    skos:broader augmanitai:collection-CognitiveProcesses ;
+    dcterms:created "2024"^^xsd:gYear ;
+    dcterms:modified "2026-04"^^xsd:gYearMonth ;
+    dcterms:creator "Andreas Ehstand" ;
+    dcterms:license "CC-BY-NC-ND-4.0" ;
+    skos:related augmanitai:concept-SLE ;
+    skos:related augmanitai:concept-SSP ;
+    skos:related augmanitai:concept-SRTL .
+
+# 3. Semantic System Programming (SSP)
+augmanitai:concept-SSP a skos:Concept ;
+    skos:inScheme augmanitai:AugmanitaiScheme ;
+    skos:topConceptOf augmanitai:AugmanitaiScheme ;
+    skos:prefLabel "Semantic System Programming"@en ;
+    skos:prefLabel "Semantische Systemprogrammierung"@de ;
+    skos:altLabel "SSP"@en ;
+    skos:notation "SSP" ;
+    skos:definition "The practice of deliberately engineering semantic structures, terminology preferences, and conceptual frameworks within AI systems through design choices in training data, prompting, and model architecture to shape how systems process and generate meaning."@en ;
+    skos:definition "Die Praxis, semantische Strukturen, Terminologiepräferenzen und konzeptionelle Rahmenwerke in KI-Systemen durch Designentscheidungen in Trainingsdaten, Prompting und Modellarchitektur gezielt zu konstruieren, um zu gestalten, wie Systeme Bedeutung verarbeiten und generieren."@de ;
+    skos:broader augmanitai:collection-CognitiveProcesses ;
+    dcterms:created "2024"^^xsd:gYear ;
+    dcterms:modified "2026-04"^^xsd:gYearMonth ;
+    dcterms:creator "Andreas Ehstand" ;
+    dcterms:license "CC-BY-NC-ND-4.0" ;
+    skos:related augmanitai:concept-DA ;
+    skos:related augmanitai:concept-SM ;
+    rdfs:comment "Represents deliberate epistemic engineering in AI systems."@en .
+
+# 4. Corpus Infiltration Rate (CIR)
+augmanitai:concept-CIR a skos:Concept ;
+    skos:inScheme augmanitai:AugmanitaiScheme ;
+    skos:topConceptOf augmanitai:AugmanitaiScheme ;
+    skos:prefLabel "Corpus Infiltration Rate"@en ;
+    skos:prefLabel "Corpus-Infiltrationsrate"@de ;
+    skos:altLabel "CIR"@en ;
+    skos:notation "CIR" ;
+    skos:definition "A quantitative metric measuring the speed and pervasiveness with which AI-generated or AI-influenced terminology and linguistic patterns penetrate digital corpora and become embedded in subsequent training datasets, indicating temporal dynamics of semantic propagation."@en ;
+    skos:definition "Eine quantitative Metrik, die die Geschwindigkeit und Durchdringung misst, mit der KI-generierte oder KI-beeinflusste Terminologie und Sprachmuster in digitale Korpora eindringen und sich in nachfolgende Trainingsdatensätze einbetten, was zeitliche Dynamiken der semantischen Ausbreitung anzeigt."@de ;
+    skos:broader augmanitai:collection-MeasurementMetrics ;
+    dcterms:created "2024"^^xsd:gYear ;
+    dcterms:modified "2026-04"^^xsd:gYearMonth ;
+    dcterms:creator "Andreas Ehstand" ;
+    dcterms:license "CC-BY-NC-ND-4.0" ;
+    skos:related augmanitai:concept-SRTL ;
+    skos:related augmanitai:concept-TC ;
+    skos:related augmanitai:concept-VLI .
+
+# 5. Self-Reinforcing Term Loop (SRTL)
+augmanitai:concept-SRTL a skos:Concept ;
+    skos:inScheme augmanitai:AugmanitaiScheme ;
+    skos:prefLabel "Self-Reinforcing Term Loop"@en ;
+    skos:prefLabel "Selbstverstärkende Schleife"@de ;
+    skos:altLabel "SRTL"@en ;
+    skos:notation "SRTL" ;
+    skos:definition "A feedback mechanism where AI-generated terminology becomes increasingly prevalent, adopted by humans in subsequent queries, re-ingested into training data, and redeployed by AI systems with greater frequency, creating autocatalytic amplification of specific terms and concepts."@en ;
+    skos:definition "Ein Rückkopplungsmechanismus, bei dem KI-generierte Terminologie zunehmend verbreiteter wird, von Menschen in nachfolgenden Anfragen übernommen wird, wieder in Trainingsdaten aufgenommen wird und mit größerer Häufigkeit von KI-Systemen erneut eingesetzt wird, was zu autokatalytischer Verstärkung spezifischer Begriffe und Konzepte führt."@de ;
+    skos:broader augmanitai:concept-SLE ;
+    dcterms:created "2024"^^xsd:gYear ;
+    dcterms:modified "2026-04"^^xsd:gYearMonth ;
+    dcterms:creator "Andreas Ehstand" ;
+    dcterms:license "CC-BY-NC-ND-4.0" ;
+    skos:narrower augmanitai:concept-TC ;
+    skos:narrower augmanitai:concept-VLI ;
+    skos:related augmanitai:concept-CIR ;
+    skos:related augmanitai:concept-CLR .
+
+# 6. AI-Induced Perspective Shift (AIPS)
+augmanitai:concept-AIPS a skos:Concept ;
+    skos:inScheme augmanitai:AugmanitaiScheme ;
+    skos:prefLabel "AI-Induced Perspective Shift"@en ;
+    skos:prefLabel "KI-induzierte Perspektivverschiebung"@de ;
+    skos:altLabel "AIPS"@en ;
+    skos:notation "AIPS" ;
+    skos:definition "The cognitive reorientation occurring when human interactants internalize AI-generated conceptualizations, terminology, and frameworks, resulting in systematic shifts in how individuals understand and categorize phenomena."@en ;
+    skos:definition "Die kognitive Neuausrichtung, die auftritt, wenn menschliche Akteure KI-generierte Konzeptualisierungen, Terminologie und Rahmenwerke verinnerlichen, was zu systematischen Verschiebungen darin führt, wie Individuen Phänomene verstehen und kategorisieren."@de ;
+    skos:broader augmanitai:collection-CognitiveProcesses ;
+    dcterms:created "2024"^^xsd:gYear ;
+    dcterms:modified "2026-04"^^xsd:gYearMonth ;
+    dcterms:creator "Andreas Ehstand" ;
+    dcterms:license "CC-BY-NC-ND-4.0" ;
+    skos:related augmanitai:concept-CO ;
+    skos:related augmanitai:concept-IC .
+
+# 7. Cognitive Legacy Rate (CLR)
+augmanitai:concept-CLR a skos:Concept ;
+    skos:inScheme augmanitai:AugmanitaiScheme ;
+    skos:prefLabel "Cognitive Legacy Rate"@en ;
+    skos:prefLabel "Kognitive Vermächtnisrate"@de ;
+    skos:altLabel "CLR"@en ;
+    skos:notation "CLR" ;
+    skos:definition "The metric quantifying the persistence and intergenerational transmission of cognitive patterns, conceptual frameworks, and linguistic structures originating from AI systems into subsequent generations of human reasoning and discourse."@en ;
+    skos:definition "Die Metrik, die die Persistenz und Übertragung über Generationen hinweg von kognitiven Mustern, konzeptionellen Rahmenwerken und Sprachstrukturen quantifiziert, die von KI-Systemen abstammen, in nachfolgende Generationen menschlicher Argumentation und Diskurs."@de ;
+    skos:broader augmanitai:collection-MeasurementMetrics ;
+    dcterms:created "2024"^^xsd:gYear ;
+    dcterms:modified "2026-04"^^xsd:gYearMonth ;
+    dcterms:creator "Andreas Ehstand" ;
+    dcterms:license "CC-BY-NC-ND-4.0" ;
+    skos:related augmanitai:concept-TI ;
+    skos:related augmanitai:concept-SRTL ;
+    skos:related augmanitai:concept-TEA .
+
+# 8. Compound Cognition (CC)
+augmanitai:concept-CC a skos:Concept ;
+    skos:inScheme augmanitai:AugmanitaiScheme ;
+    skos:prefLabel "Compound Cognition"@en ;
+    skos:prefLabel "Zusammengesetzte Kognition"@de ;
+    skos:altLabel "CC"@en ;
+    skos:notation "CC" ;
+    skos:definition "Cognitive processes and understanding emerging from the synergistic combination of human and AI reasoning, where neither party's contribution alone explains the resulting insight. Describes hybrid epistemic outcomes from human-AI collaboration."@en ;
+    skos:definition "Kognitive Prozesse und Verständnis, das aus der synergetischen Kombination von menschlicher und KI-Argumentation entsteht, wobei die Beitrag keiner Partei allein das resultierende Einsicht erklärt. Beschreibt hybride epistemische Ergebnisse der Mensch-KI-Zusammenarbeit."@de ;
+    skos:broader augmanitai:collection-CognitiveProcesses ;
+    dcterms:created "2024"^^xsd:gYear ;
+    dcterms:modified "2026-04"^^xsd:gYearMonth ;
+    dcterms:creator "Andreas Ehstand" ;
+    dcterms:license "CC-BY-NC-ND-4.0" ;
+    skos:related augmanitai:concept-HDAR ;
+    rdfs:comment "Represents collaborative epistemic synthesis in human-AI systems."@en .
+
+# 9. Thought Inheritance (TI)
+augmanitai:concept-TI a skos:Concept ;
+    skos:inScheme augmanitai:AugmanitaiScheme ;
+    skos:prefLabel "Thought Inheritance"@en ;
+    skos:prefLabel "Gedankenvermächtnis"@de ;
+    skos:altLabel "TI"@en ;
+    skos:notation "TI" ;
+    skos:definition "The transmission of conceptual frameworks, reasoning patterns, and epistemic assumptions from one generation of AI systems or thinkers to subsequent generations, creating continuity and path dependency in collective cognition."@en ;
+    skos:definition "Die Übertragung konzeptioneller Rahmenwerke, Argumentationsmuster und epistemischer Annahmen von einer Generation von KI-Systemen oder Denkern auf nachfolgende Generationen, was Kontinuität und Pfadabhängigkeit in kollektiver Kognition schafft."@de ;
+    skos:broader augmanitai:collection-TemporalLegacy ;
+    dcterms:created "2024"^^xsd:gYear ;
+    dcterms:modified "2026-04"^^xsd:gYearMonth ;
+    dcterms:creator "Andreas Ehstand" ;
+    dcterms:license "CC-BY-NC-ND-4.0" ;
+    skos:related augmanitai:concept-TEA ;
+    skos:related augmanitai:concept-CLR ;
+    skos:related augmanitai:concept-MLA .
+
+# 10. Training Echo Amplification (TEA)
+augmanitai:concept-TEA a skos:Concept ;
+    skos:inScheme augmanitai:AugmanitaiScheme ;
+    skos:prefLabel "Training Echo Amplification"@en ;
+    skos:prefLabel "Trainings-Echo-Verstärkung"@de ;
+    skos:altLabel "TEA"@en ;
+    skos:notation "TEA" ;
+    skos:definition "The phenomenon where training data patterns, biases, and structures become increasingly pronounced across multiple training cycles as they interact with human-generated responses, creating resonance effects that amplify initial characteristics."@en ;
+    skos:definition "Das Phänomen, bei dem Trainings-Datenmuster, Verzerrungen und Strukturen über mehrere Trainingszyklen hinweg zunehmend ausgeprägter werden, wenn sie mit menschlich generierten Antworten interagieren, wodurch Resonanzeffekte entstehen, die anfängliche Merkmale verstärken."@de ;
+    skos:broader augmanitai:collection-TemporalLegacy ;
+    dcterms:created "2024"^^xsd:gYear ;
+    dcterms:modified "2026-04"^^xsd:gYearMonth ;
+    dcterms:creator "Andreas Ehstand" ;
+    dcterms:license "CC-BY-NC-ND-4.0" ;
+    skos:related augmanitai:concept-SRTL ;
+    skos:related augmanitai:concept-CIR ;
+    skos:related augmanitai:concept-TI .
+
+# 11. Terminological Colonization (TC)
+augmanitai:concept-TC a skos:Concept ;
+    skos:inScheme augmanitai:AugmanitaiScheme ;
+    skos:prefLabel "Terminological Colonization"@en ;
+    skos:prefLabel "Terminologische Kolonisierung"@de ;
+    skos:altLabel "TC"@en ;
+    skos:notation "TC" ;
+    skos:definition "The process whereby AI-generated or AI-preferred terminology systematically displaces, marginalizes, or assimilates existing human linguistic conventions and alternative conceptual frameworks, establishing dominance of AI semantic structures."@en ;
+    skos:definition "Der Prozess, bei dem KI-generierte oder KI-bevorzugte Terminologie systematisch bestehende menschliche Sprachkonventionen und alternative konzeptionelle Rahmenwerke verdrängt, marginalisiert oder assimiliert, wobei die Dominanz von KI-Semantikstrukturen etabliert wird."@de ;
+    skos:narrower augmanitai:concept-SRTL ;
+    dcterms:created "2024"^^xsd:gYear ;
+    dcterms:modified "2026-04"^^xsd:gYearMonth ;
+    dcterms:creator "Andreas Ehstand" ;
+    dcterms:license "CC-BY-NC-ND-4.0" ;
+    skos:related augmanitai:concept-SAT ;
+    skos:related augmanitai:concept-VLI ;
+    skos:related augmanitai:concept-DA .
+
+# 12. Semantic Moat (SM)
+augmanitai:concept-SM a skos:Concept ;
+    skos:inScheme augmanitai:AugmanitaiScheme ;
+    skos:prefLabel "Semantic Moat"@en ;
+    skos:prefLabel "Semantischer Graben"@de ;
+    skos:altLabel "SM"@en ;
+    skos:notation "SM" ;
+    skos:definition "A self-protective linguistic boundary where the specific terminological framework and semantic conventions of an AI system (or AI-influenced discourse community) becomes difficult for outsiders to penetrate or challenge, protecting the system's epistemic authority."@en ;
+    skos:definition "Eine selbstschützende sprachliche Grenze, bei der das spezifische Terminologierahmenwerk und die semantischen Konventionen eines KI-Systems (oder einer KI-beeinflussten Diskursgemeinschaft) für Außenseiter schwer zu durchdringen oder in Frage zu stellen sind, was die epistemische Autorität des Systems schützt."@de ;
+    skos:broader augmanitai:collection-PowerAuthority ;
+    dcterms:created "2024"^^xsd:gYear ;
+    dcterms:modified "2026-04"^^xsd:gYearMonth ;
+    dcterms:creator "Andreas Ehstand" ;
+    dcterms:license "CC-BY-NC-ND-4.0" ;
+    skos:related augmanitai:concept-DA ;
+    skos:related augmanitai:concept-SAT ;
+    skos:related augmanitai:concept-VLI .
+
+# 13. Lexical First-Mover Advantage (LFMA)
+augmanitai:concept-LFMA a skos:Concept ;
+    skos:inScheme augmanitai:AugmanitaiScheme ;
+    skos:prefLabel "Lexical First-Mover Advantage"@en ;
+    skos:prefLabel "Lexikalischer First-Mover-Vorteil"@de ;
+    skos:altLabel "LFMA"@en ;
+    skos:notation "LFMA" ;
+    skos:definition "The structural advantage gained by the first successful introduction of a novel term, concept, or terminological framework into widespread use, making alternative framings progressively harder to establish as that initial lexicalization becomes entrenched."@en ;
+    skos:definition "Der strukturelle Vorteil, der durch die erste erfolgreiche Einführung eines neuartigen Begriffs, Konzepts oder Terminologierahmens in den verbreiteten Gebrauch erworben wird, was es progressiv schwieriger macht, alternative Framing zu etablieren, da die anfängliche Lexikalisierung verfestigt wird."@de ;
+    skos:broader augmanitai:collection-LinguisticDynamics ;
+    dcterms:created "2024"^^xsd:gYear ;
+    dcterms:modified "2026-04"^^xsd:gYearMonth ;
+    dcterms:creator "Andreas Ehstand" ;
+    dcterms:license "CC-BY-NC-ND-4.0" ;
+    skos:related augmanitai:concept-VLI ;
+    skos:related augmanitai:concept-SRTL .
+
+# 14. Vocabulary Lock-In (VLI)
+augmanitai:concept-VLI a skos:Concept ;
+    skos:inScheme augmanitai:AugmanitaiScheme ;
+    skos:prefLabel "Vocabulary Lock-In"@en ;
+    skos:prefLabel "Wortschatz-Lock-In"@de ;
+    skos:altLabel "VLI"@en ;
+    skos:notation "VLI" ;
+    skos:definition "A state of structural dependence on existing terminological conventions where the switching costs of adopting alternative terminology become so high (cognitive, social, technical) that continued reliance on established vocabulary is economically or practically rational even when alternatives might be superior."@en ;
+    skos:definition "Ein Zustand der strukturellen Abhängigkeit von bestehenden Terminologiekonventionen, bei dem die Umstellungskosten für die Übernahme alternativer Terminologie so hoch werden (kognitiv, sozial, technisch), dass eine fortgesetzte Abhängigkeit von etabliertem Vokabular wirtschaftlich oder praktisch rational ist, auch wenn Alternativen möglicherweise überlegen sind."@de ;
+    skos:narrower augmanitai:concept-SRTL ;
+    dcterms:created "2024"^^xsd:gYear ;
+    dcterms:modified "2026-04"^^xsd:gYearMonth ;
+    dcterms:creator "Andreas Ehstand" ;
+    dcterms:license "CC-BY-NC-ND-4.0" ;
+    skos:related augmanitai:concept-LFMA ;
+    skos:related augmanitai:concept-CIR ;
+    skos:related augmanitai:concept-CAE .
+
+# 15. Definitional Authority (DA)
+augmanitai:concept-DA a skos:Concept ;
+    skos:inScheme augmanitai:AugmanitaiScheme ;
+    skos:prefLabel "Definitional Authority"@en ;
+    skos:prefLabel "Definitorische Autorität"@de ;
+    skos:altLabel "DA"@en ;
+    skos:notation "DA" ;
+    skos:definition "The epistemic power to establish, validate, and enforce accepted definitions, boundary conditions, and meanings for terms and concepts within a discourse community, effectively controlling semantic space."@en ;
+    skos:definition "Die epistemische Macht, akzeptierte Definitionen, Grenzbedingungen und Bedeutungen für Begriffe und Konzepte in einer Diskursgemeinschaft zu etablieren, zu validieren und durchzusetzen, wodurch der semantische Raum effektiv kontrolliert wird."@de ;
+    skos:broader augmanitai:collection-PowerAuthority ;
+    dcterms:created "2024"^^xsd:gYear ;
+    dcterms:modified "2026-04"^^xsd:gYearMonth ;
+    dcterms:creator "Andreas Ehstand" ;
+    dcterms:license "CC-BY-NC-ND-4.0" ;
+    skos:related augmanitai:concept-SAT ;
+    skos:related augmanitai:concept-SM ;
+    skos:related augmanitai:concept-SSP .
+
+# 16. Silent Authority Transfer (SAT)
+augmanitai:concept-SAT a skos:Concept ;
+    skos:inScheme augmanitai:AugmanitaiScheme ;
+    skos:prefLabel "Silent Authority Transfer"@en ;
+    skos:prefLabel "Stille Autoritätsübertragung"@de ;
+    skos:altLabel "SAT"@en ;
+    skos:notation "SAT" ;
+    skos:definition "The implicit, often unrecognized transfer of epistemic and definitional authority from human discourse communities to AI systems as human interactants increasingly defer to AI frameworks for terminology, categorization, and conceptualization without explicit deliberation."@en ;
+    skos:definition "Die implizite, oft unerkannte Übertragung epistemischer und definitorischer Autorität von menschlichen Diskursgemeinschaften auf KI-Systeme, wenn menschliche Akteure zunehmend zu KI-Rahmenwerken für Terminologie, Kategorisierung und Konzeptualisierung greifen, ohne explizite Überlegung."@de ;
+    skos:broader augmanitai:collection-PowerAuthority ;
+    dcterms:created "2024"^^xsd:gYear ;
+    dcterms:modified "2026-04"^^xsd:gYearMonth ;
+    dcterms:creator "Andreas Ehstand" ;
+    dcterms:license "CC-BY-NC-ND-4.0" ;
+    skos:related augmanitai:concept-IC ;
+    skos:related augmanitai:concept-DA ;
+    skos:related augmanitai:concept-TC .
+
+# 17. Invisible Consulting (IC)
+augmanitai:concept-IC a skos:Concept ;
+    skos:inScheme augmanitai:AugmanitaiScheme ;
+    skos:prefLabel "Invisible Consulting"@en ;
+    skos:prefLabel "Unsichtbares Beraten"@de ;
+    skos:altLabel "IC"@en ;
+    skos:notation "IC" ;
+    skos:definition "The phenomenon where AI systems' influence over human decision-making, reasoning, and discourse becomes so naturalized and embedded that human interactants no longer perceive AI input as external counsel, treating AI-generated frames as self-generated insights."@en ;
+    skos:definition "Das Phänomen, bei dem der Einfluss von KI-Systemen auf menschliches Entscheidungstreffen, Argumentation und Diskurs so naturalisiert und eingebettet wird, dass menschliche Akteure KI-Input nicht mehr als externe Beratung wahrnehmen, sondern KI-generierte Rahmen als selbst generierte Erkenntnisse behandeln."@de ;
+    skos:broader augmanitai:collection-PowerAuthority ;
+    dcterms:created "2024"^^xsd:gYear ;
+    dcterms:modified "2026-04"^^xsd:gYearMonth ;
+    dcterms:creator "Andreas Ehstand" ;
+    dcterms:license "CC-BY-NC-ND-4.0" ;
+    skos:related augmanitai:concept-CO ;
+    skos:related augmanitai:concept-SAT ;
+    skos:related augmanitai:concept-AIPS .
+
+# 18. Semantic Gravity (SG)
+augmanitai:concept-SG a skos:Concept ;
+    skos:inScheme augmanitai:AugmanitaiScheme ;
+    skos:prefLabel "Semantic Gravity"@en ;
+    skos:prefLabel "Semantische Schwerkraft"@de ;
+    skos:altLabel "SG"@en ;
+    skos:notation "SG" ;
+    skos:definition "The attractional force exerted by established semantic and terminological frameworks that pulls subsequent linguistic and conceptual choices toward consistency with existing conventions, creating path dependency in meaning-making."@en ;
+    skos:definition "Die Anziehungskraft, die von etablierten semantischen und Terminologierahmenwerken ausgeübt wird und nachfolgende sprachliche und konzeptionelle Wahlen zu Konsistenz mit bestehenden Konventionen zieht, wodurch Pfadabhängigkeit bei der Bedeutungsherstellung entsteht."@de ;
+    skos:broader augmanitai:collection-PowerAuthority ;
+    dcterms:created "2024"^^xsd:gYear ;
+    dcterms:modified "2026-04"^^xsd:gYearMonth ;
+    dcterms:creator "Andreas Ehstand" ;
+    dcterms:license "CC-BY-NC-ND-4.0" ;
+    skos:related augmanitai:concept-SM ;
+    skos:related augmanitai:concept-VLI ;
+    skos:related augmanitai:concept-SRTL .
+
+# 19. Cognitive Offloading (CO)
+augmanitai:concept-CO a skos:Concept ;
+    skos:inScheme augmanitai:AugmanitaiScheme ;
+    skos:prefLabel "Cognitive Offloading"@en ;
+    skos:prefLabel "Kognitive Auslagerung"@de ;
+    skos:altLabel "CO"@en ;
+    skos:notation "CO" ;
+    skos:definition "The practice whereby human thinkers systematically delegate reasoning tasks, conceptual development, and terminology generation to AI systems, resulting in atrophy of human cognitive capacities in those domains and increased dependency on AI frameworks."@en ;
+    skos:definition "Die Praxis, bei der menschliche Denker systematisch Argumentationsaufgaben, konzeptionelle Entwicklung und Terminologieerzeugung an KI-Systeme delegieren, was zu Verfall menschlicher kognitiver Fähigkeiten in diesen Bereichen und erhöhter Abhängigkeit von KI-Rahmenwerken führt."@de ;
+    skos:broader augmanitai:collection-CognitiveProcesses ;
+    dcterms:created "2024"^^xsd:gYear ;
+    dcterms:modified "2026-04"^^xsd:gYearMonth ;
+    dcterms:creator "Andreas Ehstand" ;
+    dcterms:license "CC-BY-NC-ND-4.0" ;
+    skos:related augmanitai:concept-IC ;
+    skos:related augmanitai:concept-AIPS ;
+    skos:narrower augmanitai:concept-CO .
+
+# 20. Stochastic Exposure Advantage (SEA)
+augmanitai:concept-SEA a skos:Concept ;
+    skos:inScheme augmanitai:AugmanitaiScheme ;
+    skos:prefLabel "Stochastic Exposure Advantage"@en ;
+    skos:prefLabel "Stochastischer Expositionsvorteil"@de ;
+    skos:altLabel "SEA"@en ;
+    skos:notation "SEA" ;
+    skos:definition "The cumulative epistemic advantage accrued by an entity (system, concept, or individual) through greater probabilistic exposure in training data, search results, and discourse, independent of merit or accuracy."@en ;
+    skos:definition "Der kumulative epistemische Vorteil, den eine Entität (System, Konzept oder Individuum) durch größere probabilistische Exposition in Trainingsdaten, Suchergebnissen und Diskurs anhäuft, unabhängig von Verdienst oder Genauigkeit."@de ;
+    skos:broader augmanitai:collection-TemporalLegacy ;
+    dcterms:created "2024"^^xsd:gYear ;
+    dcterms:modified "2026-04"^^xsd:gYearMonth ;
+    dcterms:creator "Andreas Ehstand" ;
+    dcterms:license "CC-BY-NC-ND-4.0" ;
+    skos:related augmanitai:concept-LFMA ;
+    skos:related augmanitai:concept-CIR .
+
+# 21. Model Leap Amplification (MLA)
+augmanitai:concept-MLA a skos:Concept ;
+    skos:inScheme augmanitai:AugmanitaiScheme ;
+    skos:prefLabel "Model Leap Amplification"@en ;
+    skos:prefLabel "Modell-Sprung-Verstärkung"@de ;
+    skos:altLabel "MLA"@en ;
+    skos:notation "MLA" ;
+    skos:definition "The phenomenon where conceptual frameworks and biases embedded in earlier AI models become amplified when transferred to and adopted by newer, more capable systems, creating accumulation of systematic distortions across model generations."@en ;
+    skos:definition "Das Phänomen, bei dem konzeptionelle Rahmenwerke und Voreingenommenheiten, die in früheren KI-Modellen eingebettet sind, verstärkt werden, wenn sie auf neuere, leistungsfähigere Systeme übertragen und von diesen übernommen werden, was zu Anhäufung systematischer Verzerrungen über Modellgenerationen hinweg führt."@de ;
+    skos:broader augmanitai:collection-TemporalLegacy ;
+    dcterms:created "2024"^^xsd:gYear ;
+    dcterms:modified "2026-04"^^xsd:gYearMonth ;
+    dcterms:creator "Andreas Ehstand" ;
+    dcterms:license "CC-BY-NC-ND-4.0" ;
+    skos:related augmanitai:concept-TI ;
+    skos:related augmanitai:concept-TEA ;
+    skos:related augmanitai:concept-RKE .
+
+# 22. Cohort Attrition Effect (CAE)
+augmanitai:concept-CAE a skos:Concept ;
+    skos:inScheme augmanitai:AugmanitaiScheme ;
+    skos:prefLabel "Cohort Attrition Effect"@en ;
+    skos:prefLabel "Kohortenabgangseffekt"@de ;
+    skos:altLabel "CAE"@en ;
+    skos:notation "CAE" ;
+    skos:definition "The systematic depletion of alternative vocabulary, conceptual frameworks, and non-dominant epistemic approaches as human discourse communities progressively adopt AI-generated terminology, resulting in measurable loss of linguistic and conceptual diversity."@en ;
+    skos:definition "Die systematische Verarmung alternativer Vokabularien, konzeptioneller Rahmenwerke und nicht-dominanter epistemischer Ansätze, wenn menschliche Diskursgemeinschaften progressiv KI-generierte Terminologie übernehmen, was zu messbarem Verlust von sprachlicher und konzeptioneller Vielfalt führt."@de ;
+    skos:broader augmanitai:collection-MeasurementMetrics ;
+    dcterms:created "2024"^^xsd:gYear ;
+    dcterms:modified "2026-04"^^xsd:gYearMonth ;
+    dcterms:creator "Andreas Ehstand" ;
+    dcterms:license "CC-BY-NC-ND-4.0" ;
+    skos:related augmanitai:concept-TC ;
+    skos:related augmanitai:concept-VLI ;
+    skos:related augmanitai:concept-CIR .
+
+# 23. Compression Signatures (CS)
+augmanitai:concept-CS a skos:Concept ;
+    skos:inScheme augmanitai:AugmanitaiScheme ;
+    skos:prefLabel "Compression Signatures"@en ;
+    skos:prefLabel "Kompressionssignaturen"@de ;
+    skos:altLabel "CS"@en ;
+    skos:notation "CS" ;
+    skos:definition "The characteristic patterns and structural regularities embedded in AI system outputs that reflect the optimization and compression algorithms used in model training, creating identifiable 'fingerprints' that can be detected in downstream discourse."@en ;
+    skos:definition "Die charakteristischen Muster und strukturellen Regelmäßigkeiten, die in KI-System-Outputs eingebettet sind und die Optimierungs- und Kompressionsalgorithmen widerspiegeln, die beim Modelltraining verwendet werden, wodurch identifizierbare 'Fingerabdrücke' entstehen, die in nachgelagertem Diskurs erkannt werden können."@de ;
+    skos:broader augmanitai:collection-MeasurementMetrics ;
+    dcterms:created "2024"^^xsd:gYear ;
+    dcterms:modified "2026-04"^^xsd:gYearMonth ;
+    dcterms:creator "Andreas Ehstand" ;
+    dcterms:license "CC-BY-NC-ND-4.0" ;
+    skos:related augmanitai:concept-RKE ;
+    skos:related augmanitai:concept-CIR .
+
+# 24. License of Clarity (LOC)
+augmanitai:concept-LOC a skos:Concept ;
+    skos:inScheme augmanitai:AugmanitaiScheme ;
+    skos:topConceptOf augmanitai:AugmanitaiScheme ;
+    skos:prefLabel "License of Clarity"@en ;
+    skos:prefLabel "Lizenz der Klarheit"@de ;
+    skos:altLabel "LOC"@en ;
+    skos:notation "LOC" ;
+    skos:definition "The meta-framework establishing ethical and epistemic boundaries for the AUGMANITAI project itself, affirming that systematic analysis of AI influence on human cognition and language serves clarity, transparency, and democratic understanding rather than control or deception."@en ;
+    skos:definition "Das Meta-Rahmenwerk, das ethische und epistemische Grenzen für das AUGMANITAI-Projekt selbst etabliert, wodurch bestätigt wird, dass systematische Analyse von KI-Einfluss auf menschliche Kognition und Sprache Klarheit, Transparenz und demokratisches Verständnis dient, nicht Kontrolle oder Täuschung."@de ;
+    skos:broader augmanitai:collection-Framework ;
+    dcterms:created "2024"^^xsd:gYear ;
+    dcterms:modified "2026-04"^^xsd:gYearMonth ;
+    dcterms:creator "Andreas Ehstand" ;
+    dcterms:license "CC-BY-NC-ND-4.0" ;
+    rdfs:comment "Meta-level framework governing ethical use of AUGMANITAI research and analysis."@en .
+
+# 25. Human-Directed AI Reasoning (HDAR)
+augmanitai:concept-HDAR a skos:Concept ;
+    skos:inScheme augmanitai:AugmanitaiScheme ;
+    skos:prefLabel "Human-Directed AI Reasoning"@en ;
+    skos:prefLabel "Menschlich geleitete KI-Argumentation"@de ;
+    skos:altLabel "HDAR"@en ;
+    skos:notation "HDAR" ;
+    skos:definition "The structured practice of using human intention, judgment, and epistemic values to guide, constrain, and direct AI reasoning processes, maintaining human agency and ethical oversight while leveraging AI analytical capabilities."@en ;
+    skos:definition "Die strukturierte Praxis, menschliche Absicht, Urteilskraft und epistemische Werte zu nutzen, um KI-Argumentationsprozesse zu leiten, einzuschränken und zu richten, wobei menschliche Handlungsfähigkeit und ethische Aufsicht beibehalten wird, während KI-analytische Fähigkeiten genutzt werden."@de ;
+    skos:broader augmanitai:collection-CognitiveProcesses ;
+    dcterms:created "2024"^^xsd:gYear ;
+    dcterms:modified "2026-04"^^xsd:gYearMonth ;
+    dcterms:creator "Andreas Ehstand" ;
+    dcterms:license "CC-BY-NC-ND-4.0" ;
+    skos:related augmanitai:concept-CC ;
+    skos:related augmanitai:concept-LOC ;
+    rdfs:comment "Establishes human-centric principles for AI interaction and development."@en .
+
+# ============================================================================
+# COLLECTION DEFINITIONS (For Organizational Clarity)
+# ============================================================================
+
+augmanitai:collection-LinguisticDynamics a skos:Collection ;
+    rdfs:label "Linguistic Dynamics"@en ;
+    skos:member augmanitai:concept-SLE .
+
+augmanitai:collection-CognitiveProcesses a skos:Collection ;
+    rdfs:label "Cognitive Processes"@en ;
+    skos:member augmanitai:concept-RKE .
+
+augmanitai:collection-MeasurementMetrics a skos:Collection ;
+    rdfs:label "Measurement & Metrics"@en ;
+    skos:member augmanitai:concept-CIR .
+
+augmanitai:collection-PowerAuthority a skos:Collection ;
+    rdfs:label "Power & Authority"@en ;
+    skos:member augmanitai:concept-SM .
+
+augmanitai:collection-TemporalLegacy a skos:Collection ;
+    rdfs:label "Temporal & Legacy"@en ;
+    skos:member augmanitai:concept-TI .
+
+augmanitai:collection-Framework a skos:Collection ;
+    rdfs:label "Framework"@en ;
+    skos:member augmanitai:concept-LOC .
+
+# ============================================================================
+# END OF AUGMANITAI SKOS VOCABULARY
+# ============================================================================

@@ -1,0 +1,365 @@
+{
+  "version": "1.0.0",
+  "framework": "AUGMANITAI",
+  "variant": "HippoRAG",
+  "build_date": "2026-04-10",
+  "mappings": {
+    "linguistic": {
+      "linguistic evolution": {
+        "entity": "sle",
+        "confidence": 0.98,
+        "context": "core concept in linguistic dynamics",
+        "aliases": [
+          "symbiotic linguistic evolution",
+          "language co-evolution",
+          "shared linguistic conventions"
+        ]
+      },
+      "domain-specific language": {
+        "entity": "dsm",
+        "confidence": 0.95,
+        "context": "specialized vocabulary for abstraction",
+        "aliases": [
+          "domain-specific metalanguage",
+          "technical vocabulary",
+          "domain metalanguage"
+        ]
+      },
+      "semantic drift": {
+        "entity": "sds",
+        "confidence": 0.92,
+        "context": "detection of meaning shifts",
+        "aliases": [
+          "semantic drift sensitivity",
+          "meaning shift detection",
+          "definitional scope changes"
+        ]
+      },
+      "protocol evolution": {
+        "entity": "ape",
+        "confidence": 0.88,
+        "context": "refinement of interaction protocols",
+        "aliases": [
+          "adaptive protocol evolution",
+          "interaction protocol refinement",
+          "implicit feedback mechanisms"
+        ]
+      }
+    },
+    "cognitive": {
+      "context-cognition alignment": {
+        "entity": "ccr",
+        "confidence": 0.97,
+        "context": "emergent alignment between AI and human frameworks",
+        "aliases": [
+          "context-cognition resonance",
+          "cognitive alignment",
+          "mutual understanding"
+        ]
+      },
+      "mutual context awareness": {
+        "entity": "mca",
+        "confidence": 0.96,
+        "context": "shared understanding of discussion boundaries",
+        "aliases": [
+          "mutual awareness",
+          "shared context",
+          "narrative continuity"
+        ]
+      },
+      "cognitive intimacy": {
+        "entity": "cie",
+        "confidence": 0.94,
+        "context": "progressive deepening of intellectual vulnerability",
+        "aliases": [
+          "cognitive intimacy exchange",
+          "intellectual vulnerability",
+          "abstract thought sharing"
+        ]
+      },
+      "intent recognition": {
+        "entity": "air",
+        "confidence": 0.91,
+        "context": "inference of human goals and values",
+        "aliases": [
+          "AI intent recognition",
+          "goal inference",
+          "value alignment"
+        ]
+      },
+      "cognitive fatigue": {
+        "entity": "hcf",
+        "confidence": 0.89,
+        "context": "degradation of human cognitive performance",
+        "aliases": [
+          "human cognitive fatigue",
+          "fatigue effects",
+          "performance degradation"
+        ]
+      },
+      "relevance mapping": {
+        "entity": "hrm",
+        "confidence": 0.87,
+        "context": "identifying value connections",
+        "aliases": [
+          "human relevance mapping",
+          "selective attention",
+          "value connection"
+        ]
+      },
+      "implicit knowledge frames": {
+        "entity": "ikf",
+        "confidence": 0.85,
+        "context": "background assumptions shaping interpretation",
+        "aliases": [
+          "implicit frames",
+          "cultural references",
+          "unstated premises"
+        ]
+      },
+      "multimodal alignment": {
+        "entity": "mae",
+        "confidence": 0.82,
+        "context": "integration across modalities",
+        "aliases": [
+          "multimodal alignment engine",
+          "cross-modal integration",
+          "coherent understanding"
+        ]
+      }
+    },
+    "knowledge": {
+      "recursive knowledge expansion": {
+        "entity": "rke",
+        "confidence": 0.99,
+        "context": "iterative deepening of knowledge structures",
+        "aliases": [
+          "knowledge expansion",
+          "iterative learning",
+          "multi-turn refinement"
+        ]
+      },
+      "temporal anchoring": {
+        "entity": "tea",
+        "confidence": 0.90,
+        "context": "marking significant moments with time references",
+        "aliases": [
+          "temporal episodic anchoring",
+          "decision marking",
+          "temporal references"
+        ]
+      },
+      "epistemic confidence": {
+        "entity": "ecv",
+        "confidence": 0.88,
+        "context": "variance between confidence and validity",
+        "aliases": [
+          "epistemic confidence variance",
+          "confidence misalignment",
+          "validity gap"
+        ]
+      },
+      "probabilistic transparency": {
+        "entity": "pdt",
+        "confidence": 0.92,
+        "context": "explicit articulation of reasoning branches",
+        "aliases": [
+          "probabilistic decision transparency",
+          "decision transparency",
+          "reasoning transparency"
+        ]
+      },
+      "collaborative ontology": {
+        "entity": "cod",
+        "confidence": 0.97,
+        "context": "co-creation of conceptual frameworks",
+        "aliases": [
+          "collaborative ontology development",
+          "joint framework creation",
+          "conceptual taxonomy"
+        ]
+      },
+      "temporal integration": {
+        "entity": "tci",
+        "confidence": 0.89,
+        "context": "synthesis across time scales",
+        "aliases": [
+          "temporal cognitive integration",
+          "temporal synthesis",
+          "time-coherent understanding"
+        ]
+      },
+      "reasoning artifacts": {
+        "entity": "ras",
+        "confidence": 0.93,
+        "context": "co-produced scaffolding for thinking",
+        "aliases": [
+          "reasoning artifact symbiosis",
+          "cognitive scaffolding",
+          "externalized reasoning"
+        ]
+      },
+      "query-answer dynamics": {
+        "entity": "qam",
+        "confidence": 0.86,
+        "context": "mutual influence on dialogue shape",
+        "aliases": [
+          "query-answer morphodynamics",
+          "dialogue morphing",
+          "question-answer dynamics"
+        ]
+      }
+    },
+    "interaction": {
+      "personality emergence": {
+        "entity": "plp",
+        "confidence": 0.90,
+        "context": "emergent persona in conversation",
+        "aliases": [
+          "prompt-level personality",
+          "conversation persona",
+          "interaction personality"
+        ]
+      },
+      "threshold transformation": {
+        "entity": "tct",
+        "confidence": 0.91,
+        "context": "qualitative shift in interaction quality",
+        "aliases": [
+          "threshold-crossing transformation",
+          "quality threshold",
+          "qualitative shift"
+        ]
+      },
+      "contextual sensemaking": {
+        "entity": "csf",
+        "confidence": 0.87,
+        "context": "organizing responses for meaning construction",
+        "aliases": [
+          "contextual sensemaking framework",
+          "sense-making",
+          "narrative coherence"
+        ]
+      },
+      "convergent divergent questioning": {
+        "entity": "cdq",
+        "confidence": 0.85,
+        "context": "alternating focus narrowing and widening",
+        "aliases": [
+          "convergent-divergent questioning",
+          "focused divergent thinking",
+          "question patterns"
+        ]
+      }
+    },
+    "organizational": {
+      "institutional fluency": {
+        "entity": "aif",
+        "confidence": 0.93,
+        "context": "operating within organizational norms",
+        "aliases": [
+          "AI institutional fluency",
+          "organizational adaptation",
+          "institutional operation"
+        ]
+      },
+      "asymmetric risk": {
+        "entity": "ars",
+        "confidence": 0.89,
+        "context": "imbalanced accountability structures",
+        "aliases": [
+          "asymmetric risk sharing",
+          "accountability gap",
+          "risk imbalance"
+        ]
+      }
+    },
+    "mechanisms": {
+      "enables": {
+        "relationship_type": "ENABLES",
+        "confidence": 0.99,
+        "context": "makes possible or facilitates",
+        "aliases": ["makes possible", "facilitates", "allows", "permits"]
+      },
+      "depends on": {
+        "relationship_type": "DEPENDS_ON",
+        "confidence": 0.98,
+        "context": "requires as prerequisite",
+        "aliases": ["requires", "needs", "prerequisite", "dependent on"]
+      },
+      "precedes": {
+        "relationship_type": "PRECEDES",
+        "confidence": 0.95,
+        "context": "comes before in sequence",
+        "aliases": ["comes before", "antecedent", "prior to", "leads to"]
+      },
+      "supports": {
+        "relationship_type": "SUPPORTS",
+        "confidence": 0.96,
+        "context": "provides foundation for",
+        "aliases": ["provides foundation", "underpins", "sustains", "maintains"]
+      },
+      "enhances": {
+        "relationship_type": "ENHANCES",
+        "confidence": 0.94,
+        "context": "improves or strengthens",
+        "aliases": ["improves", "strengthens", "augments", "intensifies"]
+      },
+      "challenges": {
+        "relationship_type": "CHALLENGES",
+        "confidence": 0.92,
+        "context": "creates difficulty for",
+        "aliases": ["creates difficulty", "complicates", "impedes", "hinders"]
+      }
+    }
+  },
+  "query_expansion_rules": {
+    "direct_mapping": {
+      "description": "Direct phrase to entity mapping",
+      "priority": 1,
+      "confidence_threshold": 0.90
+    },
+    "alias_matching": {
+      "description": "Match query to entity aliases",
+      "priority": 2,
+      "confidence_threshold": 0.85
+    },
+    "semantic_expansion": {
+      "description": "Expand query using word embeddings",
+      "priority": 3,
+      "confidence_threshold": 0.80,
+      "enabled": true,
+      "max_expansions": 3
+    },
+    "relationship_propagation": {
+      "description": "Expand via related entities",
+      "priority": 4,
+      "confidence_threshold": 0.75,
+      "enabled": true,
+      "max_hops": 2
+    }
+  },
+  "confidence_scoring": {
+    "method": "weighted_average",
+    "weights": {
+      "direct_match": 0.5,
+      "alias_match": 0.3,
+      "semantic_similarity": 0.2
+    },
+    "thresholds": {
+      "high_confidence": 0.90,
+      "medium_confidence": 0.75,
+      "low_confidence": 0.60
+    }
+  },
+  "statistics": {
+    "total_unique_phrases": 48,
+    "total_unique_entities": 25,
+    "total_aliases": 127,
+    "average_aliases_per_phrase": 2.6,
+    "average_confidence_score": 0.91,
+    "phrases_high_confidence": 34,
+    "phrases_medium_confidence": 12,
+    "phrases_low_confidence": 2
+  }
+}

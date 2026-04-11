@@ -1,0 +1,98 @@
+name: Bug Report
+description: Report a defect in AUGMANITAI code, data, documentation, or infrastructure
+title: "[BUG] "
+labels: ["bug", "triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. Please fill out the form below so we can reproduce and fix it quickly.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which area of the project?
+      options:
+        - Python package (augmanitai-python)
+        - NPM package (augmanitai-npm)
+        - Terminology data (terms.json / ontology / SKOS)
+        - REST API (api-mock)
+        - MCP server (protocols/mcp)
+        - A2A / ANP / AG-UI adapter
+        - GraphRAG variants
+        - Documentation / Handbook
+        - Interactive explorer HTML
+        - SPARQL / SHACL / TBX / JSON-LD export
+        - Deploy (Docker / Helm / HuggingFace Space)
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: AUGMANITAI version
+      description: What version are you using? (e.g., 1.0.0, main@abc1234)
+      placeholder: 1.0.0
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: Minimal, complete, reproducible example
+      placeholder: |
+        1. Install augmanitai-python 1.0.0
+        2. Run `python -c "from augmanitai import AugmanitaiDB; print(AugmanitaiDB().lookup('foo'))"`
+        3. Observe error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened? Include full error messages and stack traces if applicable.
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Python version, Node version, dependency versions, etc.
+      placeholder: |
+        OS: Ubuntu 24.04
+        Python: 3.12.3
+        augmanitai-python: 1.0.0
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Checklist
+      options:
+        - label: I have searched existing issues and this is not a duplicate
+          required: true
+        - label: I have read the CONTRIBUTING.md
+          required: true
+        - label: I agree to follow this project's Code of Conduct
+          required: true

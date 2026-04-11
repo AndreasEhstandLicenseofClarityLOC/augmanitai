@@ -1,0 +1,74 @@
+# AUGMANITAI
+
+> A curated terminology framework for phenomena at the human–AI interface. 1000 terms, informed by ISO 704 / ISO 1087 / ISO 30042 (ISO-inspired, not ISO-certified), published on Zenodo under CC BY-NC-ND 4.0. Author: Andreas Ehstand (ORCID 0009-0006-3773-7796).
+
+## Ethical disclaimer (§1–§20)
+
+AUGMANITAI is purely descriptive linguistic-terminological research.
+- §1 Descriptive, not normative.
+- §11 Non-peer-reviewed. AUGMANITAI is a longitudinal n=1 terminological priority deposit, not a peer-reviewed publication. See METHODOLOGY.md §2.0.
+- §13 No efficacy claims, not a substitute for professional advice.
+- §7 18+ only.
+- §20 Must not be used as diagnostic label, medical/psychological classification, legal categorization, HR screening, credit scoring, insurance assessment, state surveillance, or profiling mechanism.
+
+Full disclaimer: `DISCLAIMER.md` in the repository root.
+
+## Canonical resources
+
+- Zenodo DOI: https://doi.org/10.5281/zenodo.19481331 — canonical published version
+- ORCID: https://orcid.org/0009-0006-3773-7796 — author identity
+
+## What AUGMANITAI is
+
+AUGMANITAI is a research terminology and a priority-establishing terminological deposit. Its core deliverable is the 1000-Term Compendium, the curated output of a longitudinal n=1 observation of daily human–LLM interaction over approximately nine months, formalized as an RDF knowledge graph with OWL, SKOS, SKOS-XL, OntoLex-Lemon, SHACL, and JSON-LD serializations, plus a TBX export for terminology management systems.
+
+The priority claim covers the schema as a whole — the selection, definition, relation structure, and serialization — not the invention of each individual term. Some terms are imported from prior literature, some are re-formulations, some are newly introduced. See METHODOLOGY.md §3 for the origin categories.
+
+It is a research instrument, not a product, not a methodology, and not a manifesto. Terms are tools for observation.
+
+## Standards the framework is informed by
+
+Per §16 of the Ethical Disclaimer, AUGMANITAI is ISO-inspired, not ISO-certified. The standards listed below informed the methodology; listing them does not assert certification or conformance.
+
+- ISO 704:2022 — Terminology work: principles and methods (informed by)
+- ISO 1087:2019 — Terminology work: vocabulary (informed by)
+- ISO 30042:2019 — TermBase eXchange (TBX) (informed by)
+- W3C SKOS, SKOS-XL, OntoLex-Lemon, SHACL, JSON-LD 1.1
+- W3C Verifiable Credentials 2.0 (for provenance)
+
+## Repository structure
+
+- `ontology/` — core OWL, SKOS, OntoLex-Lemon, SKOS-XL, JSON-LD, SHACL, TBX
+- `protocols/` — MCP, A2A, ANP, AG-UI protocol adapters
+- `provenance/` — C2PA, SPDX 3.0 AI Profile, CycloneDX 1.6 ML-BOM, W3C VC 2.0
+- `graphrag-variants/` — six GraphRAG integration examples
+- `demo-swarms/` — multi-agent reference examples (with mock LLMs)
+- `governance/` — Code of Conduct, CLA, DCO, Security, Maintainers, Roadmap
+- `licensing/` — dual-license files, SPDX, PATENT, TRADEMARK, NOTICE
+- `DISCLAIMER.md` — Ethical Disclaimer §1–§20 (bilingual DE/EN)
+
+## Metadata
+
+- DOI (concept): 10.5281/zenodo.19481331
+- Creator: Andreas Ehstand
+- Creator ORCID: 0009-0006-3773-7796
+- License (data): CC BY-NC-ND 4.0
+- License (code): Apache 2.0
+- SPDX expression: CC-BY-NC-ND-4.0 AND Apache-2.0
+- Term count: 1000
+- Language: English (primary)
+- Status: Longitudinal n=1 terminological priority deposit (non-peer-reviewed, §11)
+
+## Citation
+
+Ehstand, A. AUGMANITAI: 1000-Term Compendium. Zenodo. https://doi.org/10.5281/zenodo.19481331
+
+A machine-readable `CITATION.cff` is in the repository root.
+
+## Licensing
+
+Data under CC BY-NC-ND 4.0. Code under Apache 2.0. Commercial licensing inquiries regarding the data layer: via ORCID.
+
+## Contact
+
+Via ORCID profile: https://orcid.org/0009-0006-3773-7796

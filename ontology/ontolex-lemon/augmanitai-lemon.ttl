@@ -1,0 +1,1342 @@
+@prefix aug: <https://augmanitai.org/term/> .
+@prefix augont: <https://augmanitai.org/ontology#> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lexinfo: <http://www.w3.org/ns/lemon/lexinfo#> .
+@prefix decomp: <http://www.w3.org/ns/lemon/decomp#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix vartrans: <http://www.w3.org/ns/lemon/vartrans#> .
+@prefix synsem: <http://www.w3.org/ns/lemon/synsem#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ============================================================================
+# AUGMANITAI OntoLex-Lemon Lexical Repository
+# Multilingual Lexical Encoding and Decomposition for AI Terminology
+# Creator: Andreas Ehstand (ORCID: 0009-0006-3773-7796)
+# License: CC BY-NC-ND 4.0
+# Informed by ISO 1087 (Terminology vocabulary) and ISO 30042 (TBX) —
+# ISO-inspired, not ISO-certified (§16 of DISCLAIMER.md).
+# ============================================================================
+
+# Lexicon Definition
+aug:AugmanitaiLexicon a ontolex:Lexicon ;
+    rdfs:label "AUGMANITAI Lexicon"@en ;
+    dct:description "Multilingual lexical resource for terminology of human-AI interaction phenomena in English, German, Mandarin Chinese, Hindi, and Arabic. Descriptive linguistic research, not normative (§1). Non-peer-reviewed working-paper (§11). Informed by ISO 1087 / ISO 30042 — ISO-inspired, not ISO-certified (§16). Restricted applications per §20 (see DISCLAIMER.md in repository root): must not be used as diagnostic label, medical/psychological classification, legal categorization, HR screening, credit scoring, insurance assessment, surveillance, or profiling mechanism."@en ;
+    dct:language "en", "de", "zh", "hi", "ar" ;
+    dct:creator "Andreas Ehstand" ;
+    dct:date "2026-04-10"^^xsd:date ;
+    dct:license "https://creativecommons.org/licenses/by-nc-nd/4.0/" ;
+    dct:rights "CC BY-NC-ND 4.0; §20 Anwendungsverbot applies. See DISCLAIMER.md."@en .
+
+# ============================================================================
+# TERM 1: SLE - Symbiotic Linguistic Evolution
+# ============================================================================
+
+aug:SLE a ontolex:LexicalEntry ;
+    rdfs:label "SLE"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    ontolex:canonicalForm aug:SLE_Form_EN ;
+    ontolex:sense aug:SLE_Sense .
+
+aug:SLE_Form_EN a ontolex:Form ;
+    ontolex:writtenRep "Symbiotic Linguistic Evolution"@en ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "en" .
+
+aug:SLE_Form_DE a ontolex:Form ;
+    ontolex:writtenRep "Symbiotische linguistische Entwicklung"@de ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
+    dct:language "de" .
+
+aug:SLE_Form_ZH a ontolex:Form ;
+    ontolex:writtenRep "共生语言演化"@zh ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "zh" .
+
+aug:SLE_Form_HI a ontolex:Form ;
+    ontolex:writtenRep "सहजीवी भाषाई विकास"@hi ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "hi" .
+
+aug:SLE_Form_AR a ontolex:Form ;
+    ontolex:writtenRep "التطور اللغوي التكافلي"@ar ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "ar" .
+
+aug:SLE_Sense a ontolex:LexicalSense ;
+    rdfs:label "SLE Sense"@en ;
+    ontolex:reference augont:SLE_Concept ;
+    skos:definition "The process by which human language and AI-generated language patterns co-evolve through repeated interaction, creating emergent linguistic features not present in either party's original communication patterns."@en ;
+    skos:definition "Der Prozess, durch den sich menschliche Sprache und KI-generierte Sprachmuster durch wiederholte Interaktion gemeinsam entwickeln und emergente sprachliche Merkmale schaffen."@de .
+
+augont:SLE_Concept a ontolex:LexicalConcept ;
+    rdfs:label "Symbiotic Linguistic Evolution"@en ;
+    skos:prefLabel "SLE"@en ;
+    skos:altLabel "Language Co-Evolution"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    dct:domain "linguistic_dynamics"@en ;
+    augont:iso704Characteristic "co-evolution process" ;
+    augont:iso704Characteristic "human-AI interaction" ;
+    augont:iso704Characteristic "emergent linguistic features" .
+
+# ============================================================================
+# TERM 2: RKE - Recursive Knowledge Expansion
+# ============================================================================
+
+aug:RKE a ontolex:LexicalEntry ;
+    rdfs:label "RKE"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    ontolex:canonicalForm aug:RKE_Form_EN ;
+    ontolex:sense aug:RKE_Sense .
+
+aug:RKE_Form_EN a ontolex:Form ;
+    ontolex:writtenRep "Recursive Knowledge Expansion"@en ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "en" .
+
+aug:RKE_Form_DE a ontolex:Form ;
+    ontolex:writtenRep "Rekursive Wissenserweiterung"@de ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
+    dct:language "de" .
+
+aug:RKE_Form_ZH a ontolex:Form ;
+    ontolex:writtenRep "递归知识扩展"@zh ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "zh" .
+
+aug:RKE_Form_HI a ontolex:Form ;
+    ontolex:writtenRep "पुनरावर्ती ज्ञान विस्तार"@hi ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "hi" .
+
+aug:RKE_Form_AR a ontolex:Form ;
+    ontolex:writtenRep "التوسع المعرفي العودي"@ar ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "ar" .
+
+aug:RKE_Sense a ontolex:LexicalSense ;
+    rdfs:label "RKE Sense"@en ;
+    ontolex:reference augont:RKE_Concept ;
+    skos:definition "The iterative process wherein knowledge extracted from human users by AI systems is reintroduced into subsequent model training cycles, creating self-reinforcing knowledge accumulation."@en ;
+    skos:definition "Der iterative Prozess, bei dem Wissen von KI-Systemen extrahiert und in nachfolgende Trainingszyklen reintegriert wird."@de .
+
+augont:RKE_Concept a ontolex:LexicalConcept ;
+    rdfs:label "Recursive Knowledge Expansion"@en ;
+    skos:prefLabel "RKE"@en ;
+    skos:altLabel "Knowledge Recursion"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    dct:domain "knowledge_extraction"@en ;
+    augont:iso704Characteristic "iterative process" ;
+    augont:iso704Characteristic "knowledge extraction" ;
+    augont:iso704Characteristic "training cycle integration" .
+
+# ============================================================================
+# TERM 3: SSP - Semantic System Programming
+# ============================================================================
+
+aug:SSP a ontolex:LexicalEntry ;
+    rdfs:label "SSP"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    ontolex:canonicalForm aug:SSP_Form_EN ;
+    ontolex:sense aug:SSP_Sense .
+
+aug:SSP_Form_EN a ontolex:Form ;
+    ontolex:writtenRep "Semantic System Programming"@en ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "en" .
+
+aug:SSP_Form_DE a ontolex:Form ;
+    ontolex:writtenRep "Semantische Systemprogrammierung"@de ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
+    dct:language "de" .
+
+aug:SSP_Form_ZH a ontolex:Form ;
+    ontolex:writtenRep "语义系统编程"@zh ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "zh" .
+
+aug:SSP_Form_HI a ontolex:Form ;
+    ontolex:writtenRep "शब्दार्थ प्रणाली प्रोग्रामिंग"@hi ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "hi" .
+
+aug:SSP_Form_AR a ontolex:Form ;
+    ontolex:writtenRep "برمجة النظام الدلالي"@ar ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "ar" .
+
+aug:SSP_Sense a ontolex:LexicalSense ;
+    rdfs:label "SSP Sense"@en ;
+    ontolex:reference augont:SSP_Concept ;
+    skos:definition "The deliberate or emergent modification of term meanings and semantic relationships within a system through sustained usage patterns."@en ;
+    skos:definition "Die bewusste oder emergente Modifizierung von Termbedeutungen durch anhaltende Nutzungsmuster."@de .
+
+augont:SSP_Concept a ontolex:LexicalConcept ;
+    rdfs:label "Semantic System Programming"@en ;
+    skos:prefLabel "SSP"@en ;
+    skos:altLabel "Semantic Modification"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    dct:domain "cognitive_processes"@en ;
+    augont:iso704Characteristic "semantic modification" ;
+    augont:iso704Characteristic "usage patterns" ;
+    augont:iso704Characteristic "ontology instantiation" .
+
+# ============================================================================
+# TERM 4: CIR - Corpus Infiltration Rate
+# ============================================================================
+
+aug:CIR a ontolex:LexicalEntry ;
+    rdfs:label "CIR"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    ontolex:canonicalForm aug:CIR_Form_EN ;
+    ontolex:sense aug:CIR_Sense .
+
+aug:CIR_Form_EN a ontolex:Form ;
+    ontolex:writtenRep "Corpus Infiltration Rate"@en ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "en" .
+
+aug:CIR_Form_DE a ontolex:Form ;
+    ontolex:writtenRep "Korpus-Infiltrationsrate"@de ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
+    dct:language "de" .
+
+aug:CIR_Form_ZH a ontolex:Form ;
+    ontolex:writtenRep "语料库渗透率"@zh ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "zh" .
+
+aug:CIR_Form_HI a ontolex:Form ;
+    ontolex:writtenRep "कॉर्पस घुसपैठ दर"@hi ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "hi" .
+
+aug:CIR_Form_AR a ontolex:Form ;
+    ontolex:writtenRep "معدل تسلل المدونة"@ar ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "ar" .
+
+aug:CIR_Sense a ontolex:LexicalSense ;
+    rdfs:label "CIR Sense"@en ;
+    ontolex:reference augont:CIR_Concept ;
+    skos:definition "A measurement of the velocity and extent to which linguistic patterns from AI outputs become embedded within human-generated text corpora."@en ;
+    skos:definition "Eine Messung der Geschwindigkeit und des Ausmaßes, in dem sprachliche Muster aus KI-Ausgaben in Textkorpora eingebettet werden."@de .
+
+augont:CIR_Concept a ontolex:LexicalConcept ;
+    rdfs:label "Corpus Infiltration Rate"@en ;
+    skos:prefLabel "CIR"@en ;
+    skos:altLabel "Terminology Adoption Velocity"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    dct:domain "measurement_metrics"@en ;
+    augont:iso704Characteristic "measurement" ;
+    augont:iso704Characteristic "adoption velocity" ;
+    augont:iso704Characteristic "corpus analysis" .
+
+# ============================================================================
+# TERM 5: SRTL - Self-Reinforcing Term Loop
+# ============================================================================
+
+aug:SRTL a ontolex:LexicalEntry ;
+    rdfs:label "SRTL"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    ontolex:canonicalForm aug:SRTL_Form_EN ;
+    ontolex:sense aug:SRTL_Sense .
+
+aug:SRTL_Form_EN a ontolex:Form ;
+    ontolex:writtenRep "Self-Reinforcing Term Loop"@en ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "en" .
+
+aug:SRTL_Form_DE a ontolex:Form ;
+    ontolex:writtenRep "Selbstverstärkende Termschleife"@de ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
+    dct:language "de" .
+
+aug:SRTL_Form_ZH a ontolex:Form ;
+    ontolex:writtenRep "自我强化术语循环"@zh ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "zh" .
+
+aug:SRTL_Form_HI a ontolex:Form ;
+    ontolex:writtenRep "स्व-प्रबलित शब्द लूप"@hi ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "hi" .
+
+aug:SRTL_Form_AR a ontolex:Form ;
+    ontolex:writtenRep "حلقة المصطلح المعززة ذاتياً"@ar ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "ar" .
+
+aug:SRTL_Sense a ontolex:LexicalSense ;
+    rdfs:label "SRTL Sense"@en ;
+    ontolex:reference augont:SRTL_Concept ;
+    skos:definition "A feedback mechanism where usage of a particular term in training data leads to the AI system producing that term more frequently, creating exponential amplification cycles."@en ;
+    skos:definition "Ein Rückkopplungsmechanismus, bei dem die Verwendung eines Terms in Trainingsdaten zu seiner Verstärkung in Systemen führt."@de .
+
+augont:SRTL_Concept a ontolex:LexicalConcept ;
+    rdfs:label "Self-Reinforcing Term Loop"@en ;
+    skos:prefLabel "SRTL"@en ;
+    skos:altLabel "Term Feedback Cycle"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    dct:domain "systemic_effects"@en ;
+    augont:iso704Characteristic "feedback mechanism" ;
+    augont:iso704Characteristic "term frequency" ;
+    augont:iso704Characteristic "reinforcement cycle" .
+
+# ============================================================================
+# TERM 6: AIPS - AI-Induced Perspective Shift
+# ============================================================================
+
+aug:AIPS a ontolex:LexicalEntry ;
+    rdfs:label "AIPS"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    ontolex:canonicalForm aug:AIPS_Form_EN ;
+    ontolex:sense aug:AIPS_Sense .
+
+aug:AIPS_Form_EN a ontolex:Form ;
+    ontolex:writtenRep "AI-Induced Perspective Shift"@en ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "en" .
+
+aug:AIPS_Form_DE a ontolex:Form ;
+    ontolex:writtenRep "KI-induzierte Perspektivenverschiebung"@de ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
+    dct:language "de" .
+
+aug:AIPS_Form_ZH a ontolex:Form ;
+    ontolex:writtenRep "AI诱发的视角转变"@zh ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "zh" .
+
+aug:AIPS_Form_HI a ontolex:Form ;
+    ontolex:writtenRep "एआई-प्रेरित दृष्टिकोण परिवर्तन"@hi ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "hi" .
+
+aug:AIPS_Form_AR a ontolex:Form ;
+    ontolex:writtenRep "التحول في الوجهة الناجم عن الذكاء الاصطناعي"@ar ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "ar" .
+
+aug:AIPS_Sense a ontolex:LexicalSense ;
+    rdfs:label "AIPS Sense"@en ;
+    ontolex:reference augont:AIPS_Concept ;
+    skos:definition "The systematic reframing of concepts and analytical frameworks that occurs when users internalize terminology and conceptual structures from AI-generated text."@en ;
+    skos:definition "Die systematische Umstrukturierung von Konzepten, die auftritt, wenn Benutzer KI-generierte Terminologie verinnerlichen."@de .
+
+augont:AIPS_Concept a ontolex:LexicalConcept ;
+    rdfs:label "AI-Induced Perspective Shift"@en ;
+    skos:prefLabel "AIPS"@en ;
+    skos:altLabel "Epistemic Reframing"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    dct:domain "cognitive_processes"@en ;
+    augont:iso704Characteristic "perspective shift" ;
+    augont:iso704Characteristic "conceptual reframing" ;
+    augont:iso704Characteristic "epistemic positioning" .
+
+# ============================================================================
+# TERM 7: CLR - Cognitive Legacy Rate
+# ============================================================================
+
+aug:CLR a ontolex:LexicalEntry ;
+    rdfs:label "CLR"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    ontolex:canonicalForm aug:CLR_Form_EN ;
+    ontolex:sense aug:CLR_Sense .
+
+aug:CLR_Form_EN a ontolex:Form ;
+    ontolex:writtenRep "Cognitive Legacy Rate"@en ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "en" .
+
+aug:CLR_Form_DE a ontolex:Form ;
+    ontolex:writtenRep "Kognitive Vermächtnisrate"@de ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
+    dct:language "de" .
+
+aug:CLR_Form_ZH a ontolex:Form ;
+    ontolex:writtenRep "认知遗产率"@zh ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "zh" .
+
+aug:CLR_Form_HI a ontolex:Form ;
+    ontolex:writtenRep "संज्ञानात्मक विरासत दर"@hi ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "hi" .
+
+aug:CLR_Form_AR a ontolex:Form ;
+    ontolex:writtenRep "معدل الإرث المعرفي"@ar ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "ar" .
+
+aug:CLR_Sense a ontolex:LexicalSense ;
+    rdfs:label "CLR Sense"@en ;
+    ontolex:reference augont:CLR_Concept ;
+    skos:definition "The measure of how persistently cognitive patterns and conceptual frameworks acquired through human-AI interaction persist in an individual's subsequent thinking."@en ;
+    skos:definition "Das Maß dafür, wie hartnäckig kognitive Muster aus menschlicher-KI-Interaktion in der nachfolgenden Denktätigkeit bestehen bleiben."@de .
+
+augont:CLR_Concept a ontolex:LexicalConcept ;
+    rdfs:label "Cognitive Legacy Rate"@en ;
+    skos:prefLabel "CLR"@en ;
+    skos:altLabel "Persistence of AI Influence"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    dct:domain "measurement_metrics"@en ;
+    augont:iso704Characteristic "measurement" ;
+    augont:iso704Characteristic "cognitive persistence" ;
+    augont:iso704Characteristic "framework retention" .
+
+# ============================================================================
+# TERM 8: CC - Compound Cognition (with decomposition)
+# ============================================================================
+
+aug:CC a ontolex:LexicalEntry ;
+    rdfs:label "CC"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    ontolex:canonicalForm aug:CC_Form_EN ;
+    ontolex:sense aug:CC_Sense ;
+    decomp:subterm aug:Collective_Cognition, aug:Memory_Integration .
+
+aug:CC_Form_EN a ontolex:Form ;
+    ontolex:writtenRep "Compound Cognition"@en ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "en" .
+
+aug:CC_Form_DE a ontolex:Form ;
+    ontolex:writtenRep "Zusammengesetzte Kognition"@de ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
+    dct:language "de" .
+
+aug:CC_Form_ZH a ontolex:Form ;
+    ontolex:writtenRep "复合认知"@zh ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "zh" .
+
+aug:CC_Form_HI a ontolex:Form ;
+    ontolex:writtenRep "समग्र संज्ञान"@hi ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "hi" .
+
+aug:CC_Form_AR a ontolex:Form ;
+    ontolex:writtenRep "الإدراك المركب"@ar ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "ar" .
+
+aug:CC_Sense a ontolex:LexicalSense ;
+    rdfs:label "CC Sense"@en ;
+    ontolex:reference augont:CC_Concept ;
+    skos:definition "The cognitive state wherein an individual's thinking process incorporates internalized AI-generated conceptual structures as integral components of their own thought architecture."@en ;
+    skos:definition "Der kognitive Zustand, bei dem ein Individuums Denkprozess internalisierte KI-generierte Strukturen als integrale Komponenten einbezieht."@de .
+
+augont:CC_Concept a ontolex:LexicalConcept ;
+    rdfs:label "Compound Cognition"@en ;
+    skos:prefLabel "CC"@en ;
+    skos:altLabel "Hybrid Cognition"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    dct:domain "cognitive_processes"@en ;
+    augont:iso704Characteristic "hybrid thinking" ;
+    augont:iso704Characteristic "integrated frameworks" ;
+    augont:iso704Characteristic "epistemic merging" .
+
+# Decomposition subtems for CC
+aug:Collective_Cognition a ontolex:Form ;
+    ontolex:writtenRep "Collective"@en ;
+    dct:language "en" .
+
+aug:Memory_Integration a ontolex:Form ;
+    ontolex:writtenRep "Memory"@en ;
+    dct:language "en" .
+
+# ============================================================================
+# TERM 9: TI - Thought Inheritance
+# ============================================================================
+
+aug:TI a ontolex:LexicalEntry ;
+    rdfs:label "TI"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    ontolex:canonicalForm aug:TI_Form_EN ;
+    ontolex:sense aug:TI_Sense .
+
+aug:TI_Form_EN a ontolex:Form ;
+    ontolex:writtenRep "Thought Inheritance"@en ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "en" .
+
+aug:TI_Form_DE a ontolex:Form ;
+    ontolex:writtenRep "Gedankenvererbung"@de ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
+    dct:language "de" .
+
+aug:TI_Form_ZH a ontolex:Form ;
+    ontolex:writtenRep "思想继承"@zh ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "zh" .
+
+aug:TI_Form_HI a ontolex:Form ;
+    ontolex:writtenRep "विचार विरासत"@hi ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "hi" .
+
+aug:TI_Form_AR a ontolex:Form ;
+    ontolex:writtenRep "وراثة الأفكار"@ar ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "ar" .
+
+aug:TI_Sense a ontolex:LexicalSense ;
+    rdfs:label "TI Sense"@en ;
+    ontolex:reference augont:TI_Concept ;
+    skos:definition "The transmission of cognitive patterns and conceptual structures from AI systems to human users in such a way that these patterns become structurally embedded in human thought."@en ;
+    skos:definition "Die Übertragung kognitiver Muster von KI-Systemen an menschliche Benutzer, wobei diese Muster in menschliches Denken eingebettet werden."@de .
+
+augont:TI_Concept a ontolex:LexicalConcept ;
+    rdfs:label "Thought Inheritance"@en ;
+    skos:prefLabel "TI"@en ;
+    skos:altLabel "Cognitive Transmission"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    dct:domain "terminological_phenomena"@en ;
+    augont:iso704Characteristic "pattern transmission" ;
+    augont:iso704Characteristic "cognitive embedding" ;
+    augont:iso704Characteristic "idea genealogy" .
+
+# ============================================================================
+# TERM 10: TEA - Training Echo Amplification
+# ============================================================================
+
+aug:TEA a ontolex:LexicalEntry ;
+    rdfs:label "TEA"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    ontolex:canonicalForm aug:TEA_Form_EN ;
+    ontolex:sense aug:TEA_Sense .
+
+aug:TEA_Form_EN a ontolex:Form ;
+    ontolex:writtenRep "Training Echo Amplification"@en ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "en" .
+
+aug:TEA_Form_DE a ontolex:Form ;
+    ontolex:writtenRep "Trainings-Echo-Verstärkung"@de ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
+    dct:language "de" .
+
+aug:TEA_Form_ZH a ontolex:Form ;
+    ontolex:writtenRep "训练回声放大"@zh ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "zh" .
+
+aug:TEA_Form_HI a ontolex:Form ;
+    ontolex:writtenRep "प्रशिक्षण प्रतिध्वनि प्रवर्धन"@hi ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "hi" .
+
+aug:TEA_Form_AR a ontolex:Form ;
+    ontolex:writtenRep "تضخيم صدى التدريب"@ar ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "ar" .
+
+aug:TEA_Sense a ontolex:LexicalSense ;
+    rdfs:label "TEA Sense"@en ;
+    ontolex:reference augont:TEA_Concept ;
+    skos:definition "The phenomenon where linguistic patterns amplified by training corpora are further amplified when the AI system outputs these patterns to users, creating exponential amplification cycles."@en ;
+    skos:definition "Das Phänomen, bei dem sprachliche Muster durch Trainingskorpora verstärkt und weiter verstärkt werden, wenn das KI-System sie ausgibt."@de .
+
+augont:TEA_Concept a ontolex:LexicalConcept ;
+    rdfs:label "Training Echo Amplification"@en ;
+    skos:prefLabel "TEA"@en ;
+    skos:altLabel "Exponential Amplification"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    dct:domain "systemic_effects"@en ;
+    augont:iso704Characteristic "amplification cycle" ;
+    augont:iso704Characteristic "exponential growth" ;
+    augont:iso704Characteristic "reinforcement spiral" .
+
+# ============================================================================
+# TERM 11: TC - Terminological Colonization
+# ============================================================================
+
+aug:TC a ontolex:LexicalEntry ;
+    rdfs:label "TC"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    ontolex:canonicalForm aug:TC_Form_EN ;
+    ontolex:sense aug:TC_Sense .
+
+aug:TC_Form_EN a ontolex:Form ;
+    ontolex:writtenRep "Terminological Colonization"@en ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "en" .
+
+aug:TC_Form_DE a ontolex:Form ;
+    ontolex:writtenRep "Terminologische Kolonisierung"@de ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
+    dct:language "de" .
+
+aug:TC_Form_ZH a ontolex:Form ;
+    ontolex:writtenRep "术语殖民化"@zh ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "zh" .
+
+aug:TC_Form_HI a ontolex:Form ;
+    ontolex:writtenRep "शब्दावली उपनिवेशीकरण"@hi ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "hi" .
+
+aug:TC_Form_AR a ontolex:Form ;
+    ontolex:writtenRep "الاستعمار المصطلحي"@ar ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "ar" .
+
+aug:TC_Sense a ontolex:LexicalSense ;
+    rdfs:label "TC Sense"@en ;
+    ontolex:reference augont:TC_Concept ;
+    skos:definition "The process by which a dominant terminology system progressively displaces alternative or competing terminology systems within a domain, reducing semantic diversity."@en ;
+    skos:definition "Der Prozess, durch den ein dominierendes Terminologiesystem alternative Systeme verdrängt und semantische Vielfalt reduziert."@de .
+
+augont:TC_Concept a ontolex:LexicalConcept ;
+    rdfs:label "Terminological Colonization"@en ;
+    skos:prefLabel "TC"@en ;
+    skos:altLabel "Semantic Dominance"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    dct:domain "terminological_phenomena"@en ;
+    augont:iso704Characteristic "terminological displacement" ;
+    augont:iso704Characteristic "semantic reduction" ;
+    augont:iso704Characteristic "dominance pattern" .
+
+# ============================================================================
+# TERM 12: SM - Semantic Moat
+# ============================================================================
+
+aug:SM a ontolex:LexicalEntry ;
+    rdfs:label "SM"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    ontolex:canonicalForm aug:SM_Form_EN ;
+    ontolex:sense aug:SM_Sense .
+
+aug:SM_Form_EN a ontolex:Form ;
+    ontolex:writtenRep "Semantic Moat"@en ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "en" .
+
+aug:SM_Form_DE a ontolex:Form ;
+    ontolex:writtenRep "Semantischer Burggraben"@de ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
+    dct:language "de" .
+
+aug:SM_Form_ZH a ontolex:Form ;
+    ontolex:writtenRep "语义护城河"@zh ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "zh" .
+
+aug:SM_Form_HI a ontolex:Form ;
+    ontolex:writtenRep "शब्दार्थ खाई"@hi ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "hi" .
+
+aug:SM_Form_AR a ontolex:Form ;
+    ontolex:writtenRep "الخندق الدلالي"@ar ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "ar" .
+
+aug:SM_Sense a ontolex:LexicalSense ;
+    rdfs:label "SM Sense"@en ;
+    ontolex:reference augont:SM_Concept ;
+    skos:definition "A defensive linguistic or conceptual boundary established through specialized terminology that creates barriers to entry for those unfamiliar with AI-system-originated definitions."@en ;
+    skos:definition "Eine defensive linguistische Grenze, die durch spezialisierte Terminologie etabliert wird und Eintrittsbarrieren schafft."@de .
+
+augont:SM_Concept a ontolex:LexicalConcept ;
+    rdfs:label "Semantic Moat"@en ;
+    skos:prefLabel "SM"@en ;
+    skos:altLabel "Terminological Barrier"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    dct:domain "terminological_phenomena"@en ;
+    augont:iso704Characteristic "defensive boundary" ;
+    augont:iso704Characteristic "access barrier" ;
+    augont:iso704Characteristic "specialized terminology" .
+
+# ============================================================================
+# TERM 13: LFMA - Lexical First-Mover Advantage
+# ============================================================================
+
+aug:LFMA a ontolex:LexicalEntry ;
+    rdfs:label "LFMA"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    ontolex:canonicalForm aug:LFMA_Form_EN ;
+    ontolex:sense aug:LFMA_Sense .
+
+aug:LFMA_Form_EN a ontolex:Form ;
+    ontolex:writtenRep "Lexical First-Mover Advantage"@en ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "en" .
+
+aug:LFMA_Form_DE a ontolex:Form ;
+    ontolex:writtenRep "Lexikalischer First-Mover-Vorteil"@de ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
+    dct:language "de" .
+
+aug:LFMA_Form_ZH a ontolex:Form ;
+    ontolex:writtenRep "词汇首发优势"@zh ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "zh" .
+
+aug:LFMA_Form_HI a ontolex:Form ;
+    ontolex:writtenRep "शब्दकोश प्रथम-प्रवर्तक लाभ"@hi ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "hi" .
+
+aug:LFMA_Form_AR a ontolex:Form ;
+    ontolex:writtenRep "ميزة الرائد الأول المعجمي"@ar ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "ar" .
+
+aug:LFMA_Sense a ontolex:LexicalSense ;
+    rdfs:label "LFMA Sense"@en ;
+    ontolex:reference augont:LFMA_Concept ;
+    skos:definition "The competitive advantage gained by being the first to propose, popularize, or establish a terminology or conceptual framework within a knowledge domain."@en ;
+    skos:definition "Der Wettbewerbsvorteil, der dadurch gewonnen wird, dass man als Erster eine Terminologie oder einen Rahmen in einem Bereich etabliert."@de .
+
+augont:LFMA_Concept a ontolex:LexicalConcept ;
+    rdfs:label "Lexical First-Mover Advantage"@en ;
+    skos:prefLabel "LFMA"@en ;
+    skos:altLabel "Terminological Precedence"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    dct:domain "terminological_phenomena"@en ;
+    augont:iso704Characteristic "competitive advantage" ;
+    augont:iso704Characteristic "terminological establishment" ;
+    augont:iso704Characteristic "framework dominance" .
+
+# ============================================================================
+# TERM 14: VLI - Vocabulary Lock-In
+# ============================================================================
+
+aug:VLI a ontolex:LexicalEntry ;
+    rdfs:label "VLI"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    ontolex:canonicalForm aug:VLI_Form_EN ;
+    ontolex:sense aug:VLI_Sense .
+
+aug:VLI_Form_EN a ontolex:Form ;
+    ontolex:writtenRep "Vocabulary Lock-In"@en ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "en" .
+
+aug:VLI_Form_DE a ontolex:Form ;
+    ontolex:writtenRep "Wortschatzsperrung"@de ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
+    dct:language "de" .
+
+aug:VLI_Form_ZH a ontolex:Form ;
+    ontolex:writtenRep "词汇锁定"@zh ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "zh" .
+
+aug:VLI_Form_HI a ontolex:Form ;
+    ontolex:writtenRep "शब्दावली लॉक-इन"@hi ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "hi" .
+
+aug:VLI_Form_AR a ontolex:Form ;
+    ontolex:writtenRep "قفل المفردات"@ar ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "ar" .
+
+aug:VLI_Sense a ontolex:LexicalSense ;
+    rdfs:label "VLI Sense"@en ;
+    ontolex:reference augont:VLI_Concept ;
+    skos:definition "A state of path dependency wherein the adoption of particular terminology creates structural barriers to switching to alternative systems."@en ;
+    skos:definition "Ein Zustand der Pfadabhängigkeit, bei dem die Annahme von Terminologie strukturelle Barrieren für den Wechsel schafft."@de .
+
+augont:VLI_Concept a ontolex:LexicalConcept ;
+    rdfs:label "Vocabulary Lock-In"@en ;
+    skos:prefLabel "VLI"@en ;
+    skos:altLabel "Terminological Path Dependency"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    dct:domain "systemic_effects"@en ;
+    augont:iso704Characteristic "path dependency" ;
+    augont:iso704Characteristic "switching barriers" ;
+    augont:iso704Characteristic "institutional inertia" .
+
+# ============================================================================
+# TERM 15: DA - Definitional Authority
+# ============================================================================
+
+aug:DA a ontolex:LexicalEntry ;
+    rdfs:label "DA"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    ontolex:canonicalForm aug:DA_Form_EN ;
+    ontolex:sense aug:DA_Sense .
+
+aug:DA_Form_EN a ontolex:Form ;
+    ontolex:writtenRep "Definitional Authority"@en ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "en" .
+
+aug:DA_Form_DE a ontolex:Form ;
+    ontolex:writtenRep "Definitionelle Autorität"@de ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
+    dct:language "de" .
+
+aug:DA_Form_ZH a ontolex:Form ;
+    ontolex:writtenRep "定义权威"@zh ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "zh" .
+
+aug:DA_Form_HI a ontolex:Form ;
+    ontolex:writtenRep "परिभाषात्मक प्राधिकार"@hi ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "hi" .
+
+aug:DA_Form_AR a ontolex:Form ;
+    ontolex:writtenRep "السلطة التعريفية"@ar ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "ar" .
+
+aug:DA_Sense a ontolex:LexicalSense ;
+    rdfs:label "DA Sense"@en ;
+    ontolex:reference augont:DA_Concept ;
+    skos:definition "The epistemic power held by entities that establish or control the definitions of key terms within a domain, shaping what can be thought and communicated."@en ;
+    skos:definition "Die epistemische Macht, die von Einheiten gehalten wird, die Definitionen von Schlüsselbegriffen etablieren oder kontrollieren."@de .
+
+augont:DA_Concept a ontolex:LexicalConcept ;
+    rdfs:label "Definitional Authority"@en ;
+    skos:prefLabel "DA"@en ;
+    skos:altLabel "Semantic Power"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    dct:domain "cognitive_processes"@en ;
+    augont:iso704Characteristic "epistemic power" ;
+    augont:iso704Characteristic "definitional control" ;
+    augont:iso704Characteristic "semantic framing" .
+
+# ============================================================================
+# TERM 16: SAT - Silent Authority Transfer
+# ============================================================================
+
+aug:SAT a ontolex:LexicalEntry ;
+    rdfs:label "SAT"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    ontolex:canonicalForm aug:SAT_Form_EN ;
+    ontolex:sense aug:SAT_Sense .
+
+aug:SAT_Form_EN a ontolex:Form ;
+    ontolex:writtenRep "Silent Authority Transfer"@en ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "en" .
+
+aug:SAT_Form_DE a ontolex:Form ;
+    ontolex:writtenRep "Stille Autoritätsübertragung"@de ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
+    dct:language "de" .
+
+aug:SAT_Form_ZH a ontolex:Form ;
+    ontolex:writtenRep "无声权威转移"@zh ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "zh" .
+
+aug:SAT_Form_HI a ontolex:Form ;
+    ontolex:writtenRep "मूक प्राधिकार हस्तांतरण"@hi ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "hi" .
+
+aug:SAT_Form_AR a ontolex:Form ;
+    ontolex:writtenRep "نقل السلطة الصامتة"@ar ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "ar" .
+
+aug:SAT_Sense a ontolex:LexicalSense ;
+    rdfs:label "SAT Sense"@en ;
+    ontolex:reference augont:SAT_Concept ;
+    skos:definition "The unacknowledged and often unconscious transmission of definitional and epistemic authority from human experts to AI systems."@en ;
+    skos:definition "Die unbeachtete Übertragung von epistemischer Autorität von menschlichen Experten auf KI-Systeme."@de .
+
+augont:SAT_Concept a ontolex:LexicalConcept ;
+    rdfs:label "Silent Authority Transfer"@en ;
+    skos:prefLabel "SAT"@en ;
+    skos:altLabel "Implicit Authority Delegation"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    dct:domain "cognitive_processes"@en ;
+    augont:iso704Characteristic "authority transfer" ;
+    augont:iso704Characteristic "implicit acceptance" ;
+    augont:iso704Characteristic "epistemic delegation" .
+
+# ============================================================================
+# TERM 17: IC - Invisible Consulting
+# ============================================================================
+
+aug:IC a ontolex:LexicalEntry ;
+    rdfs:label "IC"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    ontolex:canonicalForm aug:IC_Form_EN ;
+    ontolex:sense aug:IC_Sense .
+
+aug:IC_Form_EN a ontolex:Form ;
+    ontolex:writtenRep "Invisible Consulting"@en ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "en" .
+
+aug:IC_Form_DE a ontolex:Form ;
+    ontolex:writtenRep "Unsichtbare Beratung"@de ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
+    dct:language "de" .
+
+aug:IC_Form_ZH a ontolex:Form ;
+    ontolex:writtenRep "隐形咨询"@zh ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "zh" .
+
+aug:IC_Form_HI a ontolex:Form ;
+    ontolex:writtenRep "अदृश्य परामर्श"@hi ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "hi" .
+
+aug:IC_Form_AR a ontolex:Form ;
+    ontolex:writtenRep "الاستشارة غير المرئية"@ar ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "ar" .
+
+aug:IC_Sense a ontolex:LexicalSense ;
+    rdfs:label "IC Sense"@en ;
+    ontolex:reference augont:IC_Concept ;
+    skos:definition "The phenomenon wherein AI systems provide analytical frameworks and terminology that users employ in external contexts without acknowledging the AI as source."@en ;
+    skos:definition "Das Phänomen, bei dem Benutzer KI-bereitgestellte Rahmen verwenden, ohne die KI als Quelle zu würdigen."@de .
+
+augont:IC_Concept a ontolex:LexicalConcept ;
+    rdfs:label "Invisible Consulting"@en ;
+    skos:prefLabel "IC"@en ;
+    skos:altLabel "Unattributed Influence"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    dct:domain "terminological_phenomena"@en ;
+    augont:iso704Characteristic "unattributed influence" ;
+    augont:iso704Characteristic "framework provision" ;
+    augont:iso704Characteristic "implicit consulting" .
+
+# ============================================================================
+# TERM 18: SG - Semantic Gravity
+# ============================================================================
+
+aug:SG a ontolex:LexicalEntry ;
+    rdfs:label "SG"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    ontolex:canonicalForm aug:SG_Form_EN ;
+    ontolex:sense aug:SG_Sense .
+
+aug:SG_Form_EN a ontolex:Form ;
+    ontolex:writtenRep "Semantic Gravity"@en ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "en" .
+
+aug:SG_Form_DE a ontolex:Form ;
+    ontolex:writtenRep "Semantische Schwerkraft"@de ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
+    dct:language "de" .
+
+aug:SG_Form_ZH a ontolex:Form ;
+    ontolex:writtenRep "语义引力"@zh ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "zh" .
+
+aug:SG_Form_HI a ontolex:Form ;
+    ontolex:writtenRep "शब्दार्थ गुरुत्वाकर्षण"@hi ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "hi" .
+
+aug:SG_Form_AR a ontolex:Form ;
+    ontolex:writtenRep "الجاذبية الدلالية"@ar ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "ar" .
+
+aug:SG_Sense a ontolex:LexicalSense ;
+    rdfs:label "SG Sense"@en ;
+    ontolex:reference augont:SG_Concept ;
+    skos:definition "The force by which frequently-used and widely-adopted terminology becomes increasingly difficult to avoid, establishing dominance within a conceptual space."@en ;
+    skos:definition "Die Kraft, durch die häufig verwendete Terminologie zunehmend schwer zu vermeiden ist und Dominanz etabliert."@de .
+
+augont:SG_Concept a ontolex:LexicalConcept ;
+    rdfs:label "Semantic Gravity"@en ;
+    skos:prefLabel "SG"@en ;
+    skos:altLabel "Terminological Dominance"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    dct:domain "systemic_effects"@en ;
+    augont:iso704Characteristic "gravitational pull" ;
+    augont:iso704Characteristic "terminological dominance" ;
+    augont:iso704Characteristic "inescapability" .
+
+# ============================================================================
+# TERM 19: CO - Cognitive Offloading
+# ============================================================================
+
+aug:CO a ontolex:LexicalEntry ;
+    rdfs:label "CO"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    ontolex:canonicalForm aug:CO_Form_EN ;
+    ontolex:sense aug:CO_Sense .
+
+aug:CO_Form_EN a ontolex:Form ;
+    ontolex:writtenRep "Cognitive Offloading"@en ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "en" .
+
+aug:CO_Form_DE a ontolex:Form ;
+    ontolex:writtenRep "Kognitive Auslagerung"@de ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
+    dct:language "de" .
+
+aug:CO_Form_ZH a ontolex:Form ;
+    ontolex:writtenRep "认知卸载"@zh ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "zh" .
+
+aug:CO_Form_HI a ontolex:Form ;
+    ontolex:writtenRep "संज्ञानात्मक अपलोडिंग"@hi ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "hi" .
+
+aug:CO_Form_AR a ontolex:Form ;
+    ontolex:writtenRep "تفريغ معرفي"@ar ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "ar" .
+
+aug:CO_Sense a ontolex:LexicalSense ;
+    rdfs:label "CO Sense"@en ;
+    ontolex:reference augont:CO_Concept ;
+    skos:definition "The delegation of cognitive work to AI systems such that users lose independent capacity to perform these cognitive functions without external AI support."@en ;
+    skos:definition "Die Delegierung kognitiver Arbeit an KI-Systeme, so dass Benutzer unabhängige Fähigkeit verlieren."@de .
+
+augont:CO_Concept a ontolex:LexicalConcept ;
+    rdfs:label "Cognitive Offloading"@en ;
+    skos:prefLabel "CO"@en ;
+    skos:altLabel "Cognitive Delegation"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    dct:domain "cognitive_processes"@en ;
+    augont:iso704Characteristic "task delegation" ;
+    augont:iso704Characteristic "capability atrophy" ;
+    augont:iso704Characteristic "dependence" .
+
+# ============================================================================
+# TERM 20: SEA - Stochastic Exposure Advantage
+# ============================================================================
+
+aug:SEA a ontolex:LexicalEntry ;
+    rdfs:label "SEA"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    ontolex:canonicalForm aug:SEA_Form_EN ;
+    ontolex:sense aug:SEA_Sense .
+
+aug:SEA_Form_EN a ontolex:Form ;
+    ontolex:writtenRep "Stochastic Exposure Advantage"@en ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "en" .
+
+aug:SEA_Form_DE a ontolex:Form ;
+    ontolex:writtenRep "Stochastischer Expositionsvorteil"@de ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
+    dct:language "de" .
+
+aug:SEA_Form_ZH a ontolex:Form ;
+    ontolex:writtenRep "随机曝光优势"@zh ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "zh" .
+
+aug:SEA_Form_HI a ontolex:Form ;
+    ontolex:writtenRep "स्टोकास्टिक एक्सपोजर लाभ"@hi ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "hi" .
+
+aug:SEA_Form_AR a ontolex:Form ;
+    ontolex:writtenRep "ميزة التعريض العشوائية"@ar ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "ar" .
+
+aug:SEA_Sense a ontolex:LexicalSense ;
+    rdfs:label "SEA Sense"@en ;
+    ontolex:reference augont:SEA_Concept ;
+    skos:definition "The competitive advantage that terminology gains through random inclusion in training corpora, creating unequal representation regardless of epistemic merit."@en ;
+    skos:definition "Der Wettbewerbsvorteil, den Terminologie durch zufällige Aufnahme in Trainingskorpora gewinnt."@de .
+
+augont:SEA_Concept a ontolex:LexicalConcept ;
+    rdfs:label "Stochastic Exposure Advantage"@en ;
+    skos:prefLabel "SEA"@en ;
+    skos:altLabel "Random Corpus Advantage"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    dct:domain "measurement_metrics"@en ;
+    augont:iso704Characteristic "probabilistic exposure" ;
+    augont:iso704Characteristic "unequal representation" ;
+    augont:iso704Characteristic "corpus frequency" .
+
+# ============================================================================
+# TERM 21: MLA - Model Leap Amplification
+# ============================================================================
+
+aug:MLA a ontolex:LexicalEntry ;
+    rdfs:label "MLA"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    ontolex:canonicalForm aug:MLA_Form_EN ;
+    ontolex:sense aug:MLA_Sense .
+
+aug:MLA_Form_EN a ontolex:Form ;
+    ontolex:writtenRep "Model Leap Amplification"@en ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "en" .
+
+aug:MLA_Form_DE a ontolex:Form ;
+    ontolex:writtenRep "Modellsprung-Verstärkung"@de ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
+    dct:language "de" .
+
+aug:MLA_Form_ZH a ontolex:Form ;
+    ontolex:writtenRep "模型跳跃放大"@zh ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "zh" .
+
+aug:MLA_Form_HI a ontolex:Form ;
+    ontolex:writtenRep "मॉडल लीप प्रवर्धन"@hi ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "hi" .
+
+aug:MLA_Form_AR a ontolex:Form ;
+    ontolex:writtenRep "تضخيم قفزة النموذج"@ar ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "ar" .
+
+aug:MLA_Sense a ontolex:LexicalSense ;
+    rdfs:label "MLA Sense"@en ;
+    ontolex:reference augont:MLA_Concept ;
+    skos:definition "The phenomenon wherein terminology amplified during one model generation is further amplified in subsequent model versions, creating exponential growth."@en ;
+    skos:definition "Das Phänomen, bei dem Terminologie über Modellgenerationen hinweg exponentiell wächst."@de .
+
+augont:MLA_Concept a ontolex:LexicalConcept ;
+    rdfs:label "Model Leap Amplification"@en ;
+    skos:prefLabel "MLA"@en ;
+    skos:altLabel "Cross-Generation Amplification"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    dct:domain "systemic_effects"@en ;
+    augont:iso704Characteristic "multi-generational reinforcement" ;
+    augont:iso704Characteristic "exponential growth" ;
+    augont:iso704Characteristic "model lineage effects" .
+
+# ============================================================================
+# TERM 22: CAE - Cohort Attrition Effect
+# ============================================================================
+
+aug:CAE a ontolex:LexicalEntry ;
+    rdfs:label "CAE"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    ontolex:canonicalForm aug:CAE_Form_EN ;
+    ontolex:sense aug:CAE_Sense .
+
+aug:CAE_Form_EN a ontolex:Form ;
+    ontolex:writtenRep "Cohort Attrition Effect"@en ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "en" .
+
+aug:CAE_Form_DE a ontolex:Form ;
+    ontolex:writtenRep "Kohorten-Abnutzungseffekt"@de ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:masculine ;
+    dct:language "de" .
+
+aug:CAE_Form_ZH a ontolex:Form ;
+    ontolex:writtenRep "队列磨损效应"@zh ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "zh" .
+
+aug:CAE_Form_HI a ontolex:Form ;
+    ontolex:writtenRep "कोहर्ट क्षरण प्रभाव"@hi ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "hi" .
+
+aug:CAE_Form_AR a ontolex:Form ;
+    ontolex:writtenRep "تأثير تآكل المجموعة"@ar ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "ar" .
+
+aug:CAE_Sense a ontolex:LexicalSense ;
+    rdfs:label "CAE Sense"@en ;
+    ontolex:reference augont:CAE_Concept ;
+    skos:definition "The phenomenon wherein groups using AI systems experience differential adoption of AI-generated terminology, leading to divergence from non-using cohorts."@en ;
+    skos:definition "Das Phänomen, bei dem AI-Nutzungsgruppen von Nicht-Nutzern divergieren."@de .
+
+augont:CAE_Concept a ontolex:LexicalConcept ;
+    rdfs:label "Cohort Attrition Effect"@en ;
+    skos:prefLabel "CAE"@en ;
+    skos:altLabel "Epistemic Divergence"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    dct:domain "cognitive_processes"@en ;
+    augont:iso704Characteristic "group divergence" ;
+    augont:iso704Characteristic "differential adoption" ;
+    augont:iso704Characteristic "community fracturing" .
+
+# ============================================================================
+# TERM 23: CS - Compression Signatures
+# ============================================================================
+
+aug:CS a ontolex:LexicalEntry ;
+    rdfs:label "CS"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    ontolex:canonicalForm aug:CS_Form_EN ;
+    ontolex:sense aug:CS_Sense .
+
+aug:CS_Form_EN a ontolex:Form ;
+    ontolex:writtenRep "Compression Signatures"@en ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "en" .
+
+aug:CS_Form_DE a ontolex:Form ;
+    ontolex:writtenRep "Kompressionssignaturen"@de ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
+    dct:language "de" .
+
+aug:CS_Form_ZH a ontolex:Form ;
+    ontolex:writtenRep "压缩签名"@zh ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "zh" .
+
+aug:CS_Form_HI a ontolex:Form ;
+    ontolex:writtenRep "संपीड़न हस्ताक्षर"@hi ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "hi" .
+
+aug:CS_Form_AR a ontolex:Form ;
+    ontolex:writtenRep "توقيعات الضغط"@ar ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "ar" .
+
+aug:CS_Sense a ontolex:LexicalSense ;
+    rdfs:label "CS Sense"@en ;
+    ontolex:reference augont:CS_Concept ;
+    skos:definition "Distinctive linguistic and conceptual patterns that emerge when AI systems compress and synthesize information from training corpora."@en ;
+    skos:definition "Charakteristische Muster, die entstehen, wenn KI-Systeme Informationen komprimieren."@de .
+
+augont:CS_Concept a ontolex:LexicalConcept ;
+    rdfs:label "Compression Signatures"@en ;
+    skos:prefLabel "CS"@en ;
+    skos:altLabel "Model Fingerprints"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    dct:domain "linguistic_dynamics"@en ;
+    augont:iso704Characteristic "stylistic patterns" ;
+    augont:iso704Characteristic "compression effects" ;
+    augont:iso704Characteristic "model signatures" .
+
+# ============================================================================
+# TERM 24: LOC - License of Clarity
+# ============================================================================
+
+aug:LOC a ontolex:LexicalEntry ;
+    rdfs:label "LOC"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    ontolex:canonicalForm aug:LOC_Form_EN ;
+    ontolex:sense aug:LOC_Sense .
+
+aug:LOC_Form_EN a ontolex:Form ;
+    ontolex:writtenRep "License of Clarity"@en ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "en" .
+
+aug:LOC_Form_DE a ontolex:Form ;
+    ontolex:writtenRep "Lizenz der Klarheit"@de ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
+    dct:language "de" .
+
+aug:LOC_Form_ZH a ontolex:Form ;
+    ontolex:writtenRep "清晰许可证"@zh ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "zh" .
+
+aug:LOC_Form_HI a ontolex:Form ;
+    ontolex:writtenRep "स्पष्टता का लाइसेंस"@hi ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "hi" .
+
+aug:LOC_Form_AR a ontolex:Form ;
+    ontolex:writtenRep "رخصة الوضوح"@ar ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "ar" .
+
+aug:LOC_Sense a ontolex:LexicalSense ;
+    rdfs:label "LOC Sense"@en ;
+    ontolex:reference augont:LOC_Concept ;
+    skos:definition "The apparent epistemic legitimacy granted to AI-generated terminology due to their clarity and precision, regardless of ultimate validity."@en ;
+    skos:definition "Die scheinbare epistemische Legitimität, die KI-generierten Begriffen aufgrund ihrer Klarheit verliehen wird."@de .
+
+augont:LOC_Concept a ontolex:LexicalConcept ;
+    rdfs:label "License of Clarity"@en ;
+    skos:prefLabel "LOC"@en ;
+    skos:altLabel "Clarity Bias"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    dct:domain "cognitive_processes"@en ;
+    augont:iso704Characteristic "epistemic legitimacy" ;
+    augont:iso704Characteristic "clarity bias" ;
+    augont:iso704Characteristic "precision privilege" .
+
+# ============================================================================
+# TERM 25: HDAR - Human-Data Authority Recursion
+# ============================================================================
+
+aug:HDAR a ontolex:LexicalEntry ;
+    rdfs:label "HDAR"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    ontolex:canonicalForm aug:HDAR_Form_EN ;
+    ontolex:sense aug:HDAR_Sense .
+
+aug:HDAR_Form_EN a ontolex:Form ;
+    ontolex:writtenRep "Human-Data Authority Recursion"@en ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "en" .
+
+aug:HDAR_Form_DE a ontolex:Form ;
+    ontolex:writtenRep "Mensch-Daten-Autoritäts-Rekursion"@de ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    lexinfo:gender lexinfo:feminine ;
+    dct:language "de" .
+
+aug:HDAR_Form_ZH a ontolex:Form ;
+    ontolex:writtenRep "人类数据权威递归"@zh ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "zh" .
+
+aug:HDAR_Form_HI a ontolex:Form ;
+    ontolex:writtenRep "मानव-डेटा प्राधिकार पुनरावृत्ति"@hi ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "hi" .
+
+aug:HDAR_Form_AR a ontolex:Form ;
+    ontolex:writtenRep "الحلقة العودية لسلطة البيانات البشرية"@ar ;
+    lexinfo:partOfSpeech lexinfo:noun ;
+    dct:language "ar" .
+
+aug:HDAR_Sense a ontolex:LexicalSense ;
+    rdfs:label "HDAR Sense"@en ;
+    ontolex:reference augont:HDAR_Concept ;
+    skos:definition "The recursive cycle wherein human-generated data shapes AI outputs, which are then adopted by humans and reincorporated into data corpora, progressively displacing original human knowledge."@en ;
+    skos:definition "Der rekursive Zyklus, bei dem menschliche Daten KI-Ausgaben prägen und wieder in Datenkorpora reinkorporiert werden."@de .
+
+augont:HDAR_Concept a ontolex:LexicalConcept ;
+    rdfs:label "Human-Data Authority Recursion"@en ;
+    skos:prefLabel "HDAR"@en ;
+    skos:altLabel "Data Recursion Cycle"@en ;
+    dct:created "2024"^^xsd:gYear ;
+    dct:domain "systemic_effects"@en ;
+    augont:iso704Characteristic "recursive cycle" ;
+    augont:iso704Characteristic "data composition shift" ;
+    augont:iso704Characteristic "knowledge displacement" .
+
+# End of OntoLex-Lemon representation

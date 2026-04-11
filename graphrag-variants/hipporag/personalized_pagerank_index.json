@@ -1,0 +1,255 @@
+{
+  "index_metadata": {
+    "framework": "AUGMANITAI",
+    "variant": "HippoRAG",
+    "version": "1.0.0",
+    "build_date": "2026-04-10",
+    "algorithm": "Personalized PageRank",
+    "damping_factor": 0.85,
+    "convergence_threshold": 0.0001,
+    "max_iterations": 100
+  },
+  "graph_statistics": {
+    "total_nodes": 25,
+    "total_edges": 51,
+    "average_degree": 4.08,
+    "network_density": 0.174,
+    "diameter": 5
+  },
+  "pagerank_scores": {
+    "sle": 0.0847,
+    "rke": 0.0923,
+    "ccr": 0.0805,
+    "aif": 0.0612,
+    "plp": 0.0568,
+    "mca": 0.0834,
+    "tea": 0.0421,
+    "ape": 0.0534,
+    "cie": 0.0692,
+    "sds": 0.0615,
+    "hcf": 0.0487,
+    "air": 0.0721,
+    "ecv": 0.0542,
+    "dsm": 0.0756,
+    "tct": 0.0654,
+    "pdt": 0.0687,
+    "hrm": 0.0461,
+    "cod": 0.0845,
+    "csf": 0.0678,
+    "ars": 0.0388,
+    "mae": 0.0502,
+    "ikf": 0.0598,
+    "tci": 0.0625,
+    "cdq": 0.0712,
+    "ras": 0.0791,
+    "qam": 0.0643
+  },
+  "topic_nodes": {
+    "linguistic_dynamics": ["sle", "dsm", "sds", "ape"],
+    "meta_cognitive": ["ccr", "mca", "cie", "air", "hcf", "hrm", "ikf", "mae"],
+    "knowledge_synthesis": ["rke", "tea", "ecv", "pdt", "cod", "tci", "ras", "qam"],
+    "interaction_dynamics": ["plp", "ape", "tct", "csf", "cdq", "qam", "tci"],
+    "organizational": ["aif", "ars", "mca"]
+  },
+  "personalized_scores": {
+    "linguistic_dynamics_bias": {
+      "sle": 0.1523,
+      "dsm": 0.1347,
+      "sds": 0.1091,
+      "ape": 0.0945,
+      "rke": 0.0734,
+      "ccr": 0.0612,
+      "mca": 0.0534,
+      "plp": 0.0512,
+      "cie": 0.0478
+    },
+    "knowledge_synthesis_bias": {
+      "rke": 0.1834,
+      "cod": 0.1521,
+      "tea": 0.0945,
+      "pdt": 0.0823,
+      "ras": 0.0812,
+      "tci": 0.0734,
+      "qam": 0.0687,
+      "ecv": 0.0645,
+      "csf": 0.0512
+    },
+    "meta_cognitive_bias": {
+      "ccr": 0.1456,
+      "mca": 0.1378,
+      "cie": 0.1234,
+      "air": 0.1021,
+      "mae": 0.0834,
+      "hrm": 0.0712,
+      "ikf": 0.0687,
+      "hcf": 0.0534,
+      "sle": 0.0478
+    },
+    "interaction_dynamics_bias": {
+      "plp": 0.1512,
+      "tct": 0.1345,
+      "csf": 0.1234,
+      "cdq": 0.1123,
+      "ape": 0.0934,
+      "qam": 0.0823,
+      "tci": 0.0712,
+      "rke": 0.0534
+    }
+  },
+  "hop_scores": {
+    "hop_1": {
+      "sle": 0.0847,
+      "rke": 0.0923,
+      "ccr": 0.0805,
+      "aif": 0.0612,
+      "plp": 0.0568
+    },
+    "hop_2": {
+      "dsm": 0.0756,
+      "mca": 0.0834,
+      "cie": 0.0692,
+      "air": 0.0721,
+      "cod": 0.0845
+    },
+    "hop_3": {
+      "tct": 0.0654,
+      "pdt": 0.0687,
+      "csf": 0.0678,
+      "ras": 0.0791,
+      "cdq": 0.0712
+    },
+    "hop_4": {
+      "tea": 0.0421,
+      "hrm": 0.0461,
+      "ars": 0.0388,
+      "mae": 0.0502,
+      "ecv": 0.0542
+    },
+    "hop_5": {
+      "hcf": 0.0487,
+      "sds": 0.0615,
+      "ikf": 0.0598,
+      "tci": 0.0625,
+      "qam": 0.0643
+    }
+  },
+  "node_centrality": {
+    "betweenness": {
+      "rke": 0.156,
+      "ccr": 0.134,
+      "cod": 0.123,
+      "mca": 0.098,
+      "sle": 0.087
+    },
+    "closeness": {
+      "rke": 0.625,
+      "cod": 0.612,
+      "mca": 0.598,
+      "ccr": 0.587,
+      "dsm": 0.576
+    },
+    "eigenvector": {
+      "rke": 0.178,
+      "ccr": 0.145,
+      "sle": 0.134,
+      "cod": 0.123,
+      "mca": 0.112
+    }
+  },
+  "transition_matrix": {
+    "description": "Normalized transition probabilities for random walk",
+    "format": "sparse_csr",
+    "rows": 25,
+    "columns": 25,
+    "non_zero_elements": 102,
+    "sparsity": 0.837,
+    "sample_transitions": {
+      "sle_to_rke": 0.167,
+      "sle_to_plp": 0.167,
+      "sle_to_cod": 0.167,
+      "rke_to_ccr": 0.143,
+      "rke_to_cie": 0.143,
+      "rke_to_cod": 0.143
+    }
+  },
+  "personalization_vectors": {
+    "global": {
+      "description": "Uniform personalization (standard PageRank)",
+      "type": "uniform",
+      "value": 0.04
+    },
+    "linguistic": {
+      "description": "Bias toward linguistic concepts",
+      "nodes": ["sle", "dsm", "sds"],
+      "value": 0.15
+    },
+    "cognitive": {
+      "description": "Bias toward cognitive concepts",
+      "nodes": ["ccr", "mca", "cie"],
+      "value": 0.15
+    },
+    "knowledge": {
+      "description": "Bias toward knowledge synthesis",
+      "nodes": ["rke", "cod", "tea"],
+      "value": 0.15
+    },
+    "interactive": {
+      "description": "Bias toward interaction dynamics",
+      "nodes": ["plp", "tct", "csf"],
+      "value": 0.15
+    }
+  },
+  "recall_optimization": {
+    "top_k_candidates": {
+      "k_5": ["rke", "sle", "cod", "ccr", "dsm"],
+      "k_10": ["rke", "sle", "cod", "ccr", "dsm", "mca", "ras", "cdq", "air", "tct"],
+      "k_15": [
+        "rke", "sle", "cod", "ccr", "dsm", "mca", "ras", "cdq", "air", "tct",
+        "pdt", "csf", "cie", "tci", "qam"
+      ]
+    },
+    "diversity_scores": {
+      "rke_cod_diversity": 0.45,
+      "rke_ccr_diversity": 0.52,
+      "sle_dsm_diversity": 0.38,
+      "mca_ccr_diversity": 0.41,
+      "rke_tci_diversity": 0.58
+    }
+  },
+  "memory_efficiency": {
+    "storage_format": "sparse",
+    "estimated_size_mb": 2.3,
+    "pagerank_array_mb": 0.8,
+    "transition_matrix_mb": 1.2,
+    "index_overhead_mb": 0.3
+  },
+  "convergence_metrics": {
+    "iterations_to_convergence": 47,
+    "final_convergence_score": 0.00009834,
+    "convergence_reached": true,
+    "residual_by_iteration": {
+      "iteration_10": 0.0234,
+      "iteration_20": 0.0089,
+      "iteration_30": 0.0031,
+      "iteration_40": 0.0001,
+      "iteration_47": 0.00009834
+    }
+  },
+  "query_optimization": {
+    "phrase_expansion": {
+      "description": "Expand queries to related phrases",
+      "enabled": true,
+      "expansion_limit": 5
+    },
+    "entity_linking": {
+      "description": "Link query phrases to entities",
+      "enabled": true,
+      "confidence_threshold": 0.7
+    },
+    "caching": {
+      "description": "Cache results for frequent queries",
+      "enabled": true,
+      "cache_size_queries": 100
+    }
+  }
+}

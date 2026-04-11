@@ -1,0 +1,413 @@
+@prefix aug: <https://augmanitai.org/term/> .
+@prefix augont: <https://augmanitai.org/ontology#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+# ============================================================================
+# AUGMANITAI SHACL Validation Shapes
+# Semantic and Structural Validation for Term Data
+# Creator: Andreas Ehstand
+# License: CC BY-NC-ND 4.0
+# ISO Standards: ISO 704, 1087, 30042, 12620
+# ============================================================================
+
+# Term Shape - validates all aug:Term instances
+augont:TermShape a sh:NodeShape ;
+    sh:targetClass augont:Term ;
+    sh:closed false ;
+    sh:ignoredProperties ( rdf:type ) ;
+    rdfs:label "AUGMANITAI Term Shape"@en ;
+    rdfs:comment "Validates structural and semantic constraints for all AUGMANITAI terminology entries"@en ;
+
+    # Constraint 1: Exactly one preferred label in English
+    sh:property [
+        sh:path skos:prefLabel ;
+        sh:name "Preferred Label"@en ;
+        sh:description "Each term must have exactly one preferred label in English (en) language tag"@en ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype rdf:langString ;
+        sh:languageIn ( "en" ) ;
+        sh:severity sh:Violation ;
+        sh:message "Term must have exactly one skos:prefLabel with @en language tag"@en ;
+    ] ;
+
+    # Constraint 2: Required creation date
+    sh:property [
+        sh:path dct:created ;
+        sh:name "Creation Date"@en ;
+        sh:description "Every term must have a dct:created date for provenance tracking"@en ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:date ;
+        sh:or (
+            [ sh:datatype xsd:date ]
+            [ sh:datatype xsd:gYear ]
+            [ sh:datatype xsd:gYearMonth ]
+        ) ;
+        sh:severity sh:Violation ;
+        sh:message "Term must have exactly one dct:created date"@en ;
+    ] ;
+
+    # Constraint 3: At least one definition
+    sh:property [
+        sh:path skos:definition ;
+        sh:name "Definition"@en ;
+        sh:description "Each term must have at least one SKOS definition"@en ;
+        sh:minCount 1 ;
+        sh:datatype rdf:langString ;
+        sh:severity sh:Violation ;
+        sh:message "Term must have at least one skos:definition"@en ;
+    ] ;
+
+    # Constraint 4: ISO 704 Characteristics
+    sh:property [
+        sh:path augont:iso704Characteristic ;
+        sh:name "ISO 704 Characteristic"@en ;
+        sh:description "Each term must have at least one ISO 704 characteristic defining its essential properties"@en ;
+        sh:minCount 1 ;
+        sh:datatype xsd:string ;
+        sh:severity sh:Violation ;
+        sh:message "Term must have at least one augont:iso704Characteristic"@en ;
+    ] ;
+
+    # Constraint 5: URI pattern validation
+    sh:property [
+        sh:path sh:this ;
+        sh:name "URI Pattern"@en ;
+        sh:description "Term URI must match the pattern https://augmanitai.org/term/[A-Z]+"@en ;
+        sh:pattern "^https://augmanitai\\.org/term/[A-Z]+$" ;
+        sh:severity sh:Violation ;
+        sh:message "Term URI must match pattern https://augmanitai.org/term/[A-Z]+"@en ;
+    ] ;
+
+    # Constraint 6: Domain classification
+    sh:property [
+        sh:path dct:domain ;
+        sh:name "Domain"@en ;
+        sh:description "Each term should be classified in a domain"@en ;
+        sh:minCount 0 ;
+        sh:datatype xsd:string ;
+        sh:in (
+            "linguistic_dynamics"
+            "cognitive_processes"
+            "measurement_metrics"
+            "power_authority"
+            "terminological_phenomena"
+            "systemic_effects"
+            "knowledge_extraction"
+        ) ;
+        sh:severity sh:Warning ;
+        sh:message "Term domain should be in authorized domain list"@en ;
+    ] ;
+
+    # Constraint 7: Alternative labels language diversity
+    sh:property [
+        sh:path skos:altLabel ;
+        sh:name "Alternative Labels"@en ;
+        sh:description "Alternative labels should cover multiple languages when available"@en ;
+        sh:minCount 0 ;
+        sh:datatype rdf:langString ;
+        sh:severity sh:Info ;
+    ] ;
+
+    # Constraint 8: Broader and narrower relations
+    sh:property [
+        sh:path skos:broader ;
+        sh:name "Broader Term"@en ;
+        sh:description "Links to broader, more general concepts"@en ;
+        sh:minCount 0 ;
+        sh:nodeKind sh:IRI ;
+        sh:severity sh:Info ;
+    ] ;
+
+    sh:property [
+        sh:path skos:narrower ;
+        sh:name "Narrower Term"@en ;
+        sh:description "Links to narrower, more specific concepts"@en ;
+        sh:minCount 0 ;
+        sh:nodeKind sh:IRI ;
+        sh:severity sh:Info ;
+    ] ;
+
+    # Constraint 9: Related terms
+    sh:property [
+        sh:path skos:related ;
+        sh:name "Related Term"@en ;
+        sh:description "Links to associatively related concepts"@en ;
+        sh:minCount 0 ;
+        sh:nodeKind sh:IRI ;
+        sh:severity sh:Info ;
+    ] ;
+
+    # Constraint 10: Creator attribution
+    sh:property [
+        sh:path dct:creator ;
+        sh:name "Creator"@en ;
+        sh:description "Attribution of term origin and responsibility"@en ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:severity sh:Warning ;
+    ] ;
+
+    # Constraint 11: License specification
+    sh:property [
+        sh:path dct:license ;
+        sh:name "License"@en ;
+        sh:description "License URI for term usage rights"@en ;
+        sh:maxCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:in ( <https://creativecommons.org/licenses/by-nc-nd/4.0/> ) ;
+        sh:severity sh:Warning ;
+    ] .
+
+
+# Definition Language Shape - validates definition language tags
+augont:DefinitionLanguageShape a sh:NodeShape ;
+    sh:targetObjectsOf skos:definition ;
+    sh:name "Definition Language Validation"@en ;
+    sh:description "All definitions must have valid BCP 47 language tags"@en ;
+
+    # Validate language tag format
+    sh:property [
+        sh:path sh:this ;
+        sh:name "Language Tag"@en ;
+        sh:description "Language tag must be valid BCP 47"@en ;
+        sh:in ( "en" "de" "zh" "hi" "ar" "fr" "es" "pt" "ja" "ko" ) ;
+        sh:severity sh:Violation ;
+        sh:message "Definition must have valid BCP 47 language tag"@en ;
+    ] .
+
+
+# Alternative Label Shape - validates alt label language tags
+augont:AltLabelLanguageShape a sh:NodeShape ;
+    sh:targetObjectsOf skos:altLabel ;
+    sh:name "Alternative Label Language Validation"@en ;
+    sh:description "All alternative labels must have valid BCP 47 language tags"@en ;
+
+    sh:property [
+        sh:path sh:this ;
+        sh:name "Language Tag"@en ;
+        sh:in ( "en" "de" "zh" "hi" "ar" "fr" "es" "pt" "ja" "ko" ) ;
+        sh:severity sh:Warning ;
+    ] .
+
+
+# Characteristic String Shape - validates ISO 704 characteristics
+augont:CharacteristicShape a sh:NodeShape ;
+    sh:targetObjectsOf augont:iso704Characteristic ;
+    sh:name "ISO 704 Characteristic Validation"@en ;
+    sh:description "Characteristics must be non-empty strings describing defining features"@en ;
+
+    sh:property [
+        sh:path sh:this ;
+        sh:name "Characteristic Value"@en ;
+        sh:minLength 3 ;
+        sh:maxLength 200 ;
+        sh:datatype xsd:string ;
+        sh:severity sh:Violation ;
+        sh:message "Characteristic must be a string between 3 and 200 characters"@en ;
+    ] .
+
+
+# Creation Date Range Shape - validates dates are not in future
+augont:CreationDateShape a sh:NodeShape ;
+    sh:targetObjectsOf dct:created ;
+    sh:name "Creation Date Range Validation"@en ;
+    sh:description "Creation dates must be in past or present, not future"@en ;
+
+    sh:property [
+        sh:path sh:this ;
+        sh:name "Date Range"@en ;
+        sh:minInclusive "1900-01-01"^^xsd:date ;
+        sh:maxInclusive "2026-12-31"^^xsd:date ;
+        sh:severity sh:Violation ;
+        sh:message "Creation date must be between 1900 and today"@en ;
+    ] .
+
+
+# Relation Target Shape - validates that relation targets are terms
+augont:RelationTargetShape a sh:NodeShape ;
+    sh:targetObjectsOf augont:relatedTo ;
+    sh:targetObjectsOf augont:partOf ;
+    sh:targetObjectsOf augont:hasChild ;
+    sh:targetObjectsOf augont:enables ;
+    sh:name "Relation Target Validation"@en ;
+    sh:description "Relation targets must be valid AUGMANITAI Term URIs"@en ;
+
+    sh:property [
+        sh:path sh:this ;
+        sh:name "Target URI"@en ;
+        sh:pattern "^https://augmanitai\\.org/term/" ;
+        sh:nodeKind sh:IRI ;
+        sh:severity sh:Violation ;
+        sh:message "Relation target must be a term URI (https://augmanitai.org/term/*)"@en ;
+    ] .
+
+
+# Term Relationship Consistency Shape
+augont:RelationshipConsistencyShape a sh:NodeShape ;
+    sh:targetClass augont:Term ;
+    sh:name "Relationship Consistency"@en ;
+    sh:description "Validates consistency of reciprocal relationships"@en ;
+
+    # Broader/narrower inverse consistency
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:name "Broader-Narrower Consistency"@en ;
+        sh:description "If A skos:broader B, then B must have skos:narrower A"@en ;
+        sh:message "Narrower/broader relationship inconsistency detected"@en ;
+        sh:prefixes "skos: <http://www.w3.org/2004/02/skos/core#>" ;
+        sh:select """
+            SELECT $this ?other
+            WHERE {
+                $this skos:broader ?other .
+                FILTER NOT EXISTS { ?other skos:narrower $this . }
+            }
+        """ ;
+        sh:severity sh:Warning ;
+    ] ;
+
+    # Related relationship symmetry
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:name "Related Relationship Symmetry"@en ;
+        sh:description "If A skos:related B, ideally B should have skos:related A"@en ;
+        sh:message "Asymmetric 'related' relationship detected"@en ;
+        sh:prefixes "skos: <http://www.w3.org/2004/02/skos/core#>" ;
+        sh:select """
+            SELECT $this ?other
+            WHERE {
+                $this skos:related ?other .
+                FILTER NOT EXISTS { ?other skos:related $this . }
+            }
+        """ ;
+        sh:severity sh:Info ;
+    ] .
+
+
+# Multilingual Coverage Shape
+augont:MultilingualCoverageShape a sh:NodeShape ;
+    sh:targetClass augont:Term ;
+    sh:name "Multilingual Coverage"@en ;
+    sh:description "Terms should have definitions in at least 2 languages"@en ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:name "Definition Language Coverage"@en ;
+        sh:description "Term should have definitions in multiple languages"@en ;
+        sh:message "Term definitions are limited to single language (recommended: en, de, zh, hi, ar)"@en ;
+        sh:prefixes "skos: <http://www.w3.org/2004/02/skos/core#>" ;
+        sh:select """
+            SELECT $this (COUNT(DISTINCT ?lang) as ?langCount)
+            WHERE {
+                $this skos:definition ?def .
+                BIND(LANG(?def) AS ?lang)
+            }
+            GROUP BY $this
+            HAVING (?langCount < 2)
+        """ ;
+        sh:severity sh:Warning ;
+    ] .
+
+
+# Label Uniqueness Shape
+augont:LabelUniquenessShape a sh:NodeShape ;
+    sh:targetClass augont:Term ;
+    sh:name "Preferred Label Uniqueness"@en ;
+    sh:description "Preferred labels should be unique within the vocabulary"@en ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:name "Unique Preferred Labels"@en ;
+        sh:description "No two terms should have identical English preferred labels"@en ;
+        sh:message "Duplicate preferred label detected"@en ;
+        sh:prefixes "skos: <http://www.w3.org/2004/02/skos/core#>" ;
+        sh:select """
+            SELECT $this ?label (COUNT(?other) as ?count)
+            WHERE {
+                $this skos:prefLabel ?label .
+                FILTER (LANG(?label) = "en")
+                ?other skos:prefLabel ?label .
+                FILTER (LANG(?label) = "en")
+                FILTER (?other != $this)
+            }
+            GROUP BY $this ?label
+            HAVING (?count > 0)
+        """ ;
+        sh:severity sh:Violation ;
+    ] .
+
+
+# Definition Quality Shape
+augont:DefinitionQualityShape a sh:NodeShape ;
+    sh:targetObjectsOf skos:definition ;
+    sh:name "Definition Quality"@en ;
+    sh:description "Definitions should be substantive and well-formed"@en ;
+
+    sh:property [
+        sh:path sh:this ;
+        sh:name "Definition Length"@en ;
+        sh:description "Definition should be between 20 and 500 characters"@en ;
+        sh:minLength 20 ;
+        sh:maxLength 500 ;
+        sh:severity sh:Warning ;
+        sh:message "Definition should be between 20 and 500 characters for adequate coverage"@en ;
+    ] ;
+
+    sh:property [
+        sh:path sh:this ;
+        sh:name "Definition Format"@en ;
+        sh:description "Definition should start with capital letter"@en ;
+        sh:pattern "^[A-Z]" ;
+        sh:severity sh:Warning ;
+        sh:message "Definition should begin with a capital letter"@en ;
+    ] .
+
+
+# Domain Validation Completeness Shape
+augont:DomainCompleteness a sh:NodeShape ;
+    sh:targetClass augont:Term ;
+    sh:name "Domain Classification Completeness"@en ;
+    sh:description "All terms should have domain classification"@en ;
+
+    sh:property [
+        sh:path dct:domain ;
+        sh:name "Domain Assignment"@en ;
+        sh:minCount 1 ;
+        sh:maxCount 3 ;
+        sh:severity sh:Warning ;
+        sh:message "Term should have at least one domain classification"@en ;
+    ] .
+
+
+# Validation Summary Documentation
+augont:ValidationSummary a rdf:Description ;
+    rdfs:label "AUGMANITAI SHACL Validation Suite"@en ;
+    rdfs:comment "Comprehensive set of SHACL shapes for validating AUGMANITAI ontology and term data"@en ;
+
+    sh:declare [
+        sh:prefix "aug" ;
+        sh:namespace "https://augmanitai.org/term/"^^xsd:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "augont" ;
+        sh:namespace "https://augmanitai.org/ontology#"^^xsd:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "skos" ;
+        sh:namespace "http://www.w3.org/2004/02/skos/core#"^^xsd:anyURI ;
+    ] ;
+
+    sh:declare [
+        sh:prefix "dct" ;
+        sh:namespace "http://purl.org/dc/terms/"^^xsd:anyURI ;
+    ] .
+
+# End of SHACL Shapes

@@ -1,0 +1,57 @@
+cff-version: 1.2.0
+message: "If you use AUGMANITAI in your research, please cite it as below."
+type: dataset
+title: "AUGMANITAI: 1000-Term Compendium"
+abstract: >-
+  AUGMANITAI is a curated terminology for phenomena at the human–AI interface,
+  published as a priority-establishing terminological deposit. The core deliverable
+  is the 1000-Term Compendium, formalized as an RDF knowledge graph informed by
+  ISO 704 / ISO 1087 / ISO 30042 (ISO-inspired, not ISO-certified) and serialized
+  with W3C SKOS, SKOS-XL, OntoLex-Lemon, SHACL, and JSON-LD. The compendium is the
+  curated output of a longitudinal n=1 observation of daily human–LLM interaction
+  over approximately nine months and is offered as descriptive linguistic research
+  (non-peer-reviewed). The priority claim covers the schema as a whole — its
+  selection, definition, relation structure, and serialization — not the invention
+  of each individual term; some terms are imported from prior literature, some
+  are re-formulations, and some are newly introduced where no existing label fit.
+  See DISCLAIMER.md (§1–§20) and METHODOLOGY.md (§2.0, §3, §11) in the repository
+  for the study design, origin categories, and restricted-application clause (§20).
+authors:
+  - family-names: Ehstand
+    given-names: Andreas
+    orcid: "https://orcid.org/0009-0006-3773-7796"
+doi: 10.5281/zenodo.19481331
+url: "https://doi.org/10.5281/zenodo.19481331"
+repository-code: "https://github.com/AndreasEhstand/augmanitai"
+license: CC-BY-NC-ND-4.0
+keywords:
+  - terminology
+  - ontology
+  - knowledge-graph
+  - semantic-web
+  - SKOS
+  - SKOS-XL
+  - OntoLex-Lemon
+  - SHACL
+  - TBX
+  - ISO-704-informed
+  - ISO-1087-informed
+  - ISO-30042-informed
+  - JSON-LD
+  - AUGMANITAI
+  - human-AI interaction
+  - neologism
+  - applied linguistics
+references:
+  - type: standard
+    title: "ISO 704:2022 Terminology work — Principles and methods"
+    institution:
+      name: "International Organization for Standardization"
+  - type: standard
+    title: "ISO 1087:2019 Terminology work — Vocabulary"
+    institution:
+      name: "International Organization for Standardization"
+  - type: standard
+    title: "ISO 30042:2019 Management of terminology resources — TermBase eXchange (TBX)"
+    institution:
+      name: "International Organization for Standardization"

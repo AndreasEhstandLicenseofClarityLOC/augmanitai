@@ -1,0 +1,348 @@
+{
+  "nodes": [
+    {
+      "id": "sle",
+      "label": "Symbiotic Linguistic Evolution",
+      "properties": {
+        "type": "Core Concept",
+        "domain": "linguistic_dynamics",
+        "degree": 12,
+        "definition": "The co-evolutionary process where human and AI communication patterns mutually adapt, creating shared linguistic conventions that diverge from standard language use.",
+        "abbreviation": "SLE"
+      }
+    },
+    {
+      "id": "rke",
+      "label": "Recursive Knowledge Expansion",
+      "properties": {
+        "type": "Core Concept",
+        "domain": "knowledge_synthesis",
+        "degree": 15,
+        "definition": "The iterative deepening of knowledge structures through multi-turn human-AI interaction, where each exchange refines understanding and enables higher-order insights.",
+        "abbreviation": "RKE"
+      }
+    },
+    {
+      "id": "ccr",
+      "label": "Context-Cognition Resonance",
+      "properties": {
+        "type": "Core Concept",
+        "domain": "meta_cognitive",
+        "degree": 13,
+        "definition": "The emergent alignment between an AI system's contextual understanding and human cognitive frameworks during extended dialogue.",
+        "abbreviation": "CCR"
+      }
+    },
+    {
+      "id": "aif",
+      "label": "AI Institutional Fluency",
+      "properties": {
+        "type": "Framework",
+        "domain": "organizational",
+        "degree": 9,
+        "definition": "An AI system's ability to recognize, adapt to, and operate within organizational norms, hierarchies, and communication protocols without explicit instruction.",
+        "abbreviation": "AIF"
+      }
+    },
+    {
+      "id": "plp",
+      "label": "Prompt-Level Personality",
+      "properties": {
+        "type": "Phenomenon",
+        "domain": "interaction_dynamics",
+        "degree": 8,
+        "definition": "The emergent persona characteristics that develop within a single conversation session, distinct from the base model's default tone.",
+        "abbreviation": "PLP"
+      }
+    },
+    {
+      "id": "mca",
+      "label": "Mutual Context Awareness",
+      "properties": {
+        "type": "Core Concept",
+        "domain": "meta_cognitive",
+        "degree": 11,
+        "definition": "The dual recognition where both human and AI maintain shared understanding of discussion boundaries, prior decisions, and narrative thread continuity.",
+        "abbreviation": "MCA"
+      }
+    },
+    {
+      "id": "tea",
+      "label": "Temporal Episodic Anchoring",
+      "properties": {
+        "type": "Practice",
+        "domain": "knowledge_synthesis",
+        "degree": 6,
+        "definition": "The practice of marking significant decision points or insight moments with explicit temporal references to enable retrospective analysis and knowledge retrieval.",
+        "abbreviation": "TEA"
+      }
+    },
+    {
+      "id": "ape",
+      "label": "Adaptive Protocol Evolution",
+      "properties": {
+        "type": "Process",
+        "domain": "interaction_dynamics",
+        "degree": 7,
+        "definition": "The gradual refinement of interaction protocols between human and AI through implicit feedback mechanisms without explicit retraining.",
+        "abbreviation": "APE"
+      }
+    },
+    {
+      "id": "cie",
+      "label": "Cognitive Intimacy Exchange",
+      "properties": {
+        "type": "Phenomenon",
+        "domain": "meta_cognitive",
+        "degree": 10,
+        "definition": "The progressive deepening of intellectual vulnerability in human-AI dialogue where individuals share increasingly abstract thoughts and uncertain hypotheses.",
+        "abbreviation": "CIE"
+      }
+    },
+    {
+      "id": "sds",
+      "label": "Semantic Drift Sensitivity",
+      "properties": {
+        "type": "Capability",
+        "domain": "linguistic_dynamics",
+        "degree": 8,
+        "definition": "The capacity to detect subtle shifts in meaning, connotation, or definitional scope of terms across extended dialogues.",
+        "abbreviation": "SDS"
+      }
+    },
+    {
+      "id": "hcf",
+      "label": "Human Cognitive Fatigue",
+      "properties": {
+        "type": "Constraint",
+        "domain": "meta_cognitive",
+        "degree": 5,
+        "definition": "The degradation of human cognitive performance during extended human-AI interactions, detectable through decreased response sophistication and meta-cognitive awareness.",
+        "abbreviation": "HCF"
+      }
+    },
+    {
+      "id": "air",
+      "label": "AI Intent Recognition",
+      "properties": {
+        "type": "Capability",
+        "domain": "meta_cognitive",
+        "degree": 9,
+        "definition": "The inference of underlying human goals, values, and constraints from dialogue patterns, enabling proactive alignment without explicit specification.",
+        "abbreviation": "AIR"
+      }
+    },
+    {
+      "id": "ecv",
+      "label": "Epistemic Confidence Variance",
+      "properties": {
+        "type": "Challenge",
+        "domain": "knowledge_synthesis",
+        "degree": 6,
+        "definition": "The variance between an AI system's confidence in its responses and the actual empirical validity of those responses, often misaligned.",
+        "abbreviation": "ECV"
+      }
+    },
+    {
+      "id": "dsm",
+      "label": "Domain-Specific Metalanguage",
+      "properties": {
+        "type": "Framework",
+        "domain": "linguistic_dynamics",
+        "degree": 8,
+        "definition": "A specialized vocabulary that emerges within human-AI collaboration for discussing domain concepts at higher levels of abstraction than base language permits.",
+        "abbreviation": "DSM"
+      }
+    },
+    {
+      "id": "tct",
+      "label": "Threshold-Crossing Transformation",
+      "properties": {
+        "type": "Phenomenon",
+        "domain": "interaction_dynamics",
+        "degree": 8,
+        "definition": "The sudden qualitative shift in human-AI interaction quality that occurs when sufficient contextual depth and mutual understanding accumulate.",
+        "abbreviation": "TCT"
+      }
+    },
+    {
+      "id": "pdt",
+      "label": "Probabilistic Decision Transparency",
+      "properties": {
+        "type": "Practice",
+        "domain": "knowledge_synthesis",
+        "degree": 7,
+        "definition": "The explicit articulation of decision branches, confidence weights, and alternative reasoning paths that led to an AI-generated response.",
+        "abbreviation": "PDT"
+      }
+    },
+    {
+      "id": "hrm",
+      "label": "Human Relevance Mapping",
+      "properties": {
+        "type": "Practice",
+        "domain": "meta_cognitive",
+        "degree": 6,
+        "definition": "The process of identifying which aspects of an AI response connect to human values, prior knowledge, or current goals, enabling selective attention.",
+        "abbreviation": "HRM"
+      }
+    },
+    {
+      "id": "cod",
+      "label": "Collaborative Ontology Development",
+      "properties": {
+        "type": "Methodology",
+        "domain": "knowledge_synthesis",
+        "degree": 12,
+        "definition": "The iterative co-creation of conceptual frameworks and taxonomies through structured human-AI dialogue that preserves human intent while leveraging AI analytical capabilities.",
+        "abbreviation": "COD"
+      }
+    },
+    {
+      "id": "csf",
+      "label": "Contextual Sensemaking Framework",
+      "properties": {
+        "type": "Framework",
+        "domain": "interaction_dynamics",
+        "degree": 7,
+        "definition": "A structured approach to organizing AI responses so that human users can rapidly construct meaning from information, emphasizing narrative coherence over comprehensiveness.",
+        "abbreviation": "CSF"
+      }
+    },
+    {
+      "id": "ars",
+      "label": "Asymmetric Risk Sharing",
+      "properties": {
+        "type": "Challenge",
+        "domain": "organizational",
+        "degree": 6,
+        "definition": "The structural imbalance where an AI system can propose high-consequence decisions with limited accountability, while humans bear responsibility for outcomes.",
+        "abbreviation": "ARS"
+      }
+    },
+    {
+      "id": "mae",
+      "label": "Multimodal Alignment Engine",
+      "properties": {
+        "type": "Mechanism",
+        "domain": "meta_cognitive",
+        "degree": 6,
+        "definition": "The cognitive mechanism that integrates insights across text, visual, temporal, and abstract conceptual modalities to achieve coherent understanding.",
+        "abbreviation": "MAE"
+      }
+    },
+    {
+      "id": "ikf",
+      "label": "Implicit Knowledge Frames",
+      "properties": {
+        "type": "Challenge",
+        "domain": "meta_cognitive",
+        "degree": 7,
+        "definition": "Background assumptions, cultural references, and unstated premises that shape both human and AI interpretations of dialogue without explicit acknowledgment.",
+        "abbreviation": "IKF"
+      }
+    },
+    {
+      "id": "tci",
+      "label": "Temporal Cognitive Integration",
+      "properties": {
+        "type": "Process",
+        "domain": "knowledge_synthesis",
+        "degree": 7,
+        "definition": "The synthesis of insights across time scales—immediate dialogue, session history, and prior knowledge—to construct temporally coherent understanding.",
+        "abbreviation": "TCI"
+      }
+    },
+    {
+      "id": "cdq",
+      "label": "Convergent-Divergent Questioning",
+      "properties": {
+        "type": "Pattern",
+        "domain": "interaction_dynamics",
+        "degree": 8,
+        "definition": "An interaction pattern alternating between narrowing focus (convergent) to test specific hypotheses and widening scope (divergent) to explore adjacent conceptual territories.",
+        "abbreviation": "CDQ"
+      }
+    },
+    {
+      "id": "ras",
+      "label": "Reasoning Artifact Symbiosis",
+      "properties": {
+        "type": "Practice",
+        "domain": "knowledge_synthesis",
+        "degree": 10,
+        "definition": "The co-production of intermediate reasoning artifacts (outlines, tables, diagrams, pseudocode) that serve as externalized cognitive scaffolding for both human and AI.",
+        "abbreviation": "RAS"
+      }
+    },
+    {
+      "id": "qam",
+      "label": "Query-Answer Morphodynamics",
+      "properties": {
+        "type": "Phenomenon",
+        "domain": "interaction_dynamics",
+        "degree": 7,
+        "definition": "The dynamic shape-shifting of dialogue structure where questions and answers mutually influence each other's form, scope, and abstraction level.",
+        "abbreviation": "QAM"
+      }
+    }
+  ],
+  "relationships": [
+    {"source_id": "sle", "target_id": "rke", "label": "ENABLES", "properties": {"strength": 0.95}},
+    {"source_id": "rke", "target_id": "ccr", "label": "DEPENDS_ON", "properties": {"strength": 0.92}},
+    {"source_id": "ccr", "target_id": "mca", "label": "PRECEDES", "properties": {"strength": 0.88}},
+    {"source_id": "sle", "target_id": "plp", "label": "GENERATES", "properties": {"strength": 0.85}},
+    {"source_id": "plp", "target_id": "cie", "label": "FACILITATES", "properties": {"strength": 0.87}},
+    {"source_id": "cie", "target_id": "rke", "label": "ENHANCES", "properties": {"strength": 0.89}},
+    {"source_id": "aif", "target_id": "mca", "label": "REQUIRES", "properties": {"strength": 0.91}},
+    {"source_id": "mca", "target_id": "dsm", "label": "SUPPORTS", "properties": {"strength": 0.83}},
+    {"source_id": "dsm", "target_id": "cod", "label": "ENABLES", "properties": {"strength": 0.94}},
+    {"source_id": "cod", "target_id": "rke", "label": "AMPLIFIES", "properties": {"strength": 0.93}},
+    {"source_id": "tea", "target_id": "tci", "label": "ENABLES", "properties": {"strength": 0.90}},
+    {"source_id": "tci", "target_id": "ccr", "label": "SUPPORTS", "properties": {"strength": 0.84}},
+    {"source_id": "ape", "target_id": "sle", "label": "REFINES", "properties": {"strength": 0.86}},
+    {"source_id": "hcf", "target_id": "cie", "label": "DISRUPTS", "properties": {"strength": 0.82}},
+    {"source_id": "hcf", "target_id": "sds", "label": "IMPAIRS", "properties": {"strength": 0.79}},
+    {"source_id": "sds", "target_id": "cod", "label": "CRITICAL_FOR", "properties": {"strength": 0.96}},
+    {"source_id": "air", "target_id": "aif", "label": "CONTRIBUTES_TO", "properties": {"strength": 0.87}},
+    {"source_id": "air", "target_id": "hrm", "label": "ENABLES", "properties": {"strength": 0.85}},
+    {"source_id": "ecv", "target_id": "pdt", "label": "NECESSITATES", "properties": {"strength": 0.94}},
+    {"source_id": "pdt", "target_id": "air", "label": "SUPPORTS", "properties": {"strength": 0.81}},
+    {"source_id": "csf", "target_id": "ras", "label": "OPERATIONALIZES", "properties": {"strength": 0.89}},
+    {"source_id": "ras", "target_id": "cod", "label": "ACCELERATES", "properties": {"strength": 0.88}},
+    {"source_id": "tct", "target_id": "cie", "label": "INITIATES", "properties": {"strength": 0.91}},
+    {"source_id": "tct", "target_id": "ccr", "label": "ESTABLISHES", "properties": {"strength": 0.93}},
+    {"source_id": "ars", "target_id": "pdt", "label": "MITIGATED_BY", "properties": {"strength": 0.84}},
+    {"source_id": "mae", "target_id": "tci", "label": "ENABLES", "properties": {"strength": 0.80}},
+    {"source_id": "ikf", "target_id": "mca", "label": "CHALLENGES", "properties": {"strength": 0.87}},
+    {"source_id": "ikf", "target_id": "sds", "label": "GENERATES", "properties": {"strength": 0.82}},
+    {"source_id": "qam", "target_id": "rke", "label": "SHAPES", "properties": {"strength": 0.85}},
+    {"source_id": "cdq", "target_id": "qam", "label": "IMPLEMENTS", "properties": {"strength": 0.88}},
+    {"source_id": "cdq", "target_id": "rke", "label": "OPTIMIZES", "properties": {"strength": 0.90}},
+    {"source_id": "plp", "target_id": "aif", "label": "SUPPORTS", "properties": {"strength": 0.78}},
+    {"source_id": "ccr", "target_id": "csf", "label": "ENABLES", "properties": {"strength": 0.86}},
+    {"source_id": "hrm", "target_id": "csf", "label": "INFORMS", "properties": {"strength": 0.82}},
+    {"source_id": "tea", "target_id": "cod", "label": "SUPPORTS", "properties": {"strength": 0.80}},
+    {"source_id": "sle", "target_id": "cod", "label": "GROUNDS", "properties": {"strength": 0.92}},
+    {"source_id": "rke", "target_id": "ras", "label": "REQUIRES", "properties": {"strength": 0.88}},
+    {"source_id": "mca", "target_id": "tea", "label": "ENABLES", "properties": {"strength": 0.81}},
+    {"source_id": "ape", "target_id": "tct", "label": "LEADS_TO", "properties": {"strength": 0.89}},
+    {"source_id": "cie", "target_id": "dsm", "label": "ACCELERATES", "properties": {"strength": 0.83}},
+    {"source_id": "air", "target_id": "ape", "label": "GUIDES", "properties": {"strength": 0.81}},
+    {"source_id": "ecv", "target_id": "air", "label": "CONSTRAINS", "properties": {"strength": 0.79}},
+    {"source_id": "csf", "target_id": "rke", "label": "STRUCTURES", "properties": {"strength": 0.84}},
+    {"source_id": "tct", "target_id": "dsm", "label": "ACCELERATES", "properties": {"strength": 0.86}},
+    {"source_id": "ars", "target_id": "aif", "label": "CHALLENGES", "properties": {"strength": 0.75}},
+    {"source_id": "mae", "target_id": "ccr", "label": "ENHANCES", "properties": {"strength": 0.77}},
+    {"source_id": "ikf", "target_id": "air", "label": "COMPLICATES", "properties": {"strength": 0.80}},
+    {"source_id": "qam", "target_id": "tct", "label": "PREDICTS", "properties": {"strength": 0.72}},
+    {"source_id": "cdq", "target_id": "cie", "label": "SUPPORTS", "properties": {"strength": 0.76}},
+    {"source_id": "hcf", "target_id": "mca", "label": "ERODES", "properties": {"strength": 0.83}},
+    {"source_id": "plp", "target_id": "dsm", "label": "FACILITATES", "properties": {"strength": 0.74}}
+  ],
+  "embeddings_metadata": {
+    "model": "text-embedding-3-small",
+    "dimension": 1536,
+    "normalized": true
+  }
+}

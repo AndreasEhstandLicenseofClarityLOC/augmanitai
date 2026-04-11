@@ -1,0 +1,546 @@
+@prefix aug: <https://augmanitai.org/term/> .
+@prefix augont: <https://augmanitai.org/ontology#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+# ============================================================================
+# AUGMANITAI Relation Validation Shapes
+# Validates semantic relationships between terms
+# Creator: Andreas Ehstand
+# License: CC BY-NC-ND 4.0
+# ============================================================================
+
+# Base Relation Shape - validates all AUGMANITAI relations
+augont:RelationShape a sh:NodeShape ;
+    sh:name "AUGMANITAI Base Relation Shape"@en ;
+    sh:description "Validates structural constraints for all AUGMANITAI semantic relations"@en ;
+
+    # Relation subject must be a term
+    sh:property [
+        sh:path sh:this ;
+        sh:name "Subject Validation"@en ;
+        sh:description "Relation subject must be a valid AUGMANITAI Term"@en ;
+        sh:pattern "^https://augmanitai\\.org/term/[A-Z]+" ;
+        sh:severity sh:Violation ;
+        sh:message "Relation subject must be a valid term URI"@en ;
+    ] ;
+
+    # Relation object must also be a term (validates through range constraints)
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:name "Relation Target Type Check"@en ;
+        sh:description "All relation targets must be AUGMANITAI Terms"@en ;
+        sh:message "Relation target is not a valid AUGMANITAI term"@en ;
+        sh:severity sh:Violation ;
+        sh:select """
+            PREFIX augont: <https://augmanitai.org/ontology#>
+            SELECT $this ?relation ?target
+            WHERE {
+                $this ?relation ?target .
+                FILTER (
+                    ?relation IN (
+                        augont:isPartOf, augont:hasPart,
+                        augont:isSpecializationOf, augont:isGeneralizationOf,
+                        augont:enables, augont:enabledBy,
+                        augont:causesDirectly, augont:causedDirectlyBy,
+                        augont:causesIndirectly, augont:causedIndirectlyBy,
+                        augont:contradicts, augont:incompatibleWith,
+                        augont:equivalentTo, augont:similarTo,
+                        augont:precedesLogically, augont:followsLogically,
+                        augont:manifests, augont:manifestedBy,
+                        augont:amplifies, augont:amplifiedBy,
+                        augont:exacerbates, augont:exacerbatedBy,
+                        augont:mitigates, augont:mitigatedBy,
+                        augont:hasConsequence, augont:isConsequenceOf,
+                        augont:presupposes, augont:presupposedBy
+                    )
+                )
+                FILTER (!STRSTARTS(STR(?target), "https://augmanitai.org/term/"))
+            }
+        """ ;
+    ] .
+
+
+# Part-Whole Relation Validation
+augont:PartWholeRelationShape a sh:NodeShape ;
+    sh:name "Part-Whole Relation Validation"@en ;
+    sh:description "Validates part-whole relationships (isPartOf, hasPart)"@en ;
+
+    # Constraints on isPartOf relations
+    sh:property [
+        sh:path augont:isPartOf ;
+        sh:name "Is Part Of Relation"@en ;
+        sh:description "Subject must be a more specific component of object"@en ;
+        sh:minCount 0 ;
+        sh:nodeKind sh:IRI ;
+        sh:pattern "^https://augmanitai\\.org/term/" ;
+        sh:severity sh:Violation ;
+        sh:message "isPartOf target must be a term URI"@en ;
+    ] ;
+
+    # Constraints on hasPart relations
+    sh:property [
+        sh:path augont:hasPart ;
+        sh:name "Has Part Relation"@en ;
+        sh:description "Object must be a component of subject"@en ;
+        sh:minCount 0 ;
+        sh:nodeKind sh:IRI ;
+        sh:pattern "^https://augmanitai\\.org/term/" ;
+        sh:severity sh:Violation ;
+        sh:message "hasPart target must be a term URI"@en ;
+    ] ;
+
+    # Validate inverse relationship consistency
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:name "Part-Whole Inverse Consistency"@en ;
+        sh:description "If A isPartOf B, then B must have hasPart A"@en ;
+        sh:message "Part-whole relationship is not properly reciprocated"@en ;
+        sh:prefixes "augont: <https://augmanitai.org/ontology#>" ;
+        sh:select """
+            SELECT $this ?target
+            WHERE {
+                $this augont:isPartOf ?target .
+                FILTER NOT EXISTS { ?target augont:hasPart $this . }
+            }
+        """ ;
+        sh:severity sh:Violation ;
+    ] ;
+
+    # Check for circularity (A cannot be part of something that is part of A)
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:name "Part-Whole Acyclicity"@en ;
+        sh:description "Part-whole relationships must be acyclic (prevent circular composition)"@en ;
+        sh:message "Circular part-whole relationship detected"@en ;
+        sh:prefixes "augont: <https://augmanitai.org/ontology#>" ;
+        sh:select """
+            SELECT $this ?cycle
+            WHERE {
+                $this augont:isPartOf+ ?cycle .
+                ?cycle augont:isPartOf+ $this .
+            }
+        """ ;
+        sh:severity sh:Violation ;
+    ] .
+
+
+# Hierarchical Relation Validation
+augont:HierarchicalRelationShape a sh:NodeShape ;
+    sh:name "Hierarchical Relation Validation"@en ;
+    sh:description "Validates taxonomic relationships (isSpecializationOf, isGeneralizationOf)"@en ;
+
+    sh:property [
+        sh:path augont:isSpecializationOf ;
+        sh:name "Is Specialization Of"@en ;
+        sh:description "Subject is a more specific version of object"@en ;
+        sh:minCount 0 ;
+        sh:nodeKind sh:IRI ;
+        sh:pattern "^https://augmanitai\\.org/term/" ;
+        sh:severity sh:Violation ;
+    ] ;
+
+    sh:property [
+        sh:path augont:isGeneralizationOf ;
+        sh:name "Is Generalization Of"@en ;
+        sh:description "Subject is a more general version of object"@en ;
+        sh:minCount 0 ;
+        sh:nodeKind sh:IRI ;
+        sh:pattern "^https://augmanitai\\.org/term/" ;
+        sh:severity sh:Violation ;
+    ] ;
+
+    # Check inverse consistency
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:name "Specialization-Generalization Consistency"@en ;
+        sh:message "Specialization/generalization relationship not reciprocated"@en ;
+        sh:prefixes "augont: <https://augmanitai.org/ontology#>" ;
+        sh:select """
+            SELECT $this ?target
+            WHERE {
+                {
+                    $this augont:isSpecializationOf ?target .
+                    FILTER NOT EXISTS { ?target augont:isGeneralizationOf $this . }
+                } UNION {
+                    $this augont:isGeneralizationOf ?target .
+                    FILTER NOT EXISTS { ?target augont:isSpecializationOf $this . }
+                }
+            }
+        """ ;
+        sh:severity sh:Violation ;
+    ] ;
+
+    # Check for cycles in generalization chain
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:name "Hierarchy Acyclicity"@en ;
+        sh:description "Hierarchical relationships must be acyclic"@en ;
+        sh:message "Cyclic generalization chain detected"@en ;
+        sh:prefixes "augont: <https://augmanitai.org/ontology#>" ;
+        sh:select """
+            SELECT $this ?cycle
+            WHERE {
+                $this augont:isGeneralizationOf+ ?cycle .
+                ?cycle augont:isGeneralizationOf+ $this .
+            }
+        """ ;
+        sh:severity sh:Violation ;
+    ] .
+
+
+# Causal Relation Validation
+augont:CausalRelationShape a sh:NodeShape ;
+    sh:name "Causal Relation Validation"@en ;
+    sh:description "Validates causal relationships (enables, causes, etc.)"@en ;
+
+    # Direct causation
+    sh:property [
+        sh:path augont:causesDirectly ;
+        sh:name "Causes Directly"@en ;
+        sh:minCount 0 ;
+        sh:nodeKind sh:IRI ;
+        sh:pattern "^https://augmanitai\\.org/term/" ;
+        sh:severity sh:Violation ;
+    ] ;
+
+    # Indirect causation
+    sh:property [
+        sh:path augont:causesIndirectly ;
+        sh:name "Causes Indirectly"@en ;
+        sh:minCount 0 ;
+        sh:nodeKind sh:IRI ;
+        sh:pattern "^https://augmanitai\\.org/term/" ;
+        sh:severity sh:Violation ;
+    ] ;
+
+    # Enabling relationship
+    sh:property [
+        sh:path augont:enables ;
+        sh:name "Enables"@en ;
+        sh:minCount 0 ;
+        sh:nodeKind sh:IRI ;
+        sh:pattern "^https://augmanitai\\.org/term/" ;
+        sh:severity sh:Violation ;
+    ] ;
+
+    # Reciprocal causation validation
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:name "Causal Reciprocity"@en ;
+        sh:description "If A causes B, then B should be caused by A"@en ;
+        sh:message "Causal relationship is not properly reciprocated"@en ;
+        sh:prefixes "augont: <https://augmanitai.org/ontology#>" ;
+        sh:select """
+            SELECT $this ?target
+            WHERE {
+                {
+                    $this augont:causesDirectly ?target .
+                    FILTER NOT EXISTS { ?target augont:causedDirectlyBy $this . }
+                } UNION {
+                    $this augont:causesIndirectly ?target .
+                    FILTER NOT EXISTS { ?target augont:causedIndirectlyBy $this . }
+                } UNION {
+                    $this augont:enables ?target .
+                    FILTER NOT EXISTS { ?target augont:enabledBy $this . }
+                }
+            }
+        """ ;
+        sh:severity sh:Warning ;
+    ] ;
+
+    # Prevent causation of self
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:name "No Self-Causation"@en ;
+        sh:description "A term cannot cause itself"@en ;
+        sh:message "Self-causation relationship detected (logical error)"@en ;
+        sh:prefixes "augont: <https://augmanitai.org/ontology#>" ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                {
+                    $this augont:causesDirectly $this .
+                } UNION {
+                    $this augont:causesIndirectly $this .
+                } UNION {
+                    $this augont:enables $this .
+                }
+            }
+        """ ;
+        sh:severity sh:Violation ;
+    ] .
+
+
+# Similarity and Contradiction Validation
+augont:SimilarityRelationShape a sh:NodeShape ;
+    sh:name "Similarity and Contradiction Validation"@en ;
+    sh:description "Validates similarity and contradiction relationships"@en ;
+
+    sh:property [
+        sh:path augont:similarTo ;
+        sh:name "Similar To"@en ;
+        sh:minCount 0 ;
+        sh:nodeKind sh:IRI ;
+        sh:pattern "^https://augmanitai\\.org/term/" ;
+        sh:severity sh:Violation ;
+    ] ;
+
+    sh:property [
+        sh:path augont:equivalentTo ;
+        sh:name "Equivalent To"@en ;
+        sh:minCount 0 ;
+        sh:nodeKind sh:IRI ;
+        sh:pattern "^https://augmanitai\\.org/term/" ;
+        sh:severity sh:Violation ;
+    ] ;
+
+    sh:property [
+        sh:path augont:contradicts ;
+        sh:name "Contradicts"@en ;
+        sh:minCount 0 ;
+        sh:nodeKind sh:IRI ;
+        sh:pattern "^https://augmanitai\\.org/term/" ;
+        sh:severity sh:Violation ;
+    ] ;
+
+    sh:property [
+        sh:path augont:incompatibleWith ;
+        sh:name "Incompatible With"@en ;
+        sh:minCount 0 ;
+        sh:nodeKind sh:IRI ;
+        sh:pattern "^https://augmanitai\\.org/term/" ;
+        sh:severity sh:Violation ;
+    ] ;
+
+    # Equivalence symmetry
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:name "Equivalence Symmetry"@en ;
+        sh:description "If A equivalent to B, then B equivalent to A"@en ;
+        sh:message "Equivalence relationship not symmetric"@en ;
+        sh:prefixes "augont: <https://augmanitai.org/ontology#>" ;
+        sh:select """
+            SELECT $this ?target
+            WHERE {
+                $this augont:equivalentTo ?target .
+                FILTER NOT EXISTS { ?target augont:equivalentTo $this . }
+                FILTER ($this != ?target)
+            }
+        """ ;
+        sh:severity sh:Violation ;
+    ] ;
+
+    # Contradiction symmetry
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:name "Contradiction Symmetry"@en ;
+        sh:description "If A contradicts B, then B contradicts A"@en ;
+        sh:message "Contradiction relationship not symmetric"@en ;
+        sh:prefixes "augont: <https://augmanitai.org/ontology#>" ;
+        sh:select """
+            SELECT $this ?target
+            WHERE {
+                $this augont:contradicts ?target .
+                FILTER NOT EXISTS { ?target augont:contradicts $this . }
+            }
+        """ ;
+        sh:severity sh:Violation ;
+    ] ;
+
+    # Consistency: cannot be both equivalent and contradictory
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:name "Equivalence-Contradiction Consistency"@en ;
+        sh:description "A term cannot both be equivalent and contradictory to same term"@en ;
+        sh:message "Term is both equivalent and contradictory to another term"@en ;
+        sh:prefixes "augont: <https://augmanitai.org/ontology#>" ;
+        sh:select """
+            SELECT $this ?target
+            WHERE {
+                $this augont:equivalentTo ?target .
+                $this augont:contradicts ?target .
+            }
+        """ ;
+        sh:severity sh:Violation ;
+    ] .
+
+
+# Manifestation Relation Validation
+augont:ManifestationRelationShape a sh:NodeShape ;
+    sh:name "Manifestation Relation Validation"@en ;
+    sh:description "Validates manifestation relationships (manifests, manifestedBy)"@en ;
+
+    sh:property [
+        sh:path augont:manifests ;
+        sh:name "Manifests"@en ;
+        sh:description "Abstract concept manifests in concrete form"@en ;
+        sh:minCount 0 ;
+        sh:nodeKind sh:IRI ;
+        sh:pattern "^https://augmanitai\\.org/term/" ;
+        sh:severity sh:Warning ;
+    ] ;
+
+    sh:property [
+        sh:path augont:manifestedBy ;
+        sh:name "Manifested By"@en ;
+        sh:description "Concrete manifestation of abstract concept"@en ;
+        sh:minCount 0 ;
+        sh:nodeKind sh:IRI ;
+        sh:pattern "^https://augmanitai\\.org/term/" ;
+        sh:severity sh:Warning ;
+    ] ;
+
+    # Manifestation reciprocity
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:name "Manifestation Reciprocity"@en ;
+        sh:message "Manifestation relationship not properly reciprocated"@en ;
+        sh:prefixes "augont: <https://augmanitai.org/ontology#>" ;
+        sh:select """
+            SELECT $this ?target
+            WHERE {
+                {
+                    $this augont:manifests ?target .
+                    FILTER NOT EXISTS { ?target augont:manifestedBy $this . }
+                } UNION {
+                    $this augont:manifestedBy ?target .
+                    FILTER NOT EXISTS { ?target augont:manifests $this . }
+                }
+            }
+        """ ;
+        sh:severity sh:Warning ;
+    ] .
+
+
+# Amplification and Exacerbation Relation Validation
+augont:AmplificationRelationShape a sh:NodeShape ;
+    sh:name "Amplification and Exacerbation Validation"@en ;
+    sh:description "Validates amplification and exacerbation relationships"@en ;
+
+    sh:property [
+        sh:path augont:amplifies ;
+        sh:name "Amplifies"@en ;
+        sh:minCount 0 ;
+        sh:nodeKind sh:IRI ;
+        sh:pattern "^https://augmanitai\\.org/term/" ;
+        sh:severity sh:Warning ;
+    ] ;
+
+    sh:property [
+        sh:path augont:exacerbates ;
+        sh:name "Exacerbates"@en ;
+        sh:minCount 0 ;
+        sh:nodeKind sh:IRI ;
+        sh:pattern "^https://augmanitai\\.org/term/" ;
+        sh:severity sh:Warning ;
+    ] ;
+
+    sh:property [
+        sh:path augont:mitigates ;
+        sh:name "Mitigates"@en ;
+        sh:minCount 0 ;
+        sh:nodeKind sh:IRI ;
+        sh:pattern "^https://augmanitai\\.org/term/" ;
+        sh:severity sh:Warning ;
+    ] ;
+
+    # Amplification reciprocity
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:name "Amplification Reciprocity"@en ;
+        sh:prefixes "augont: <https://augmanitai.org/ontology#>" ;
+        sh:select """
+            SELECT $this ?target
+            WHERE {
+                $this augont:amplifies ?target .
+                FILTER NOT EXISTS { ?target augont:amplifiedBy $this . }
+            }
+        """ ;
+        sh:severity sh:Warning ;
+    ] .
+
+
+# Logical Sequence Validation
+augont:LogicalSequenceShape a sh:NodeShape ;
+    sh:name "Logical Sequence Validation"@en ;
+    sh:description "Validates logical precedence relationships"@en ;
+
+    sh:property [
+        sh:path augont:precedesLogically ;
+        sh:name "Precedes Logically"@en ;
+        sh:minCount 0 ;
+        sh:nodeKind sh:IRI ;
+        sh:pattern "^https://augmanitai\\.org/term/" ;
+        sh:severity sh:Warning ;
+    ] ;
+
+    sh:property [
+        sh:path augont:followsLogically ;
+        sh:name "Follows Logically"@en ;
+        sh:minCount 0 ;
+        sh:nodeKind sh:IRI ;
+        sh:pattern "^https://augmanitai\\.org/term/" ;
+        sh:severity sh:Warning ;
+    ] ;
+
+    # Logical reciprocity
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:name "Logical Sequence Reciprocity"@en ;
+        sh:message "Logical sequence relationship not reciprocated"@en ;
+        sh:prefixes "augont: <https://augmanitai.org/ontology#>" ;
+        sh:select """
+            SELECT $this ?target
+            WHERE {
+                {
+                    $this augont:precedesLogically ?target .
+                    FILTER NOT EXISTS { ?target augont:followsLogically $this . }
+                } UNION {
+                    $this augont:followsLogically ?target .
+                    FILTER NOT EXISTS { ?target augont:precedesLogically $this . }
+                }
+            }
+        """ ;
+        sh:severity sh:Warning ;
+    ] ;
+
+    # No self-precedence
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:name "No Logical Self-Precedence"@en ;
+        sh:message "Term cannot logically precede or follow itself"@en ;
+        sh:prefixes "augont: <https://augmanitai.org/ontology#>" ;
+        sh:select """
+            SELECT $this
+            WHERE {
+                {
+                    $this augont:precedesLogically $this .
+                } UNION {
+                    $this augont:followsLogically $this .
+                }
+            }
+        """ ;
+        sh:severity sh:Violation ;
+    ] .
+
+
+# Relation Statistics
+augont:RelationStats a rdf:Description ;
+    rdfs:label "AUGMANITAI Relation Validation Statistics"@en ;
+    rdfs:comment "Documents authorized relation types and their constraints"@en ;
+
+    # Authorized relation types
+    sh:declare [
+        sh:prefix "augont" ;
+        sh:namespace "https://augmanitai.org/ontology#"^^xsd:anyURI ;
+    ] ;
+
+    # Count: 23 authorized relation types documented
+    dct:description "23 semantic relation types authorized for use in AUGMANITAI framework"@en .
+
+# End of Relation Shapes

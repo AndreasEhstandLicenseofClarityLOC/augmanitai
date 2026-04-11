@@ -1,0 +1,258 @@
+{
+  "_note": "STRUCTURAL DEMONSTRATION ONLY. This file documents cryptographic proof shapes (RSA / Ed25519 / ECDSA) that a downstream operator could use when issuing their own W3C Verifiable Credentials. AUGMANITAI is a manually curated terminology DATASET and does not operate a live issuer, a live status list, a trust registry, or a timestamping service. All example signatures, URLs, and endorsement references below are placeholders. Descriptive linguistic research, not normative (§1). Non-peer-reviewed working-paper (§11). ISO-inspired, not ISO-certified (§16). Restricted applications per §20. See DISCLAIMER.md in the repository root.",
+  "proofTemplates": [
+    {
+      "proofType": "RsaSignature2018",
+      "description": "RSA 2048-bit signature proof (FIPS 186-4 compliant)",
+      "algorithm": "RSASSA-PKCS1-v1_5",
+      "hashAlgorithm": "SHA-256",
+      "keyType": "RsaVerificationKey2018",
+      "template": {
+        "type": "RsaSignature2018",
+        "created": "{{creationDate}}",
+        "verificationMethod": "{{verificationMethodId}}",
+        "signatureValue": "{{base64EncodedSignature}}"
+      },
+      "signatureAlgorithmSteps": [
+        "Step 1: Canonicalize credential JSON using JSON-LD canonicalization (RDF Dataset Normalization Algorithm)",
+        "Step 2: Compute SHA-256 hash of canonicalized credential",
+        "Step 3: Sign hash using RSA private key (RSASSA-PKCS1-v1_5, SHA-256)",
+        "Step 4: Encode signature as base64url (RFC 4648 without padding)",
+        "Step 5: Populate proof object with signatureValue"
+      ],
+      "verificationSteps": [
+        "Step 1: Extract verificationMethod from proof",
+        "Step 2: Retrieve public key associated with verificationMethod",
+        "Step 3: Canonicalize credential JSON using same RDF Dataset Normalization",
+        "Step 4: Compute SHA-256 hash of canonicalized credential",
+        "Step 5: Verify RSA signature using public key",
+        "Step 6: Check 'created' timestamp is within acceptable range (not future-dated, not too old)"
+      ],
+      "implementation": "OpenSSL, libsodium, or cryptography libraries supporting RSA-2048 PKCS#1 v1.5"
+    },
+    {
+      "proofType": "Ed25519Signature2018",
+      "description": "EdDSA (Ed25519) signature proof (modern, performance-optimized)",
+      "algorithm": "EdDSA",
+      "hashAlgorithm": "SHA-512 (implicit in Ed25519)",
+      "keyType": "Ed25519VerificationKey2018",
+      "template": {
+        "type": "Ed25519Signature2018",
+        "created": "{{creationDate}}",
+        "verificationMethod": "{{verificationMethodId}}",
+        "signatureValue": "{{base64UrlEncodedSignature}}"
+      },
+      "signatureAlgorithmSteps": [
+        "Step 1: Canonicalize credential JSON using JSON-LD canonicalization",
+        "Step 2: Sign canonicalized credential using Ed25519 private key",
+        "Step 3: Encode signature as base64url (128 characters for 64-byte signature)",
+        "Step 4: Populate proof object with signatureValue"
+      ],
+      "verificationSteps": [
+        "Step 1: Extract verificationMethod from proof",
+        "Step 2: Retrieve Ed25519 public key",
+        "Step 3: Canonicalize credential JSON identically",
+        "Step 4: Verify signature using Ed25519 public key",
+        "Step 5: Validate timestamp"
+      ],
+      "implementation": "libsodium, Bouncy Castle, or libp2p (more efficient than RSA)"
+    },
+    {
+      "proofType": "EcdsaKoblitzSignature2016",
+      "description": "ECDSA with Koblitz curve (Bitcoin/Ethereum compatible)",
+      "algorithm": "ECDSA",
+      "curve": "secp256k1",
+      "hashAlgorithm": "SHA-256",
+      "keyType": "EcdsaKoblitzPublicKey2016",
+      "template": {
+        "type": "EcdsaKoblitzSignature2016",
+        "created": "{{creationDate}}",
+        "verificationMethod": "{{verificationMethodId}}",
+        "signatureValue": "{{base64UrlEncodedSignature}}"
+      },
+      "notes": "Signature format: base64url-encoded (r, s) concatenated (64 bytes total)"
+    }
+  ],
+  "credentialProofExamples": [
+    {
+      "name": "AUGMANITAI Terminology Metadata Credential with RSA Signature",
+      "proofType": "RsaSignature2018",
+      "example": {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          "https://zenodo.org/records/19481331/augmanitai-context.jsonld"
+        ],
+        "type": ["VerifiableCredential", "AugmanitaiTerminologyCitationCredential"],
+        "issuer": "urn:augmanitai:issuer:terminology-reference",
+        "issuanceDate": "2026-04-10T00:00:00Z",
+        "credentialSubject": {
+          "id": "urn:augmanitai:dataset:v1.0",
+          "terminologyMetrics": {
+            "totalTerms": 1000,
+            "domainCount": 16,
+            "isoInformedBy": ["ISO 704", "ISO 1087", "ISO 30042"],
+            "isoCertified": false,
+            "_note": "ISO-inspired, not ISO-certified (§16)."
+          }
+        },
+        "proof": {
+          "type": "RsaSignature2018",
+          "created": "2026-04-10T00:00:00Z",
+          "verificationMethod": "urn:augmanitai:issuer:terminology-reference#key-1",
+          "signatureValue": "SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c..."
+        }
+      }
+    },
+    {
+      "name": "System Compliance Credential with Ed25519 Signature",
+      "proofType": "Ed25519Signature2018",
+      "example": {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          "https://zenodo.org/records/19481331/augmanitai-context.jsonld"
+        ],
+        "type": ["VerifiableCredential", "SystemComplianceCredential"],
+        "issuer": "urn:augmanitai:issuer:terminology-reference",
+        "issuanceDate": "2026-04-10T12:00:00Z",
+        "credentialSubject": {
+          "id": "urn:system:example:v1.0",
+          "augmantaiTerminologyUsage": {
+            "termsUsed": 2,
+            "note": "Fictional demonstration only. See DISCLAIMER.md §1, §20."
+          }
+        },
+        "proof": {
+          "type": "Ed25519Signature2018",
+          "created": "2026-04-10T12:00:00Z",
+          "verificationMethod": "urn:augmanitai:issuer:terminology-reference#ed25519-key-1",
+          "signatureValue": "3pmhUsMVjideBeqLmwLoA2yCjLT1xs3kPmC3DQBvDFJrSDRW3MrczLgCEyrBEjVcvkqEvsNqqZDbn7E6OlCjDA=="
+        }
+      }
+    }
+  ],
+  "verificationMethodRegistry": {
+    "rsaKeysMetadata": {
+      "keySize": "RSA-2048 minimum (RSA-3072 or RSA-4096 recommended)",
+      "keyFormat": "PEM (Privacy Enhanced Mail) format",
+      "keyUsage": "Signature (not encryption)",
+      "publicKeyId": "urn:augmanitai:issuer:terminology-reference#rsa-key-{year}",
+      "lifespan": "2 years",
+      "rotationSchedule": "Biennial with 90-day transition period"
+    },
+    "ed25519KeysMetadata": {
+      "keySize": "256 bits (32 bytes for public key, 64 bytes for private key)",
+      "keyFormat": "Raw binary or PEM wrapped",
+      "keyUsage": "EdDSA signatures",
+      "publicKeyId": "urn:augmanitai:issuer:terminology-reference#ed25519-key-{year}",
+      "lifespan": "2 years"
+    }
+  },
+  "timestampingAuthority": {
+    "enabled": true,
+    "provider": "RFC 3161 compatible TSA",
+    "url": "https://timestamping.example.com/rfc3161",
+    "purpose": "Provide independent timestamp verification beyond issuer's clock",
+    "timestampInclusionPolicy": "Optional in proof, recommended for high-stakes credentials",
+    "timestampTemplate": {
+      "type": "RsaSignatureRfc3161Timestamp",
+      "timestamp": "{{rfc3161TimestampToken}}",
+      "timestampingAuthority": "{{tsaUrl}}"
+    }
+  },
+  "chainOfTrustValidation": {
+    "description": "Multi-step validation process for credential verification",
+    "steps": [
+      {
+        "step": 1,
+        "name": "Credential Structure Validation",
+        "validation": "Verify credential conforms to W3C Verifiable Credentials 2.0 data model",
+        "tools": ["jsonld validator", "JSON schema validator"]
+      },
+      {
+        "step": 2,
+        "name": "Issuer Trust Check",
+        "validation": "Verify issuer is in trusted issuer registry (operator-defined; AUGMANITAI does not operate one)",
+        "data": "No AUGMANITAI-operated issuer registry exists. Downstream operators must define and maintain their own trust framework."
+      },
+      {
+        "step": 3,
+        "name": "Proof Verification",
+        "validation": "Cryptographically verify proof using issuer's public key",
+        "algorithms": ["RSA-PKCS1v15-SHA256", "EdDSA-SHA512", "ECDSA-secp256k1"]
+      },
+      {
+        "step": 4,
+        "name": "Timestamp Validation",
+        "validation": "Verify creation timestamp is not in future; not excessively old (>1 year)",
+        "parameters": {
+          "maxFutureClockSkew": "5 minutes",
+          "maxAge": "365 days",
+          "rfcTimestampValidation": "If RFC 3161 timestamp present, validate independently"
+        }
+      },
+      {
+        "step": 5,
+        "name": "Revocation Check",
+        "validation": "Query status list credential; verify credential not revoked",
+        "statusListUrl": "urn:placeholder:not-operational",
+        "updateFrequency": "Not applicable — AUGMANITAI does not operate a status list."
+      },
+      {
+        "step": 6,
+        "name": "Subject Validation",
+        "validation": "Verify credential subject matches expected entity; consistency check",
+        "checks": ["Subject ID format", "Subject claims plausibility", "Subject history"]
+      }
+    ],
+    "totalVerificationTime": "<5 seconds for offline verification (excluding network latency)"
+  },
+  "failureHandling": {
+    "proofInvalid": {
+      "cause": "Signature verification failed",
+      "response": "Credential invalid; do not accept claims",
+      "recovery": "Request fresh credential from issuer or contact issuer support"
+    },
+    "issuerNotTrusted": {
+      "cause": "Issuer not in trusted registry or endorsements missing",
+      "response": "Credential questionable; escalate for manual review",
+      "recovery": "Verify issuer via out-of-band channel"
+    },
+    "revoked": {
+      "cause": "Credential present in status list with revocation bit set",
+      "response": "Credential invalid; reject immediately",
+      "recovery": "Cannot recover revoked credential; request new one"
+    },
+    "expired": {
+      "cause": "Credential expirationDate has passed",
+      "response": "Credential expired; do not accept",
+      "recovery": "Request fresh credential with new issuanceDate and expirationDate"
+    },
+    "timestampInvalid": {
+      "cause": "Creation timestamp is in future or excessively old",
+      "response": "Warning: timestamp anomaly; review credential source",
+      "recovery": "Request credential with current timestamp"
+    }
+  },
+  "integrationGuides": [
+    {
+      "platform": "JavaScript/Node.js",
+      "library": "jsonld-signatures",
+      "example": "See w3c-vc-verifier.py (Python alternative)"
+    },
+    {
+      "platform": "Python 3.9+",
+      "library": "cryptography + jsonld",
+      "example": "See w3c-vc-verifier.py in same directory"
+    },
+    {
+      "platform": "Go",
+      "library": "ld-signatures-go",
+      "example": "github.com/ld-signatures-go/ld-signatures"
+    },
+    {
+      "platform": "Java",
+      "library": "jsonld-java + Bouncy Castle",
+      "example": "http://json-ld.org/java/"
+    }
+  ]
+}

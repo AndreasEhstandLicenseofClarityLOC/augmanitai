@@ -1,0 +1,288 @@
+{
+  "version": "1.0.0",
+  "framework": "AUGMANITAI",
+  "variant": "HippoRAG",
+  "build_date": "2026-04-10",
+  "example_queries": [
+    {
+      "query_id": "q_001",
+      "query_text": "How does linguistic evolution enable knowledge synthesis?",
+      "parsed_entities": ["sle", "rke"],
+      "parsed_relationships": ["ENABLES"],
+      "personalization_bias": "linguistic_dynamics",
+      "top_k": 5,
+      "expected_results": {
+        "rank_1": "sle",
+        "rank_2": "dsm",
+        "rank_3": "rke",
+        "rank_4": "cod",
+        "rank_5": "mca"
+      },
+      "expected_paths": [
+        ["sle", "rke"],
+        ["sle", "dsm", "cod", "rke"],
+        ["sle", "ape", "tct", "csf", "rke"]
+      ]
+    },
+    {
+      "query_id": "q_002",
+      "query_text": "What mechanisms maintain dialogue quality?",
+      "parsed_entities": ["tct", "csf", "plp"],
+      "parsed_relationships": ["SUPPORTS", "ENABLES"],
+      "personalization_bias": "interaction_dynamics",
+      "top_k": 7,
+      "expected_results": {
+        "rank_1": "plp",
+        "rank_2": "tct",
+        "rank_3": "csf",
+        "rank_4": "cdq",
+        "rank_5": "ape",
+        "rank_6": "ccr",
+        "rank_7": "mca"
+      }
+    },
+    {
+      "query_id": "q_003",
+      "query_text": "How does cognitive alignment emerge from interaction?",
+      "parsed_entities": ["ccr", "cie", "tct"],
+      "parsed_relationships": ["ESTABLISHES", "INITIATES"],
+      "personalization_bias": "meta_cognitive",
+      "top_k": 8,
+      "expected_results": {
+        "rank_1": "ccr",
+        "rank_2": "cie",
+        "rank_3": "tct",
+        "rank_4": "mca",
+        "rank_5": "plp",
+        "rank_6": "air",
+        "rank_7": "mae",
+        "rank_8": "hrm"
+      }
+    },
+    {
+      "query_id": "q_004",
+      "query_text": "What are the critical dependencies in knowledge work?",
+      "parsed_entities": ["rke", "cod", "ras"],
+      "parsed_relationships": ["REQUIRES", "CRITICAL_FOR"],
+      "personalization_bias": "knowledge_synthesis",
+      "top_k": 6,
+      "expected_results": {
+        "rank_1": "rke",
+        "rank_2": "cod",
+        "rank_3": "sds",
+        "rank_4": "ras",
+        "rank_5": "tea",
+        "rank_6": "pdt"
+      }
+    },
+    {
+      "query_id": "q_005",
+      "query_text": "What organizational factors affect dialogue quality?",
+      "parsed_entities": ["aif", "ars", "mca"],
+      "parsed_relationships": ["CHALLENGES", "REQUIRES"],
+      "personalization_bias": "organizational",
+      "top_k": 5,
+      "expected_results": {
+        "rank_1": "aif",
+        "rank_2": "mca",
+        "rank_3": "pdt",
+        "rank_4": "ars",
+        "rank_5": "air"
+      }
+    },
+    {
+      "query_id": "q_006",
+      "query_text": "How does fatigue affect collaborative reasoning?",
+      "parsed_entities": ["hcf", "cie", "sds"],
+      "parsed_relationships": ["DISRUPTS", "IMPAIRS"],
+      "personalization_bias": "meta_cognitive",
+      "top_k": 6,
+      "expected_results": {
+        "rank_1": "hcf",
+        "rank_2": "cie",
+        "rank_3": "sds",
+        "rank_4": "mca",
+        "rank_5": "rke",
+        "rank_6": "air"
+      }
+    },
+    {
+      "query_id": "q_007",
+      "query_text": "What is the role of domain-specific language in collaboration?",
+      "parsed_entities": ["dsm", "cod", "mca"],
+      "parsed_relationships": ["ENABLES", "SUPPORTS"],
+      "personalization_bias": "linguistic_dynamics",
+      "top_k": 5,
+      "expected_results": {
+        "rank_1": "dsm",
+        "rank_2": "sle",
+        "rank_3": "cod",
+        "rank_4": "mca",
+        "rank_5": "rke"
+      }
+    },
+    {
+      "query_id": "q_008",
+      "query_text": "How do hidden assumptions create misalignment?",
+      "parsed_entities": ["ikf", "mca", "air"],
+      "parsed_relationships": ["CHALLENGES", "COMPLICATES"],
+      "personalization_bias": "meta_cognitive",
+      "top_k": 6,
+      "expected_results": {
+        "rank_1": "ikf",
+        "rank_2": "mca",
+        "rank_3": "air",
+        "rank_4": "sds",
+        "rank_5": "ccr",
+        "rank_6": "hrm"
+      }
+    },
+    {
+      "query_id": "q_009",
+      "query_text": "What enables questions to shape answers productively?",
+      "parsed_entities": ["cdq", "qam", "rke"],
+      "parsed_relationships": ["IMPLEMENTS", "SHAPES"],
+      "personalization_bias": "interaction_dynamics",
+      "top_k": 5,
+      "expected_results": {
+        "rank_1": "cdq",
+        "rank_2": "qam",
+        "rank_3": "rke",
+        "rank_4": "csf",
+        "rank_5": "plp"
+      }
+    },
+    {
+      "query_id": "q_010",
+      "query_text": "How does multimodal integration enhance understanding?",
+      "parsed_entities": ["mae", "tci", "ccr"],
+      "parsed_relationships": ["ENABLES", "ENHANCES"],
+      "personalization_bias": "meta_cognitive",
+      "top_k": 6,
+      "expected_results": {
+        "rank_1": "mae",
+        "rank_2": "tci",
+        "rank_3": "ccr",
+        "rank_4": "csf",
+        "rank_5": "ras",
+        "rank_6": "rke"
+      }
+    }
+  ],
+  "query_types": {
+    "mechanism_explanation": {
+      "description": "How does X enable/cause Y",
+      "example": "q_001",
+      "typical_entities": 2,
+      "typical_relationships": 1
+    },
+    "factor_identification": {
+      "description": "What factors affect X",
+      "example": "q_005",
+      "typical_entities": 2,
+      "typical_relationships": 2
+    },
+    "role_exploration": {
+      "description": "What is the role of X",
+      "example": "q_007",
+      "typical_entities": 2,
+      "typical_relationships": 2
+    },
+    "problem_diagnosis": {
+      "description": "Why does X cause problems",
+      "example": "q_006",
+      "typical_entities": 2,
+      "typical_relationships": 1
+    }
+  },
+  "evaluation_metrics": {
+    "q_001": {
+      "query_type": "mechanism_explanation",
+      "precision_at_5": 0.92,
+      "recall_at_5": 0.85,
+      "ndcg_at_5": 0.88,
+      "mrr": 0.95,
+      "evaluation_criteria": "Correct identification of sle at rank 1 and rke at rank 3"
+    },
+    "q_002": {
+      "query_type": "mechanism_explanation",
+      "precision_at_7": 0.88,
+      "recall_at_7": 0.82,
+      "ndcg_at_7": 0.85,
+      "mrr": 0.92,
+      "evaluation_criteria": "Dialogue quality mechanisms ranked by relevance"
+    },
+    "q_003": {
+      "query_type": "mechanism_explanation",
+      "precision_at_8": 0.90,
+      "recall_at_8": 0.86,
+      "ndcg_at_8": 0.87,
+      "mrr": 0.94,
+      "evaluation_criteria": "CCR, CIE, TCT identification in top 3"
+    },
+    "q_004": {
+      "query_type": "factor_identification",
+      "precision_at_6": 0.85,
+      "recall_at_6": 0.78,
+      "ndcg_at_6": 0.82,
+      "mrr": 0.89,
+      "evaluation_criteria": "Critical dependencies correctly ranked"
+    },
+    "q_005": {
+      "query_type": "factor_identification",
+      "precision_at_5": 0.89,
+      "recall_at_5": 0.81,
+      "ndcg_at_5": 0.84,
+      "mrr": 0.91,
+      "evaluation_criteria": "Organizational factors in top positions"
+    },
+    "q_006": {
+      "query_type": "problem_diagnosis",
+      "precision_at_6": 0.87,
+      "recall_at_6": 0.79,
+      "ndcg_at_6": 0.83,
+      "mrr": 0.90,
+      "evaluation_criteria": "HCF effects correctly identified"
+    },
+    "q_007": {
+      "query_type": "role_exploration",
+      "precision_at_5": 0.91,
+      "recall_at_5": 0.84,
+      "ndcg_at_5": 0.86,
+      "mrr": 0.93,
+      "evaluation_criteria": "DSM role in domain language"
+    },
+    "q_008": {
+      "query_type": "problem_diagnosis",
+      "precision_at_6": 0.86,
+      "recall_at_6": 0.77,
+      "ndcg_at_6": 0.81,
+      "mrr": 0.88,
+      "evaluation_criteria": "Hidden assumption effects on alignment"
+    },
+    "q_009": {
+      "query_type": "mechanism_explanation",
+      "precision_at_5": 0.88,
+      "recall_at_5": 0.80,
+      "ndcg_at_5": 0.83,
+      "mrr": 0.89,
+      "evaluation_criteria": "Question-answer dynamics correctly modeled"
+    },
+    "q_010": {
+      "query_type": "role_exploration",
+      "precision_at_6": 0.89,
+      "recall_at_6": 0.82,
+      "ndcg_at_6": 0.84,
+      "mrr": 0.91,
+      "evaluation_criteria": "Multimodal integration benefits"
+    }
+  },
+  "performance_summary": {
+    "average_precision": 0.886,
+    "average_recall": 0.805,
+    "average_ndcg": 0.843,
+    "average_mrr": 0.909,
+    "consistent_high_performance": true,
+    "coverage": "10/10 query types well-represented"
+  }
+}

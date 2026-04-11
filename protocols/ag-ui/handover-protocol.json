@@ -1,0 +1,224 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AG-UI Handover Protocol",
+  "description": "User-to-agent handover state machine for AUGMANITAI interaction",
+  "type": "object",
+  "properties": {
+    "stateMachine": {
+      "type": "object",
+      "description": "Interaction state definitions and transitions",
+      "properties": {
+        "states": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "enum": [
+                  "idle",
+                  "searching",
+                  "browsing",
+                  "viewing_term",
+                  "comparing_terms",
+                  "validating_drift",
+                  "delegating_task",
+                  "awaiting_response",
+                  "presenting_results",
+                  "error"
+                ]
+              },
+              "displayName": { "type": "string" },
+              "description": { "type": "string" },
+              "userControl": {
+                "type": "boolean",
+                "description": "Can user interact in this state?"
+              },
+              "agentControl": {
+                "type": "boolean",
+                "description": "Can agent act in this state?"
+              },
+              "contextData": {
+                "type": "object",
+                "description": "Data maintained in this state"
+              }
+            },
+            "required": ["id", "displayName"]
+          }
+        },
+        "transitions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "from": { "type": "string" },
+              "to": { "type": "string" },
+              "trigger": {
+                "type": "string",
+                "enum": [
+                  "user_query",
+                  "user_selection",
+                  "user_navigation",
+                  "user_handoff",
+                  "agent_ready",
+                  "agent_error",
+                  "agent_completion",
+                  "timeout"
+                ]
+              },
+              "conditions": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "actions": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            },
+            "required": ["from", "to", "trigger"]
+          }
+        }
+      }
+    },
+    "handoverPatterns": {
+      "type": "array",
+      "description": "Common interaction handover sequences",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "description": { "type": "string" },
+          "sequence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "step": { "type": "integer" },
+                "actor": { "enum": ["user", "agent"] },
+                "action": { "type": "string" },
+                "stateAfter": { "type": "string" },
+                "data": { "type": "object" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "dataExchange": {
+      "type": "object",
+      "description": "Data structures passed during handover",
+      "properties": {
+        "userToAgent": {
+          "type": "object",
+          "properties": {
+            "query": {
+              "type": "object",
+              "properties": {
+                "text": { "type": "string" },
+                "context": { "type": "object" },
+                "preferences": {
+                  "type": "object",
+                  "properties": {
+                    "language": { "enum": ["en", "de"] },
+                    "resultLimit": { "type": "integer" },
+                    "includeExamples": { "type": "boolean" }
+                  }
+                }
+              }
+            },
+            "selection": {
+              "type": "object",
+              "properties": {
+                "termId": { "type": "string" },
+                "action": {
+                  "enum": [
+                    "view_details",
+                    "find_related",
+                    "compare",
+                    "validate_drift",
+                    "export"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "agentToUser": {
+          "type": "object",
+          "properties": {
+            "results": {
+              "type": "array",
+              "items": { "type": "object" }
+            },
+            "suggestion": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "enum": [
+                    "related_term",
+                    "domain_exploration",
+                    "validation_result"
+                  ]
+                },
+                "content": { "type": "object" },
+                "confidence": { "type": "number" }
+              }
+            },
+            "metadata": {
+              "type": "object",
+              "properties": {
+                "processingTime": { "type": "number" },
+                "resultCount": { "type": "integer" },
+                "cacheHit": { "type": "boolean" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "errorHandling": {
+      "type": "object",
+      "properties": {
+        "errors": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "code": { "type": "string" },
+              "message": { "type": "string" },
+              "recoveryAction": { "type": "string" },
+              "stateTransition": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "sessionManagement": {
+      "type": "object",
+      "properties": {
+        "timeout": {
+          "type": "object",
+          "properties": {
+            "idle": { "type": "number", "description": "Milliseconds" },
+            "operation": { "type": "number", "description": "Milliseconds" }
+          }
+        },
+        "persistence": {
+          "type": "object",
+          "properties": {
+            "enabled": { "type": "boolean" },
+            "storage": { "enum": ["session", "local", "none"] }
+          }
+        },
+        "history": {
+          "type": "object",
+          "properties": {
+            "enabled": { "type": "boolean" },
+            "maxEntries": { "type": "integer" }
+          }
+        }
+      }
+    }
+  },
+  "required": ["stateMachine"]
+}

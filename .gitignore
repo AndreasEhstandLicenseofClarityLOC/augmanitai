@@ -1,0 +1,85 @@
+# Environments and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+secrets/
+credentials/
+.secrets/
+*.token
+*token.txt
+*.credentials
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.npm/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Output
+out/
+output/
+tmp/
+temp/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Zenodo / Draft
+*.draft
+draft/
+
+# Generated archives that shouldn't be committed
+*.tar.gz
+*.zip
+# Exception: release artifacts under releases/
+!releases/*.zip
+!releases/*.tar.gz
+
+# Backup files
+*.bak
+*.orig
+*.rej

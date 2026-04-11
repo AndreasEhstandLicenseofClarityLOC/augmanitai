@@ -1,0 +1,98 @@
+{
+  "schema": {
+    "nodes": {
+      "required_properties": ["id", "label"],
+      "optional_properties": ["type", "domain", "degree", "definition", "abbreviation"],
+      "property_types": {
+        "id": "string",
+        "label": "string",
+        "type": "string",
+        "domain": "string",
+        "degree": "integer",
+        "definition": "string",
+        "abbreviation": "string"
+      },
+      "node_types": [
+        "Core Concept",
+        "Phenomenon",
+        "Practice",
+        "Framework",
+        "Capability",
+        "Process",
+        "Challenge",
+        "Mechanism",
+        "Methodology",
+        "Pattern",
+        "Constraint"
+      ],
+      "domains": [
+        "linguistic_dynamics",
+        "meta_cognitive",
+        "knowledge_synthesis",
+        "interaction_dynamics",
+        "organizational"
+      ]
+    },
+    "relationships": {
+      "required_properties": ["source_id", "target_id", "label"],
+      "optional_properties": ["strength", "description"],
+      "property_types": {
+        "source_id": "string",
+        "target_id": "string",
+        "label": "string",
+        "strength": "float",
+        "description": "string"
+      },
+      "relationship_types": [
+        "ENABLES",
+        "DEPENDS_ON",
+        "PRECEDES",
+        "GENERATES",
+        "FACILITATES",
+        "ENHANCES",
+        "REQUIRES",
+        "SUPPORTS",
+        "CONTRIBUTES_TO",
+        "CAUSES",
+        "CRITICAL_FOR",
+        "AMPLIFIES",
+        "IMPLEMENTS",
+        "OPTIMIZES",
+        "SHAPES",
+        "INITIATES",
+        "ESTABLISHES",
+        "MITIGATED_BY",
+        "CHALLENGES",
+        "CONSTRAINS",
+        "COMPLICATES",
+        "PREDICTS",
+        "ACCELERATES",
+        "GUIDES",
+        "INFORMS",
+        "STRUCTURES",
+        "OPERATIONALIZES",
+        "ERODES",
+        "IMPAIRS",
+        "DISRUPTS",
+        "GROUNDS",
+        "LEADS_TO",
+        "REFINES"
+      ],
+      "strength_range": [0.72, 0.96]
+    },
+    "constraints": {
+      "node_degree_range": [5, 15],
+      "relationship_strength_precision": 2,
+      "max_hops_for_traversal": 5,
+      "embedding_dimension": 1536
+    }
+  },
+  "metadata": {
+    "framework": "AUGMANITAI",
+    "version": "1.0.0",
+    "format": "LlamaIndex PropertyGraphStore",
+    "total_nodes": 25,
+    "total_relationships": 51,
+    "last_updated": "2026-04-10"
+  }
+}

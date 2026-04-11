@@ -1,0 +1,70 @@
+{
+  "levels": [
+    {
+      "level": 0,
+      "name": "Global Graph Summary",
+      "description": "Complete AUGMANITAI framework across all domains and interaction types",
+      "content": "# AUGMANITAI: Complete Framework Summary\n\nAUGMANITAI is a comprehensive terminology framework for understanding human-AI interaction, knowledge synthesis, and collaborative cognitive processes. The framework comprises 25 core concepts organized into five interconnected communities addressing linguistic, meta-cognitive, knowledge-synthesis, interaction, and organizational dimensions of human-AI collaboration.\n\n## Core Finding\nThe framework demonstrates that sustained human-AI collaboration produces emergent phenomena not present in either party alone. These phenomena include shared linguistic conventions (idiolects), meta-cognitive alignment, collaborative knowledge structures, and qualitative transformations in dialogue quality at critical thresholds.\n\n## Key Relationships\n- Linguistic foundations (SLE, DSM) enable all higher-order collaboration\n- Meta-cognitive alignment (CCR, MCA) is a critical quality constraint\n- Knowledge synthesis (RKE, COD) is the productive output\n- Interaction dynamics (TCT, CSF) determine quality and flow\n- Organizational context (AIF, ARS) determines institutional impact\n\n## Safety Implications\n- Epistemic confidence variance creates systematic overconfidence\n- Intent inference is high-risk without explicit verification\n- Cognitive fatigue is invisible but dramatically degrades quality\n- Asymmetric risk sharing requires explicit governance\n- Implicit knowledge frames cause hidden misalignments"
+    },
+    {
+      "level": 1,
+      "name": "Domain Community Summaries",
+      "clusters": [
+        {
+          "cluster": "Linguistic-Cognitive Integration",
+          "communities": ["comm_linguistic_001", "comm_meta_cognitive_001"],
+          "summary": "How linguistic patterns and cognitive alignment co-evolve. Linguistic foundations enable meta-cognitive processes; cognitive processes maintain and refine linguistic patterns.",
+          "key_insight": "Linguistic and cognitive processes are inseparable. Semantic drift sensitivity requires meta-cognitive awareness; meta-cognitive alignment is expressed through shared linguistic conventions."
+        },
+        {
+          "cluster": "Knowledge-Interaction Synthesis",
+          "communities": ["comm_knowledge_001", "comm_interaction_001"],
+          "summary": "How knowledge synthesis processes unfold through dialogue interaction. Interaction dynamics create the conditions under which knowledge synthesis occurs; knowledge synthesis gives purpose to interaction.",
+          "key_insight": "Quality dialogue and productive knowledge synthesis are mutually enabling. Good interaction dynamics create conditions for deep knowledge work; knowledge work provides motivation for quality interaction."
+        },
+        {
+          "cluster": "Organizational Integration",
+          "communities": ["comm_organizational_001"],
+          "summary": "How individual dialogue quality translates into organizational impact. Bridges between dialogue-level phenomena and institutional constraints.",
+          "key_insight": "High-quality dialogue means little without effective institutional integration. Organizational context is not a constraint to overcome but a dimension to navigate explicitly."
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "name": "Sub-Cluster Analysis",
+      "subclusters": [
+        {
+          "name": "Linguistic Foundation Layer",
+          "concepts": ["sle", "dsm", "sds"],
+          "role": "Provides stable linguistic ground for all other interaction",
+          "mechanism": "Symbiotic linguistic evolution creates shared conventions; domain-specific metalanguage enables abstraction; semantic drift sensitivity prevents degradation"
+        },
+        {
+          "name": "Meta-Cognitive Quality Layer",
+          "concepts": ["ccr", "mca", "cie", "air", "hcf", "hrm"],
+          "role": "Maintains dialogue quality and prevents misalignment",
+          "mechanism": "Cognitive resonance establishes baseline alignment; mutual context awareness maintains alignment; cognitive intimacy enables depth; intent recognition enables proactivity; fatigue detection prevents degradation"
+        },
+        {
+          "name": "Knowledge Productive Layer",
+          "concepts": ["rke", "cod", "ras", "pdt", "tea", "tci"],
+          "role": "Enables actual knowledge work and learning",
+          "mechanism": "Recursive expansion deepens structure; ontology development formalizes understanding; reasoning artifacts make thinking explicit; transparency enables verification; temporal anchoring preserves history"
+        },
+        {
+          "name": "Dialogue Dynamic Layer",
+          "concepts": ["plp", "ape", "tct", "csf", "cdq", "qam"],
+          "role": "Governs flow, quality, and emergent properties of dialogue",
+          "mechanism": "Personality creates safety; protocol evolution optimizes; threshold transformation enables qualitative shifts; sensemaking organizes content; convergent-divergent questioning provides rhythm"
+        },
+        {
+          "name": "Institutional Reality Layer",
+          "concepts": ["aif", "ars", "mca"],
+          "role": "Translates dialogue quality into organizational action",
+          "mechanism": "Institutional fluency enables organizational operation; risk sharing clarity prevents accountability gaps; extended context awareness maintains organizational synchronization"
+        }
+      ]
+    }
+  ]
+}

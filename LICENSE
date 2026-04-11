@@ -1,0 +1,24 @@
+AUGMANITAI is released under a dual license.
+
+DATA (terms, definitions, RDF serializations, ontology files, documentation):
+    Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
+    SPDX: CC-BY-NC-ND-4.0
+    Full text: licensing/LICENSE-data
+    Canonical: https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
+
+CODE (scripts, tooling, protocol servers, demos, converters):
+    Apache License, Version 2.0
+    SPDX: Apache-2.0
+    Full text: licensing/LICENSE-code-apache
+    Canonical: https://www.apache.org/licenses/LICENSE-2.0
+
+SPDX compound expression:
+    CC-BY-NC-ND-4.0 AND Apache-2.0
+
+See licensing/LICENSE-summary.md for the substantive explanation, per-file SPDX
+header conventions, the patent non-assertion commitment (licensing/PATENT.md),
+the trademark policy (licensing/TRADEMARK.md), and third-party attributions
+(licensing/NOTICE).
+
+For commercial licensing inquiries regarding the data layer, contact the author
+via ORCID: https://orcid.org/0009-0006-3773-7796

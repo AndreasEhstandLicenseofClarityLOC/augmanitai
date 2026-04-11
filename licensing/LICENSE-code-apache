@@ -1,0 +1,90 @@
+AUGMANITAI Code License (Apache 2.0)
+=====================================
+
+SPDX-License-Identifier: Apache-2.0
+
+The AUGMANITAI code — including the Python package (augmanitai-python),
+the NPM package (augmanitai-npm), the MCP/A2A/ANP/AG-UI protocol servers,
+the API mock, the GraphRAG integration scripts, the SPARQL/SHACL/TBX/JSON-LD
+generators and validators, all deployment configurations, and all other
+software and build tooling — is licensed under the
+
+    Apache License, Version 2.0
+
+Copyright (c) 2025-2026 Andreas Ehstand
+ORCID: 0009-0006-3773-7796
+
+Canonical license text: https://www.apache.org/licenses/LICENSE-2.0.txt
+Human-readable summary: https://www.apache.org/licenses/LICENSE-2.0
+
+Summary of your rights under this license
+------------------------------------------
+
+You are granted a perpetual, worldwide, non-exclusive, no-charge,
+royalty-free, irrevocable copyright license AND a patent license to use,
+reproduce, modify, distribute, sublicense, and sell copies of the software,
+subject to the following conditions:
+
+  1. You must include a copy of the Apache License 2.0 with any distribution.
+
+  2. You must retain all copyright, patent, trademark, and attribution
+     notices in the source form of the work.
+
+  3. If you distribute a modified version, you must mark your changes
+     prominently.
+
+  4. If the work includes a NOTICE file, you must include a readable copy
+     of the NOTICE in any derivative you distribute. See ../NOTICE in this
+     repository.
+
+  5. You may not use the trademarks of the licensor except as required for
+     describing the origin of the work. See TRADEMARK.md.
+
+Patent grant
+------------
+
+The Apache License 2.0 includes an express patent grant: each contributor
+grants you a patent license covering any patent claims they hold that are
+necessarily infringed by their contribution. This patent grant terminates
+if you initiate patent litigation against any entity alleging that the
+software infringes a patent.
+
+Limitation of liability and warranty disclaimer
+-----------------------------------------------
+
+THE WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, express or
+implied, including but not limited to warranties of title, non-infringement,
+merchantability, or fitness for a particular purpose. See the canonical
+license text for the full text of these clauses.
+
+How to apply this license to your own contributions
+----------------------------------------------------
+
+When adding a new source file, include the following header:
+
+    Copyright 2026 Andreas Ehstand
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+    SPDX-License-Identifier: Apache-2.0
+
+==============================================================================
+NOTE TO PROJECT MAINTAINERS
+==============================================================================
+The legally binding canonical Apache License 2.0 text is published at:
+
+    https://www.apache.org/licenses/LICENSE-2.0.txt
+
+When distributing AUGMANITAI, fetch the canonical license text and include
+it alongside this file as `LICENSE-code-apache-canonical.txt`. The helper
+script `fetch_licenses.sh` in this directory automates this step.

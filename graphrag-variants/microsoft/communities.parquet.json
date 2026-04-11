@@ -1,0 +1,66 @@
+[
+  {
+    "id": "comm_linguistic_001",
+    "level": 0,
+    "name": "Linguistic Dynamics",
+    "size": 4,
+    "entities": ["sle", "dsm", "sds", "cs-001"],
+    "description": "Concepts governing how language evolves, drifts, and becomes codified through human-AI interaction. Focuses on linguistic change mechanisms and meta-linguistic awareness."
+  },
+  {
+    "id": "comm_meta_cognitive_001",
+    "level": 0,
+    "name": "Meta-Cognitive Processes",
+    "size": 8,
+    "entities": ["ccr", "mca", "cie", "air", "hcf", "hrm", "ikf", "mae"],
+    "description": "Concepts addressing how participants maintain awareness of their own thinking, mutual understanding, and contextual alignment. Central to dialogue quality and misalignment detection."
+  },
+  {
+    "id": "comm_knowledge_001",
+    "level": 0,
+    "name": "Knowledge Synthesis",
+    "size": 8,
+    "entities": ["rke", "tea", "ecv", "pdt", "cod", "tci", "ras", "qam"],
+    "description": "Concepts governing knowledge acquisition, retention, verification, and refinement through interaction. Emphasizes iterative deepening and artifact-based reasoning."
+  },
+  {
+    "id": "comm_interaction_001",
+    "level": 0,
+    "name": "Interaction Dynamics",
+    "size": 7,
+    "entities": ["plp", "ape", "tct", "csf", "cdq", "qam", "mca"],
+    "description": "Concepts addressing dialogue structure, conversation quality, and moment-to-moment interaction patterns. Includes phenomenon and practices that occur at dialogue level."
+  },
+  {
+    "id": "comm_organizational_001",
+    "level": 0,
+    "name": "Organizational Context",
+    "size": 3,
+    "entities": ["aif", "ars", "mca"],
+    "description": "Concepts governing how AI systems operate within institutional constraints, hierarchies, and governance frameworks. Addresses institutional adoption and risk management."
+  },
+  {
+    "id": "comm_compound_001",
+    "level": 1,
+    "name": "Compound Meta-Cognitive Ecosystem",
+    "size": 13,
+    "entities": ["ccr", "mca", "cie", "air", "hcf", "hrm", "ikf", "mae", "rke", "tea", "pdt", "ape", "tct"],
+    "description": "Integration of meta-cognitive awareness with knowledge synthesis processes. Represents how participants maintain mutual understanding while actively building new knowledge."
+  },
+  {
+    "id": "comm_prompt_ontology_001",
+    "level": 1,
+    "name": "Prompt-Response Ontology",
+    "size": 9,
+    "entities": ["plp", "sle", "dsm", "cod", "cdq", "qam", "csf", "ras", "ape"],
+    "description": "Concepts governing how meaning emerges through prompting patterns, linguistic evolution, and structured dialogue. Addresses both structure and content of interaction."
+  },
+  {
+    "id": "comm_collective_001",
+    "level": 1,
+    "name": "Collective Meaning-Making",
+    "size": 11,
+    "entities": ["sle", "rke", "ccr", "cod", "dsm", "cie", "air", "tea", "tci", "ras", "csf"],
+    "description": "How human-AI pairs collaboratively construct shared understanding, terminology, and conceptual frameworks. Represents the synergistic aspects of human-AI collaboration."
+  }
+]

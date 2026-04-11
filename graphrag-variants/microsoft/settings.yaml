@@ -1,0 +1,92 @@
+llm:
+  api_key: ${OPENAI_API_KEY}
+  model: gpt-4-turbo
+  temperature: 0.7
+  max_tokens: 4000
+  timeout: 60.0
+
+embeddings:
+  type: openai
+  model: text-embedding-3-small
+  batch_size: 100
+  target_dim: 1536
+
+chunks:
+  size: 1200
+  overlap: 100
+  group_by_columns:
+    - id
+    - type
+
+input:
+  type: file
+  file_type: json
+  encoding: utf-8
+  source_column: text_unit_ids
+
+cache:
+  type: file
+  base_dir: ./cache
+
+storage:
+  type: file
+  base_dir: ./output
+
+reporting:
+  type: file
+  organization: by_community
+  output_format: json
+
+entity_extraction:
+  entity_types:
+    - Core Concept
+    - Phenomenon
+    - Practice
+    - Capability
+    - Framework
+    - Process
+    - Challenge
+    - Mechanism
+    - Methodology
+    - Pattern
+    - Constraint
+
+summarize_descriptions:
+  method: text
+  max_length: 500
+  llm_params:
+    temperature: 0.3
+
+claim_extraction:
+  max_claims_per_chunk: 5
+  method: structured
+
+community_reports:
+  max_community_size: 10
+  max_report_length: 3000
+  summary_length: 300
+
+cluster_graph:
+  algorithm: leiden
+  resolution: 1.0
+  max_iterations: 100
+
+umap:
+  enabled: true
+  n_dimensions: 2
+
+snapshots:
+  enabled: true
+  frequency: after_each_run
+
+local_search:
+  top_k_entities: 10
+  top_k_relationships: 20
+
+global_search:
+  top_k_reports: 5
+  top_k_entities: 20
+
+drift_search:
+  enabled: true
+  lookback_windows: [1, 2, 4]

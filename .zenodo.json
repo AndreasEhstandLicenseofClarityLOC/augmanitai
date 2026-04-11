@@ -1,0 +1,46 @@
+{
+  "title": "AUGMANITAI — 1000-Term Compendium",
+  "description": "AUGMANITAI is a curated terminology framework for phenomena at the human–AI interface. The core deliverable is the 1000-Term Compendium, formalized as an RDF knowledge graph informed by ISO 704 / ISO 1087 / ISO 30042 (ISO-inspired, not ISO-certified) and serialized with W3C SKOS, SKOS-XL, OntoLex-Lemon, SHACL, and JSON-LD. Descriptive linguistic research, non-peer-reviewed working-paper status (§11). See DISCLAIMER.md (§1–§20) for the full ethical disclaimer and restricted-application clause (§20).",
+  "upload_type": "dataset",
+  "access_right": "open",
+  "license": "CC-BY-NC-ND-4.0",
+  "language": "eng",
+  "creators": [
+    {
+      "name": "Ehstand, Andreas",
+      "orcid": "0009-0006-3773-7796"
+    }
+  ],
+  "keywords": [
+    "terminology",
+    "ontology",
+    "knowledge-graph",
+    "semantic-web",
+    "SKOS",
+    "SKOS-XL",
+    "OntoLex-Lemon",
+    "SHACL",
+    "TBX",
+    "ISO-704-informed",
+    "ISO-1087-informed",
+    "ISO-30042-informed",
+    "JSON-LD",
+    "AUGMANITAI",
+    "human-AI interaction",
+    "neologism",
+    "applied linguistics",
+    "descriptive-research"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.19481331",
+      "relation": "isVersionOf",
+      "resource_type": "dataset"
+    },
+    {
+      "identifier": "10.5281/zenodo.19203505",
+      "relation": "references",
+      "resource_type": "publication-other"
+    }
+  ]
+}

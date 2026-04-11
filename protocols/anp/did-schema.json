@@ -1,0 +1,161 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AUGMANITAI DID Document",
+  "description": "W3C Decentralized Identifier (DID) document for AUGMANITAI agent in ANP network",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": [
+        "https://www.w3.org/ns/did/v1",
+        "https://w3id.org/security/suites/jws-2020/v1"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^did:web:augmanitai\\.local",
+      "description": "DID identifier following did:web scheme"
+    },
+    "type": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["Agent", "Service"]
+      },
+      "default": ["Agent"]
+    },
+    "name": {
+      "type": "string",
+      "const": "AUGMANITAI",
+      "description": "Agent display name"
+    },
+    "description": {
+      "type": "string",
+      "description": "Agent description"
+    },
+    "verificationMethod": {
+      "type": "array",
+      "description": "Cryptographic keys for verifying agent signatures",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^did:web:augmanitai.*#key"
+          },
+          "type": {
+            "type": "string",
+            "const": "JsonWebKey2020"
+          },
+          "controller": {
+            "type": "string"
+          },
+          "publicKeyJwk": {
+            "type": "object",
+            "description": "Public key in JWK format"
+          }
+        },
+        "required": ["id", "type", "controller"]
+      }
+    },
+    "authentication": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "References to verificationMethods used for authentication"
+    },
+    "assertionMethod": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "References to verificationMethods used for assertion"
+    },
+    "service": {
+      "type": "array",
+      "description": "Service endpoints for agent interaction",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Service endpoint identifier"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "TermLookupService",
+              "TermSearchService",
+              "TermRelateService",
+              "DriftValidationService",
+              "PeerToPeerService"
+            ]
+          },
+          "serviceEndpoint": {
+            "type": ["string", "object"],
+            "description": "Service URL or object with multiple endpoints"
+          },
+          "description": {
+            "type": "string"
+          }
+        },
+        "required": ["id", "type", "serviceEndpoint"]
+      }
+    },
+    "publicKey": {
+      "type": "array",
+      "description": "Legacy public key format (deprecated, use verificationMethod)",
+      "items": {
+        "type": "object"
+      }
+    },
+    "capabilityInvocation": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Keys authorized to invoke capabilities"
+    },
+    "capabilityDelegation": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Keys authorized to delegate capabilities"
+    },
+    "proof": {
+      "type": "object",
+      "description": "Proof of DID document authenticity",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "JsonWebSignature2020"
+        },
+        "created": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "verificationMethod": {
+          "type": "string"
+        },
+        "signatureValue": {
+          "type": "string"
+        }
+      }
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp of DID document creation"
+    },
+    "updated": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp of last update"
+    }
+  },
+  "required": [
+    "@context",
+    "id",
+    "type",
+    "verificationMethod"
+  ]
+}

@@ -1,0 +1,90 @@
+name: Feature Request
+description: Suggest an enhancement to AUGMANITAI infrastructure, code, or documentation
+title: "[FEATURE] "
+labels: ["enhancement", "triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an improvement! For NEW TERM proposals, please use the "Term Proposal" template instead — it has fields specific to ISO 704 terminology work.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which area does this feature touch?
+      options:
+        - Python package (augmanitai-python)
+        - NPM package (augmanitai-npm)
+        - REST API (api-mock)
+        - MCP server (protocols/mcp)
+        - A2A / ANP / AG-UI adapter
+        - GraphRAG variants
+        - Documentation / Handbook
+        - Interactive explorer HTML
+        - SPARQL / SHACL / TBX / JSON-LD export
+        - Deploy (Docker / Helm / HuggingFace Space)
+        - New protocol or format integration
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What problem are you trying to solve? Why is the current state insufficient?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed Solution
+      description: A clear and concise description of what you want to happen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: What other approaches did you consider? Why did you reject them?
+
+  - type: textarea
+    id: use_case
+    attributes:
+      label: Concrete Use Case
+      description: A concrete example that shows the feature in action (pseudocode, config, UI sketch, etc.)
+
+  - type: dropdown
+    id: breaking
+    attributes:
+      label: Would this be a breaking change?
+      options:
+        - "No (additive)"
+        - "Yes (breaking)"
+        - "Uncertain"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: willing
+    attributes:
+      label: Willingness to Contribute
+      options:
+        - label: I would be willing to implement this if accepted
+        - label: I would be willing to test this if implemented by someone else
+        - label: I would be willing to document this
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Checklist
+      options:
+        - label: I have searched existing issues and this is not a duplicate
+          required: true
+        - label: This is not a new term proposal (I would use the Term Proposal template for that)
+          required: true
+        - label: I agree to follow this project's Code of Conduct
+          required: true

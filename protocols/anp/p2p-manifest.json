@@ -1,0 +1,131 @@
+{
+  "@context": "https://w3c.github.io/anp/contexts/v1",
+  "id": "did:web:augmanitai.local",
+  "type": "AgentNode",
+  "name": "AUGMANITAI",
+  "version": "1.0.0",
+  "description": "Decentralized agent node for AUGMANITAI terminology framework",
+  "capabilities": {
+    "core": [
+      "term_lookup",
+      "term_search",
+      "term_relate",
+      "term_validate_drift"
+    ],
+    "network": [
+      "peer_discovery",
+      "message_routing",
+      "capability_delegation",
+      "credential_issuance"
+    ],
+    "storage": [
+      "readonly_distributed",
+      "indexing",
+      "replication"
+    ]
+  },
+  "endpoints": {
+    "p2p": {
+      "id": "did:web:augmanitai.local#p2p-endpoint",
+      "type": "P2PEndpoint",
+      "protocols": ["libp2p", "ipfs"],
+      "addresses": [
+        "local://augmanitai/p2p"
+      ]
+    },
+    "http": {
+      "id": "did:web:augmanitai.local#http-endpoint",
+      "type": "HttpEndpoint",
+      "url": "local://augmanitai/http"
+    },
+    "query": {
+      "id": "did:web:augmanitai.local#query-endpoint",
+      "type": "QueryEndpoint",
+      "url": "local://augmanitai/query"
+    }
+  },
+  "peerManagement": {
+    "discoveryMechanism": "dht",
+    "maxPeers": 100,
+    "trustModel": "open",
+    "peerVerification": "did-document"
+  },
+  "messageFormat": {
+    "default": "application/json",
+    "supported": [
+      "application/json",
+      "application/ld+json",
+      "text/turtle"
+    ]
+  },
+  "dataModel": {
+    "type": "linked-data",
+    "serialization": ["jsonld", "turtle", "nquads"],
+    "ontologies": [
+      "https://www.w3.org/ns/dcat",
+      "https://www.w3.org/ns/skos",
+      "https://purl.org/iso/639-1/codes"
+    ]
+  },
+  "security": {
+    "signingAlgorithms": [
+      "ed25519",
+      "ecdsa-secp256r1"
+    ],
+    "encryptionSupport": true,
+    "tlsRequired": false,
+    "credentialVerification": true
+  },
+  "replication": {
+    "enabled": true,
+    "factor": 3,
+    "strategy": "peer-based"
+  },
+  "resourceManagement": {
+    "cpuOptimized": true,
+    "memoryLimit": "1GB",
+    "storageLimit": "10GB",
+    "bandwidthLimit": "100Mbps"
+  },
+  "governance": {
+    "updateMechanism": "centralized",
+    "authority": "did:web:augmanitai.local",
+    "versioningScheme": "semantic"
+  },
+  "metadata": {
+    "created": "2026-04-10T00:00:00Z",
+    "updated": "2026-04-10T00:00:00Z",
+    "status": "active",
+    "author": {
+      "name": "Andreas Ehstand",
+      "orcid": "0009-0006-3773-7796"
+    },
+    "license": "CC BY-NC-ND 4.0",
+    "doi": "10.5281/zenodo.19481331"
+  },
+  "interoperability": {
+    "protocols": {
+      "mcp": {
+        "supported": true,
+        "version": "1.0"
+      },
+      "a2a": {
+        "supported": true,
+        "version": "2026"
+      },
+      "anp": {
+        "supported": true,
+        "version": "1.0"
+      },
+      "agui": {
+        "supported": true,
+        "version": "1.0"
+      }
+    },
+    "bridges": {
+      "mcp-to-a2a": "local://bridges/mcp-to-a2a",
+      "a2a-to-anp": "local://bridges/a2a-to-anp",
+      "anp-to-mcp": "local://bridges/anp-to-mcp"
+    }
+  }
+}

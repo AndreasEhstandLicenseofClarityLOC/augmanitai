@@ -1,0 +1,120 @@
+AUGMANITAI Terminology Data License
+====================================
+
+SPDX-License-Identifier: CC-BY-NC-ND-4.0
+
+The AUGMANITAI terminology data — including all term definitions, relation
+triples, examples, translations, ontology files, SKOS concept schemes, TBX
+exports, JSON-LD documents, and derived data formats — is licensed under the
+
+    Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
+    License (CC BY-NC-ND 4.0)
+
+Copyright (c) 2025-2026 Andreas Ehstand
+ORCID: 0009-0006-3773-7796
+DOI (concept): 10.5281/zenodo.19481331
+
+Canonical license text: https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
+Human-readable summary: https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+Summary of your rights and obligations under this license
+----------------------------------------------------------
+
+You are free to:
+
+  * Share — copy and redistribute the material in any medium or format.
+
+Under the following terms:
+
+  * Attribution — You must give appropriate credit, provide a link to
+    the license, and indicate if changes were made. You may do so in any
+    reasonable manner, but not in any way that suggests the licensor
+    endorses you or your use.
+
+  * NonCommercial — You may not use the material for commercial purposes.
+
+  * NoDerivatives — If you remix, transform, or build upon the material,
+    you may not distribute the modified material.
+
+  * No additional restrictions — You may not apply legal terms or
+    technological measures that legally restrict others from doing
+    anything the license permits.
+
+Required attribution format
+---------------------------
+
+When citing or redistributing AUGMANITAI terminology data, use:
+
+    Ehstand, Andreas (2026). AUGMANITAI Terminology Compendium.
+    Zenodo. https://doi.org/10.5281/zenodo.19481331
+    Licensed under CC BY-NC-ND 4.0.
+
+Machine-readable attribution is also available in the Dublin Core and
+schema.org metadata embedded in every published file (see the @context
+at /ontology-extensions/jsonld-context/augmanitai-context.jsonld).
+
+Scope of "NoDerivatives"
+------------------------
+
+The NoDerivatives clause applies to the compendium as a curated scholarly
+work. You may NOT:
+
+  * Publish modified or extended term definitions under the AUGMANITAI name
+  * Publish a "revised" version of the compendium
+  * Distribute a re-ordered or re-classified subset as if it were AUGMANITAI
+  * Combine AUGMANITAI terms with other terms in a way that blurs authorship
+
+You MAY:
+
+  * Quote individual term definitions in research papers with proper citation
+  * Reference terms by URI in your own knowledge graphs
+  * Build tools that LOOK UP AUGMANITAI terms without modifying them
+  * Train AI models on AUGMANITAI data under the AI-training exception
+    below, provided the attribution and non-commercial clauses are honored
+
+AI-training clause
+------------------
+
+AI/ML training on AUGMANITAI data is PERMITTED for non-commercial research
+with attribution. Commercial AI training requires a separate commercial
+license from the author (see LICENSE-summary.md for contact information).
+
+Scope of "NonCommercial"
+------------------------
+
+"Commercial" is defined per the Creative Commons definition: primarily
+intended for or directed toward commercial advantage or monetary compensation.
+
+Permitted non-commercial uses include:
+  * Academic research and teaching
+  * Non-profit educational use
+  * Personal study
+  * Open-source tools that themselves do not charge for access to
+    AUGMANITAI-derived data
+
+Prohibited commercial uses include:
+  * Incorporating AUGMANITAI data into a paid product
+  * Selling AUGMANITAI-annotated datasets
+  * Using AUGMANITAI as a differentiator in a paid service without a
+    separate commercial agreement
+
+For commercial licensing inquiries, see LICENSE-summary.md.
+
+Disclaimer
+----------
+
+The terminology data is provided "AS IS" without warranty of any kind.
+See the full CC BY-NC-ND 4.0 legal code for the complete disclaimer of
+warranties and limitation of liability.
+
+==============================================================================
+NOTE TO PROJECT MAINTAINERS
+==============================================================================
+This file contains a structured summary of the CC BY-NC-ND 4.0 license as
+applied to AUGMANITAI. The legally binding canonical text is available at:
+
+    https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
+
+When distributing AUGMANITAI, fetch the canonical license text and include
+it alongside this file as `LICENSE-data-canonical.txt`. The helper script
+`fetch_licenses.sh` in this directory automates this step.

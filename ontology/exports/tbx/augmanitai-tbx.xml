@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<martif type="TBX-Core" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>AUGMANITAI Terminology Database - TBX-Core Export</title>
+        <note type="description">Complete AUGMANITAI term definitions, characteristics, and multilingual coverage in ISO 30042 TBX-Core format</note>
+      </titleStmt>
+      <publicationStmt>
+        <p>AUGMANITAI Project - Semantic Web Terminology Framework</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Generated from augmanitai/data/terms.json with multilingual extensions</p>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>ISO 30042 TBX-Core format - Machine-readable terminology database</p>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language xml:lang="en">English</language>
+        <language xml:lang="de">German</language>
+        <language xml:lang="zh">Mandarin Chinese</language>
+        <language xml:lang="hi">Hindi</language>
+        <language xml:lang="ar">Arabic</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-04-10">Initial TBX-Core export from AUGMANITAI terminology database</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <termEntry id="SLE">
+        <descrip type="definition" xml:lang="en">The process by which human language and AI-generated language patterns co-evolve through repeated interaction, creating emergent linguistic features not present in either party's original communication patterns.</descrip>
+        <descrip type="domain">linguistic_dynamics</descrip>
+        <admin type="license">CC BY-NC-ND 4.0</admin>
+        <langSet xml:lang="en">
+          <tig>
+            <term>Symbiotic Linguistic Evolution</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="abbreviation">SLE</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="de">
+          <tig>
+            <term>Symbiotische linguistische Entwicklung</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="grammaticalGender">feminine</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="RKE">
+        <descrip type="definition" xml:lang="en">The iterative process wherein knowledge extracted from human users by AI systems is reintroduced into subsequent model training cycles, creating self-reinforcing knowledge accumulation that may diverge from original human understanding.</descrip>
+        <descrip type="domain">knowledge_extraction</descrip>
+        <admin type="license">CC BY-NC-ND 4.0</admin>
+        <langSet xml:lang="en">
+          <tig>
+            <term>Recursive Knowledge Expansion</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="abbreviation">RKE</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="de">
+          <tig>
+            <term>Rekursive Wissenserweiterung</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="grammaticalGender">feminine</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="SSP">
+        <descrip type="definition" xml:lang="en">The deliberate or emergent modification of term meanings and semantic relationships within a system through sustained usage patterns, such that the computational system begins to instantiate user-defined ontologies rather than standard linguistic semantics.</descrip>
+        <descrip type="domain">cognitive_processes</descrip>
+        <admin type="license">CC BY-NC-ND 4.0</admin>
+        <langSet xml:lang="en">
+          <tig>
+            <term>Semantic System Programming</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="abbreviation">SSP</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="de">
+          <tig>
+            <term>Semantische Systemprogrammierung</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="grammaticalGender">feminine</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="CIR">
+        <descrip type="definition" xml:lang="en">A measurement of the velocity and extent to which linguistic patterns, terminology, or conceptual frameworks originating from AI outputs become embedded within human-generated text corpora, as measured by prevalence in subsequent documents.</descrip>
+        <descrip type="domain">measurement_metrics</descrip>
+        <admin type="license">CC BY-NC-ND 4.0</admin>
+        <langSet xml:lang="en">
+          <tig>
+            <term>Corpus Infiltration Rate</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="abbreviation">CIR</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="de">
+          <tig>
+            <term>Korpus-Infiltrationsrate</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="grammaticalGender">feminine</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="SRTL">
+        <descrip type="definition" xml:lang="en">A feedback mechanism where usage of a particular term in training data leads to the AI system producing that term more frequently, which then increases its prevalence in new user-generated content, further reinforcing its representation in future training data.</descrip>
+        <descrip type="domain">systemic_effects</descrip>
+        <admin type="license">CC BY-NC-ND 4.0</admin>
+        <langSet xml:lang="en">
+          <tig>
+            <term>Self-Reinforcing Term Loop</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="abbreviation">SRTL</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="de">
+          <tig>
+            <term>Selbstverstärkende Termschleife</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="grammaticalGender">feminine</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="AIPS">
+        <descrip type="definition" xml:lang="en">The systematic reframing of concepts, analytical frameworks, or interpretative lenses that occurs when users internalize terminology and conceptual structures originating from AI-generated text, resulting in altered epistemic positioning.</descrip>
+        <descrip type="domain">cognitive_processes</descrip>
+        <admin type="license">CC BY-NC-ND 4.0</admin>
+        <langSet xml:lang="en">
+          <tig>
+            <term>AI-Induced Perspective Shift</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="abbreviation">AIPS</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="de">
+          <tig>
+            <term>KI-induzierte Perspektivenverschiebung</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="grammaticalGender">feminine</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="CLR">
+        <descrip type="definition" xml:lang="en">The measure of how persistently cognitive patterns, terminology preferences, and conceptual frameworks acquired through human-AI interaction persist in an individual's subsequent thinking and communication, independent of continued AI interaction.</descrip>
+        <descrip type="domain">measurement_metrics</descrip>
+        <admin type="license">CC BY-NC-ND 4.0</admin>
+        <langSet xml:lang="en">
+          <tig>
+            <term>Cognitive Legacy Rate</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="abbreviation">CLR</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="de">
+          <tig>
+            <term>Kognitive Vermächtnisrate</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="grammaticalGender">feminine</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="CC">
+        <descrip type="definition" xml:lang="en">The cognitive state wherein an individual's thinking process incorporates internalized AI-generated conceptual structures, terminology, and analytical frameworks as integral components of their own thought architecture, creating a hybrid epistemic position.</descrip>
+        <descrip type="domain">cognitive_processes</descrip>
+        <admin type="license">CC BY-NC-ND 4.0</admin>
+        <langSet xml:lang="en">
+          <tig>
+            <term>Compound Cognition</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="abbreviation">CC</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="de">
+          <tig>
+            <term>Zusammengesetzte Kognition</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="grammaticalGender">feminine</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="TI">
+        <descrip type="definition" xml:lang="en">The transmission of cognitive patterns, conceptual structures, and terminology from AI systems to human users in such a way that these patterns become structurally embedded in human thought and are subsequently transmitted to other humans, creating genealogical lineages of ideas.</descrip>
+        <descrip type="domain">terminological_phenomena</descrip>
+        <admin type="license">CC BY-NC-ND 4.0</admin>
+        <langSet xml:lang="en">
+          <tig>
+            <term>Thought Inheritance</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="abbreviation">TI</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="de">
+          <tig>
+            <term>Gedankenvererb</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="grammaticalGender">feminine</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="TEA">
+        <descrip type="definition" xml:lang="en">The phenomenon where linguistic patterns and conceptual structures that have been amplified by their presence in training corpora are further amplified when the AI system outputs these patterns to users, who then incorporate them back into text corpora, creating exponential amplification cycles.</descrip>
+        <descrip type="domain">systemic_effects</descrip>
+        <admin type="license">CC BY-NC-ND 4.0</admin>
+        <langSet xml:lang="en">
+          <tig>
+            <term>Training Echo Amplification</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="abbreviation">TEA</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="de">
+          <tig>
+            <term>Trainings-Echo-Verstärkung</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="grammaticalGender">feminine</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="TC">
+        <descrip type="definition" xml:lang="en">The process by which a dominant terminology system, often originating from or amplified by AI systems, progressively displaces or subjugates alternative or competing terminology systems within a domain, reducing semantic diversity and conceptual alternatives.</descrip>
+        <descrip type="domain">terminological_phenomena</descrip>
+        <admin type="license">CC BY-NC-ND 4.0</admin>
+        <langSet xml:lang="en">
+          <tig>
+            <term>Terminological Colonization</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="abbreviation">TC</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="de">
+          <tig>
+            <term>Terminologische Kolonisierung</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="grammaticalGender">feminine</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="SM">
+        <descrip type="definition" xml:lang="en">A defensive linguistic or conceptual boundary established through the systematic use of specialized terminology that requires knowledge of AI-system-originated definitions to comprehend, thereby creating barriers to entry for those unfamiliar with these linguistic innovations.</descrip>
+        <descrip type="domain">terminological_phenomena</descrip>
+        <admin type="license">CC BY-NC-ND 4.0</admin>
+        <langSet xml:lang="en">
+          <tig>
+            <term>Semantic Moat</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="abbreviation">SM</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="de">
+          <tig>
+            <term>Semantischer Burggraben</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="grammaticalGender">masculine</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="LFMA">
+        <descrip type="definition" xml:lang="en">The competitive advantage gained by being the first to propose, popularize, or establish a terminology or conceptual framework within a knowledge domain, such that subsequent thinkers must reference or position themselves against this original terminology.</descrip>
+        <descrip type="domain">terminological_phenomena</descrip>
+        <admin type="license">CC BY-NC-ND 4.0</admin>
+        <langSet xml:lang="en">
+          <tig>
+            <term>Lexical First-Mover Advantage</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="abbreviation">LFMA</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="de">
+          <tig>
+            <term>Lexikalischer First-Mover-Vorteil</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="grammaticalGender">masculine</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="VLI">
+        <descrip type="definition" xml:lang="en">A state of path dependency wherein the adoption of particular terminology and conceptual frameworks creates structural barriers to switching to alternative systems, because existing knowledge, social networks, and institutional practices are built upon the established vocabulary.</descrip>
+        <descrip type="domain">systemic_effects</descrip>
+        <admin type="license">CC BY-NC-ND 4.0</admin>
+        <langSet xml:lang="en">
+          <tig>
+            <term>Vocabulary Lock-In</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="abbreviation">VLI</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="de">
+          <tig>
+            <term>Wortschatzsperrung</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="grammaticalGender">feminine</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="DA">
+        <descrip type="definition" xml:lang="en">The epistemic power held by entities that establish or control the definitions of key terms within a domain, such that their definitional choices shape what can be thought and communicated within that domain.</descrip>
+        <descrip type="domain">cognitive_processes</descrip>
+        <admin type="license">CC BY-NC-ND 4.0</admin>
+        <langSet xml:lang="en">
+          <tig>
+            <term>Definitional Authority</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="abbreviation">DA</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="de">
+          <tig>
+            <term>Definitionelle Autorität</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="grammaticalGender">feminine</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="SAT">
+        <descrip type="definition" xml:lang="en">The unacknowledged and often unconscious transmission of definitional and epistemic authority from human experts to AI systems, wherein users implicitly accept AI-generated definitions and frameworks as authoritative without explicit validation or critical examination.</descrip>
+        <descrip type="domain">cognitive_processes</descrip>
+        <admin type="license">CC BY-NC-ND 4.0</admin>
+        <langSet xml:lang="en">
+          <tig>
+            <term>Silent Authority Transfer</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="abbreviation">SAT</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="de">
+          <tig>
+            <term>Stille Autoritätsübertragung</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="grammaticalGender">feminine</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="IC">
+        <descrip type="definition" xml:lang="en">The phenomenon wherein AI systems provide analytical frameworks, conceptual structures, and terminology that users subsequently employ in external contexts without acknowledging or recognizing the AI system as the source, creating unattributed intellectual influence.</descrip>
+        <descrip type="domain">terminological_phenomena</descrip>
+        <admin type="license">CC BY-NC-ND 4.0</admin>
+        <langSet xml:lang="en">
+          <tig>
+            <term>Invisible Consulting</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="abbreviation">IC</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="de">
+          <tig>
+            <term>Unsichtbare Beratung</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="grammaticalGender">feminine</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="SG">
+        <descrip type="definition" xml:lang="en">The force by which frequently-used and widely-adopted terminology becomes increasingly difficult to avoid or critically examine, pulling other terms and concepts into its gravitational field and establishing dominance within a conceptual space.</descrip>
+        <descrip type="domain">systemic_effects</descrip>
+        <admin type="license">CC BY-NC-ND 4.0</admin>
+        <langSet xml:lang="en">
+          <tig>
+            <term>Semantic Gravity</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="abbreviation">SG</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="de">
+          <tig>
+            <term>Semantische Schwerkraft</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="grammaticalGender">feminine</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="CO">
+        <descrip type="definition" xml:lang="en">The delegation of cognitive work—including analytical reasoning, terminology selection, and conceptual framing—to AI systems, such that users lose independent capacity to perform these cognitive functions without external AI support.</descrip>
+        <descrip type="domain">cognitive_processes</descrip>
+        <admin type="license">CC BY-NC-ND 4.0</admin>
+        <langSet xml:lang="en">
+          <tig>
+            <term>Cognitive Offloading</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="abbreviation">CO</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="de">
+          <tig>
+            <term>Kognitive Auslagerung</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="grammaticalGender">feminine</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="SEA">
+        <descrip type="definition" xml:lang="en">The competitive advantage that terminology or conceptual frameworks gain through random inclusion in training corpora, where probabilistic exposure during model training creates unequal representation regardless of epistemic merit or validity.</descrip>
+        <descrip type="domain">measurement_metrics</descrip>
+        <admin type="license">CC BY-NC-ND 4.0</admin>
+        <langSet xml:lang="en">
+          <tig>
+            <term>Stochastic Exposure Advantage</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="abbreviation">SEA</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="de">
+          <tig>
+            <term>Stochastischer Expositionsvorteil</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="grammaticalGender">masculine</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="MLA">
+        <descrip type="definition" xml:lang="en">The phenomenon wherein terminology and conceptual frameworks that have been amplified during one model generation are further amplified in subsequent model versions, creating exponential growth in representation across model lineages.</descrip>
+        <descrip type="domain">systemic_effects</descrip>
+        <admin type="license">CC BY-NC-ND 4.0</admin>
+        <langSet xml:lang="en">
+          <tig>
+            <term>Model Leap Amplification</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="abbreviation">MLA</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="de">
+          <tig>
+            <term>Modellsprung-Verstärkung</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="grammaticalGender">feminine</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="CAE">
+        <descrip type="definition" xml:lang="en">The phenomenon wherein groups of individuals using AI systems experience differential adoption of AI-generated terminology and conceptual frameworks, leading to divergence from cohorts not using AI systems and creating fissures in shared epistemic communities.</descrip>
+        <descrip type="domain">cognitive_processes</descrip>
+        <admin type="license">CC BY-NC-ND 4.0</admin>
+        <langSet xml:lang="en">
+          <tig>
+            <term>Cohort Attrition Effect</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="abbreviation">CAE</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="de">
+          <tig>
+            <term>Kohorten-Abnutzungseffekt</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="grammaticalGender">masculine</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="CS">
+        <descrip type="definition" xml:lang="en">Distinctive linguistic and conceptual patterns that emerge when AI systems compress and synthesize information from training corpora, creating recognizable stylistic and semantic signatures that permeate AI-generated terminology and explanations.</descrip>
+        <descrip type="domain">linguistic_dynamics</descrip>
+        <admin type="license">CC BY-NC-ND 4.0</admin>
+        <langSet xml:lang="en">
+          <tig>
+            <term>Compression Signatures</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="abbreviation">CS</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="de">
+          <tig>
+            <term>Kompressionssignaturen</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="grammaticalGender">feminine</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="LOC">
+        <descrip type="definition" xml:lang="en">The apparent epistemic legitimacy granted to AI-generated terminology and definitions due to their clarity and precision, such that users may adopt these definitions primarily because they are clearly articulated, regardless of their ultimate validity or alignment with expert consensus.</descrip>
+        <descrip type="domain">cognitive_processes</descrip>
+        <admin type="license">CC BY-NC-ND 4.0</admin>
+        <langSet xml:lang="en">
+          <tig>
+            <term>License of Clarity</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="abbreviation">LOC</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="de">
+          <tig>
+            <term>Lizenz der Klarheit</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="grammaticalGender">feminine</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="HDAR">
+        <descrip type="definition" xml:lang="en">The recursive cycle wherein human-generated data shapes AI outputs, which are then adopted by humans and reincorporated into data corpora, with each cycle increasing the proportion of data derived from previous AI outputs, progressively displacing original human knowledge.</descrip>
+        <descrip type="domain">systemic_effects</descrip>
+        <admin type="license">CC BY-NC-ND 4.0</admin>
+        <langSet xml:lang="en">
+          <tig>
+            <term>Human-Data Authority Recursion</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="abbreviation">HDAR</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="de">
+          <tig>
+            <term>Mensch-Daten-Autoritäts-Rekursion</term>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="grammaticalGender">feminine</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+    </body>
+  </text>
+</martif>

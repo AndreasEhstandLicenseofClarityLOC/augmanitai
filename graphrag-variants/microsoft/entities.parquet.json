@@ -1,0 +1,236 @@
+[
+  {
+    "id": "sle",
+    "name": "Symbiotic Linguistic Evolution",
+    "type": "Core Concept",
+    "description": "The co-evolutionary process where human and AI communication patterns mutually adapt, creating shared linguistic conventions that diverge from standard language use. Observed in sustained human-AI dialogue systems where repeated interactions create idiolects specific to dyadic pairs or small collaborative groups.",
+    "text_unit_ids": ["tu_sle_001", "tu_sle_002"],
+    "community_ids": ["comm_linguistic_001"],
+    "degree": 12
+  },
+  {
+    "id": "rke",
+    "name": "Recursive Knowledge Expansion",
+    "type": "Core Concept",
+    "description": "The iterative deepening of knowledge structures through multi-turn human-AI interaction, where each exchange refines understanding and enables higher-order insights. Demonstrates exponential growth in conceptual complexity through systematic questioning and response refinement.",
+    "text_unit_ids": ["tu_rke_001", "tu_rke_002"],
+    "community_ids": ["comm_knowledge_001"],
+    "degree": 15
+  },
+  {
+    "id": "ccr",
+    "name": "Context-Cognition Resonance",
+    "type": "Core Concept",
+    "description": "The emergent alignment between an AI system's contextual understanding and human cognitive frameworks during extended dialogue. Measured through consistency in domain-specific terminology adoption and prediction accuracy in human response patterns.",
+    "text_unit_ids": ["tu_ccr_001", "tu_ccr_002"],
+    "community_ids": ["comm_meta_cognitive_001"],
+    "degree": 13
+  },
+  {
+    "id": "aif",
+    "name": "AI Institutional Fluency",
+    "type": "Framework",
+    "description": "An AI system's ability to recognize, adapt to, and operate within organizational norms, hierarchies, and communication protocols without explicit instruction. Critical for enterprise deployment; demonstrated through appropriate escalation patterns and stakeholder communication strategies.",
+    "text_unit_ids": ["tu_aif_001"],
+    "community_ids": ["comm_organizational_001"],
+    "degree": 9
+  },
+  {
+    "id": "plp",
+    "name": "Prompt-Level Personality",
+    "type": "Phenomenon",
+    "description": "The emergent persona characteristics that develop within a single conversation session, distinct from the base model's default tone. Ephemeral and context-dependent; reverts upon session reset. Distinct from persistent character design.",
+    "text_unit_ids": ["tu_plp_001"],
+    "community_ids": ["comm_interaction_001"],
+    "degree": 8
+  },
+  {
+    "id": "mca",
+    "name": "Mutual Context Awareness",
+    "type": "Core Concept",
+    "description": "The dual recognition where both human and AI maintain shared understanding of discussion boundaries, prior decisions, and narrative thread continuity. Requires explicit context refreshes in long sessions; degrades with context window limitations.",
+    "text_unit_ids": ["tu_mca_001", "tu_mca_002"],
+    "community_ids": ["comm_meta_cognitive_001"],
+    "degree": 11
+  },
+  {
+    "id": "tea",
+    "name": "Temporal Episodic Anchoring",
+    "type": "Practice",
+    "description": "The practice of marking significant decision points or insight moments with explicit temporal references to enable retrospective analysis and knowledge retrieval. Essential for audit trails and knowledge base construction from dialogue logs.",
+    "text_unit_ids": ["tu_tea_001"],
+    "community_ids": ["comm_knowledge_001"],
+    "degree": 6
+  },
+  {
+    "id": "ape",
+    "name": "Adaptive Protocol Evolution",
+    "type": "Process",
+    "description": "The gradual refinement of interaction protocols between human and AI through implicit feedback mechanisms without explicit retraining. Operates at session and multi-session scales; distinct from model fine-tuning.",
+    "text_unit_ids": ["tu_ape_001"],
+    "community_ids": ["comm_interaction_001"],
+    "degree": 7
+  },
+  {
+    "id": "cie",
+    "name": "Cognitive Intimacy Exchange",
+    "type": "Phenomenon",
+    "description": "The progressive deepening of intellectual vulnerability in human-AI dialogue where individuals share increasingly abstract thoughts and uncertain hypotheses. Associated with increased dialogue quality and creative output; requires psychological safety.",
+    "text_unit_ids": ["tu_cie_001"],
+    "community_ids": ["comm_meta_cognitive_001"],
+    "degree": 10
+  },
+  {
+    "id": "sds",
+    "name": "Semantic Drift Sensitivity",
+    "type": "Capability",
+    "description": "The capacity to detect subtle shifts in meaning, connotation, or definitional scope of terms across extended dialogues. Critical for philosophical and scientific discussions where definitions must be preserved.",
+    "text_unit_ids": ["tu_sds_001"],
+    "community_ids": ["comm_linguistic_001"],
+    "degree": 8
+  },
+  {
+    "id": "hcf",
+    "name": "Human Cognitive Fatigue",
+    "type": "Constraint",
+    "description": "The degradation of human cognitive performance during extended human-AI interactions, detectable through decreased response sophistication and meta-cognitive awareness. Observable after 45-90 minutes of sustained multi-turn dialogue; mitigated by breaks and context switching.",
+    "text_unit_ids": ["tu_hcf_001"],
+    "community_ids": ["comm_meta_cognitive_001"],
+    "degree": 5
+  },
+  {
+    "id": "air",
+    "name": "AI Intent Recognition",
+    "type": "Capability",
+    "description": "The inference of underlying human goals, values, and constraints from dialogue patterns, enabling proactive alignment without explicit specification. Accuracy increases with dialogue length and domain familiarity; false positives create misalignment risks.",
+    "text_unit_ids": ["tu_air_001"],
+    "community_ids": ["comm_meta_cognitive_001"],
+    "degree": 9
+  },
+  {
+    "id": "ecv",
+    "name": "Epistemic Confidence Variance",
+    "type": "Challenge",
+    "description": "The variance between an AI system's confidence in its responses and the actual empirical validity of those responses, often misaligned. Critical safety issue; requires calibration through external validation or uncertainty quantification.",
+    "text_unit_ids": ["tu_ecv_001"],
+    "community_ids": ["comm_knowledge_001"],
+    "degree": 6
+  },
+  {
+    "id": "dsm",
+    "name": "Domain-Specific Metalanguage",
+    "type": "Framework",
+    "description": "A specialized vocabulary that emerges within human-AI collaboration for discussing domain concepts at higher levels of abstraction than base language permits. Examples: 'context token budget' in AI research, 'render flow' in design systems.",
+    "text_unit_ids": ["tu_dsm_001"],
+    "community_ids": ["comm_linguistic_001"],
+    "degree": 8
+  },
+  {
+    "id": "tct",
+    "name": "Threshold-Crossing Transformation",
+    "type": "Phenomenon",
+    "description": "The sudden qualitative shift in human-AI interaction quality that occurs when sufficient contextual depth and mutual understanding accumulate. Observable at approximately 30-50 turn transitions; enables fundamentally different dialogue styles.",
+    "text_unit_ids": ["tu_tct_001"],
+    "community_ids": ["comm_interaction_001"],
+    "degree": 8
+  },
+  {
+    "id": "pdt",
+    "name": "Probabilistic Decision Transparency",
+    "type": "Practice",
+    "description": "The explicit articulation of decision branches, confidence weights, and alternative reasoning paths that led to an AI-generated response. Enhances human ability to detect and correct errors; computationally expensive for long reasoning chains.",
+    "text_unit_ids": ["tu_pdt_001"],
+    "community_ids": ["comm_knowledge_001"],
+    "degree": 7
+  },
+  {
+    "id": "hrm",
+    "name": "Human Relevance Mapping",
+    "type": "Practice",
+    "description": "The process of identifying which aspects of an AI response connect to human values, prior knowledge, or current goals, enabling selective attention. Reduces information overload in technical responses; requires explicit relevance signaling from AI system.",
+    "text_unit_ids": ["tu_hrm_001"],
+    "community_ids": ["comm_meta_cognitive_001"],
+    "degree": 6
+  },
+  {
+    "id": "cod",
+    "name": "Collaborative Ontology Development",
+    "type": "Methodology",
+    "description": "The iterative co-creation of conceptual frameworks and taxonomies through structured human-AI dialogue that preserves human intent while leveraging AI analytical capabilities. Foundation for AUGMANITAI itself; applicable to domain-specific terminology frameworks.",
+    "text_unit_ids": ["tu_cod_001", "tu_cod_002"],
+    "community_ids": ["comm_knowledge_001"],
+    "degree": 12
+  },
+  {
+    "id": "csf",
+    "name": "Contextual Sensemaking Framework",
+    "type": "Framework",
+    "description": "A structured approach to organizing AI responses so that human users can rapidly construct meaning from information, emphasizing narrative coherence over comprehensiveness. Operationalized through response scaffolding, key-point highlighting, and explicit connection articulation.",
+    "text_unit_ids": ["tu_csf_001"],
+    "community_ids": ["comm_interaction_001"],
+    "degree": 7
+  },
+  {
+    "id": "ars",
+    "name": "Asymmetric Risk Sharing",
+    "type": "Challenge",
+    "description": "The structural imbalance where an AI system can propose high-consequence decisions with limited accountability, while humans bear responsibility for outcomes. Critical governance issue; requires explicit decision frameworks and human checkpoints.",
+    "text_unit_ids": ["tu_ars_001"],
+    "community_ids": ["comm_organizational_001"],
+    "degree": 6
+  },
+  {
+    "id": "mae",
+    "name": "Multimodal Alignment Engine",
+    "type": "Mechanism",
+    "description": "The cognitive mechanism that integrates insights across text, visual, temporal, and abstract conceptual modalities to achieve coherent understanding. Increasingly important as multimodal AI systems mature; human alignment across modalities remains unstudied.",
+    "text_unit_ids": ["tu_mae_001"],
+    "community_ids": ["comm_meta_cognitive_001"],
+    "degree": 6
+  },
+  {
+    "id": "ikf",
+    "name": "Implicit Knowledge Frames",
+    "type": "Challenge",
+    "description": "Background assumptions, cultural references, and unstated premises that shape both human and AI interpretations of dialogue without explicit acknowledgment. Major source of misalignment; surfacing and aligning these frames is computationally and cognitively expensive.",
+    "text_unit_ids": ["tu_ikf_001"],
+    "community_ids": ["comm_meta_cognitive_001"],
+    "degree": 7
+  },
+  {
+    "id": "tci",
+    "name": "Temporal Cognitive Integration",
+    "type": "Process",
+    "description": "The synthesis of insights across time scales—immediate dialogue, session history, and prior knowledge—to construct temporally coherent understanding. Limited by context window constraints; structured memory architectures essential for longer projects.",
+    "text_unit_ids": ["tu_tci_001"],
+    "community_ids": ["comm_knowledge_001"],
+    "degree": 7
+  },
+  {
+    "id": "cdq",
+    "name": "Convergent-Divergent Questioning",
+    "type": "Pattern",
+    "description": "An interaction pattern alternating between narrowing focus (convergent) to test specific hypotheses and widening scope (divergent) to explore adjacent conceptual territories. Optimal rhythm differs by domain and individual; AI systems benefit from explicit mode signaling.",
+    "text_unit_ids": ["tu_cdq_001"],
+    "community_ids": ["comm_interaction_001"],
+    "degree": 8
+  },
+  {
+    "id": "ras",
+    "name": "Reasoning Artifact Symbiosis",
+    "type": "Practice",
+    "description": "The co-production of intermediate reasoning artifacts (outlines, tables, diagrams, pseudocode) that serve as externalized cognitive scaffolding for both human and AI. Dramatically improves reasoning quality and verifiability; analogous to rubber duck debugging in programming.",
+    "text_unit_ids": ["tu_ras_001"],
+    "community_ids": ["comm_knowledge_001"],
+    "degree": 10
+  },
+  {
+    "id": "qam",
+    "name": "Query-Answer Morphodynamics",
+    "type": "Phenomenon",
+    "description": "The dynamic shape-shifting of dialogue structure where questions and answers mutually influence each other's form, scope, and abstraction level. Reflects non-linear dialogue dynamics; important for dialogue quality assessment and optimization.",
+    "text_unit_ids": ["tu_qam_001"],
+    "community_ids": ["comm_interaction_001"],
+    "degree": 7
+  }
+]

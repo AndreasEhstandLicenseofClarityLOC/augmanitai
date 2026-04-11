@@ -1,0 +1,138 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "A2A TaskResponse",
+  "description": "Google Agent-to-Agent Protocol task response message from AUGMANITAI",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "type": "string",
+      "const": "https://google.github.io/A2A/v1/schema/task-response.jsonld",
+      "description": "JSON-LD context URI"
+    },
+    "type": {
+      "type": "string",
+      "const": "TaskResponse",
+      "description": "Message type indicator"
+    },
+    "id": {
+      "type": "string",
+      "description": "Unique response identifier (UUID v4)"
+    },
+    "requestId": {
+      "type": "string",
+      "description": "ID of the request this response answers"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp when response was created"
+    },
+    "version": {
+      "type": "string",
+      "const": "1.0",
+      "description": "A2A protocol version"
+    },
+    "sourceAgent": {
+      "type": "object",
+      "properties": {
+        "agentId": {
+          "type": "string",
+          "const": "augmanitai",
+          "description": "Response source agent (AUGMANITAI)"
+        },
+        "name": {
+          "type": "string",
+          "const": "AUGMANITAI",
+          "description": "Source agent name"
+        }
+      },
+      "required": ["agentId"]
+    },
+    "targetAgent": {
+      "type": "object",
+      "description": "The agent that made the original request"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["success", "partial", "failed"],
+      "description": "Response status"
+    },
+    "result": {
+      "type": "object",
+      "description": "Task result payload (structure depends on action)",
+      "properties": {
+        "action": {
+          "type": "string",
+          "description": "Action that was performed"
+        },
+        "artifacts": {
+          "type": "array",
+          "description": "Array of data artifacts returned by action",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": ["term", "search_result", "domain_map"]
+              },
+              "data": {
+                "type": "object",
+                "description": "Artifact data"
+              }
+            }
+          }
+        }
+      }
+    },
+    "error": {
+      "type": "object",
+      "description": "Error information if status is 'failed' or 'partial'",
+      "properties": {
+        "code": {
+          "type": "string",
+          "enum": [
+            "TERM_NOT_FOUND",
+            "INVALID_PARAMETER",
+            "SEARCH_FAILED",
+            "INVALID_ACTION",
+            "INTERNAL_ERROR"
+          ]
+        },
+        "message": {
+          "type": "string"
+        },
+        "details": {
+          "type": "object"
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Response metadata",
+      "properties": {
+        "processingTime": {
+          "type": "number",
+          "description": "Time to process request in milliseconds"
+        },
+        "resultCount": {
+          "type": "integer",
+          "description": "Number of results returned"
+        },
+        "language": {
+          "type": "string",
+          "description": "Language of response content"
+        }
+      }
+    }
+  },
+  "required": [
+    "@context",
+    "type",
+    "id",
+    "requestId",
+    "timestamp",
+    "sourceAgent",
+    "status"
+  ],
+  "additionalProperties": false
+}

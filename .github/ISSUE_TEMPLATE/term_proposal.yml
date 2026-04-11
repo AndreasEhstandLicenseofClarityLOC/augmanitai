@@ -1,0 +1,161 @@
+name: Term Proposal
+description: Propose a new term for the AUGMANITAI compendium
+title: "[TERM] "
+labels: ["term-proposal", "triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for proposing a new term! AUGMANITAI follows ISO 704 / 1087 / 30042 principles.
+        Please fill out every field. Incomplete proposals will be returned for revision.
+
+        Before submitting, please check that:
+        - The phenomenon you are naming is NOT already captured by an existing term
+        - The proposed term has been used or observed in at least one documented context (no pure neologisms without attestation)
+        - You can distinguish it from its nearest neighbors in the existing vocabulary
+
+  - type: input
+    id: proposed_id
+    attributes:
+      label: Proposed Term ID (short abbreviation)
+      description: 2-8 uppercase letters/digits. Must be unique. Examples: SLE, CDC, TI, CC
+      placeholder: XYZ
+    validations:
+      required: true
+
+  - type: input
+    id: full_name
+    attributes:
+      label: Full Name (English)
+      description: The full spelled-out name
+      placeholder: Example Phenomenon Name
+    validations:
+      required: true
+
+  - type: input
+    id: full_name_de
+    attributes:
+      label: Full Name (German) — optional but preferred
+      placeholder: Beispiel-Phänomen-Name
+
+  - type: input
+    id: genus
+    attributes:
+      label: Genus (the broader category this term belongs to)
+      description: Per ISO 704, every term has a genus (supertype) and a differentia (what distinguishes it)
+      placeholder: e.g., "Context phenomenon" or "Multi-agent failure mode"
+    validations:
+      required: true
+
+  - type: textarea
+    id: differentia
+    attributes:
+      label: Differentia (what distinguishes this term from its genus)
+      description: What makes THIS term different from other members of the same genus?
+      placeholder: |
+        Unlike other context phenomena, this one specifically occurs when...
+    validations:
+      required: true
+
+  - type: textarea
+    id: definition_en
+    attributes:
+      label: Definition (English) — ISO 704 style
+      description: |
+        One sentence if possible. Must be substitutable: the definition should be usable as a replacement
+        for the term in a sentence without changing meaning.
+    validations:
+      required: true
+
+  - type: textarea
+    id: definition_de
+    attributes:
+      label: Definition (German) — optional but preferred
+
+  - type: textarea
+    id: characteristics
+    attributes:
+      label: ISO 704 Characteristics (minimum 3)
+      description: |
+        List the necessary and sufficient characteristics that define the concept.
+        These are the features that ALL instances of the term share and that together distinguish it from neighboring concepts.
+      placeholder: |
+        1. Occurs in multi-turn dialogue contexts
+        2. Involves at least two interacting agents
+        3. Produces a measurable drift in context integrity
+    validations:
+      required: true
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples (at least 2)
+      description: Concrete, attested examples where this phenomenon has been observed
+      placeholder: |
+        Example 1: In a test dialogue with model X on date Y, the following occurred: ...
+        Example 2: ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: attestation
+    attributes:
+      label: First Attestation Source
+      description: Where was this phenomenon first observed or named? Citation, log, paper, personal observation with date
+      placeholder: |
+        Personal observation, 2025-11-15, dialogue with Claude Sonnet 4.5. Logs available on request.
+        OR: Smith et al. 2024, "Paper Title", DOI:...
+    validations:
+      required: true
+
+  - type: textarea
+    id: related_terms
+    attributes:
+      label: Related Existing Terms
+      description: List AUGMANITAI terms that are near-synonyms, antonyms, hypernyms, hyponyms, or otherwise related. Use their IDs.
+      placeholder: |
+        - SLE (near-synonym, but differs because...)
+        - CDC (hypernym, this is a specific sub-case of CDC)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: domain
+    attributes:
+      label: Proposed Domain
+      options:
+        - Meta-Cognitive
+        - Compound Cognition
+        - Multi-Agent / Swarm
+        - Collective Intelligence
+        - Prompt-Ontology Bridge
+        - Other (specify in "Other info" below)
+    validations:
+      required: true
+
+  - type: textarea
+    id: other_info
+    attributes:
+      label: Additional Context
+      description: Anything else reviewers should know (translations you can provide, related work, etymology, etc.)
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Contributor Checklist
+      options:
+        - label: I have searched existing terms and confirm this is not a duplicate
+          required: true
+        - label: I have provided at least 3 ISO 704 characteristics
+          required: true
+        - label: I have provided at least 2 concrete examples
+          required: true
+        - label: I have provided an attestation source
+          required: true
+        - label: I understand my contribution will be licensed under CC BY-NC-ND 4.0
+          required: true
+        - label: I agree to sign off with DCO or ICLA if the term is accepted
+          required: true
+        - label: I agree to follow this project's Code of Conduct
+          required: true

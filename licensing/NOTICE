@@ -1,0 +1,183 @@
+AUGMANITAI
+Copyright 2025-2026 Andreas Ehstand
+ORCID: 0009-0006-3773-7796
+DOI: 10.5281/zenodo.19481331
+
+================================================================================
+ETHICAL DISCLAIMER (§1-§20) — MANDATORY FOR ALL USES
+================================================================================
+
+AUGMANITAI is purely descriptive linguistic-terminological research into
+phenomena observable at the human-AI interface. The full bilingual Ethical
+Disclaimer is in DISCLAIMER.md in the repository root and applies to every
+file, every term, and every serialization in this project.
+
+Key clauses (short form):
+
+  §1  Descriptive, not normative. Naming a phenomenon is not endorsement.
+  §2  No recommendation for action.
+  §5  No medical, psychological, psychiatric, therapeutic, legal, or
+      financial statements.
+  §6  No diagnostic function.
+  §7  18+ only. Not intended for minors.
+  §11 Independent, non-peer-reviewed working-paper research.
+  §13 No efficacy claims. Not a substitute for professional advice.
+  §14 Naming a phenomenon implies neither normalization nor recommendation.
+  §16 ISO-inspired, not ISO-certified.
+  §18 German law applies. Jurisdiction: Munich, Germany.
+
+================================================================================
+§20 RESTRICTED APPLICATIONS (ANWENDUNGSVERBOT)
+================================================================================
+
+The terms, definitions, and descriptions in AUGMANITAI EXPRESSLY MUST NOT be
+used as, or as part of, any of the following:
+
+  - diagnostic labels
+  - medical classification
+  - psychological screening instruments
+  - legal categorization or legal basis
+  - military or intelligence-service classification
+  - basis for personnel decisions
+  - HR screening
+  - credit scoring
+  - insurance assessment
+  - state surveillance systems
+  - profiling mechanisms
+
+The contents constitute exclusively linguistic-descriptive research. Any
+application beyond this contradicts the documented research purpose and is
+excluded. Downstream users are bound by these restrictions under the terms
+of CC BY-NC-ND 4.0 (NoDerivatives + NonCommercial) and by the explicit
+§20 clause of the Ethical Disclaimer.
+
+================================================================================
+LICENSES
+================================================================================
+
+This project includes software and data licensed under multiple licenses:
+
+TERMINOLOGY DATA
+The terminology data — including term definitions, relations, translations,
+ontology files, and derived export formats — is licensed under:
+
+  Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
+  License (CC-BY-NC-ND-4.0)
+  https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+CODE
+The software code — including generators, validators, protocol adapters,
+and tooling — is licensed under:
+
+  Apache License, Version 2.0 (Apache-2.0)
+  https://www.apache.org/licenses/LICENSE-2.0
+
+================================================================================
+THIRD-PARTY ACKNOWLEDGMENTS
+================================================================================
+
+This project references the following standards and specifications, each of
+which has its own copyright and terms. Per §16, AUGMANITAI is INFORMED BY
+these standards (ISO-inspired, not ISO-certified); listing them does not
+assert certification, conformance, or official approval.
+
+  - ISO 704 (Terminology work — Principles and methods)
+    Copyright International Organization for Standardization.
+    Referenced for methodology; no ISO text is reproduced in this project.
+
+  - ISO 1087 (Terminology work — Vocabulary)
+    Copyright International Organization for Standardization.
+    Referenced for terminology vocabulary; no ISO text reproduced.
+
+  - ISO 30042 (Management of terminology resources — TermBase eXchange)
+    Copyright International Organization for Standardization.
+    Referenced for TBX file format; no ISO text reproduced.
+
+  - W3C SKOS (Simple Knowledge Organization System)
+    Copyright W3C. SKOS vocabulary is used under W3C permissive terms.
+    https://www.w3.org/TR/skos-reference/
+
+  - W3C OntoLex-Lemon (Lexicon Model for Ontologies)
+    Copyright W3C. OntoLex vocabulary is used under W3C permissive terms.
+    https://www.w3.org/community/ontolex/
+
+  - W3C SHACL (Shapes Constraint Language)
+    Copyright W3C. SHACL vocabulary is used under W3C permissive terms.
+    https://www.w3.org/TR/shacl/
+
+  - W3C JSON-LD 1.1
+    Copyright W3C. JSON-LD vocabulary is used under W3C permissive terms.
+    https://www.w3.org/TR/json-ld11/
+
+  - schema.org vocabulary
+    Copyright schema.org contributors. CC BY-SA 3.0.
+    https://schema.org/
+
+  - Dublin Core Metadata Terms
+    Copyright DCMI. CC BY 4.0.
+    https://www.dublincore.org/specifications/dublin-core/dcmi-terms/
+
+  - PROV-O Ontology
+    Copyright W3C. W3C permissive terms.
+    https://www.w3.org/TR/prov-o/
+
+  - Wikidata
+    All Wikidata content is licensed under CC0 (public domain).
+    References to Wikidata Q-identifiers are factual and uncopyrightable.
+
+  - Contributor Covenant Code of Conduct, version 2.1
+    https://www.contributor-covenant.org/version/2/1/code_of_conduct/
+    CC BY 4.0.
+
+  - Developer Certificate of Origin, version 1.1
+    https://developercertificate.org/
+    Copyright The Linux Foundation. Freely reproducible.
+
+================================================================================
+PROVENANCE STANDARDS
+================================================================================
+
+  - C2PA Content Credentials (Coalition for Content Provenance and
+    Authenticity). C2PA specifications are published under Creative Commons
+    Attribution 4.0 International.
+    https://c2pa.org/
+
+  - SPDX License List
+    Copyright Linux Foundation. SPDX specifications are published under
+    Creative Commons Attribution 3.0 Unported.
+    https://spdx.org/licenses/
+
+  - CycloneDX SBOM Specification
+    Copyright OWASP Foundation. Apache 2.0.
+    https://cyclonedx.org/
+
+================================================================================
+AGENT PROTOCOLS
+================================================================================
+
+  - Model Context Protocol (MCP), Anthropic / Linux Foundation
+    https://modelcontextprotocol.io/
+
+  - Agent-to-Agent Protocol (A2A), Google
+    https://google.github.io/A2A/
+
+  - Agent Network Protocol (ANP), W3C Community Group
+    https://w3c-cg.github.io/agent-network-protocol/
+
+  - AG-UI (Agent-User Interaction), CopilotKit and contributors
+    https://ag-ui.com/
+
+================================================================================
+ATTRIBUTION FOR DOWNSTREAM USE
+================================================================================
+
+When redistributing AUGMANITAI in source or binary form, this NOTICE file
+AND the DISCLAIMER.md file MUST be included together. When using AUGMANITAI
+in a published work (academic or otherwise), the following citation is
+required, together with acknowledgement of the §20 Restricted Applications
+clause:
+
+    Ehstand, A. AUGMANITAI: 1000-Term Compendium for human-AI interaction
+    phenomena. Zenodo. https://doi.org/10.5281/zenodo.19481331
+
+For BibTeX, see CITATION.cff in the project root.

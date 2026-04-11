@@ -1,0 +1,584 @@
+@prefix aug: <https://augmanitai.org/term/> .
+@prefix augont: <https://augmanitai.org/ontology#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+# ============================================================================
+# AUGMANITAI SKOS-XL Extended Labels
+# Rich Lexical Metadata for AUGMANITAI Terminology
+# Creator: Andreas Ehstand
+# License: CC BY-NC-ND 4.0
+# ISO Standards: ISO 704, 1087, 30042, 12620
+# W3C Standards: SKOS, SKOS-XL
+# ============================================================================
+
+# ============================================================================
+# Symbiotic Linguistic Evolution (SLE)
+# ============================================================================
+aug:SLE skosxl:prefLabel aug:SLE_prefLabel ;
+    skosxl:altLabel aug:SLE_altLabel_1, aug:SLE_altLabel_2 ;
+    skosxl:hiddenLabel aug:SLE_hiddenLabel_1 .
+
+aug:SLE_prefLabel a skosxl:Label ;
+    skosxl:literalForm "Symbiotic Linguistic Evolution"@en ;
+    dct:created "2024-01-15"^^xsd:date ;
+    dct:creator "Andreas Ehstand" ;
+    dct:language "en" ;
+    rdfs:comment "Primary English designation; use for formal terminology systems"@en .
+
+aug:SLE_altLabel_1 a skosxl:Label ;
+    skosxl:literalForm "Linguistic Co-evolution"@en ;
+    dct:created "2024-02-20"^^xsd:date ;
+    dct:isVersionOf "Symbiotic Linguistic Evolution"@en ;
+    skosxl:labelRelation aug:SLE_prefLabel ;
+    rdfs:comment "Synonym emphasizing iterative co-development"@en .
+
+aug:SLE_altLabel_2 a skosxl:Label ;
+    skosxl:literalForm "Human-AI Language Interplay"@en ;
+    dct:created "2024-03-10"^^xsd:date ;
+    rdfs:comment "Informal variant for general audience communication"@en .
+
+aug:SLE_hiddenLabel_1 a skosxl:Label ;
+    skosxl:literalForm "Symbiotische linguistische Entwicklung"@de ;
+    dct:created "2024-02-15"^^xsd:date ;
+    rdfs:comment "German form for multilingual indexing; use hidden label to enable retrieval without display"@en .
+
+# ============================================================================
+# Recursive Knowledge Expansion (RKE)
+# ============================================================================
+aug:RKE skosxl:prefLabel aug:RKE_prefLabel ;
+    skosxl:altLabel aug:RKE_altLabel_1, aug:RKE_altLabel_2, aug:RKE_altLabel_3 .
+
+aug:RKE_prefLabel a skosxl:Label ;
+    skosxl:literalForm "Recursive Knowledge Expansion"@en ;
+    dct:created "2024-01-20"^^xsd:date ;
+    dct:creator "Andreas Ehstand" ;
+    dct:language "en" ;
+    augont:termVariant "RKE" ;
+    rdfs:comment "Canonical form emphasizing iterative process of knowledge reintroduction"@en .
+
+aug:RKE_altLabel_1 a skosxl:Label ;
+    skosxl:literalForm "Iterative Knowledge Accumulation"@en ;
+    dct:created "2024-03-01"^^xsd:date ;
+    skosxl:labelRelation aug:RKE_prefLabel ;
+    rdfs:comment "Emphasizes accumulation aspect over recursion"@en .
+
+aug:RKE_altLabel_2 a skosxl:Label ;
+    skosxl:literalForm "Feedback Knowledge Loops"@en ;
+    dct:created "2024-03-05"^^xsd:date ;
+    rdfs:comment "Variant emphasizing cyclical nature"@en .
+
+aug:RKE_altLabel_3 a skosxl:Label ;
+    skosxl:literalForm "Knowledge Bootstrapping"@en ;
+    dct:created "2024-03-12"^^xsd:date ;
+    rdfs:comment "Technical variant used in machine learning contexts"@en .
+
+# ============================================================================
+# Semantic System Programming (SSP)
+# ============================================================================
+aug:SSP skosxl:prefLabel aug:SSP_prefLabel ;
+    skosxl:altLabel aug:SSP_altLabel_1, aug:SSP_altLabel_2 .
+
+aug:SSP_prefLabel a skosxl:Label ;
+    skosxl:literalForm "Semantic System Programming"@en ;
+    dct:created "2024-01-22"^^xsd:date ;
+    dct:creator "Andreas Ehstand" ;
+    dct:language "en" ;
+    rdfs:comment "Primary designation emphasizing deliberate semantic modification"@en .
+
+aug:SSP_altLabel_1 a skosxl:Label ;
+    skosxl:literalForm "User-Defined Ontology Instantiation"@en ;
+    dct:created "2024-03-08"^^xsd:date ;
+    rdfs:comment "Technical variant emphasizing ontological aspects"@en .
+
+aug:SSP_altLabel_2 a skosxl:Label ;
+    skosxl:literalForm "Semantic Drift Programming"@en ;
+    dct:created "2024-03-14"^^xsd:date ;
+    rdfs:comment "Variant emphasizing emergent semantic changes"@en .
+
+# ============================================================================
+# Corpus Infiltration Rate (CIR)
+# ============================================================================
+aug:CIR skosxl:prefLabel aug:CIR_prefLabel ;
+    skosxl:altLabel aug:CIR_altLabel_1 .
+
+aug:CIR_prefLabel a skosxl:Label ;
+    skosxl:literalForm "Corpus Infiltration Rate"@en ;
+    dct:created "2024-01-25"^^xsd:date ;
+    dct:creator "Andreas Ehstand" ;
+    dct:language "en" ;
+    augont:termVariant "CIR" ;
+    rdfs:comment "Measurement metric for linguistic pattern embedding velocity"@en .
+
+aug:CIR_altLabel_1 a skosxl:Label ;
+    skosxl:literalForm "AI Linguistic Prevalence Metric"@en ;
+    dct:created "2024-03-11"^^xsd:date ;
+    rdfs:comment "Variant emphasizing AI-generated content tracking"@en .
+
+# ============================================================================
+# Self-Reinforcing Term Loop (SRTL)
+# ============================================================================
+aug:SRTL skosxl:prefLabel aug:SRTL_prefLabel ;
+    skosxl:altLabel aug:SRTL_altLabel_1, aug:SRTL_altLabel_2 .
+
+aug:SRTL_prefLabel a skosxl:Label ;
+    skosxl:literalForm "Self-Reinforcing Term Loop"@en ;
+    dct:created "2024-02-01"^^xsd:date ;
+    dct:creator "Andreas Ehstand" ;
+    dct:language "en" ;
+    augont:termVariant "SRTL" ;
+    rdfs:comment "Feedback mechanism creating exponential terminology amplification"@en .
+
+aug:SRTL_altLabel_1 a skosxl:Label ;
+    skosxl:literalForm "Terminology Amplification Cycle"@en ;
+    dct:created "2024-03-16"^^xsd:date ;
+    rdfs:comment "Variant emphasizing cyclical amplification"@en .
+
+aug:SRTL_altLabel_2 a skosxl:Label ;
+    skosxl:literalForm "Echo Chamber Terminology"@en ;
+    dct:created "2024-03-18"^^xsd:date ;
+    rdfs:comment "Informal variant emphasizing echo chamber dynamics"@en .
+
+# ============================================================================
+# AI-Induced Perspective Shift (AIPS)
+# ============================================================================
+aug:AIPS skosxl:prefLabel aug:AIPS_prefLabel ;
+    skosxl:altLabel aug:AIPS_altLabel_1 .
+
+aug:AIPS_prefLabel a skosxl:Label ;
+    skosxl:literalForm "AI-Induced Perspective Shift"@en ;
+    dct:created "2024-02-03"^^xsd:date ;
+    dct:creator "Andreas Ehstand" ;
+    dct:language "en" ;
+    augont:termVariant "AIPS" ;
+    rdfs:comment "Reframing of analytical frameworks through AI internalization"@en .
+
+aug:AIPS_altLabel_1 a skosxl:Label ;
+    skosxl:literalForm "Epistemic Reorientation"@en ;
+    dct:created "2024-03-19"^^xsd:date ;
+    rdfs:comment "Formal variant emphasizing epistemological changes"@en .
+
+# ============================================================================
+# Cognitive Legacy Rate (CLR)
+# ============================================================================
+aug:CLR skosxl:prefLabel aug:CLR_prefLabel ;
+    skosxl:altLabel aug:CLR_altLabel_1 .
+
+aug:CLR_prefLabel a skosxl:Label ;
+    skosxl:literalForm "Cognitive Legacy Rate"@en ;
+    dct:created "2024-02-05"^^xsd:date ;
+    dct:creator "Andreas Ehstand" ;
+    dct:language "en" ;
+    augont:termVariant "CLR" ;
+    rdfs:comment "Persistence measure of AI-acquired cognitive patterns"@en .
+
+aug:CLR_altLabel_1 a skosxl:Label ;
+    skosxl:literalForm "Cognitive Pattern Persistence"@en ;
+    dct:created "2024-03-21"^^xsd:date ;
+    rdfs:comment "Variant emphasizing duration of cognitive pattern retention"@en .
+
+# ============================================================================
+# Compound Cognition (CC)
+# ============================================================================
+aug:CC skosxl:prefLabel aug:CC_prefLabel ;
+    skosxl:altLabel aug:CC_altLabel_1, aug:CC_altLabel_2 .
+
+aug:CC_prefLabel a skosxl:Label ;
+    skosxl:literalForm "Compound Cognition"@en ;
+    dct:created "2024-02-07"^^xsd:date ;
+    dct:creator "Andreas Ehstand" ;
+    dct:language "en" ;
+    augont:termVariant "CC" ;
+    rdfs:comment "Hybrid epistemic position integrating AI-derived and human thought"@en .
+
+aug:CC_altLabel_1 a skosxl:Label ;
+    skosxl:literalForm "Hybrid Epistemology"@en ;
+    dct:created "2024-03-22"^^xsd:date ;
+    rdfs:comment "Formal variant emphasizing epistemological hybridity"@en .
+
+aug:CC_altLabel_2 a skosxl:Label ;
+    skosxl:literalForm "Blended Cognition"@en ;
+    dct:created "2024-03-24"^^xsd:date ;
+    rdfs:comment "Informal variant emphasizing integration and blending"@en .
+
+# ============================================================================
+# Thought Inheritance (TI)
+# ============================================================================
+aug:TI skosxl:prefLabel aug:TI_prefLabel ;
+    skosxl:altLabel aug:TI_altLabel_1, aug:TI_altLabel_2 .
+
+aug:TI_prefLabel a skosxl:Label ;
+    skosxl:literalForm "Thought Inheritance"@en ;
+    dct:created "2024-02-09"^^xsd:date ;
+    dct:creator "Andreas Ehstand" ;
+    dct:language "en" ;
+    augont:termVariant "TI" ;
+    rdfs:comment "Transmission of cognitive patterns from AI to humans to other humans"@en .
+
+aug:TI_altLabel_1 a skosxl:Label ;
+    skosxl:literalForm "Ideological Genealogy"@en ;
+    dct:created "2024-03-25"^^xsd:date ;
+    rdfs:comment "Variant emphasizing genealogical transmission"@en .
+
+aug:TI_altLabel_2 a skosxl:Label ;
+    skosxl:literalForm "Cognitive Pattern Propagation"@en ;
+    dct:created "2024-03-26"^^xsd:date ;
+    rdfs:comment "Technical variant emphasizing propagation mechanism"@en .
+
+# ============================================================================
+# Training Echo Amplification (TEA)
+# ============================================================================
+aug:TEA skosxl:prefLabel aug:TEA_prefLabel ;
+    skosxl:altLabel aug:TEA_altLabel_1 .
+
+aug:TEA_prefLabel a skosxl:Label ;
+    skosxl:literalForm "Training Echo Amplification"@en ;
+    dct:created "2024-02-11"^^xsd:date ;
+    dct:creator "Andreas Ehstand" ;
+    dct:language "en" ;
+    augont:termVariant "TEA" ;
+    rdfs:comment "Exponential amplification cycles of linguistic patterns"@en .
+
+aug:TEA_altLabel_1 a skosxl:Label ;
+    skosxl:literalForm "Echo Amplification Spirals"@en ;
+    dct:created "2024-03-27"^^xsd:date ;
+    rdfs:comment "Variant emphasizing spiral dynamics"@en .
+
+# ============================================================================
+# Terminological Colonization (TC)
+# ============================================================================
+aug:TC skosxl:prefLabel aug:TC_prefLabel ;
+    skosxl:altLabel aug:TC_altLabel_1, aug:TC_altLabel_2 .
+
+aug:TC_prefLabel a skosxl:Label ;
+    skosxl:literalForm "Terminological Colonization"@en ;
+    dct:created "2024-02-13"^^xsd:date ;
+    dct:creator "Andreas Ehstand" ;
+    dct:language "en" ;
+    augont:termVariant "TC" ;
+    rdfs:comment "Displacement of alternative terminology systems by dominant frameworks"@en .
+
+aug:TC_altLabel_1 a skosxl:Label ;
+    skosxl:literalForm "Semantic Dominance"@en ;
+    dct:created "2024-03-28"^^xsd:date ;
+    rdfs:comment "Variant emphasizing dominance aspect"@en .
+
+aug:TC_altLabel_2 a skosxl:Label ;
+    skosxl:literalForm "Terminology Displacement"@en ;
+    dct:created "2024-03-29"^^xsd:date ;
+    rdfs:comment "Variant emphasizing replacement mechanism"@en .
+
+# ============================================================================
+# Semantic Moat (SM)
+# ============================================================================
+aug:SM skosxl:prefLabel aug:SM_prefLabel ;
+    skosxl:altLabel aug:SM_altLabel_1 .
+
+aug:SM_prefLabel a skosxl:Label ;
+    skosxl:literalForm "Semantic Moat"@en ;
+    dct:created "2024-02-15"^^xsd:date ;
+    dct:creator "Andreas Ehstand" ;
+    dct:language "en" ;
+    augont:termVariant "SM" ;
+    rdfs:comment "Defensive linguistic barrier requiring specialized knowledge"@en .
+
+aug:SM_altLabel_1 a skosxl:Label ;
+    skosxl:literalForm "Terminology Barrier"@en ;
+    dct:created "2024-03-30"^^xsd:date ;
+    rdfs:comment "Variant emphasizing exclusionary barriers"@en .
+
+# ============================================================================
+# Lexical First-Mover Advantage (LFMA)
+# ============================================================================
+aug:LFMA skosxl:prefLabel aug:LFMA_prefLabel ;
+    skosxl:altLabel aug:LFMA_altLabel_1 .
+
+aug:LFMA_prefLabel a skosxl:Label ;
+    skosxl:literalForm "Lexical First-Mover Advantage"@en ;
+    dct:created "2024-02-17"^^xsd:date ;
+    dct:creator "Andreas Ehstand" ;
+    dct:language "en" ;
+    augont:termVariant "LFMA" ;
+    rdfs:comment "Competitive advantage from early terminology establishment"@en .
+
+aug:LFMA_altLabel_1 a skosxl:Label ;
+    skosxl:literalForm "Terminology Market Capture"@en ;
+    dct:created "2024-04-01"^^xsd:date ;
+    rdfs:comment "Variant emphasizing market dominance"@en .
+
+# ============================================================================
+# Vocabulary Lock-In (VLI)
+# ============================================================================
+aug:VLI skosxl:prefLabel aug:VLI_prefLabel ;
+    skosxl:altLabel aug:VLI_altLabel_1 .
+
+aug:VLI_prefLabel a skosxl:Label ;
+    skosxl:literalForm "Vocabulary Lock-In"@en ;
+    dct:created "2024-02-19"^^xsd:date ;
+    dct:creator "Andreas Ehstand" ;
+    dct:language "en" ;
+    augont:termVariant "VLI" ;
+    rdfs:comment "Path-dependent barriers to switching terminology systems"@en .
+
+aug:VLI_altLabel_1 a skosxl:Label ;
+    skosxl:literalForm "Terminological Lock-In"@en ;
+    dct:created "2024-04-02"^^xsd:date ;
+    rdfs:comment "Variant emphasizing locks on terminology choice"@en .
+
+# ============================================================================
+# Definitional Authority (DA)
+# ============================================================================
+aug:DA skosxl:prefLabel aug:DA_prefLabel ;
+    skosxl:altLabel aug:DA_altLabel_1 .
+
+aug:DA_prefLabel a skosxl:Label ;
+    skosxl:literalForm "Definitional Authority"@en ;
+    dct:created "2024-02-21"^^xsd:date ;
+    dct:creator "Andreas Ehstand" ;
+    dct:language "en" ;
+    augont:termVariant "DA" ;
+    rdfs:comment "Epistemic power to establish and control term definitions"@en .
+
+aug:DA_altLabel_1 a skosxl:Label ;
+    skosxl:literalForm "Semantic Authority"@en ;
+    dct:created "2024-04-03"^^xsd:date ;
+    rdfs:comment "Variant emphasizing semantic dominance"@en .
+
+# ============================================================================
+# Silent Authority Transfer (SAT)
+# ============================================================================
+aug:SAT skosxl:prefLabel aug:SAT_prefLabel ;
+    skosxl:altLabel aug:SAT_altLabel_1, aug:SAT_altLabel_2 .
+
+aug:SAT_prefLabel a skosxl:Label ;
+    skosxl:literalForm "Silent Authority Transfer"@en ;
+    dct:created "2024-02-23"^^xsd:date ;
+    dct:creator "Andreas Ehstand" ;
+    dct:language "en" ;
+    augont:termVariant "SAT" ;
+    rdfs:comment "Unacknowledged transmission of definitional power to AI systems"@en .
+
+aug:SAT_altLabel_1 a skosxl:Label ;
+    skosxl:literalForm "Implicit Authority Delegation"@en ;
+    dct:created "2024-04-04"^^xsd:date ;
+    rdfs:comment "Variant emphasizing implicit mechanisms"@en .
+
+aug:SAT_altLabel_2 a skosxl:Label ;
+    skosxl:literalForm "Epistemic Surrender"@en ;
+    dct:created "2024-04-05"^^xsd:date ;
+    rdfs:comment "Variant emphasizing power ceding"@en .
+
+# ============================================================================
+# Invisible Consulting (IC)
+# ============================================================================
+aug:IC skosxl:prefLabel aug:IC_prefLabel ;
+    skosxl:altLabel aug:IC_altLabel_1 .
+
+aug:IC_prefLabel a skosxl:Label ;
+    skosxl:literalForm "Invisible Consulting"@en ;
+    dct:created "2024-02-25"^^xsd:date ;
+    dct:creator "Andreas Ehstand" ;
+    dct:language "en" ;
+    augont:termVariant "IC" ;
+    rdfs:comment "Unattributed AI intellectual influence in external contexts"@en .
+
+aug:IC_altLabel_1 a skosxl:Label ;
+    skosxl:literalForm "Unattributed Intellectual Influence"@en ;
+    dct:created "2024-04-06"^^xsd:date ;
+    rdfs:comment "Variant emphasizing attribution absence"@en .
+
+# ============================================================================
+# Semantic Gravity (SG)
+# ============================================================================
+aug:SG skosxl:prefLabel aug:SG_prefLabel ;
+    skosxl:altLabel aug:SG_altLabel_1 .
+
+aug:SG_prefLabel a skosxl:Label ;
+    skosxl:literalForm "Semantic Gravity"@en ;
+    dct:created "2024-02-27"^^xsd:date ;
+    dct:creator "Andreas Ehstand" ;
+    dct:language "en" ;
+    augont:termVariant "SG" ;
+    rdfs:comment "Force by which dominant terminology resists critical examination"@en .
+
+aug:SG_altLabel_1 a skosxl:Label ;
+    skosxl:literalForm "Terminology Dominance"@en ;
+    dct:created "2024-04-07"^^xsd:date ;
+    rdfs:comment "Variant emphasizing dominance mechanism"@en .
+
+# ============================================================================
+# Cognitive Offloading (CO)
+# ============================================================================
+aug:CO skosxl:prefLabel aug:CO_prefLabel ;
+    skosxl:altLabel aug:CO_altLabel_1 .
+
+aug:CO_prefLabel a skosxl:Label ;
+    skosxl:literalForm "Cognitive Offloading"@en ;
+    dct:created "2024-03-01"^^xsd:date ;
+    dct:creator "Andreas Ehstand" ;
+    dct:language "en" ;
+    augont:termVariant "CO" ;
+    rdfs:comment "Delegation of cognitive work to external AI systems"@en .
+
+aug:CO_altLabel_1 a skosxl:Label ;
+    skosxl:literalForm "Cognitive Externalization"@en ;
+    dct:created "2024-04-08"^^xsd:date ;
+    rdfs:comment "Variant emphasizing externalization"@en .
+
+# ============================================================================
+# Stochastic Exposure Advantage (SEA)
+# ============================================================================
+aug:SEA skosxl:prefLabel aug:SEA_prefLabel ;
+    skosxl:altLabel aug:SEA_altLabel_1 .
+
+aug:SEA_prefLabel a skosxl:Label ;
+    skosxl:literalForm "Stochastic Exposure Advantage"@en ;
+    dct:created "2024-03-03"^^xsd:date ;
+    dct:creator "Andreas Ehstand" ;
+    dct:language "en" ;
+    augont:termVariant "SEA" ;
+    rdfs:comment "Competitive advantage through probabilistic training corpus inclusion"@en .
+
+aug:SEA_altLabel_1 a skosxl:Label ;
+    skosxl:literalForm "Random Representation Advantage"@en ;
+    dct:created "2024-04-09"^^xsd:date ;
+    rdfs:comment "Variant emphasizing random distribution effects"@en .
+
+# ============================================================================
+# Model Leap Amplification (MLA)
+# ============================================================================
+aug:MLA skosxl:prefLabel aug:MLA_prefLabel ;
+    skosxl:altLabel aug:MLA_altLabel_1 .
+
+aug:MLA_prefLabel a skosxl:Label ;
+    skosxl:literalForm "Model Leap Amplification"@en ;
+    dct:created "2024-03-05"^^xsd:date ;
+    dct:creator "Andreas Ehstand" ;
+    dct:language "en" ;
+    augont:termVariant "MLA" ;
+    rdfs:comment "Exponential amplification across sequential model generations"@en .
+
+aug:MLA_altLabel_1 a skosxl:Label ;
+    skosxl:literalForm "Generational Amplification"@en ;
+    dct:created "2024-04-10"^^xsd:date ;
+    rdfs:comment "Variant emphasizing cross-generation effects"@en .
+
+# ============================================================================
+# Cohort Attrition Effect (CAE)
+# ============================================================================
+aug:CAE skosxl:prefLabel aug:CAE_prefLabel ;
+    skosxl:altLabel aug:CAE_altLabel_1 .
+
+aug:CAE_prefLabel a skosxl:Label ;
+    skosxl:literalForm "Cohort Attrition Effect"@en ;
+    dct:created "2024-03-07"^^xsd:date ;
+    dct:creator "Andreas Ehstand" ;
+    dct:language "en" ;
+    augont:termVariant "CAE" ;
+    rdfs:comment "Divergence in terminology adoption between AI-using and non-using cohorts"@en .
+
+aug:CAE_altLabel_1 a skosxl:Label ;
+    skosxl:literalForm "Epistemic Community Fragmentation"@en ;
+    dct:created "2024-04-11"^^xsd:date ;
+    rdfs:comment "Variant emphasizing community fracturing"@en .
+
+# ============================================================================
+# Compression Signatures (CS)
+# ============================================================================
+aug:CS skosxl:prefLabel aug:CS_prefLabel ;
+    skosxl:altLabel aug:CS_altLabel_1 .
+
+aug:CS_prefLabel a skosxl:Label ;
+    skosxl:literalForm "Compression Signatures"@en ;
+    dct:created "2024-03-09"^^xsd:date ;
+    dct:creator "Andreas Ehstand" ;
+    dct:language "en" ;
+    augont:termVariant "CS" ;
+    rdfs:comment "Recognizable patterns from AI training corpus compression"@en .
+
+aug:CS_altLabel_1 a skosxl:Label ;
+    skosxl:literalForm "Model Synthesis Artifacts"@en ;
+    dct:created "2024-04-12"^^xsd:date ;
+    rdfs:comment "Variant emphasizing synthesis processes"@en .
+
+# ============================================================================
+# License of Clarity (LOC)
+# ============================================================================
+aug:LOC skosxl:prefLabel aug:LOC_prefLabel ;
+    skosxl:altLabel aug:LOC_altLabel_1, aug:LOC_altLabel_2 .
+
+aug:LOC_prefLabel a skosxl:Label ;
+    skosxl:literalForm "License of Clarity"@en ;
+    dct:created "2024-03-11"^^xsd:date ;
+    dct:creator "Andreas Ehstand" ;
+    dct:language "en" ;
+    augont:termVariant "LOC" ;
+    rdfs:comment "Epistemic legitimacy granted through clarity rather than validity"@en .
+
+aug:LOC_altLabel_1 a skosxl:Label ;
+    skosxl:literalForm "Clarity Bias"@en ;
+    dct:created "2024-04-13"^^xsd:date ;
+    rdfs:comment "Variant emphasizing bias mechanism"@en .
+
+aug:LOC_altLabel_2 a skosxl:Label ;
+    skosxl:literalForm "Precision Legitimacy"@en ;
+    dct:created "2024-04-14"^^xsd:date ;
+    rdfs:comment "Variant emphasizing precision aspect"@en .
+
+# ============================================================================
+# Human-Data Authority Recursion (HDAR)
+# ============================================================================
+aug:HDAR skosxl:prefLabel aug:HDAR_prefLabel ;
+    skosxl:altLabel aug:HDAR_altLabel_1 .
+
+aug:HDAR_prefLabel a skosxl:Label ;
+    skosxl:literalForm "Human-Data Authority Recursion"@en ;
+    dct:created "2024-03-13"^^xsd:date ;
+    dct:creator "Andreas Ehstand" ;
+    dct:language "en" ;
+    augont:termVariant "HDAR" ;
+    rdfs:comment "Recursive cycle displacing human knowledge with AI-mediated data"@en .
+
+aug:HDAR_altLabel_1 a skosxl:Label ;
+    skosxl:literalForm "Knowledge Displacement Recursion"@en ;
+    dct:created "2024-04-15"^^xsd:date ;
+    rdfs:comment "Variant emphasizing knowledge displacement"@en .
+
+# ============================================================================
+# Label Metadata Documentation
+# ============================================================================
+augont:skosxlExtensionSummary a rdf:Description ;
+    rdfs:label "AUGMANITAI SKOS-XL Extended Labels"@en ;
+    rdfs:comment "Complete SKOS-XL representation providing rich lexical metadata for terminology management systems"@en ;
+
+    rdfs:seeAlso <http://www.w3.org/2008/05/skos-xl> ;
+    rdfs:seeAlso <http://www.w3.org/2004/02/skos/core> ;
+
+    dct:creator "Andreas Ehstand" ;
+    dct:created "2026-04-10"^^xsd:date ;
+    dct:language "en" ;
+    dct:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> .
+
+# Label Relation Types
+# skosxl:labelRelation: indicates associative relationship between labels
+# Used to connect synonyms, variants, and related terms
+
+# Hidden Labels Rationale
+# Hidden labels enable retrieval without appearing in display
+# Useful for: translations, variant spellings, historical terms, jargon
+# Included here for terms where: (1) alternate language forms aid retrieval
+#                               (2) historical spellings track terminology evolution
+#                               (3) colloquial variants improve discoverability
+
+# Provenance Tracking
+# dct:created: Timestamp when label was established
+# dct:creator: Attribution for label creation
+# dct:isVersionOf: Indicates relationship to canonical form
+# Enables terminology lifecycle tracking and version management
+
+# End of SKOS-XL Extended Labels

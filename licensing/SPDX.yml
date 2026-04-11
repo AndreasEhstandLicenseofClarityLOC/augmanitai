@@ -1,0 +1,154 @@
+spdxVersion: SPDX-2.3
+dataLicense: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+name: AUGMANITAI
+documentNamespace: https://augmanitai.org/spdx/augmanitai-1.0.0
+creationInfo:
+  created: 2026-04-10T00:00:00Z
+  creators:
+    - "Person: Andreas Ehstand (ORCID 0009-0006-3773-7796)"
+    - "Tool: manual-spdx-authoring-1.0"
+  licenseListVersion: "3.24"
+
+packages:
+  - name: augmanitai
+    SPDXID: SPDXRef-Package-augmanitai
+    versionInfo: "1.0.0"
+    downloadLocation: NOASSERTION
+    filesAnalyzed: true
+    primaryPackagePurpose: DATA
+    supplier: "Person: Andreas Ehstand"
+    originator: "Person: Andreas Ehstand"
+    homepage: https://doi.org/10.5281/zenodo.19481331
+    sourceInfo: "Zenodo DOI 10.5281/zenodo.19481331"
+    licenseConcluded: "CC-BY-NC-ND-4.0 AND Apache-2.0"
+    licenseDeclared: "CC-BY-NC-ND-4.0 AND Apache-2.0"
+    copyrightText: "Copyright 2025-2026 Andreas Ehstand"
+    summary: "AUGMANITAI — ISO 704/1087/30042-compatible terminology compendium for human-AI interaction phenomena"
+    description: >
+      Scholarly terminology database defining ~120 terms across 6 domains
+      covering meta-cognitive, compound cognition, multi-agent, collective
+      intelligence, and prompt-ontology bridge phenomena in human-AI
+      interaction. Ships with Python/NPM packages, MCP/A2A/ANP/AG-UI protocol
+      servers, SPARQL/SHACL/TBX/JSON-LD exports, GraphRAG variants, and
+      deployment configurations.
+
+  - name: augmanitai-data
+    SPDXID: SPDXRef-Package-augmanitai-data
+    versionInfo: "1.0.0"
+    downloadLocation: NOASSERTION
+    filesAnalyzed: true
+    primaryPackagePurpose: DATA
+    supplier: "Person: Andreas Ehstand"
+    licenseConcluded: "CC-BY-NC-ND-4.0"
+    licenseDeclared: "CC-BY-NC-ND-4.0"
+    copyrightText: "Copyright 2025-2026 Andreas Ehstand"
+    summary: "Terminology data subset — definitions, relations, translations, ontology files"
+
+  - name: augmanitai-code
+    SPDXID: SPDXRef-Package-augmanitai-code
+    versionInfo: "1.0.0"
+    downloadLocation: NOASSERTION
+    filesAnalyzed: true
+    primaryPackagePurpose: APPLICATION
+    supplier: "Person: Andreas Ehstand"
+    licenseConcluded: "Apache-2.0"
+    licenseDeclared: "Apache-2.0"
+    copyrightText: "Copyright 2025-2026 Andreas Ehstand"
+    summary: "Tooling subset — Python/NPM packages, servers, generators, validators, deploy configs"
+
+files:
+  - fileName: "./augmanitai-python/augmanitai/data/terms.json"
+    SPDXID: SPDXRef-File-terms-json
+    fileTypes: [TEXT]
+    licenseConcluded: "CC-BY-NC-ND-4.0"
+    licenseInfoInFiles: ["CC-BY-NC-ND-4.0"]
+    copyrightText: "Copyright 2025-2026 Andreas Ehstand"
+
+  - fileName: "./augmanitai-python/augmanitai/data/relations.json"
+    SPDXID: SPDXRef-File-relations-json
+    fileTypes: [TEXT]
+    licenseConcluded: "CC-BY-NC-ND-4.0"
+    licenseInfoInFiles: ["CC-BY-NC-ND-4.0"]
+    copyrightText: "Copyright 2025-2026 Andreas Ehstand"
+
+  - fileName: "./augmanitai-ontology.ttl"
+    SPDXID: SPDXRef-File-ontology-ttl
+    fileTypes: [TEXT]
+    licenseConcluded: "CC-BY-NC-ND-4.0"
+    licenseInfoInFiles: ["CC-BY-NC-ND-4.0"]
+    copyrightText: "Copyright 2025-2026 Andreas Ehstand"
+
+  - fileName: "./augmanitai-skos.ttl"
+    SPDXID: SPDXRef-File-skos-ttl
+    fileTypes: [TEXT]
+    licenseConcluded: "CC-BY-NC-ND-4.0"
+    licenseInfoInFiles: ["CC-BY-NC-ND-4.0"]
+    copyrightText: "Copyright 2025-2026 Andreas Ehstand"
+
+  - fileName: "./augmanitai-python/augmanitai/core.py"
+    SPDXID: SPDXRef-File-core-py
+    fileTypes: [SOURCE]
+    licenseConcluded: "Apache-2.0"
+    licenseInfoInFiles: ["Apache-2.0"]
+    copyrightText: "Copyright 2025-2026 Andreas Ehstand"
+
+  - fileName: "./augmanitai-npm/src/AugmanitaiDB.ts"
+    SPDXID: SPDXRef-File-augmanitai-ts
+    fileTypes: [SOURCE]
+    licenseConcluded: "Apache-2.0"
+    licenseInfoInFiles: ["Apache-2.0"]
+    copyrightText: "Copyright 2025-2026 Andreas Ehstand"
+
+relationships:
+  - spdxElementId: SPDXRef-DOCUMENT
+    relationshipType: DESCRIBES
+    relatedSpdxElement: SPDXRef-Package-augmanitai
+
+  - spdxElementId: SPDXRef-Package-augmanitai
+    relationshipType: CONTAINS
+    relatedSpdxElement: SPDXRef-Package-augmanitai-data
+
+  - spdxElementId: SPDXRef-Package-augmanitai
+    relationshipType: CONTAINS
+    relatedSpdxElement: SPDXRef-Package-augmanitai-code
+
+  - spdxElementId: SPDXRef-Package-augmanitai-data
+    relationshipType: CONTAINS
+    relatedSpdxElement: SPDXRef-File-terms-json
+
+  - spdxElementId: SPDXRef-Package-augmanitai-data
+    relationshipType: CONTAINS
+    relatedSpdxElement: SPDXRef-File-relations-json
+
+  - spdxElementId: SPDXRef-Package-augmanitai-data
+    relationshipType: CONTAINS
+    relatedSpdxElement: SPDXRef-File-ontology-ttl
+
+  - spdxElementId: SPDXRef-Package-augmanitai-data
+    relationshipType: CONTAINS
+    relatedSpdxElement: SPDXRef-File-skos-ttl
+
+  - spdxElementId: SPDXRef-Package-augmanitai-code
+    relationshipType: CONTAINS
+    relatedSpdxElement: SPDXRef-File-core-py
+
+  - spdxElementId: SPDXRef-Package-augmanitai-code
+    relationshipType: CONTAINS
+    relatedSpdxElement: SPDXRef-File-augmanitai-ts
+
+hasExtractedLicensingInfos: []
+
+annotations:
+  - annotator: "Person: Andreas Ehstand"
+    annotationDate: 2026-04-10T00:00:00Z
+    annotationType: OTHER
+    SPDXREF: SPDXRef-DOCUMENT
+    comment: >
+      This SPDX document describes the AUGMANITAI project as published on
+      Zenodo with DOI 10.5281/zenodo.19481331. Note that CC-BY-NC-ND-4.0
+      is NOT on the SPDX/OSI list of free-software licenses; it is listed
+      on the SPDX License List as a valid identifier for content licensing.
+      See ../provenance/ai-sbom/ for the AI-specific SBOM in SPDX 3.0 AI
+      Profile format, and ai-sbom-cyclonedx.json for the CycloneDX 1.6 ML-BOM
+      alternative.

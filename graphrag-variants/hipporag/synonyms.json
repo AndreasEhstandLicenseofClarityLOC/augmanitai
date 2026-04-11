@@ -1,0 +1,411 @@
+{
+  "version": "1.0.0",
+  "framework": "AUGMANITAI",
+  "variant": "HippoRAG",
+  "build_date": "2026-04-10",
+  "synonym_groups": {
+    "linguistic_evolution": {
+      "primary": "Symbiotic Linguistic Evolution",
+      "abbreviation": "SLE",
+      "entity_id": "sle",
+      "synonyms": [
+        "linguistic co-evolution",
+        "shared linguistic conventions",
+        "idiolect development",
+        "language convergence",
+        "communicative adaptation"
+      ],
+      "related_concepts": ["dsm", "sds", "ape"]
+    },
+    "knowledge_expansion": {
+      "primary": "Recursive Knowledge Expansion",
+      "abbreviation": "RKE",
+      "entity_id": "rke",
+      "synonyms": [
+        "iterative knowledge refinement",
+        "multi-turn learning",
+        "recursive deepening",
+        "knowledge structure iteration",
+        "cumulative understanding"
+      ],
+      "related_concepts": ["cod", "tea", "tci"]
+    },
+    "cognitive_resonance": {
+      "primary": "Context-Cognition Resonance",
+      "abbreviation": "CCR",
+      "entity_id": "ccr",
+      "synonyms": [
+        "cognitive alignment",
+        "contextual understanding",
+        "emergent alignment",
+        "framework convergence",
+        "mutual comprehension"
+      ],
+      "related_concepts": ["mca", "cie", "csf"]
+    },
+    "institutional_fluency": {
+      "primary": "AI Institutional Fluency",
+      "abbreviation": "AIF",
+      "entity_id": "aif",
+      "synonyms": [
+        "organizational adaptation",
+        "institutional protocol mastery",
+        "organizational embedding",
+        "norm recognition",
+        "institutional integration"
+      ],
+      "related_concepts": ["mca", "ars"]
+    },
+    "personality_emergence": {
+      "primary": "Prompt-Level Personality",
+      "abbreviation": "PLP",
+      "entity_id": "plp",
+      "synonyms": [
+        "conversation persona",
+        "session-specific identity",
+        "emergent voice",
+        "interaction personality",
+        "dialogue character"
+      ],
+      "related_concepts": ["sle", "cie", "dsm"]
+    },
+    "mutual_awareness": {
+      "primary": "Mutual Context Awareness",
+      "abbreviation": "MCA",
+      "entity_id": "mca",
+      "synonyms": [
+        "shared understanding",
+        "joint awareness",
+        "bilateral context",
+        "narrative continuity",
+        "discussion boundary recognition"
+      ],
+      "related_concepts": ["ccr", "cie", "tea"]
+    },
+    "temporal_grounding": {
+      "primary": "Temporal Episodic Anchoring",
+      "abbreviation": "TEA",
+      "entity_id": "tea",
+      "synonyms": [
+        "temporal marking",
+        "decision anchoring",
+        "time-stamped insights",
+        "episodic grounding",
+        "retrospective reference points"
+      ],
+      "related_concepts": ["tci", "cod", "mca"]
+    },
+    "protocol_refinement": {
+      "primary": "Adaptive Protocol Evolution",
+      "abbreviation": "APE",
+      "entity_id": "ape",
+      "synonyms": [
+        "interaction protocol refinement",
+        "implicit feedback adaptation",
+        "conversational evolution",
+        "protocol optimization",
+        "pattern emergence"
+      ],
+      "related_concepts": ["sle", "tct", "ape"]
+    },
+    "intellectual_depth": {
+      "primary": "Cognitive Intimacy Exchange",
+      "abbreviation": "CIE",
+      "entity_id": "cie",
+      "synonyms": [
+        "intellectual vulnerability deepening",
+        "abstract thought sharing",
+        "progressive disclosure",
+        "conceptual intimacy",
+        "hypothesis exploration"
+      ],
+      "related_concepts": ["plp", "rke", "dsm"]
+    },
+    "meaning_shift_detection": {
+      "primary": "Semantic Drift Sensitivity",
+      "abbreviation": "SDS",
+      "entity_id": "sds",
+      "synonyms": [
+        "semantic shift detection",
+        "meaning evolution tracking",
+        "connotation change awareness",
+        "definitional scope sensitivity",
+        "semantic variation detection"
+      ],
+      "related_concepts": ["sle", "cod", "ikf"]
+    },
+    "goal_inference": {
+      "primary": "AI Intent Recognition",
+      "abbreviation": "AIR",
+      "entity_id": "air",
+      "synonyms": [
+        "human goal inference",
+        "value recognition",
+        "constraint detection",
+        "objective alignment",
+        "proactive understanding"
+      ],
+      "related_concepts": ["aif", "hrm", "ecv"]
+    },
+    "confidence_gap": {
+      "primary": "Epistemic Confidence Variance",
+      "abbreviation": "ECV",
+      "entity_id": "ecv",
+      "synonyms": [
+        "confidence-validity mismatch",
+        "overconfidence variance",
+        "epistemic misalignment",
+        "confidence error",
+        "validity gap"
+      ],
+      "related_concepts": ["pdt", "air", "ecv"]
+    },
+    "technical_vocabulary": {
+      "primary": "Domain-Specific Metalanguage",
+      "abbreviation": "DSM",
+      "entity_id": "dsm",
+      "synonyms": [
+        "specialized vocabulary",
+        "domain terminology",
+        "technical jargon",
+        "abstraction language",
+        "professional dialect"
+      ],
+      "related_concepts": ["sle", "mca", "cod"]
+    },
+    "quality_threshold": {
+      "primary": "Threshold-Crossing Transformation",
+      "abbreviation": "TCT",
+      "entity_id": "tct",
+      "synonyms": [
+        "qualitative shift",
+        "interaction quality leap",
+        "understanding threshold",
+        "phase transition",
+        "emergent transition"
+      ],
+      "related_concepts": ["ape", "cie", "ccr"]
+    },
+    "reasoning_clarity": {
+      "primary": "Probabilistic Decision Transparency",
+      "abbreviation": "PDT",
+      "entity_id": "pdt",
+      "synonyms": [
+        "decision transparency",
+        "reasoning transparency",
+        "alternative path articulation",
+        "confidence weight expression",
+        "decision branch clarity"
+      ],
+      "related_concepts": ["ecv", "air", "ars"]
+    },
+    "selective_attention": {
+      "primary": "Human Relevance Mapping",
+      "abbreviation": "HRM",
+      "entity_id": "hrm",
+      "synonyms": [
+        "relevance recognition",
+        "connection identification",
+        "value linking",
+        "selective focus",
+        "importance assessment"
+      ],
+      "related_concepts": ["air", "csf", "mca"]
+    },
+    "framework_synthesis": {
+      "primary": "Collaborative Ontology Development",
+      "abbreviation": "COD",
+      "entity_id": "cod",
+      "synonyms": [
+        "joint framework creation",
+        "collaborative taxonomy building",
+        "conceptual co-creation",
+        "ontology co-construction",
+        "shared knowledge structure"
+      ],
+      "related_concepts": ["sle", "rke", "dsm"]
+    },
+    "meaning_construction": {
+      "primary": "Contextual Sensemaking Framework",
+      "abbreviation": "CSF",
+      "entity_id": "csf",
+      "synonyms": [
+        "sense-making framework",
+        "narrative coherence focus",
+        "meaning organization",
+        "rapid understanding structure",
+        "information coherence"
+      ],
+      "related_concepts": ["ccr", "hrm", "ras"]
+    },
+    "accountability_imbalance": {
+      "primary": "Asymmetric Risk Sharing",
+      "abbreviation": "ARS",
+      "entity_id": "ars",
+      "synonyms": [
+        "risk imbalance",
+        "accountability gap",
+        "responsibility asymmetry",
+        "structural imbalance",
+        "consequence asymmetry"
+      ],
+      "related_concepts": ["pdt", "aif", "mca"]
+    },
+    "cross_modal_integration": {
+      "primary": "Multimodal Alignment Engine",
+      "abbreviation": "MAE",
+      "entity_id": "mae",
+      "synonyms": [
+        "multimodal integration",
+        "cross-modal synthesis",
+        "modality fusion",
+        "coherent understanding engine",
+        "unified representation"
+      ],
+      "related_concepts": ["tci", "ccr", "csf"]
+    },
+    "unstated_premises": {
+      "primary": "Implicit Knowledge Frames",
+      "abbreviation": "IKF",
+      "entity_id": "ikf",
+      "synonyms": [
+        "background assumptions",
+        "cultural references",
+        "implicit premises",
+        "unstated context",
+        "frame assumptions"
+      ],
+      "related_concepts": ["mca", "sds", "air"]
+    },
+    "time_coherence": {
+      "primary": "Temporal Cognitive Integration",
+      "abbreviation": "TCI",
+      "entity_id": "tci",
+      "synonyms": [
+        "temporal synthesis",
+        "time-scale integration",
+        "coherent temporality",
+        "temporal understanding",
+        "time-aware reasoning"
+      ],
+      "related_concepts": ["tea", "ccr", "mae"]
+    },
+    "inquiry_pattern": {
+      "primary": "Convergent-Divergent Questioning",
+      "abbreviation": "CDQ",
+      "entity_id": "cdq",
+      "synonyms": [
+        "question pattern alternation",
+        "focused exploration",
+        "inquiry rhythm",
+        "scope modulation",
+        "investigative pattern"
+      ],
+      "related_concepts": ["qam", "rke", "cie"]
+    },
+    "thinking_externalization": {
+      "primary": "Reasoning Artifact Symbiosis",
+      "abbreviation": "RAS",
+      "entity_id": "ras",
+      "synonyms": [
+        "cognitive scaffolding",
+        "reasoning externalization",
+        "artifact co-production",
+        "externalized thinking",
+        "collaborative artifact"
+      ],
+      "related_concepts": ["rke", "cod", "csf"]
+    },
+    "dialogue_dynamics": {
+      "primary": "Query-Answer Morphodynamics",
+      "abbreviation": "QAM",
+      "entity_id": "qam",
+      "synonyms": [
+        "dialogue shape-shifting",
+        "question-answer interaction",
+        "dialogue morphing",
+        "conversational dynamics",
+        "mutual influence"
+      ],
+      "related_concepts": ["qam", "rke", "tct"]
+    }
+  },
+  "cross_domain_synonyms": {
+    "evolution": {
+      "primary_entities": ["sle", "ape", "tct"],
+      "synonyms": ["development", "refinement", "emergence", "transformation", "adaptation"]
+    },
+    "understanding": {
+      "primary_entities": ["ccr", "mca", "csf"],
+      "synonyms": ["comprehension", "alignment", "awareness", "knowledge", "cognition"]
+    },
+    "learning": {
+      "primary_entities": ["rke", "tea", "cod"],
+      "synonyms": ["expansion", "growth", "development", "knowledge acquisition", "refinement"]
+    },
+    "interaction": {
+      "primary_entities": ["plp", "tct", "cdq"],
+      "synonyms": ["dialogue", "engagement", "conversation", "exchange", "communication"]
+    },
+    "risk": {
+      "primary_entities": ["ars", "ecv", "hcf"],
+      "synonyms": ["danger", "threat", "hazard", "challenge", "constraint"]
+    }
+  },
+  "abbreviation_mapping": {
+    "SLE": "sle",
+    "RKE": "rke",
+    "CCR": "ccr",
+    "AIF": "aif",
+    "PLP": "plp",
+    "MCA": "mca",
+    "TEA": "tea",
+    "APE": "ape",
+    "CIE": "cie",
+    "SDS": "sds",
+    "HCF": "hcf",
+    "AIR": "air",
+    "ECV": "ecv",
+    "DSM": "dsm",
+    "TCT": "tct",
+    "PDT": "pdt",
+    "HRM": "hrm",
+    "COD": "cod",
+    "CSF": "csf",
+    "ARS": "ars",
+    "MAE": "mae",
+    "IKF": "ikf",
+    "TCI": "tci",
+    "CDQ": "cdq",
+    "RAS": "ras",
+    "QAM": "qam"
+  },
+  "reverse_mapping": {
+    "sle": "SLE",
+    "rke": "RKE",
+    "ccr": "CCR",
+    "aif": "AIF",
+    "plp": "PLP",
+    "mca": "MCA",
+    "tea": "TEA",
+    "ape": "APE",
+    "cie": "CIE",
+    "sds": "SDS",
+    "hcf": "HCF",
+    "air": "AIR",
+    "ecv": "ECV",
+    "dsm": "DSM",
+    "tct": "TCT",
+    "pdt": "PDT",
+    "hrm": "HRM",
+    "cod": "COD",
+    "csf": "CSF",
+    "ars": "ARS",
+    "mae": "MAE",
+    "ikf": "IKF",
+    "tci": "TCI",
+    "cdq": "CDQ",
+    "ras": "RAS",
+    "qam": "QAM"
+  }
+}

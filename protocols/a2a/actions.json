@@ -1,0 +1,189 @@
+{
+  "actions": [
+    {
+      "id": "augmanitai.term_lookup",
+      "name": "Term Lookup",
+      "description": "Retrieve complete definition and metadata for a single AUGMANITAI term",
+      "category": "query",
+      "input": {
+        "type": "object",
+        "properties": {
+          "term_id": {
+            "type": "string",
+            "description": "Term ID (e.g., 'sle-001') or abbreviation (e.g., 'SLE')"
+          }
+        },
+        "required": ["term_id"]
+      },
+      "output": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "name_en": { "type": "string" },
+          "name_de": { "type": "string" },
+          "abbreviation": { "type": "string" },
+          "definition_en": { "type": "string" },
+          "definition_de": { "type": "string" },
+          "domain": { "type": "string" },
+          "examples": { "type": "array", "items": { "type": "string" } },
+          "iso_alignment": { "type": ["string", "null"] }
+        }
+      }
+    },
+    {
+      "id": "augmanitai.term_search",
+      "name": "Term Search",
+      "description": "Full-text search across term names, definitions, and domains",
+      "category": "query",
+      "input": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "Search query (case-insensitive, full-text)"
+          },
+          "limit": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 50,
+            "default": 10
+          },
+          "domainFilter": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Optional semantic domains to limit search"
+          }
+        },
+        "required": ["query"]
+      },
+      "output": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": { "type": "string" },
+            "name_en": { "type": "string" },
+            "abbreviation": { "type": "string" },
+            "domain": { "type": "string" },
+            "matchRelevance": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1,
+              "description": "Relevance score (0.0-1.0)"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "augmanitai.term_relate",
+      "name": "Term Relationship",
+      "description": "Find semantically related terms within the same domain",
+      "category": "query",
+      "input": {
+        "type": "object",
+        "properties": {
+          "term_id": {
+            "type": "string",
+            "description": "Term ID or abbreviation"
+          },
+          "includeDefinitions": {
+            "type": "boolean",
+            "default": true
+          }
+        },
+        "required": ["term_id"]
+      },
+      "output": {
+        "type": "object",
+        "properties": {
+          "primary": {
+            "type": "object",
+            "description": "The primary term"
+          },
+          "domain": {
+            "type": "string",
+            "description": "Semantic domain"
+          },
+          "relatedTerms": {
+            "type": "array",
+            "items": { "type": "object" },
+            "description": "Terms in same domain"
+          },
+          "relatedCount": {
+            "type": "integer"
+          }
+        }
+      }
+    },
+    {
+      "id": "augmanitai.term_validate_drift",
+      "name": "Semantic Drift Validation",
+      "description": "Check for semantic drift in term usage patterns against canonical definitions",
+      "category": "analysis",
+      "input": {
+        "type": "object",
+        "properties": {
+          "term_id": {
+            "type": "string",
+            "description": "Term ID to validate"
+          },
+          "usageContext": {
+            "type": "string",
+            "description": "Text sample showing usage"
+          },
+          "threshold": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1,
+            "default": 0.8,
+            "description": "Semantic similarity threshold"
+          }
+        },
+        "required": ["term_id", "usageContext"]
+      },
+      "output": {
+        "type": "object",
+        "properties": {
+          "term_id": { "type": "string" },
+          "canonicalDefinition": { "type": "string" },
+          "usageContext": { "type": "string" },
+          "semanticSimilarity": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "driftDetected": { "type": "boolean" },
+          "driftDescription": { "type": "string" },
+          "recommendations": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+    {
+      "id": "augmanitai.list_domains",
+      "name": "List Domains",
+      "description": "Enumerate all semantic domains and their constituent terms",
+      "category": "query",
+      "input": {
+        "type": "object"
+      },
+      "output": {
+        "type": "object",
+        "properties": {
+          "domains": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "array",
+              "items": { "type": "object" }
+            }
+          },
+          "totalDomains": { "type": "integer" },
+          "totalTerms": { "type": "integer" }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "manifest_version": "2.1",
+  "claim_generator": "AUGMANITAI manual manifest (structural demo)",
+  "document_format": "application/json",
+  "_note": "STRUCTURAL DEMONSTRATION ONLY. AUGMANITAI is a terminology DATASET, not an AI system and not a trained model. This C2PA manifest is a structural demonstration of how a downstream operator might attach provenance metadata to a dataset artifact. It does NOT assert ISO certification, EU AI Act conformity, or any numeric quality metrics. Descriptive linguistic research, not normative (§1). Non-peer-reviewed working-paper (§11). ISO-inspired, not ISO-certified (§16). Restricted applications per §20. See DISCLAIMER.md in the repository root.",
+  "metadata": {
+    "claim_id": "urn:c2pa:manifest:augmanitai-demo-2026-04-10",
+    "claim_date": "2026-04-10T00:00:00Z",
+    "claim_generator": {
+      "name": "AUGMANITAI (dataset)",
+      "version": "1.0",
+      "contact": "Andreas Ehstand (ORCID 0009-0006-3773-7796)"
+    }
+  },
+  "assertion_store": {
+    "c2pa.actions": {
+      "actions": [
+        {
+          "action": "c2pa:created",
+          "timestamp": "2026-04-10T00:00:00Z",
+          "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/humanEdited",
+          "description": "Manual terminology curation by the author. No ML model was trained; no generative or inference pipeline was used to produce the compendium."
+        },
+        {
+          "action": "c2pa:published",
+          "timestamp": "2026-04-10T00:00:00Z",
+          "publishingAgent": "Zenodo (DOI: 10.5281/zenodo.19481331)",
+          "description": "Published under CC BY-NC-ND 4.0 (data) and Apache-2.0 (code)."
+        }
+      ]
+    },
+    "c2pa.training_mining": {
+      "data_mining_notice": true,
+      "mining_restrictions": "CC BY-NC-ND 4.0 prohibits commercial use and modifications. §20 of the Ethical Disclaimer prohibits use as a diagnostic, medical, psychological, legal, HR, credit-scoring, insurance, surveillance, or profiling mechanism.",
+      "training_data_source_declaration": {
+        "claim_generator_trained": false,
+        "description": "AUGMANITAI is a manually curated terminology dataset, not a machine learning model. No training occurred and no inference runs on this artifact."
+      }
+    },
+    "c2pa.core_properties": {
+      "contentBinding": {
+        "alg": "sha256",
+        "hash": "sha256:PLACEHOLDER-NOT-A-REAL-HASH"
+      },
+      "provenance": {
+        "entityType": "TerminologyDataset",
+        "entityIdentifier": "10.5281/zenodo.19481331",
+        "version": "1.0",
+        "releaseDate": "2026-04-10"
+      }
+    },
+    "c2pa.custom_assertion.augmanitai_status": {
+      "terminology_metrics": {
+        "total_terms": 1000,
+        "domains": 16,
+        "iso_informed_by": ["ISO 704", "ISO 1087", "ISO 30042"],
+        "iso_certified": false,
+        "peer_reviewed": false,
+        "status": "non-peer-reviewed working-paper (§11)"
+      },
+      "restricted_applications": {
+        "statement": "Per §20 of the Ethical Disclaimer, AUGMANITAI terms MUST NOT be used as diagnostic labels, medical/psychological classification, legal categorization, military/intelligence classification, personnel decisions, HR screening, credit scoring, insurance assessment, state surveillance, or profiling mechanisms.",
+        "reference": "DISCLAIMER.md §20"
+      },
+      "does_not_claim": {
+        "ai_system": false,
+        "iso_certification": false,
+        "eu_ai_act_conformity": false,
+        "regulatory_endorsement": "None. No affiliation with any regulatory body.",
+        "performance_metrics": "None. Dataset, not a model."
+      }
+    }
+  },
+  "signature_block": {
+    "issuer": "Andreas Ehstand",
+    "issuer_orcid": "0009-0006-3773-7796",
+    "signature_algorithm": "placeholder",
+    "signature_timestamp": "2026-04-10T00:00:00Z",
+    "signature_value": "PLACEHOLDER-NOT-A-REAL-SIGNATURE",
+    "validation_status": "demonstration-only"
+  },
+  "distribution_context": {
+    "manifest_url": "https://doi.org/10.5281/zenodo.19481331",
+    "repository": "Zenodo (CERN)",
+    "access_level": "open",
+    "persistent_identifier": "DOI: 10.5281/zenodo.19481331"
+  },
+  "template_usage_instructions": {
+    "purpose": "This manifest template demonstrates the STRUCTURAL fields a downstream operator might use when attaching C2PA provenance to a dataset artifact. It is NOT an assertion of conformity, certification, or regulatory alignment for AUGMANITAI itself.",
+    "usage_note": "Downstream operators building AI systems must generate their own manifests describing their own systems. Do not copy the AUGMANITAI fields into a system manifest — that would misrepresent the system's provenance."
+  },
+  "disclaimerReference": "DISCLAIMER.md §1, §11, §16, §20"
+}

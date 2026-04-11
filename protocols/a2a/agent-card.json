@@ -1,0 +1,101 @@
+{
+  "@context": "https://google.github.io/A2A/v1/schema/agent-card.jsonld",
+  "type": "AgentCard",
+  "name": "AUGMANITAI",
+  "description": "Terminology reference for phenomena at the human-AI interface. Exposes a subset of AUGMANITAI core terms covering linguistic evolution, knowledge extraction, cognitive processes, measurement metrics, systemic effects, and terminological phenomena. Bilingual (EN/DE). Descriptive linguistic research, not normative (§1). Non-peer-reviewed working-paper status (§11). Informed by ISO 704 / ISO 1087 / ISO 30042 (ISO-inspired, not ISO-certified — §16). Restricted applications per §20. See DISCLAIMER.md.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Andreas Ehstand",
+    "orcid": "0009-0006-3773-7796",
+    "doi": "10.5281/zenodo.19481331"
+  },
+  "license": "CC BY-NC-ND 4.0",
+  "url": "https://zenodo.org/records/19481331",
+  "capabilities": [
+    {
+      "name": "term_lookup",
+      "description": "Retrieve complete definition and metadata for a single AUGMANITAI term",
+      "category": "query"
+    },
+    {
+      "name": "term_search",
+      "description": "Full-text search across term names, definitions, and domains",
+      "category": "query"
+    },
+    {
+      "name": "term_relate",
+      "description": "Find semantically related terms within the same domain",
+      "category": "query"
+    },
+    {
+      "name": "term_validate_drift",
+      "description": "Check for semantic drift in term usage patterns",
+      "category": "analysis"
+    }
+  ],
+  "skills": [
+    {
+      "id": "augmanitai.terminology",
+      "name": "Terminology Navigation",
+      "description": "Full access to AUGMANITAI term database with search and relationship mapping"
+    },
+    {
+      "id": "augmanitai.multilingual",
+      "name": "Multilingual Support",
+      "description": "Access to English and German term definitions and examples"
+    },
+    {
+      "id": "augmanitai.domain_analysis",
+      "name": "Domain Classification",
+      "description": "Semantic domain mapping and cross-domain term relationship analysis"
+    }
+  ],
+  "authentication": {
+    "type": "none",
+    "description": "AUGMANITAI terminology is publicly accessible without authentication"
+  },
+  "defaultInputModes": [
+    "text",
+    "json"
+  ],
+  "defaultOutputModes": [
+    "json",
+    "text",
+    "structured"
+  ],
+  "endpoints": {
+    "query": "local://augmanitai/query",
+    "subscribe": "local://augmanitai/subscribe"
+  },
+  "metadata": {
+    "framework": "AUGMANITAI",
+    "frameworkVersion": "1.0",
+    "termCount": 25,
+    "domains": [
+      "linguistic_dynamics",
+      "knowledge_extraction",
+      "cognitive_processes",
+      "measurement_metrics",
+      "systemic_effects",
+      "terminological_phenomena"
+    ],
+    "languages": ["en", "de"],
+    "isoInformedBy": "ISO 704, ISO 1087, ISO 30042 (ISO-inspired, not ISO-certified — §16)",
+    "peerReviewStatus": "non-peer-reviewed working-paper (§11)",
+    "restrictedApplications": "Must not be used as diagnostic label, medical/psychological classification, legal categorization, HR screening, credit scoring, insurance assessment, surveillance, or profiling mechanism (§20). See DISCLAIMER.md.",
+    "interoperability": {
+      "mcp": "1.0",
+      "a2a": "2026",
+      "anp": "1.0",
+      "agui": "1.0"
+    }
+  },
+  "rateLimit": {
+    "enabled": false,
+    "description": "No rate limiting for local terminology access"
+  },
+  "dataPolicy": {
+    "retentionDays": null,
+    "description": "Terminology database is read-only reference material. No user data retention."
+  }
+}

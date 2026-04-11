@@ -1,0 +1,240 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AUGMANITAI UI Schema",
+  "description": "UI rendering schema for AUGMANITAI term visualization and interaction",
+  "type": "object",
+  "properties": {
+    "components": {
+      "type": "object",
+      "properties": {
+        "termCard": {
+          "type": "object",
+          "description": "Term definition card component",
+          "properties": {
+            "type": {
+              "const": "card"
+            },
+            "layout": {
+              "type": "string",
+              "enum": ["vertical", "horizontal", "minimal"]
+            },
+            "fields": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "name": { "type": "string" },
+                  "label": { "type": "string" },
+                  "type": {
+                    "enum": ["text", "code", "badge", "tag-list"]
+                  },
+                  "visible": { "type": "boolean" }
+                }
+              }
+            },
+            "styling": {
+              "type": "object",
+              "properties": {
+                "theme": { "enum": ["light", "dark"] },
+                "borderColor": { "type": "string" },
+                "backgroundColor": { "type": "string" },
+                "padding": { "type": "string" }
+              }
+            },
+            "interactions": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": ["click", "hover", "expand", "copy"]
+              }
+            }
+          }
+        },
+        "searchWidget": {
+          "type": "object",
+          "description": "Term search input and results widget",
+          "properties": {
+            "type": { "const": "search" },
+            "placeholder": { "type": "string" },
+            "suggestions": {
+              "type": "object",
+              "properties": {
+                "enabled": { "type": "boolean" },
+                "minChars": { "type": "integer" },
+                "maxSuggestions": { "type": "integer" }
+              }
+            },
+            "filters": {
+              "type": "object",
+              "properties": {
+                "domains": { "type": "boolean" },
+                "languages": { "type": "boolean" }
+              }
+            },
+            "resultDisplay": {
+              "enum": ["grid", "list", "compact"]
+            }
+          }
+        },
+        "relationGraph": {
+          "type": "object",
+          "description": "Term relationship network visualization",
+          "properties": {
+            "type": { "const": "graph" },
+            "layout": {
+              "enum": ["force-directed", "hierarchical", "circular"]
+            },
+            "nodeTypes": {
+              "type": "object",
+              "properties": {
+                "primary": {
+                  "type": "object",
+                  "properties": {
+                    "shape": { "enum": ["circle", "square"] },
+                    "color": { "type": "string" },
+                    "size": { "type": "number" }
+                  }
+                },
+                "related": {
+                  "type": "object",
+                  "properties": {
+                    "shape": { "enum": ["circle", "square"] },
+                    "color": { "type": "string" },
+                    "size": { "type": "number" }
+                  }
+                }
+              }
+            },
+            "edges": {
+              "type": "object",
+              "properties": {
+                "style": { "enum": ["solid", "dashed", "dotted"] },
+                "color": { "type": "string" },
+                "thickness": { "type": "number" }
+              }
+            },
+            "interactions": {
+              "type": "array",
+              "items": {
+                "enum": ["zoom", "pan", "node-click", "edge-highlight"]
+              }
+            }
+          }
+        },
+        "domainBrowser": {
+          "type": "object",
+          "description": "Semantic domain explorer",
+          "properties": {
+            "type": { "const": "taxonomy" },
+            "layout": {
+              "enum": ["tree", "grid", "list"]
+            },
+            "nodeDisplay": {
+              "type": "object",
+              "properties": {
+                "showCount": { "type": "boolean" },
+                "showDescription": { "type": "boolean" }
+              }
+            },
+            "expandBehavior": {
+              "enum": ["lazy", "eager", "manual"]
+            }
+          }
+        },
+        "termTimeline": {
+          "type": "object",
+          "description": "Term versioning and change history",
+          "properties": {
+            "type": { "const": "timeline" },
+            "orientation": { "enum": ["vertical", "horizontal"] },
+            "events": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "date": { "type": "string", "format": "date-time" },
+                  "version": { "type": "string" },
+                  "status": { "enum": ["added", "updated", "deprecated"] },
+                  "details": { "type": "string" }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "layouts": {
+      "type": "object",
+      "properties": {
+        "termCardLayout": {
+          "type": "object",
+          "properties": {
+            "grid": {
+              "type": "object",
+              "properties": {
+                "columns": { "type": "integer", "minimum": 1, "maximum": 4 },
+                "gap": { "type": "string" },
+                "responsive": { "type": "boolean" }
+              }
+            }
+          }
+        },
+        "searchResultsLayout": {
+          "type": "object",
+          "properties": {
+            "maxHeight": { "type": "string" },
+            "scrolling": { "enum": ["auto", "scroll", "virtual"] },
+            "pageSize": { "type": "integer" }
+          }
+        }
+      }
+    },
+    "colors": {
+      "type": "object",
+      "properties": {
+        "primary": { "type": "string" },
+        "secondary": { "type": "string" },
+        "domain": {
+          "type": "object",
+          "properties": {
+            "linguistic_dynamics": { "type": "string" },
+            "knowledge_extraction": { "type": "string" },
+            "cognitive_processes": { "type": "string" },
+            "measurement_metrics": { "type": "string" },
+            "systemic_effects": { "type": "string" },
+            "terminological_phenomena": { "type": "string" }
+          }
+        },
+        "status": {
+          "type": "object",
+          "properties": {
+            "active": { "type": "string" },
+            "deprecated": { "type": "string" },
+            "archived": { "type": "string" }
+          }
+        }
+      }
+    },
+    "animations": {
+      "type": "object",
+      "properties": {
+        "cardEntry": {
+          "type": "object",
+          "properties": {
+            "enabled": { "type": "boolean" },
+            "duration": { "type": "number" },
+            "easing": { "type": "string" }
+          }
+        },
+        "graphExpansion": {
+          "type": "object",
+          "properties": {
+            "enabled": { "type": "boolean" },
+            "duration": { "type": "number" }
+          }
+        }
+      }
+    }
+  },
+  "required": ["components"]
+}

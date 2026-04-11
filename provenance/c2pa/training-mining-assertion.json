@@ -1,0 +1,73 @@
+{
+  "assertion_id": "c2pa.training_mining",
+  "assertion_version": "2.1",
+  "assertion_type": "org.contentauthenticity.training_mining",
+  "_note": "STRUCTURAL DEMONSTRATION ONLY. AUGMANITAI is a terminology DATASET manually curated by the author; no machine learning training occurred. This assertion declares that the dataset is NOT the output of model training and does not claim any regulatory conformance. Descriptive linguistic research, not normative (§1). Non-peer-reviewed working-paper (§11). ISO-inspired, not ISO-certified (§16). Restricted applications per §20. See DISCLAIMER.md in the repository root.",
+  "metadata": {
+    "assertion_created": "2026-04-10T00:00:00Z",
+    "assertion_updated": "2026-04-10T00:00:00Z",
+    "assertion_creator": "Andreas Ehstand (ORCID 0009-0006-3773-7796)",
+    "assertion_context": "C2PA 2.1 training_mining declaration for a manually curated linguistic dataset"
+  },
+  "data_mining_notice": {
+    "enabled": true,
+    "notice_text": "AUGMANITAI is a manually curated linguistic-terminological dataset. It is licensed under CC BY-NC-ND 4.0 (data) and Apache-2.0 (code). Use of this dataset for training machine learning models that reproduce its structure or terminology requires compliance with the license, with §20 of the Ethical Disclaimer, and with the original author's explicit permission for commercial use or derivatives.",
+    "restrictions_summary": "CC BY-NC-ND 4.0: attribution required; commercial use prohibited; no derivatives without permission. §20 restricts downstream applications."
+  },
+  "training_data_source_declaration": {
+    "claim_generator_trained": false,
+    "claim_generator_type": "TerminologyDataset",
+    "training_method": "Manual curation by the single author",
+    "description": "AUGMANITAI is a curated terminology dataset of 1000 terms across 16 domains. It was produced by the author through reading, reflection, and manual drafting informed by academic and practitioner experience. No supervised or unsupervised machine learning training was performed on any corpus to produce the terms or definitions. No automated crawling or scraping pipeline is part of the artifact.",
+    "data_mining_prohibition": {
+      "prohibited_uses": [
+        "Training machine learning models to reproduce AUGMANITAI terminology without permission",
+        "Commercial use without explicit licensing agreement",
+        "Modification of definitions or domain structure without permission",
+        "Use for any of the §20-restricted applications (diagnostic, medical, psychological, legal, HR, credit-scoring, insurance, surveillance, profiling)"
+      ],
+      "license_enforcement": "CC BY-NC-ND 4.0 permits legal enforcement against unauthorized uses."
+    },
+    "training_data_mining_allowed": false
+  },
+  "usage_restrictions_statement": {
+    "restriction_type": "CC BY-NC-ND 4.0 (data) + Apache-2.0 (code) + §20 Anwendungsverbot",
+    "restriction_text": "Data (terms, definitions, relations) licensed under CC BY-NC-ND 4.0. Code (generators, validators, tooling) licensed under Apache-2.0. Both are subject to the Ethical Disclaimer §1–§20. §20 prohibits use as a diagnostic, medical, psychological, legal, HR, credit-scoring, insurance, surveillance, or profiling mechanism.",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+  },
+  "commercial_use_policy": {
+    "commercial_use_allowed": false,
+    "commercial_licensing": {
+      "available": true,
+      "contact": "Via ORCID: https://orcid.org/0009-0006-3773-7796"
+    }
+  },
+  "modification_policy": {
+    "modifications_allowed": false,
+    "modification_request_process": {
+      "available": true,
+      "contact": "Via ORCID: https://orcid.org/0009-0006-3773-7796"
+    }
+  },
+  "attribution_requirements": {
+    "required_attribution_format": "AUGMANITAI 1000-Term Compendium by Andreas Ehstand (ORCID 0009-0006-3773-7796), DOI 10.5281/zenodo.19481331, licensed under CC BY-NC-ND 4.0. See DISCLAIMER.md §1–§20.",
+    "attribution_examples": [
+      {
+        "context": "In a research paper",
+        "format": "Ehstand, A. AUGMANITAI: 1000-Term Compendium for human-AI interaction phenomena. Zenodo. https://doi.org/10.5281/zenodo.19481331"
+      },
+      {
+        "context": "In software documentation",
+        "format": "This work references the AUGMANITAI 1000-Term Compendium (v1.0) by Andreas Ehstand (ORCID 0009-0006-3773-7796). License: CC BY-NC-ND 4.0. https://doi.org/10.5281/zenodo.19481331"
+      }
+    ]
+  },
+  "legal_disclaimers": {
+    "disclaimer_1": "This assertion is provided for informational purposes and does not constitute legal advice.",
+    "disclaimer_2": "AUGMANITAI is provided 'as is' without warranty. Non-peer-reviewed working-paper status (§11).",
+    "disclaimer_3": "Use of AUGMANITAI in downstream AI systems does NOT imply regulatory compliance. Downstream operators remain fully responsible for their own risk management and regulatory obligations.",
+    "disclaimer_4": "Naming a phenomenon is not endorsement (§1, §14).",
+    "disclaimer_5": "Restricted applications per §20 — see DISCLAIMER.md in the repository root."
+  },
+  "disclaimerReference": "DISCLAIMER.md §1, §11, §16, §20"
+}

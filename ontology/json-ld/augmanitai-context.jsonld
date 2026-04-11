@@ -1,0 +1,245 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@vocab": "https://augmanitai.org/ontology#",
+    "@base": "https://augmanitai.org/",
+
+    "aug": {
+      "@id": "https://augmanitai.org/term/",
+      "@type": "@id"
+    },
+    "augont": "https://augmanitai.org/ontology#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "skosxl": "http://www.w3.org/2008/05/skos-xl#",
+    "dct": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "ontolex": "http://www.w3.org/ns/lemon/ontolex#",
+    "lexinfo": "http://www.w3.org/ns/lemon/lexinfo#",
+    "decomp": "http://www.w3.org/ns/lemon/decomp#",
+    "vartrans": "http://www.w3.org/ns/lemon/vartrans#",
+    "synsem": "http://www.w3.org/ns/lemon/synsem#",
+    "sh": "http://www.w3.org/ns/shacl#",
+
+    "id": "@id",
+    "type": "@type",
+
+    "term": {
+      "@id": "skos:prefLabel",
+      "@language": "en"
+    },
+    "abbreviation": "augont:abbreviation",
+    "definition": {
+      "@id": "skos:definition",
+      "@language": "en",
+      "@container": "@language"
+    },
+    "definitions": {
+      "@id": "skos:definition",
+      "@container": "@language"
+    },
+    "domain": "dct:domain",
+    "domains": {
+      "@id": "dct:domain",
+      "@container": "@set"
+    },
+    "example": "augont:example",
+    "examples": {
+      "@id": "augont:example",
+      "@container": "@list"
+    },
+
+    "iso704Characteristic": "augont:iso704Characteristic",
+    "iso704Characteristics": {
+      "@id": "augont:iso704Characteristic",
+      "@container": "@set"
+    },
+
+    "prefLabel": {
+      "@id": "skos:prefLabel",
+      "@container": "@language"
+    },
+    "altLabel": {
+      "@id": "skos:altLabel",
+      "@container": "@language"
+    },
+    "hiddenLabel": {
+      "@id": "skos:hiddenLabel",
+      "@container": "@language"
+    },
+
+    "skosxlPrefLabel": "skosxl:prefLabel",
+    "skosxlAltLabel": {
+      "@id": "skosxl:altLabel",
+      "@container": "@set"
+    },
+    "skosxlHiddenLabel": {
+      "@id": "skosxl:hiddenLabel",
+      "@container": "@set"
+    },
+
+    "broader": {
+      "@id": "skos:broader",
+      "@type": "@id"
+    },
+    "broaderTerms": {
+      "@id": "skos:broader",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "narrower": {
+      "@id": "skos:narrower",
+      "@type": "@id"
+    },
+    "narrowerTerms": {
+      "@id": "skos:narrower",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "related": {
+      "@id": "skos:related",
+      "@type": "@id"
+    },
+    "relatedTerms": {
+      "@id": "skos:related",
+      "@type": "@id",
+      "@container": "@set"
+    },
+
+    "relatedTo": {
+      "@id": "augont:relatedTo",
+      "@type": "@id"
+    },
+    "partOf": {
+      "@id": "augont:partOf",
+      "@type": "@id"
+    },
+    "hasPart": {
+      "@id": "augont:hasPart",
+      "@type": "@id"
+    },
+    "hasChild": {
+      "@id": "augont:hasChild",
+      "@type": "@id"
+    },
+    "enables": {
+      "@id": "augont:enables",
+      "@type": "@id"
+    },
+    "isEnabledBy": {
+      "@id": "augont:isEnabledBy",
+      "@type": "@id"
+    },
+    "causesDirectly": {
+      "@id": "augont:causesDirectly",
+      "@type": "@id"
+    },
+    "causedDirectlyBy": {
+      "@id": "augont:causedDirectlyBy",
+      "@type": "@id"
+    },
+    "causesIndirectly": {
+      "@id": "augont:causesIndirectly",
+      "@type": "@id"
+    },
+    "causedIndirectlyBy": {
+      "@id": "augont:causedIndirectlyBy",
+      "@type": "@id"
+    },
+    "equivalentTo": {
+      "@id": "augont:equivalentTo",
+      "@type": "@id"
+    },
+    "contradicts": {
+      "@id": "augont:contradicts",
+      "@type": "@id"
+    },
+    "incompatibleWith": {
+      "@id": "augont:incompatibleWith",
+      "@type": "@id"
+    },
+
+    "created": {
+      "@id": "dct:created",
+      "@type": "xsd:date"
+    },
+    "creator": "dct:creator",
+    "license": {
+      "@id": "dct:license",
+      "@type": "@id"
+    },
+    "language": "dct:language",
+    "modified": {
+      "@id": "dct:modified",
+      "@type": "xsd:dateTime"
+    },
+    "conformsTo": {
+      "@id": "dct:conformsTo",
+      "@type": "@id"
+    },
+
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "seeAlso": {
+      "@id": "rdfs:seeAlso",
+      "@type": "@id"
+    },
+
+    "name": "foaf:name",
+    "page": {
+      "@id": "foaf:page",
+      "@type": "@id"
+    },
+    "workplaceHomepage": {
+      "@id": "foaf:workplaceHomepage",
+      "@type": "@id"
+    },
+
+    "lexicalEntry": "ontolex:LexicalEntry",
+    "canonicalForm": "ontolex:canonicalForm",
+    "sense": "ontolex:sense",
+    "reference": "ontolex:reference",
+    "writtenRep": "ontolex:writtenRep",
+    "partOfSpeech": "lexinfo:partOfSpeech",
+    "gender": "lexinfo:gender",
+
+    "termVariant": "augont:termVariant",
+    "isoAlignment": "augont:iso_alignment",
+
+    "shapes": {
+      "@id": "sh:shapesGraph",
+      "@type": "@id"
+    },
+    "nodeShape": "sh:NodeShape",
+    "property": "sh:property",
+    "path": "sh:path",
+    "minCount": {
+      "@id": "sh:minCount",
+      "@type": "xsd:integer"
+    },
+    "maxCount": {
+      "@id": "sh:maxCount",
+      "@type": "xsd:integer"
+    },
+    "datatype": {
+      "@id": "sh:datatype",
+      "@type": "@id"
+    },
+    "pattern": "sh:pattern",
+    "severity": {
+      "@id": "sh:severity",
+      "@type": "@id"
+    },
+
+    "context": {
+      "@id": "@context"
+    },
+    "contextUrl": {
+      "@id": "@context",
+      "@type": "@id"
+    }
+  }
+}

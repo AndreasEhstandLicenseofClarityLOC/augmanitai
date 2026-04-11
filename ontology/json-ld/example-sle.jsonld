@@ -1,0 +1,135 @@
+{
+  "@context": "augmanitai-context.jsonld",
+  "@id": "https://augmanitai.org/term/SLE",
+  "@type": [
+    "skos:Concept",
+    "augont:Term"
+  ],
+  "id": "https://augmanitai.org/term/SLE",
+  "type": ["skos:Concept", "augont:Term"],
+
+  "term": "Symbiotic Linguistic Evolution",
+  "abbreviation": "SLE",
+
+  "definition": {
+    "en": "The process by which human language and AI-generated language patterns co-evolve through repeated interaction, creating emergent linguistic features not present in either party's original communication patterns."
+  },
+
+  "definitions": {
+    "en": "The process by which human language and AI-generated language patterns co-evolve through repeated interaction, creating emergent linguistic features not present in either party's original communication patterns.",
+    "de": "Der Prozess, durch den sich menschliche Sprache und KI-generierte Sprachmuster durch wiederholte Interaktion gemeinsam entwickeln und emergente sprachliche Merkmale schaffen, die in den ursprünglichen Kommunikationsmustern beider Parteien nicht vorhanden sind."
+  },
+
+  "domain": "linguistic_dynamics",
+
+  "iso704Characteristics": [
+    "Co-evolutionary process between human and machine language",
+    "Emergent linguistic features result from repeated interaction",
+    "Changes present in both communicating parties"
+  ],
+
+  "examples": [
+    "Users adopt AI-suggested phrasings in subsequent conversations",
+    "Anthropomorphic language patterns emerge in human prompts",
+    "Formal registers from AI outputs influence human writing style"
+  ],
+
+  "prefLabel": {
+    "en": "Symbiotic Linguistic Evolution"
+  },
+
+  "altLabel": {
+    "en": [
+      "Linguistic Co-evolution",
+      "Human-AI Language Interplay"
+    ]
+  },
+
+  "hiddenLabel": {
+    "de": [
+      "Symbiotische linguistische Entwicklung"
+    ]
+  },
+
+  "skosxlPrefLabel": {
+    "@id": "https://augmanitai.org/term/SLE_prefLabel",
+    "@type": "skosxl:Label",
+    "skosxl:literalForm": "Symbiotic Linguistic Evolution",
+    "created": "2024-01-15",
+    "creator": "Andreas Ehstand",
+    "language": "en",
+    "comment": "Primary English designation; use for formal terminology systems"
+  },
+
+  "skosxlAltLabel": [
+    {
+      "@id": "https://augmanitai.org/term/SLE_altLabel_1",
+      "@type": "skosxl:Label",
+      "skosxl:literalForm": "Linguistic Co-evolution",
+      "created": "2024-02-20",
+      "language": "en",
+      "comment": "Synonym emphasizing iterative co-development"
+    },
+    {
+      "@id": "https://augmanitai.org/term/SLE_altLabel_2",
+      "@type": "skosxl:Label",
+      "skosxl:literalForm": "Human-AI Language Interplay",
+      "created": "2024-03-10",
+      "language": "en",
+      "comment": "Informal variant for general audience communication"
+    }
+  ],
+
+  "skosxlHiddenLabel": [
+    {
+      "@id": "https://augmanitai.org/term/SLE_hiddenLabel_1",
+      "@type": "skosxl:Label",
+      "skosxl:literalForm": "Symbiotische linguistische Entwicklung",
+      "created": "2024-02-15",
+      "language": "de",
+      "comment": "German form for multilingual indexing"
+    }
+  ],
+
+  "broaderTerms": [],
+
+  "narrowerTerms": [],
+
+  "relatedTerms": [
+    "https://augmanitai.org/term/RKE",
+    "https://augmanitai.org/term/SSP",
+    "https://augmanitai.org/term/AIPS"
+  ],
+
+  "causesDirectly": [
+    "https://augmanitai.org/term/AIPS",
+    "https://augmanitai.org/term/SRTL"
+  ],
+
+  "causesIndirectly": [
+    "https://augmanitai.org/term/TC",
+    "https://augmanitai.org/term/VLI"
+  ],
+
+  "enables": [
+    "https://augmanitai.org/term/CC",
+    "https://augmanitai.org/term/TI"
+  ],
+
+  "created": "2024-01-15",
+  "creator": "Andreas Ehstand",
+  "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+  "modified": "2026-04-10",
+
+  "label": "Symbiotic Linguistic Evolution",
+  "comment": "Core AUGMANITAI term describing the co-evolution of human and AI language patterns",
+
+  "seeAlso": [
+    "https://augmanitai.org/term/RKE",
+    "https://augmanitai.org/term/SRTL",
+    "https://augmanitai.org/term/CC"
+  ],
+
+  "termVariant": "SLE",
+  "isoAlignment": null
+}

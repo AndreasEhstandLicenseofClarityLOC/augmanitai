@@ -188,3 +188,11 @@ Vulnerabilities and security concerns: see [SECURITY.md](governance/SECURITY.md)
 ## Acknowledgements
 
 Built on the shoulders of ISO, W3C, DCMI, PROV-O, schema.org, SPDX, C2PA, Wikidata, the MCP/A2A/ANP/AG-UI communities, and the Contributor Covenant. Full attributions in [licensing/NOTICE](licensing/NOTICE).
+
+## Ecosystem
+
+AUGMANITAI is the foundation of the MANITAI framework ecosystem:
+
+- **[NEOMANITAI](https://github.com/AndreasEhstandLicenseofClarityLOC/neomanitai-terms)** — 6182 terms across 54 domains, extending the 1000-term core
+- **[PERMANITAI](https://github.com/AndreasEhstandLicenseofClarityLOC/permanitai-framework)** — Universal Performance Factor Analysis for Intelligent Entities, transferring sports science Leistungsfaktorenanalyse to AI models, agents, robots, drones, hybrid systems, business teams, world-class performers, and managers
+- **ROBMANITAI** — 750 robotics-specific terms (subsumed by PERMANITAI)

@@ -70,7 +70,7 @@ After a patch is released, we will:
 
 **Maintainer:** Andreas Ehstand (ORCID [0009-0006-3773-7796](https://orcid.org/0009-0006-3773-7796))
 **Preferred channel:** private [GitHub Security Advisory](https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/security/advisories) (do not open a public issue).
-**Fallback channel:** `vogel05wolf05 [at] gmail [dot] com` — please use the subject line `AUGMANITAI SECURITY` and request the PGP key fingerprint in a first non-sensitive message before sending details.
+**Fallback channel:** `augmanitai [at] gmail [dot] com` — please use the subject line `AUGMANITAI SECURITY` and request the PGP key fingerprint in a first non-sensitive message before sending details.
 **Provider information:** see [`IMPRESSUM.md`](../IMPRESSUM.md) in the repository root.
 
 ---

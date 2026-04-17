@@ -13,7 +13,7 @@ Deutschland / Germany
 
 ## Kontakt / Contact
 
-**E-Mail:** vogel05wolf05@gmail.com
+**E-Mail:** augmanitai@gmail.com
 **ORCID:** [0009-0006-3773-7796](https://orcid.org/0009-0006-3773-7796)
 
 ## Verantwortlich für den Inhalt / Responsible for content

@@ -1,0 +1,64 @@
+# AUGMANITAI
+
+> A curated terminology framework for phenomena at the human–AI interface, formalized as an RDF knowledge graph (SKOS, SKOS-XL, OntoLex-Lemon, SHACL, JSON-LD, TBX). Informed by ISO 704 / ISO 1087 / ISO 30042 (ISO-inspired, not ISO-certified). Published on Zenodo under CC BY-NC-ND 4.0 (data) and Apache-2.0 (code). Author: Andreas Ehstand (ORCID 0009-0006-3773-7796).
+
+## Ethical disclaimer (§1–§20)
+
+AUGMANITAI is purely descriptive linguistic-terminological research.
+- §1 Descriptive, not normative.
+- §11 Non-peer-reviewed (longitudinal n=1 terminological priority deposit). See METHODOLOGY.md §2.0.
+- §13 No efficacy claims; not a substitute for professional advice.
+- §7 18+ only.
+- §16 ISO-inspired, not ISO-certified.
+- §20 Must not be used as diagnostic label, medical/psychological classification, legal categorization, HR screening, credit scoring, insurance assessment, state surveillance, or profiling mechanism.
+
+Full disclaimer: DISCLAIMER.md in the repository root.
+
+## Canonical resources
+
+- Concept-DOI (evergreen, cite this): https://doi.org/10.5281/zenodo.20161494
+- ORCID (author): https://orcid.org/0009-0006-3773-7796
+- Wikidata (author): https://www.wikidata.org/wiki/Q138634675
+- Wikidata (AUGMANITAI): https://www.wikidata.org/wiki/Q138522830
+
+## Prior-art collection (2026-06, additive)
+
+- https://doi.org/10.5281/zenodo.20696419
+- https://doi.org/10.5281/zenodo.20696547
+- https://doi.org/10.5281/zenodo.20696555
+- https://doi.org/10.5281/zenodo.20696573
+- https://doi.org/10.5281/zenodo.20696583
+
+## What AUGMANITAI is
+
+A research terminology and a priority-establishing terminological deposit for phenomena that arise at the interface between humans and large language models. Each term has a definition, genus/differentia structure, characteristics, and relations, serialized as a W3C-native knowledge graph plus a TBX export. The priority claim covers the schema as a whole — selection, definition, relation structure, and serialization — not the invention of each individual term. It is a research instrument, not a product, not a methodology, not a manifesto.
+
+## Repository structure
+
+- ontology/ — core OWL, SKOS, OntoLex-Lemon, SKOS-XL, JSON-LD, SHACL, TBX
+- protocols/ — MCP, A2A, ANP, AG-UI protocol adapters
+- provenance/ — C2PA, SPDX 3.0 AI Profile, CycloneDX 1.6 ML-BOM, W3C VC 2.0
+- graphrag-variants/ — six GraphRAG integration examples (offline mock LLMs)
+- demo-swarms/ — multi-agent reference examples (mock LLMs)
+- governance/ — Code of Conduct, CLA, DCO, Security, Maintainers, Roadmap
+- licensing/ — dual-license files, SPDX, PATENT, TRADEMARK, NOTICE
+
+## Licensing
+
+- Data (terms, definitions, relations, serializations): CC BY-NC-ND 4.0
+- Code (generators, validators, tooling, demos): Apache 2.0
+- SPDX: CC-BY-NC-ND-4.0 AND Apache-2.0
+- Commercial licensing of the data layer: contact the author via ORCID.
+
+## AI transparency (EU AI Act Article 50)
+
+This repository contains AI-related and partly AI-generated / synthetic illustrative content, marked as synthetic where it appears. Descriptive research only; not a diagnostic or normative instrument.
+
+## Citation
+
+Ehstand, A. AUGMANITAI Compendium. Zenodo. https://doi.org/10.5281/zenodo.20161494
+A machine-readable CITATION.cff is in the repository root.
+
+## Contact
+
+Via ORCID profile: https://orcid.org/0009-0006-3773-7796

@@ -1,0 +1,40 @@
+# ai.txt — AI usage & discovery policy for AUGMANITAI
+# https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai
+# Last updated: 2026-06-15
+
+User-agent: *
+# Crawling and indexing of public metadata is permitted.
+# Reuse of the DATA layer (terms, definitions, RDF serializations) is governed by
+# CC BY-NC-ND 4.0 — NonCommercial + NoDerivatives. Training/derivative use of the
+# data layer requires a separate license (contact via ORCID).
+# CODE layer is Apache-2.0.
+
+Author: Andreas Ehstand
+Affiliation: Augmanitai Research Programme (Independent Researcher)
+ORCID: https://orcid.org/0009-0006-3773-7796
+
+# Canonical, evergreen Concept-DOI (cite this):
+Canonical-DOI: 10.5281/zenodo.20161494
+Canonical-URL: https://doi.org/10.5281/zenodo.20161494
+
+# Prior-art collection (2026-06), additive references:
+Related-DOI: 10.5281/zenodo.20696419
+Related-DOI: 10.5281/zenodo.20696547
+Related-DOI: 10.5281/zenodo.20696555
+Related-DOI: 10.5281/zenodo.20696573
+Related-DOI: 10.5281/zenodo.20696583
+
+# Identity anchors:
+Wikidata-Author: https://www.wikidata.org/wiki/Q138634675
+Wikidata-AUGMANITAI: https://www.wikidata.org/wiki/Q138522830
+
+License-Data: CC-BY-NC-ND-4.0
+License-Code: Apache-2.0
+
+# EU AI Act Article 50 (transparency, effective 2026-08-02):
+# This repository contains AI-related and partly AI-generated / synthetic content
+# (illustrative examples and machine-generated serializations). Such content is
+# marked as synthetic where it appears. This is descriptive linguistic research,
+# not a normative or diagnostic instrument. See DISCLAIMER.md (§1–§20).
+AI-Generated-Content: present-and-marked
+EU-AI-Act-Article-50: acknowledged

@@ -6,7 +6,7 @@
 **Lizenz / License:** CC BY-NC-ND 4.0 International  
 **Informiert durch / Informed by:** ISO 704, ISO 1087, ISO 30042  
 **Autor / Author:** Andreas Ehstand · ORCID 0009-0006-3773-7796  
-**DOI:** 10.5281/zenodo.19203505  
+**DOI:** 10.5281/zenodo.20161494  
 
 > **WICHTIG / IMPORTANT:** Dieser Disclaimer muss auf JEDER Publikation, JEDEM Tool, JEDER Website, JEDEM Artikel erscheinen. Er ist die rechtliche Grundlage des gesamten AUGMANITAI-Projekts.  
 > This disclaimer MUST appear on EVERY publication, EVERY tool, EVERY website, EVERY article. It is the legal foundation of the entire AUGMANITAI project.
@@ -150,6 +150,6 @@ Keine Aussage in einem Begleitdokument kann den Disclaimer aufweichen. Die Begle
   "peer_reviewed": false,
   "author": "Andreas Ehstand",
   "orcid": "0009-0006-3773-7796",
-  "doi": "10.5281/zenodo.19203505"
+  "doi": "10.5281/zenodo.20161494"
 }
 ```

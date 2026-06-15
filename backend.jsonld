@@ -1,0 +1,45 @@
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  "name": "AUGMANITAI",
+  "alternateName": "AUGMANITAI Compendium",
+  "description": "Curated terminology framework for phenomena at the human–AI interface, with reference tooling and protocol adapters. Formalized as an RDF knowledge graph (SKOS, SKOS-XL, OntoLex-Lemon, SHACL, JSON-LD, TBX). Informed by ISO 704 / ISO 1087 / ISO 30042 (ISO-inspired, not ISO-certified). Descriptive linguistic research, non-peer-reviewed (§11). See DISCLAIMER.md (§1–§20).",
+  "url": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai",
+  "codeRepository": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai",
+  "programmingLanguage": "Python",
+  "license": [
+    "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "https://www.apache.org/licenses/LICENSE-2.0"
+  ],
+  "isPartOf": {
+    "@type": "Dataset",
+    "@id": "https://doi.org/10.5281/zenodo.20161494",
+    "identifier": "10.5281/zenodo.20161494",
+    "name": "AUGMANITAI Compendium"
+  },
+  "identifier": "https://doi.org/10.5281/zenodo.20161494",
+  "citation": "https://doi.org/10.5281/zenodo.20161494",
+  "author": {
+    "@type": "Person",
+    "name": "Andreas Ehstand",
+    "givenName": "Andreas",
+    "familyName": "Ehstand",
+    "@id": "https://orcid.org/0009-0006-3773-7796",
+    "identifier": "https://orcid.org/0009-0006-3773-7796",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Augmanitai Research Programme"
+    },
+    "sameAs": [
+      "https://orcid.org/0009-0006-3773-7796",
+      "https://www.wikidata.org/wiki/Q138634675"
+    ]
+  },
+  "sameAs": [
+    "https://www.wikidata.org/wiki/Q138522830",
+    "https://doi.org/10.5281/zenodo.20161494"
+  ],
+  "keywords": "terminology, ontology, knowledge graph, semantic web, SKOS, OntoLex-Lemon, SHACL, JSON-LD, TBX, human-AI interaction",
+  "dateModified": "2026-06-15",
+  "disambiguatingDescription": "Contains AI-related and partly AI-generated / synthetic illustrative content, marked as synthetic where it appears (EU AI Act Article 50 acknowledged)."
+}

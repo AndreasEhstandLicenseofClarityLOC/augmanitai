@@ -1,0 +1,12 @@
+# robots.txt — AUGMANITAI
+# Public metadata may be crawled and indexed.
+# Reuse of repository contents is governed by the licenses in LICENSE / licensing/
+# (data: CC BY-NC-ND 4.0; code: Apache-2.0).
+
+User-agent: *
+Allow: /
+
+# Machine-readable AI policy:
+# See ai.txt and llms.txt in this repository.
+
+Sitemap: https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/sitemap.xml

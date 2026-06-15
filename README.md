@@ -2,13 +2,13 @@
 
 > A terminology framework for human–AI interaction. 1000 curated terms, informed by ISO 704 / ISO 1087 / ISO 30042 (ISO-inspired, not ISO-certified), Semantic Web native.
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.19481331-blue)](https://doi.org/10.5281/zenodo.19481331)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20161494-blue)](https://doi.org/10.5281/zenodo.20161494)
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 [![License: Apache 2.0](https://img.shields.io/badge/Code%20License-Apache%202.0-green)](https://www.apache.org/licenses/LICENSE-2.0)
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0006--3773--7796-A6CE39?logo=orcid)](https://orcid.org/0009-0006-3773-7796)
 
 **Author:** Andreas Ehstand
-**Concept DOI:** [10.5281/zenodo.19481331](https://doi.org/10.5281/zenodo.19481331)
+**Concept DOI:** [10.5281/zenodo.20161494](https://doi.org/10.5281/zenodo.20161494)
 **Status:** Priority-establishing terminological deposit. The 1000-Term Compendium is the curated output of a **longitudinal n=1 observation** of daily human–LLM interaction over approximately nine months, published as a timestamped Zenodo record with Semantic Web format extensions, validation shapes, and reference infrastructure. This is **not** a peer-reviewed publication and does not target one; see [METHODOLOGY.md §2.0](METHODOLOGY.md#20-study-design-longitudinal-n1) and [§11](METHODOLOGY.md#11-what-peer-review-would-add--and-why-this-work-does-not-target-it) for the design rationale.
 
 ---
@@ -144,8 +144,8 @@ For **commercial licensing inquiries** regarding the data layer, contact the aut
   author       = {Ehstand, Andreas},
   title        = {AUGMANITAI: 1000-Term Compendium},
   publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.19481331},
-  url          = {https://doi.org/10.5281/zenodo.19481331}
+  doi          = {10.5281/zenodo.20161494},
+  url          = {https://doi.org/10.5281/zenodo.20161494}
 }
 ```
 
@@ -182,7 +182,7 @@ Vulnerabilities and security concerns: see [SECURITY.md](governance/SECURITY.md)
 
 ## Related work
 
-- [Zenodo record](https://doi.org/10.5281/zenodo.19481331) — canonical published version with DOI
+- [Zenodo record](https://doi.org/10.5281/zenodo.20161494) — canonical published version with DOI
 - [ORCID profile](https://orcid.org/0009-0006-3773-7796) — author identity
 
 ## Acknowledgements

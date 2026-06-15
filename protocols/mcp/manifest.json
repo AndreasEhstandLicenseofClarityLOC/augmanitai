@@ -4,9 +4,9 @@
   "author": "Andreas Ehstand",
   "description": "AUGMANITAI MCP server: Academic terminology framework for human-AI interaction phenomena",
   "license": "CC BY-NC-ND 4.0",
-  "homepage": "https://zenodo.org/records/19481331",
+  "homepage": "https://zenodo.org/records/20161494",
   "orcid": "0009-0006-3773-7796",
-  "doi": "10.5281/zenodo.19481331",
+  "doi": "10.5281/zenodo.20161494",
   "implementation": "python",
   "minMcpVersion": "0.9.0",
   "tools": [

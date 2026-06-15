@@ -87,4 +87,4 @@ python3 sbom-generator.py \
 ## Contact
 
 Andreas Ehstand — ORCID [0009-0006-3773-7796](https://orcid.org/0009-0006-3773-7796)
-DOI: [10.5281/zenodo.19481331](https://doi.org/10.5281/zenodo.19481331)
+DOI: [10.5281/zenodo.20161494](https://doi.org/10.5281/zenodo.20161494)

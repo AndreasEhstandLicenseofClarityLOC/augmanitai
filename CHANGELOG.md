@@ -48,5 +48,5 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). AUG
 ### Initial release
 - 1000-Term Compendium.
 - Core OWL ontology, SKOS concept scheme.
-- Published on Zenodo: [10.5281/zenodo.19481331](https://doi.org/10.5281/zenodo.19481331).
+- Published on Zenodo: [10.5281/zenodo.20161494](https://doi.org/10.5281/zenodo.20161494).
 - License: CC BY-NC-ND 4.0.

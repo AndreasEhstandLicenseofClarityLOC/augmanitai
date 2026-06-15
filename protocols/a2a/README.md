@@ -59,7 +59,7 @@ To register AUGMANITAI with an A2A agent network:
    
    {
      "agentCard": {...agent-card.json...},
-     "verificationUrl": "https://zenodo.org/records/19481331"
+     "verificationUrl": "https://zenodo.org/records/20161494"
    }
    ```
 
@@ -168,7 +168,7 @@ Responses include structured error information when operations fail:
 - **License**: CC BY-NC-ND 4.0
 - **Author**: Andreas Ehstand
 - **ORCID**: 0009-0006-3773-7796
-- **DOI**: 10.5281/zenodo.19481331
+- **DOI**: 10.5281/zenodo.20161494
 - **Citation**: See Zenodo record for academic citation format
 
 ## Related Documentation

@@ -246,8 +246,8 @@ If you use these examples in research or publications, please cite AUGMANITAI:
   author = {Ehstand, Andreas},
   title = {AUGMANITAI: Academic Terminology Database for Human-AI Interaction},
   year = {2025},
-  doi = {10.5281/zenodo.19481331},
-  url = {https://zenodo.org/record/19481331}
+  doi = {10.5281/zenodo.20161494},
+  url = {https://zenodo.org/record/20161494}
 }
 ```
 
@@ -258,7 +258,7 @@ AUGMANITAI is published under CC BY-NC-ND 4.0 license.
 - [LangGraph Documentation](https://langchain-ai.github.io/langgraph/)
 - [CrewAI Documentation](https://docs.crewai.com/)
 - [AutoGen Documentation](https://microsoft.github.io/autogen/)
-- [AUGMANITAI Database](https://zenodo.org/record/19481331)
+- [AUGMANITAI Database](https://zenodo.org/record/20161494)
 
 ## Support
 

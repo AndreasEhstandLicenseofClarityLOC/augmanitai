@@ -15,7 +15,7 @@ Full disclaimer: `DISCLAIMER.md` in the repository root.
 
 ## Canonical resources
 
-- Zenodo DOI: https://doi.org/10.5281/zenodo.19481331 — canonical published version
+- Zenodo DOI: https://doi.org/10.5281/zenodo.20161494 — canonical published version
 - ORCID: https://orcid.org/0009-0006-3773-7796 — author identity
 
 ## What AUGMANITAI is
@@ -49,7 +49,7 @@ Per §16 of the Ethical Disclaimer, AUGMANITAI is ISO-inspired, not ISO-certifie
 
 ## Metadata
 
-- DOI (concept): 10.5281/zenodo.19481331
+- DOI (concept): 10.5281/zenodo.20161494
 - Creator: Andreas Ehstand
 - Creator ORCID: 0009-0006-3773-7796
 - License (data): CC BY-NC-ND 4.0
@@ -61,7 +61,7 @@ Per §16 of the Ethical Disclaimer, AUGMANITAI is ISO-inspired, not ISO-certifie
 
 ## Citation
 
-Ehstand, A. AUGMANITAI: 1000-Term Compendium. Zenodo. https://doi.org/10.5281/zenodo.19481331
+Ehstand, A. AUGMANITAI: 1000-Term Compendium. Zenodo. https://doi.org/10.5281/zenodo.20161494
 
 A machine-readable `CITATION.cff` is in the repository root.
 

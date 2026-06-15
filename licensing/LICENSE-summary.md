@@ -50,9 +50,9 @@ Every use of AUGMANITAI — commercial or non-commercial — must include attrib
 ```
 AUGMANITAI Terminology Compendium
 by Andreas Ehstand (ORCID 0009-0006-3773-7796)
-DOI: 10.5281/zenodo.19481331
+DOI: 10.5281/zenodo.20161494
 Licensed under CC BY-NC-ND 4.0 (data) and Apache 2.0 (code)
-https://doi.org/10.5281/zenodo.19481331
+https://doi.org/10.5281/zenodo.20161494
 ```
 
 For academic citation, use the BibTeX entry shipped in the root of this repository (`CITATION.cff` and `references.bib`).
@@ -79,7 +79,7 @@ There is no off-the-shelf commercial license schedule yet; each commercial inqui
 
 Every release of AUGMANITAI is:
 
-- Published to Zenodo with a version-specific DOI (under the concept DOI 10.5281/zenodo.19481331)
+- Published to Zenodo with a version-specific DOI (under the concept DOI 10.5281/zenodo.20161494)
 - Git-tagged and GPG/Sigstore-signed
 - Accompanied by an SPDX manifest and CycloneDX AI-SBOM (see `../provenance/ai-sbom/`)
 - Covered by a C2PA content-credentials manifest (see `../provenance/c2pa/`)

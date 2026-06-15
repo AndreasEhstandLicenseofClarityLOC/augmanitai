@@ -12,7 +12,7 @@ exports, JSON-LD documents, and derived data formats — is licensed under the
 
 Copyright (c) 2025-2026 Andreas Ehstand
 ORCID: 0009-0006-3773-7796
-DOI (concept): 10.5281/zenodo.19481331
+DOI (concept): 10.5281/zenodo.20161494
 
 Canonical license text: https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
 Human-readable summary: https://creativecommons.org/licenses/by-nc-nd/4.0/
@@ -46,7 +46,7 @@ Required attribution format
 When citing or redistributing AUGMANITAI terminology data, use:
 
     Ehstand, Andreas (2026). AUGMANITAI Terminology Compendium.
-    Zenodo. https://doi.org/10.5281/zenodo.19481331
+    Zenodo. https://doi.org/10.5281/zenodo.20161494
     Licensed under CC BY-NC-ND 4.0.
 
 Machine-readable attribution is also available in the Dublin Core and

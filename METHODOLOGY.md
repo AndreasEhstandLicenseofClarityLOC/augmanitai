@@ -34,7 +34,7 @@ AUGMANITAI v1.0 makes a narrow, defensible set of claims. It is important to sta
 
 1. **A coherent schema of 1000 terms** describing phenomena at the human–LLM interface, organized in a genus/differentia structure with explicit semantic relations (broader/narrower, related, associative).
 2. **A formal serialization** of that schema in W3C-native formats (SKOS, SKOS-XL, OntoLex-Lemon, JSON-LD 1.1, SHACL, TBX) with a validated structural layer.
-3. **A timestamped priority deposit** of the schema on Zenodo under DOI 10.5281/zenodo.19481331, dated to the public release. The timestamp is cryptographically anchored by Zenodo (CERN) and mirrored in this repository.
+3. **A timestamped priority deposit** of the schema on Zenodo under DOI 10.5281/zenodo.20161494, dated to the public release. The timestamp is cryptographically anchored by Zenodo (CERN) and mirrored in this repository.
 4. **A dual-language documentation layer** (German / English) with an explicit ethical framework ([DISCLAIMER.md](DISCLAIMER.md) §1–§20), a methodological disclosure (this document), and a dual-use statement ([DUAL_USE_STATEMENT.md](DUAL_USE_STATEMENT.md)).
 5. **Integration with existing vocabularies and standards.** Where terms or concepts already exist in the literature (in linguistics, HCI, AI safety, philosophy, cognitive science, or standards bodies), AUGMANITAI incorporates them in its schema with appropriate attribution and re-expresses them in the genus/differentia form the schema requires.
 

@@ -7,7 +7,7 @@
 | 1.x     | :white_check_mark: |
 | < 1.0   | :x:                |
 
-The current major version receives security and correctness updates. Older versions are archived on Zenodo (DOI 10.5281/zenodo.19481331) but do not receive patches.
+The current major version receives security and correctness updates. Older versions are archived on Zenodo (DOI 10.5281/zenodo.20161494) but do not receive patches.
 
 ## Reporting a Vulnerability
 

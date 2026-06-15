@@ -10,7 +10,7 @@ AUGMANITAI aims to become the authoritative, interoperable, ISO-aligned terminol
 
 **v1.0** — Initial compendium release
 - ~120 terms across 6 domains (Meta-Cognitive, Compound Cognition, Multi-Agent/Swarm, Collective Intelligence, Prompt-Ontology Bridge, Infrastructure)
-- DOI-published on Zenodo (10.5281/zenodo.19481331)
+- DOI-published on Zenodo (10.5281/zenodo.20161494)
 - CC BY-NC-ND 4.0 for data, Apache 2.0 for code
 - Informed by ISO 704 / 1087 / 30042 (ISO-inspired, not ISO-certified — §16)
 - Python package, NPM package, MCP server, REST API, SPARQL endpoint

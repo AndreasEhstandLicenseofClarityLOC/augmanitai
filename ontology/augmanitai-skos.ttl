@@ -30,7 +30,7 @@ augmanitai:AugmanitaiScheme a skos:ConceptScheme ;
     dcterms:language "en", "de" ;
     dcterms:license "https://creativecommons.org/licenses/by-nc-nd/4.0/" ;
     dcterms:subject "AI interaction terminology"@en, "semantic web"@en, "controlled vocabulary"@en ;
-    foaf:homepage <https://doi.org/10.5281/zenodo.19481331> ;
+    foaf:homepage <https://doi.org/10.5281/zenodo.20161494> ;
     owl:versionInfo "1.0.0"@en ;
     skos:hasTopConcept
         augmanitai:concept-SLE ,

@@ -31,7 +31,7 @@ augmanitai:AugmanitaiOntology a owl:Ontology ;
     dcterms:modified "2026-04"^^xsd:gYearMonth ;
     dcterms:license "https://creativecommons.org/licenses/by-nc-nd/4.0/" ;
     dcterms:language "en" ;
-    foaf:homepage <https://doi.org/10.5281/zenodo.19481331> ;
+    foaf:homepage <https://doi.org/10.5281/zenodo.20161494> ;
     owl:imports
         <http://www.w3.org/2002/07/owl> ,
         <http://www.w3.org/2000/01/rdf-schema> ,

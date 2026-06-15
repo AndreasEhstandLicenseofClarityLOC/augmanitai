@@ -90,7 +90,7 @@ Pre-releases may be published on Zenodo as separate DOI entries (each Zenodo upl
 
 ## DOI Policy
 
-- The **concept DOI** (10.5281/zenodo.19481331) always resolves to the latest version.
+- The **concept DOI** (10.5281/zenodo.20161494) always resolves to the latest version.
 - Each published version gets its own **version DOI** for citation permanence.
 - Pre-releases get their own version DOIs but are not promoted to the concept DOI until the final release.
 

@@ -366,7 +366,7 @@ suggestion_presented Event
 - **License**: CC BY-NC-ND 4.0
 - **Author**: Andreas Ehstand
 - **ORCID**: 0009-0006-3773-7796
-- **DOI**: 10.5281/zenodo.19481331
+- **DOI**: 10.5281/zenodo.20161494
 
 ## Related Documentation
 

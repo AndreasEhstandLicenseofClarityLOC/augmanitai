@@ -275,7 +275,7 @@ def create_example_manifest() -> Dict[str, Any]:
         ),
         generator.create_ingredient(
             title="AUGMANITAI Terminology",
-            data_source="AUGMANITAI 1000-Term Compendium (DOI 10.5281/zenodo.19481331)",
+            data_source="AUGMANITAI 1000-Term Compendium (DOI 10.5281/zenodo.20161494)",
             description="Reference terminology for documenting AI interaction phenomena. Use is descriptive only."
         )
     ]

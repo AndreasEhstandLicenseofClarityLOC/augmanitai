@@ -103,7 +103,7 @@ Enumerate all semantic domains and their constituent terms.
 
 Andreas Ehstand  
 ORCID: 0009-0006-3773-7796  
-DOI: 10.5281/zenodo.19481331  
+DOI: 10.5281/zenodo.20161494  
 
 ## License
 

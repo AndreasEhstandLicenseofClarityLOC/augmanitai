@@ -80,7 +80,7 @@
       "example": {
         "@context": [
           "https://www.w3.org/2018/credentials/v1",
-          "https://zenodo.org/records/19481331/augmanitai-context.jsonld"
+          "https://zenodo.org/records/20161494/augmanitai-context.jsonld"
         ],
         "type": ["VerifiableCredential", "AugmanitaiTerminologyCitationCredential"],
         "issuer": "urn:augmanitai:issuer:terminology-reference",
@@ -109,7 +109,7 @@
       "example": {
         "@context": [
           "https://www.w3.org/2018/credentials/v1",
-          "https://zenodo.org/records/19481331/augmanitai-context.jsonld"
+          "https://zenodo.org/records/20161494/augmanitai-context.jsonld"
         ],
         "type": ["VerifiableCredential", "SystemComplianceCredential"],
         "issuer": "urn:augmanitai:issuer:terminology-reference",

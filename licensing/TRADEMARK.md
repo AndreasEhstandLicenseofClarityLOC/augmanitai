@@ -2,7 +2,7 @@
 
 ## The AUGMANITAI Name and Mark
 
-"AUGMANITAI" is a project name and word mark used to identify the terminology compendium and associated tooling authored by Andreas Ehstand. The name is also used to identify the published academic work registered under DOI 10.5281/zenodo.19481331.
+"AUGMANITAI" is a project name and word mark used to identify the terminology compendium and associated tooling authored by Andreas Ehstand. The name is also used to identify the published academic work registered under DOI 10.5281/zenodo.20161494.
 
 This trademark policy describes the permitted and prohibited uses of the AUGMANITAI name, logos, and other identifying marks. It is based on the Apache Software Foundation trademark policy and the Mozilla trademark policy, adapted for a small academic project.
 

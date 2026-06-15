@@ -24,7 +24,7 @@
         {
           "action": "c2pa:published",
           "timestamp": "2026-04-10T00:00:00Z",
-          "publishingAgent": "Zenodo (DOI: 10.5281/zenodo.19481331)",
+          "publishingAgent": "Zenodo (DOI: 10.5281/zenodo.20161494)",
           "description": "Published under CC BY-NC-ND 4.0 (data) and Apache-2.0 (code)."
         }
       ]
@@ -44,7 +44,7 @@
       },
       "provenance": {
         "entityType": "TerminologyDataset",
-        "entityIdentifier": "10.5281/zenodo.19481331",
+        "entityIdentifier": "10.5281/zenodo.20161494",
         "version": "1.0",
         "releaseDate": "2026-04-10"
       }
@@ -80,10 +80,10 @@
     "validation_status": "demonstration-only"
   },
   "distribution_context": {
-    "manifest_url": "https://doi.org/10.5281/zenodo.19481331",
+    "manifest_url": "https://doi.org/10.5281/zenodo.20161494",
     "repository": "Zenodo (CERN)",
     "access_level": "open",
-    "persistent_identifier": "DOI: 10.5281/zenodo.19481331"
+    "persistent_identifier": "DOI: 10.5281/zenodo.20161494"
   },
   "template_usage_instructions": {
     "purpose": "This manifest template demonstrates the STRUCTURAL fields a downstream operator might use when attaching C2PA provenance to a dataset artifact. It is NOT an assertion of conformity, certification, or regulatory alignment for AUGMANITAI itself.",

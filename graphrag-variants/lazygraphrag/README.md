@@ -331,7 +331,7 @@ Lazy expansion respects domain structure for efficient materialization across co
 
 This implementation uses the AUGMANITAI framework by Andreas Ehstand:
 - ORCID: 0009-0006-3773-7796
-- DOI: 10.5281/zenodo.19481331
+- DOI: 10.5281/zenodo.20161494
 - License: CC BY-NC-ND 4.0
 
 ## Implementation Notes

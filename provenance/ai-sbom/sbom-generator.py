@@ -310,7 +310,7 @@ def create_example_sbom_spdx() -> Dict[str, Any]:
             "name": "AUGMANITAI Terminology",
             "description": "Descriptive terminology reference only",
             "license": "CC-BY-NC-ND-4.0",
-            "downloadLocation": "https://zenodo.org/records/19481331"
+            "downloadLocation": "https://zenodo.org/records/20161494"
         }
     }
 

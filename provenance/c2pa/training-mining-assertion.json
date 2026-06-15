@@ -50,15 +50,15 @@
     }
   },
   "attribution_requirements": {
-    "required_attribution_format": "AUGMANITAI 1000-Term Compendium by Andreas Ehstand (ORCID 0009-0006-3773-7796), DOI 10.5281/zenodo.19481331, licensed under CC BY-NC-ND 4.0. See DISCLAIMER.md §1–§20.",
+    "required_attribution_format": "AUGMANITAI 1000-Term Compendium by Andreas Ehstand (ORCID 0009-0006-3773-7796), DOI 10.5281/zenodo.20161494, licensed under CC BY-NC-ND 4.0. See DISCLAIMER.md §1–§20.",
     "attribution_examples": [
       {
         "context": "In a research paper",
-        "format": "Ehstand, A. AUGMANITAI: 1000-Term Compendium for human-AI interaction phenomena. Zenodo. https://doi.org/10.5281/zenodo.19481331"
+        "format": "Ehstand, A. AUGMANITAI: 1000-Term Compendium for human-AI interaction phenomena. Zenodo. https://doi.org/10.5281/zenodo.20161494"
       },
       {
         "context": "In software documentation",
-        "format": "This work references the AUGMANITAI 1000-Term Compendium (v1.0) by Andreas Ehstand (ORCID 0009-0006-3773-7796). License: CC BY-NC-ND 4.0. https://doi.org/10.5281/zenodo.19481331"
+        "format": "This work references the AUGMANITAI 1000-Term Compendium (v1.0) by Andreas Ehstand (ORCID 0009-0006-3773-7796). License: CC BY-NC-ND 4.0. https://doi.org/10.5281/zenodo.20161494"
       }
     ]
   },

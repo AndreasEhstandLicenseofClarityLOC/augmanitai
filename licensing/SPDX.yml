@@ -19,8 +19,8 @@ packages:
     primaryPackagePurpose: DATA
     supplier: "Person: Andreas Ehstand"
     originator: "Person: Andreas Ehstand"
-    homepage: https://doi.org/10.5281/zenodo.19481331
-    sourceInfo: "Zenodo DOI 10.5281/zenodo.19481331"
+    homepage: https://doi.org/10.5281/zenodo.20161494
+    sourceInfo: "Zenodo DOI 10.5281/zenodo.20161494"
     licenseConcluded: "CC-BY-NC-ND-4.0 AND Apache-2.0"
     licenseDeclared: "CC-BY-NC-ND-4.0 AND Apache-2.0"
     copyrightText: "Copyright 2025-2026 Andreas Ehstand"
@@ -146,7 +146,7 @@ annotations:
     SPDXREF: SPDXRef-DOCUMENT
     comment: >
       This SPDX document describes the AUGMANITAI project as published on
-      Zenodo with DOI 10.5281/zenodo.19481331. Note that CC-BY-NC-ND-4.0
+      Zenodo with DOI 10.5281/zenodo.20161494. Note that CC-BY-NC-ND-4.0
       is NOT on the SPDX/OSI list of free-software licenses; it is listed
       on the SPDX License List as a valid identifier for content licensing.
       See ../provenance/ai-sbom/ for the AI-specific SBOM in SPDX 3.0 AI

@@ -26,7 +26,7 @@ This is the same pattern used by other data-centric open projects (Wikidata's co
 You can use AUGMANITAI freely for research, teaching, and publication:
 - Cite individual terms in papers (with attribution)
 - Build academic tools on top of AUGMANITAI code (Apache 2.0)
-- Train research models on AUGMANITAI data (non-commercial AI training is permitted with attribution)
+- Train research models on AUGMANITAI data (non-commercial AI training requires prior written permission)
 - Publish results that reference AUGMANITAI terms
 
 ### If you are an open-source developer

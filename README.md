@@ -176,7 +176,7 @@ Vulnerabilities and security concerns: see [SECURITY.md](governance/SECURITY.md)
 
 ## Legal
 
-- [**IMPRESSUM**](IMPRESSUM.md) — Anbieter-Angaben gemäß § 5 TMG / provider information per § 5 German Telemedia Act
+- [**IMPRESSUM**](IMPRESSUM.md) — Anbieter-Angaben gemäß § 5 DDG / provider information per § 5 German Telemedia Act
 - [**DISCLAIMER.md**](DISCLAIMER.md) — Ethical Disclaimer §1–§20 (bilingual DE/EN)
 - [**LICENSE**](LICENSE) — CC BY-NC-ND 4.0 (data) · Apache-2.0 (code); see [`licensing/LICENSE-summary.md`](licensing/LICENSE-summary.md)
 

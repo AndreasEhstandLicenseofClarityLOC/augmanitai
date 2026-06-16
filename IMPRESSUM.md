@@ -1,6 +1,6 @@
 # Impressum
 
-*Angaben gemäß § 5 TMG / Information according to § 5 German Telemedia Act*
+*Angaben gemäß § 5 DDG / Information according to § 5 German Digital Services Act (DDG)*
 
 ---
 
@@ -18,7 +18,7 @@ Deutschland / Germany
 
 ## Verantwortlich für den Inhalt / Responsible for content
 
-Gemäß § 55 Abs. 2 RStV / According to § 55 (2) RStV:
+Gemäß § 18 Abs. 2 MStV / According to § 18 (2) MStV:
 
 **Andreas Ehstand**, Anschrift wie oben.
 

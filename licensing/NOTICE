@@ -114,7 +114,7 @@ assert certification, conformance, or official approval.
     https://schema.org/
 
   - Dublin Core Metadata Terms
-    Copyright DCMI. CC BY 4.0.
+    Copyright DCMI. CC BY-NC-ND 4.0.
     https://www.dublincore.org/specifications/dublin-core/dcmi-terms/
 
   - PROV-O Ontology
@@ -127,7 +127,7 @@ assert certification, conformance, or official approval.
 
   - Contributor Covenant Code of Conduct, version 2.1
     https://www.contributor-covenant.org/version/2/1/code_of_conduct/
-    CC BY 4.0.
+    CC BY-NC-ND 4.0.
 
   - Developer Certificate of Origin, version 1.1
     https://developercertificate.org/
@@ -139,7 +139,7 @@ PROVENANCE STANDARDS
 
   - C2PA Content Credentials (Coalition for Content Provenance and
     Authenticity). C2PA specifications are published under Creative Commons
-    Attribution 4.0 International.
+    Attribution-NonCommercial-NoDerivatives 4.0 International.
     https://c2pa.org/
 
   - SPDX License List

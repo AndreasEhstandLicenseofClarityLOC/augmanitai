@@ -1,0 +1,209 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Dataset",
+      "@id": "https://doi.org/10.5281/zenodo.22228966",
+      "name": "AUGMANITAI Public Lexicon — 101 Bilingual Terms of Human-AI Interaction (Permanent Archival Snapshot of the Open Web Edition)",
+      "description": "AI-generated catalogue description: An archived bilingual lexicon of human-AI interaction terms, distributed as a README and a structured JSON file containing 101 entries.",
+      "url": "https://zenodo.org/records/22228966",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.5281/zenodo.22228966"
+      },
+      "isVersionOf": {
+        "@id": "https://doi.org/10.5281/zenodo.22228965"
+      },
+      "datePublished": "2026-09-01",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://orcid.org/0009-0006-3773-7796",
+        "name": "Andreas Ehstand"
+      },
+      "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode",
+      "genre": "Dataset",
+      "creativeWorkStatus": "Self-published; peer-review status not established by this catalogue",
+      "keywords": [
+        "AI-generated catalogue metadata",
+        "self-published research output"
+      ],
+      "subjectOf": [
+        {
+          "@type": "CreativeWork",
+          "name": "Zenodo source metadata",
+          "url": "https://zenodo.org/api/records/22228966"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "DataCite DOI metadata",
+          "url": "https://api.datacite.org/dois/10.5281/zenodo.22228966"
+        }
+      ],
+      "version": "1.0"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.22172128",
+      "name": "The Universal Concept Layer: Language as Versionable Code — A Meaning Layer between Humans, Language Models, Agents, and Robots",
+      "description": "AI-generated catalogue description: A self-published working paper presenting a conceptual meaning layer between people, language models, software agents and robots, with English and German text files.",
+      "url": "https://zenodo.org/records/22172128",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.5281/zenodo.22172128"
+      },
+      "isVersionOf": {
+        "@id": "https://doi.org/10.5281/zenodo.22172127"
+      },
+      "datePublished": "2026-08-30",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://orcid.org/0009-0006-3773-7796",
+        "name": "Andreas Ehstand"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/legalcode",
+      "genre": "Working paper",
+      "creativeWorkStatus": "Self-published; peer-review status not established by this catalogue",
+      "keywords": [
+        "AI-generated catalogue metadata",
+        "self-published research output"
+      ],
+      "subjectOf": [
+        {
+          "@type": "CreativeWork",
+          "name": "Zenodo source metadata",
+          "url": "https://zenodo.org/api/records/22172128"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "DataCite DOI metadata",
+          "url": "https://api.datacite.org/dois/10.5281/zenodo.22172128"
+        }
+      ],
+      "version": "2.1"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.22211952",
+      "name": "Gedankenvererbungslehre: A Conceptual Framework and Five Proposed Dimensions (Republication of the 21 February 2026 First Edition)",
+      "description": "AI-generated catalogue description: A self-published conceptual framework with five proposed dimensions, made available as a republication of the edition identified in its title.",
+      "url": "https://zenodo.org/records/22211952",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.5281/zenodo.22211952"
+      },
+      "isVersionOf": {
+        "@id": "https://doi.org/10.5281/zenodo.22211951"
+      },
+      "datePublished": "2026-02-21",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://orcid.org/0009-0006-3773-7796",
+        "name": "Andreas Ehstand"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/legalcode",
+      "genre": "Working paper",
+      "creativeWorkStatus": "Self-published; peer-review status not established by this catalogue",
+      "keywords": [
+        "AI-generated catalogue metadata",
+        "self-published research output"
+      ],
+      "subjectOf": [
+        {
+          "@type": "CreativeWork",
+          "name": "Zenodo source metadata",
+          "url": "https://zenodo.org/api/records/22211952"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "DataCite DOI metadata",
+          "url": "https://api.datacite.org/dois/10.5281/zenodo.22211952"
+        }
+      ],
+      "version": "1.0"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.21990198",
+      "name": "Swarms and Multi-Agent Collectives: Why the Measurement Line Decides Success or Mismeasurement (Conceptual Note, EN/DE)",
+      "description": "AI-generated catalogue description: A self-published conceptual note about the boundary used to describe and assess swarms and multi-agent collectives, distributed as an English/German archive.",
+      "url": "https://zenodo.org/records/21990198",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.5281/zenodo.21990198"
+      },
+      "isVersionOf": {
+        "@id": "https://doi.org/10.5281/zenodo.21990197"
+      },
+      "datePublished": "2026-08-18",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://orcid.org/0009-0006-3773-7796",
+        "name": "Andreas Ehstand"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/legalcode",
+      "genre": "Working paper",
+      "creativeWorkStatus": "Self-published; peer-review status not established by this catalogue",
+      "keywords": [
+        "AI-generated catalogue metadata",
+        "self-published research output"
+      ],
+      "subjectOf": [
+        {
+          "@type": "CreativeWork",
+          "name": "Zenodo source metadata",
+          "url": "https://zenodo.org/api/records/21990198"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "DataCite DOI metadata",
+          "url": "https://api.datacite.org/dois/10.5281/zenodo.21990198"
+        }
+      ]
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.22229056",
+      "name": "AUG-WP Working Paper Series V3 (2026): Public Title and Abstract Register — 225 Working Papers on Human-AI Interaction",
+      "description": "AI-generated catalogue description: A public title and abstract register for a working-paper series. The register is the indexed work; its title does not establish access to 225 full manuscripts or their peer-review status.",
+      "url": "https://zenodo.org/records/22229056",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.5281/zenodo.22229056"
+      },
+      "isVersionOf": {
+        "@id": "https://doi.org/10.5281/zenodo.22215732"
+      },
+      "datePublished": "2026-09-01",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://orcid.org/0009-0006-3773-7796",
+        "name": "Andreas Ehstand"
+      },
+      "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode",
+      "genre": "Other",
+      "creativeWorkStatus": "Self-published; peer-review status not established by this catalogue",
+      "keywords": [
+        "AI-generated catalogue metadata",
+        "self-published research output"
+      ],
+      "subjectOf": [
+        {
+          "@type": "CreativeWork",
+          "name": "Zenodo source metadata",
+          "url": "https://zenodo.org/api/records/22229056"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "DataCite DOI metadata",
+          "url": "https://api.datacite.org/dois/10.5281/zenodo.22229056"
+        }
+      ],
+      "version": "1.1"
+    }
+  ]
+}

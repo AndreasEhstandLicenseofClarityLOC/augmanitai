@@ -1,0 +1,106 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://augmanitai.com/#andreas-ehstand",
+      "name": "Andreas Ehstand",
+      "url": "https://augmanitai.com/en/autor/",
+      "sameAs": [
+        "https://orcid.org/0009-0006-3773-7796"
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://augmanitai.com/en/kunst",
+      "url": "https://augmanitai.com/en/kunst",
+      "name": "AUGMANITAI: concepts and visual art",
+      "description": "A public collection exploring concepts through visual art, with links to related works.",
+      "author": {
+        "@id": "https://augmanitai.com/#andreas-ehstand"
+      },
+      "inLanguage": [
+        "en",
+        "de"
+      ],
+      "keywords": [
+        "conceptual art",
+        "AI art",
+        "human-AI interaction",
+        "AUGMANITAI"
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://augmanitai.com/en/kino",
+      "url": "https://augmanitai.com/en/kino",
+      "name": "AUGMANITAI Signature Films",
+      "description": "A collection of AI-generated short films on themes in Andreas Ehstand's work.",
+      "author": {
+        "@id": "https://augmanitai.com/#andreas-ehstand"
+      },
+      "inLanguage": [
+        "en",
+        "de"
+      ],
+      "keywords": [
+        "AI-generated film",
+        "art",
+        "human-AI interaction",
+        "AUGMANITAI"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://augmanitai.com/en/swamanitai",
+      "url": "https://augmanitai.com/en/swamanitai",
+      "name": "SWAMANITAI: interaction across different kinds of participants",
+      "description": "A research perspective on interaction in mixed teams of people, software agents and machines.",
+      "author": {
+        "@id": "https://augmanitai.com/#andreas-ehstand"
+      },
+      "inLanguage": [
+        "en",
+        "de"
+      ],
+      "keywords": [
+        "human-AI interaction",
+        "multi-agent systems",
+        "mixed teams",
+        "SWAMANITAI"
+      ]
+    },
+    {
+      "@type": "Collection",
+      "@id": "https://doi.org/10.5281/zenodo.22763843",
+      "name": "AUGMANITAI: Selected Public Works — Thoughts, Images, Moving Works, and Interaction",
+      "description": "An author-curated link catalogue by Andreas Ehstand, describing three public entry points: concepts and visual art, AI-generated short films, and a research perspective on interaction in mixed teams. Compiled from public page text on 15 September 2026; not exhaustive and not a peer-reviewed research-results publication.",
+      "author": {
+        "@id": "https://augmanitai.com/#andreas-ehstand"
+      },
+      "dateCreated": "2026-09-15",
+      "inLanguage": "en",
+      "hasPart": [
+        {
+          "@id": "https://augmanitai.com/en/kunst"
+        },
+        {
+          "@id": "https://augmanitai.com/en/kino"
+        },
+        {
+          "@id": "https://augmanitai.com/en/swamanitai"
+        }
+      ],
+      "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "usageInfo": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/DISCLAIMER.md",
+      "version": "1.0.0",
+      "citation": [
+        "https://augmanitai.com/en/kunst",
+        "https://augmanitai.com/en/kino",
+        "https://augmanitai.com/en/swamanitai"
+      ],
+      "url": "https://zenodo.org/records/22763843",
+      "identifier": "10.5281/zenodo.22763843"
+    }
+  ]
+}

@@ -15,7 +15,11 @@ These companions report no participant study or empirical validation. The codebo
 
 ### Read one open conceptual paper
 
-[Feeling Understood by Conversational AI: A Provisional Taxonomy and a Recognition–Disclosure Hypothesis](https://doi.org/10.5281/zenodo.22871354) explores how people describe feeling understood in conversations with AI. It proposes six codes and a testable hypothesis. The examples are constructed. No participant study, empirical validation or human substantive review of this AI-generated draft is claimed. The nine-page PDF is openly available.
+[Feeling Understood by Conversational AI: A Provisional Taxonomy and a Recognition–Disclosure Hypothesis](https://doi.org/10.5281/zenodo.22871354) explores how people describe feeling ## Explore the breadth of the work
+
+[**Nine reading paths across research and creative work**](COLLABORATION.md): human–AI interaction, terminology, art, continuation of thought, multi-agent systems, robotics, sport and performance teams, software development, and knowledge work. This AI-generated guide links each topic to a public source and identifies its publication type and limits.
+
+understood in conversations with AI. It proposes six codes and a testable hypothesis. The examples are constructed. No participant study, empirical validation or human substantive review of this AI-generated draft is claimed. The nine-page PDF is openly available.
 
 ### Explore the larger bibliography
 

@@ -1,5 +1,18 @@
 # AUGMANITAI — Research Index
 
+## Published by SwissBoardForum
+
+**AI-generated source note, checked 21 September 2026.**
+
+[KI in Verwaltungsratsvorlagen: Was der Verwaltungsrat nachvollziehen können muss](https://www.swissboardforum.ch/blog/network-briefs-13/ki-in-verwaltungsratsvorlagen-was-der-verwaltungsrat-nachvollziehen-konnen-muss-50), by **Andreas Ehstand**, appears in **SwissBoardForum's Network Briefs**, dated **15 September 2026**.
+
+The article proposes five items for examining AI-assisted board papers, with a constructed example. It addresses decisions and alternatives, supporting evidence, AI involvement and checks, assumptions, and responsibility. The source describes a proposed working framework, not a binding standard or a validated intervention.
+
+- [Structured publication record (JSON-LD)](external-publications.jsonld): work → author → ORCID, with publisher, series, date and source URL.
+- [Author's ORCID](https://orcid.org/0009-0006-3773-7796).
+
+This is an externally published practice contribution. No peer review, endorsement of the wider programme or additional reuse rights are implied. The full article remains with the publisher.
+
 ## Explore the breadth of the work
 
 [**Nine reading paths across research and creative work**](COLLABORATION.md): human–AI interaction, terminology, art, continuation of thought, multi-agent systems, robotics, sport and performance teams, software development, and knowledge work. This AI-generated guide links each topic to a public source and identifies its publication type and limits.

@@ -56,19 +56,250 @@
     {
       "@type": "CreativeWork",
       "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld",
-      "name": "External publication metadata — SwissBoardForum",
+      "name": "External publication metadata — SwissBoardForum and Private Wealth Voices",
       "dateCreated": "2026-09-21",
       "inLanguage": [
         "en",
         "de"
       ],
+      "about": [
+        {
+          "@id": "https://www.swissboardforum.ch/blog/network-briefs-13/ki-in-verwaltungsratsvorlagen-was-der-verwaltungsrat-nachvollziehen-konnen-muss-50"
+        },
+        {
+          "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026"
+        }
+      ],
+      "isBasedOn": [
+        {
+          "@id": "https://www.swissboardforum.ch/blog/network-briefs-13/ki-in-verwaltungsratsvorlagen-was-der-verwaltungsrat-nachvollziehen-konnen-muss-50"
+        },
+        {
+          "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026-source-pdf"
+        }
+      ],
+      "description": "AI-generated metadata checked against the publicly visible publisher page on 21 September 2026. The displayed article date is 15 September 2026. This record links the author's ORCID identity to the work; it is not a publisher-supplied ORCID assertion. Publication does not imply peer review, validation, membership or publisher endorsement of the author's wider programme. No article text or images are reproduced or relicensed. The Private Wealth Voices records are an AI-generated, source-checked bibliographic transcription by the author’s catalogue, not publisher-issued metadata. Fragment identifiers in this file are local catalogue identifiers, not DOIs or external authority identifiers. The foreword discusses three separate contributions; this does not assert coauthorship, collaboration, or personal endorsement. Month precision is retained because no exact publication day was independently confirmed. Printed pages for the Ehstand essay are 10–17 in V5.",
+      "dateModified": "2026-09-21"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#prestel-and-partner",
+      "name": "Prestel & Partner",
+      "url": "https://prestelandpartner.com/"
+    },
+    {
+      "@type": "Periodical",
+      "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#private-wealth-voices",
+      "name": "Private Wealth Voices",
+      "url": "https://prestelandpartner.com/private-wealth-voices.html",
+      "publisher": {
+        "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#prestel-and-partner"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "PublicationIssue",
+      "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026",
+      "name": "Private Wealth Voices — July 2026",
+      "alternativeHeadline": "The Vehicle, the Driver, and the Fuel: Three views on the modern Family Office",
+      "datePublished": "2026-07",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#private-wealth-voices"
+      },
+      "publisher": {
+        "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#prestel-and-partner"
+      },
+      "editor": {
+        "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#ben-mcnamara"
+      },
+      "hasPart": [
+        {
+          "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026-foreword"
+        },
+        {
+          "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026-dupont"
+        },
+        {
+          "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026-ehstand"
+        },
+        {
+          "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026-kaszycki"
+        }
+      ],
+      "citation": {
+        "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026-source-pdf"
+      },
+      "description": "July 2026 issue. Article relationships and printed page numbers were transcribed from the 24-page V5 single-page edition. The publisher access page may require registration; the linked announcement independently confirms the Ehstand contribution."
+    },
+    {
+      "@type": "Person",
+      "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pierre-dupont",
+      "name": "Pierre duPont",
+      "description": "Interview participant, identified in the July 2026 issue as an eighth-generation family member.",
+      "subjectOf": {
+        "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026-dupont"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#wojciech-kaszycki",
+      "name": "Wojciech Kaszycki",
+      "description": "Contributor to the July 2026 issue, identified there as Principal, ClearLedger Investment Management (FZCO)."
+    },
+    {
+      "@type": "Person",
+      "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#ben-mcnamara",
+      "name": "Ben McNamara",
+      "description": "Author of the July 2026 foreword, signed Event Director & Editor, Prestel & Partner."
+    },
+    {
+      "@type": "Article",
+      "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026-foreword",
+      "headline": "From the Editor",
+      "genre": "Editorial foreword",
+      "author": {
+        "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#ben-mcnamara"
+      },
+      "pageStart": 4,
+      "pageEnd": 4,
+      "pagination": "4",
+      "about": [
+        {
+          "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026-dupont"
+        },
+        {
+          "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026-ehstand"
+        },
+        {
+          "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026-kaszycki"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pierre-dupont"
+        },
+        {
+          "@id": "https://orcid.org/0009-0006-3773-7796"
+        },
+        {
+          "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#wojciech-kaszycki"
+        }
+      ],
+      "description": "The editorial introduces all three contributions together: defining a family office, reflecting on founder judgment through local AI, and Bitcoin as an institutional asset.",
+      "isPartOf": {
+        "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026"
+      },
+      "publisher": {
+        "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#prestel-and-partner"
+      },
+      "datePublished": "2026-07",
+      "inLanguage": "en",
+      "citation": {
+        "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026-source-pdf"
+      }
+    },
+    {
+      "@type": "Article",
+      "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026-dupont",
+      "headline": "Lessons From 226 Years of Family Heritage – Part II",
+      "genre": "Interview",
+      "contributor": {
+        "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pierre-dupont"
+      },
       "about": {
-        "@id": "https://www.swissboardforum.ch/blog/network-briefs-13/ki-in-verwaltungsratsvorlagen-was-der-verwaltungsrat-nachvollziehen-konnen-muss-50"
+        "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pierre-dupont"
       },
+      "pageStart": 6,
+      "pageEnd": 9,
+      "pagination": "6–9",
+      "subjectOf": {
+        "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026-foreword"
+      },
+      "description": "An interview with Pierre duPont about what a family office does. The interviewer is not identified in this metadata record.",
+      "isPartOf": {
+        "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026"
+      },
+      "publisher": {
+        "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#prestel-and-partner"
+      },
+      "datePublished": "2026-07",
+      "inLanguage": "en",
+      "citation": {
+        "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026-source-pdf"
+      }
+    },
+    {
+      "@type": "Article",
+      "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026-ehstand",
+      "headline": "One Missing Piece of Legacy: How Local AI Preserves a Founder’s Judgment",
+      "genre": "Conceptual essay",
+      "author": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      },
+      "pageStart": 10,
+      "pageEnd": 17,
+      "pagination": "10–17",
+      "subjectOf": {
+        "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026-foreword"
+      },
+      "citation": [
+        "https://www.linkedin.com/posts/prestel-%26-partner_privatewealthvoices-familyoffice-artificialintelligence-activity-7493275580612878336-SI-3",
+        {
+          "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026-source-pdf"
+        }
+      ],
+      "description": "A conceptual essay on documenting founder judgment through private, local human–AI reflection. Eight printed pages, including its opening page and author note. It proposes an approach; publication is not evidence of demonstrated preservation or replication of judgment.",
+      "isPartOf": {
+        "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026"
+      },
+      "publisher": {
+        "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#prestel-and-partner"
+      },
+      "datePublished": "2026-07",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026-kaszycki",
+      "headline": "Bitcoin Today: From Listed Treasury to Institutional Custody",
+      "genre": "Editorial perspective",
+      "author": {
+        "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#wojciech-kaszycki"
+      },
+      "pageStart": 18,
+      "pageEnd": 21,
+      "pagination": "18–21",
+      "subjectOf": {
+        "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026-foreword"
+      },
+      "description": "A family-office perspective on Bitcoin holding structures, custody and governance.",
+      "isPartOf": {
+        "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026"
+      },
+      "publisher": {
+        "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#prestel-and-partner"
+      },
+      "datePublished": "2026-07",
+      "inLanguage": "en",
+      "citation": {
+        "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026-source-pdf"
+      }
+    },
+    {
+      "@type": "MediaObject",
+      "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026-source-pdf",
+      "name": "Private Wealth Voices — July 2026, V5 single-page edition",
+      "encodingFormat": "application/pdf",
       "isBasedOn": {
-        "@id": "https://www.swissboardforum.ch/blog/network-briefs-13/ki-in-verwaltungsratsvorlagen-was-der-verwaltungsrat-nachvollziehen-konnen-muss-50"
+        "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026"
       },
-      "description": "AI-generated metadata checked against the publicly visible publisher page on 21 September 2026. The displayed article date is 15 September 2026. This record links the author's ORCID identity to the work; it is not a publisher-supplied ORCID assertion. Publication does not imply peer review, validation, membership or publisher endorsement of the author's wider programme. No article text or images are reproduced or relicensed."
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "SHA-256",
+        "value": "aef1a8407e372a66cb876175c02c6281d5452c67a06966f4da4c1154d4bd1dc3"
+      },
+      "description": "Bibliographic source inspected locally on 21 September 2026: P-P_2026_PrivateWealthVoices-July-Edition-V5-SinglePages.pdf, 24 pages. No public URL for this exact PDF has been verified. Full issue access is controlled by the publisher; this catalogue does not reproduce the PDF."
     }
   ]
 }

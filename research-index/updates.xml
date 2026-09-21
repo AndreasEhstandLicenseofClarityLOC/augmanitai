@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+<title>Andreas Ehstand — selected publication updates</title>
+<link>https://andreasehstandlicenseofclarityloc.github.io/augmanitai/research-index/</link>
+<description>AI-generated, author-maintained navigation to selected publications. Entries retain their source publication dates and link to the original works. Inclusion does not imply peer review or validation.</description>
+<language>en</language>
+<atom:link href="https://andreasehstandlicenseofclarityloc.github.io/augmanitai/research-index/updates.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>Feeling Understood by Conversational AI: A Provisional Taxonomy and a Recognition–Disclosure Hypothesis</title>
+<link>https://doi.org/10.5281/zenodo.22871354</link>
+<guid isPermaLink="true">https://doi.org/10.5281/zenodo.22871354</guid>
+<dc:creator>Andreas Ehstand</dc:creator>
+<dc:date>2026-09-21</dc:date>
+<description>AI-generated conceptual working paper by Andreas Ehstand. Six proposed codes and a research hypothesis; no participant study or empirical validation. Abstract: https://andreasehstandlicenseofclarityloc.github.io/augmanitai/research-index/feeling-understood.html</description>
+</item>
+<item>
+<title>Zwei KI-Agenten, eine Aufgabe: Was gehört zur Leistung?</title>
+<link>https://www.linkedin.com/pulse/zwei-ki-agenten-eine-aufgabe-geh%25C3%25B6rt-zur-leistung-andreas-ehstand-ex6qe/</link>
+<guid isPermaLink="true">https://www.linkedin.com/pulse/zwei-ki-agenten-eine-aufgabe-geh%25C3%25B6rt-zur-leistung-andreas-ehstand-ex6qe/</guid>
+<dc:creator>Andreas Ehstand</dc:creator>
+<dc:date>2026-09-21</dc:date>
+<description>LinkedIn newsletter issue by Andreas Ehstand on assessing contributions in a shared human–AI task.</description>
+</item>
+<item>
+<title>Eine Idee in drei Fassungen: Was sich im KI-Dialog verändert</title>
+<link>https://www.linkedin.com/pulse/eine-idee-drei-fassungen-sich-im-ki-dialog-ver%25C3%25A4ndert-andreas-ehstand-v0mpe/</link>
+<guid isPermaLink="true">https://www.linkedin.com/pulse/eine-idee-drei-fassungen-sich-im-ki-dialog-ver%25C3%25A4ndert-andreas-ehstand-v0mpe/</guid>
+<dc:creator>Andreas Ehstand</dc:creator>
+<dc:date>2026-09-21</dc:date>
+<description>LinkedIn newsletter issue by Andreas Ehstand on changes to an idea through dialogue with AI.</description>
+</item>
+<item>
+<title>Eine Quelle ist noch kein Beleg für den ganzen Satz</title>
+<link>https://www.linkedin.com/pulse/eine-quelle-ist-noch-kein-beleg-f%25C3%25BCr-den-ganzen-satz-andreas-ehstand-xsvke/</link>
+<guid isPermaLink="true">https://www.linkedin.com/pulse/eine-quelle-ist-noch-kein-beleg-f%25C3%25BCr-den-ganzen-satz-andreas-ehstand-xsvke/</guid>
+<dc:creator>Andreas Ehstand</dc:creator>
+<dc:date>2026-09-21</dc:date>
+<description>LinkedIn newsletter issue by Andreas Ehstand on checking which part of a claim a source supports.</description>
+</item>
+<item>
+<title>KI in Verwaltungsratsvorlagen: Was der Verwaltungsrat nachvollziehen können muss</title>
+<link>https://www.swissboardforum.ch/blog/network-briefs-13/ki-in-verwaltungsratsvorlagen-was-der-verwaltungsrat-nachvollziehen-konnen-muss-50</link>
+<guid isPermaLink="true">https://www.swissboardforum.ch/blog/network-briefs-13/ki-in-verwaltungsratsvorlagen-was-der-verwaltungsrat-nachvollziehen-konnen-muss-50</guid>
+<dc:creator>Andreas Ehstand</dc:creator>
+<dc:date>2026-09-15</dc:date>
+<description>Practice contribution by Andreas Ehstand, published in SwissBoardForum Network Briefs. Proposes a working framework for examining AI-assisted board papers; not a binding standard or a validated intervention.</description>
+</item>
+</channel>
+</rss>

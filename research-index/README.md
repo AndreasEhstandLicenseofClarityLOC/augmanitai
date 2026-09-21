@@ -1,4 +1,21 @@
+---
+title: "Andreas Ehstand — Research and publications"
+description: "Source-linked research notes, external publications, terminology and creative work by Andreas Ehstand. Reading paths across human-AI interaction, language, performance and robotics."
+---
+
 # AUGMANITAI — Research Index
+
+## Latest public updates — 21 September 2026
+
+*AI-generated navigation note. These links lead to separate works and source records.*
+
+Three new LinkedIn newsletter issues explore practical questions in human–AI work:
+
+- [Zwei KI-Agenten, eine Aufgabe: Was gehört zur Leistung?](https://www.linkedin.com/pulse/zwei-ki-agenten-eine-aufgabe-geh%25C3%25B6rt-zur-leistung-andreas-ehstand-ex6qe/) — assessing the contribution of agents in a shared task.
+- [Eine Idee in drei Fassungen: Was sich im KI-Dialog verändert](https://www.linkedin.com/pulse/eine-idee-drei-fassungen-sich-im-ki-dialog-ver%25C3%25A4ndert-andreas-ehstand-v0mpe/) — tracing changes to an idea through dialogue.
+- [Eine Quelle ist noch kein Beleg für den ganzen Satz](https://www.linkedin.com/pulse/eine-quelle-ist-noch-kein-beleg-f%25C3%25BCr-den-ganzen-satz-andreas-ehstand-xsvke/) — checking which part of a claim a source supports.
+
+The source notes below document the SwissBoardForum contribution and the July Private Wealth Voices issue, including its editor’s foreword. The [bibliographic export](external-publications.bib), [publication graph](external-publications.jsonld), [reading guide](READING_INTERACTION_EVIDENCE.md), [about.me profile](https://about.me/AndreasEhstand) and [Hugging Face catalogue](https://huggingface.co/datasets/AndreasEhstand/augmanitai-public-works) provide further routes into the work.
 
 ## Published by SwissBoardForum
 

@@ -1,5 +1,35 @@
 # AUGMANITAI — Research Index
 
+## Start here — 21 September 2026
+
+**AI-generated reading guide and catalogue update.**
+
+### Read one open conceptual paper
+
+[Feeling Understood by Conversational AI: A Provisional Taxonomy and a Recognition–Disclosure Hypothesis](https://doi.org/10.5281/zenodo.22871354) explores how people describe feeling understood in conversations with AI. It proposes six codes and a testable hypothesis. The examples are constructed. No participant study, empirical validation or human substantive review of this AI-generated draft is claimed. The nine-page PDF is openly available.
+
+### Explore the larger bibliography
+
+[Public Zenodo Bibliography — 21 September 2026 Snapshot](https://doi.org/10.5281/zenodo.22871309) indexes 725 publicly discoverable records: 28 report open file access and 697 report restricted file access. This is a dated metadata snapshot, not a collection of 725 open full-text papers or peer-reviewed findings. It predates the catalogue deposit and the conceptual paper linked above.
+
+- [CSV for spreadsheets and browsing](https://zenodo.org/api/records/22871309/files/records.csv/content)
+- [JSON Lines for software and retrieval systems](https://zenodo.org/api/records/22871309/files/records.jsonl/content)
+- [Field definitions, provenance and limitations](https://zenodo.org/api/records/22871309/files/README.md/content)
+
+Each row supplies the source title, version DOI, concept DOI, record URL, access state, source-reported resource type and publication date. The catalogue contains no private drafts or restricted file contents. Bibliographic inclusion does not validate scientific claims. Individual source licences remain in force.
+
+### Explore creative works
+
+The [selected public works catalogue](../public-works/) provides a separate route into thoughts, images, moving works and interaction.
+
+### Identify and cite the author
+
+Andreas Ehstand — [ORCID 0009-0006-3773-7796](https://orcid.org/0009-0006-3773-7796) — [OSF profile](https://osf.io/rmwd8/). For a particular claim, consult and cite the relevant source version, including its stated limitations.
+
+**Deutsch:** Hier findest du einen offenen konzeptionellen Text über das Gefühl, von KI verstanden zu werden, einen durchsuchbaren Gesamtkatalog und einen eigenen Einstieg in die kreativen Arbeiten. Hypothesen und Begriffe sind nicht allein durch ihre Veröffentlichung empirisch bestätigt.
+
+## Earlier five-resource snapshot — 15 September 2026
+
 **AI-generated catalogue text and metadata, compiled from public Zenodo and DataCite records.**
 
 Five openly available, self-published research resources by **Andreas Ehstand**: a bilingual lexicon, three conceptual working papers, and a title-and-abstract register. This index provides source links and structured attribution. Peer-review status is not established by this catalogue.

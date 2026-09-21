@@ -85,7 +85,14 @@
         "https://www.prestelandpartner.com/family-office-forum-new-york.html",
         "https://www.prestelandpartner.com/aboutus.html",
         "https://www.prestelandpartner.com/familyofficeforumlondon.html"
-      ]
+      ],
+      "encoding": {
+        "@type": "MediaObject",
+        "name": "Bibliographic export — five external works and issue contributions",
+        "encodingFormat": "text/x-bibtex",
+        "contentUrl": "https://raw.githubusercontent.com/AndreasEhstandLicenseofClarityLOC/augmanitai/main/research-index/external-publications.bib",
+        "description": "Five separate works with individual attributions. The interview with Pierre duPont has no inferred author. The author’s later Medium commentary is not an additional entry in this export."
+      }
     },
     {
       "@type": "Organization",
@@ -267,9 +274,14 @@
       "pageStart": 10,
       "pageEnd": 17,
       "pagination": "10–17",
-      "subjectOf": {
-        "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026-foreword"
-      },
+      "subjectOf": [
+        {
+          "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026-foreword"
+        },
+        {
+          "@id": "https://medium.com/@augmanitai/preserving-a-founders-judgment-notes-from-private-wealth-voices-july-2026-713c700171d0"
+        }
+      ],
       "citation": [
         "https://www.linkedin.com/posts/prestel-%26-partner_privatewealthvoices-familyoffice-artificialintelligence-activity-7493275580612878336-SI-3",
         {
@@ -327,6 +339,29 @@
         "value": "aef1a8407e372a66cb876175c02c6281d5452c67a06966f4da4c1154d4bd1dc3"
       },
       "description": "Bibliographic source inspected locally on 21 September 2026: P-P_2026_PrivateWealthVoices-July-Edition-V5-SinglePages.pdf, 24 pages. No public URL for this exact PDF has been verified. Full issue access is controlled by the publisher; this catalogue does not reproduce the PDF."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://medium.com/@augmanitai/preserving-a-founders-judgment-notes-from-private-wealth-voices-july-2026-713c700171d0",
+      "url": "https://medium.com/@augmanitai/preserving-a-founders-judgment-notes-from-private-wealth-voices-july-2026-713c700171d0",
+      "headline": "Preserving a Founder’s Judgment: Notes from Private Wealth Voices, July 2026",
+      "author": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      },
+      "datePublished": "2026-08-04",
+      "dateModified": "2026-09-21",
+      "inLanguage": "en",
+      "genre": "Author commentary",
+      "isBasedOn": {
+        "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026-ehstand"
+      },
+      "citation": [
+        {
+          "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026-ehstand"
+        },
+        "https://www.linkedin.com/posts/prestel-%26-partner_privatewealthvoices-familyoffice-artificialintelligence-activity-7493275580612878336-SI-3"
+      ],
+      "description": "Author-written context on Medium, prepared with AI assistance. Updated with corrected printed pages, links to the publisher and catalogue, and an explicit distinction between a conceptual proposal and demonstrated preservation of judgment. This is separate from the magazine essay and does not constitute a second external editorial publication."
     }
   ]
 }

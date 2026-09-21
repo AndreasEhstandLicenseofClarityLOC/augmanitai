@@ -1,0 +1,202 @@
+{
+  "@context": "https://schema.org",
+  "@type": [
+    "ItemList",
+    "CreativeWork"
+  ],
+  "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/reading-paths.jsonld",
+  "name": "Andreas Ehstand / AUGMANITAI — Nine research and creative reading paths",
+  "description": "AI-generated bibliographic guide compiled from public Zenodo metadata on 21 September 2026. Topics are reading routes, not independently validated specialties. Inclusion does not establish scientific validity, originality, effectiveness, endorsement or ranking. Source licences remain in force.",
+  "dateModified": "2026-09-21",
+  "url": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/COLLABORATION.md",
+  "numberOfItems": 9,
+  "itemListOrder": "https://schema.org/ItemListUnordered",
+  "creator": {
+    "@type": "Person",
+    "@id": "https://orcid.org/0009-0006-3773-7796",
+    "name": "Andreas Ehstand",
+    "url": "https://orcid.org/0009-0006-3773-7796"
+  },
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "CreativeWork",
+        "@id": "https://doi.org/10.5281/zenodo.22871354",
+        "name": "Feeling Understood by Conversational AI: A Provisional Taxonomy and a Recognition–Disclosure Hypothesis",
+        "url": "https://zenodo.org/records/22871354",
+        "identifier": "10.5281/zenodo.22871354",
+        "creator": {
+          "@id": "https://orcid.org/0009-0006-3773-7796"
+        },
+        "about": {
+          "@type": "Thing",
+          "name": "Human–AI interaction"
+        },
+        "datePublished": "2026-09-21",
+        "genre": "Working paper"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "CreativeWork",
+        "@id": "https://doi.org/10.5281/zenodo.22228966",
+        "name": "AUGMANITAI Public Lexicon — 101 Bilingual Terms of Human-AI Interaction (Permanent Archival Snapshot of the Open Web Edition)",
+        "url": "https://zenodo.org/records/22228966",
+        "identifier": "10.5281/zenodo.22228966",
+        "creator": {
+          "@id": "https://orcid.org/0009-0006-3773-7796"
+        },
+        "about": {
+          "@type": "Thing",
+          "name": "Terminology"
+        },
+        "datePublished": "2026-09-01",
+        "genre": "Dataset"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "CreativeWork",
+        "@id": "https://doi.org/10.5281/zenodo.22763843",
+        "name": "AUGMANITAI: Selected Public Works — Thoughts, Images, Moving Works, and Interaction",
+        "url": "https://zenodo.org/records/22763843",
+        "identifier": "10.5281/zenodo.22763843",
+        "creator": {
+          "@id": "https://orcid.org/0009-0006-3773-7796"
+        },
+        "about": {
+          "@type": "Thing",
+          "name": "Creative works"
+        },
+        "datePublished": "2026-09-15",
+        "genre": "Other"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "CreativeWork",
+        "@id": "https://doi.org/10.5281/zenodo.22211952",
+        "name": "Gedankenvererbungslehre: A Conceptual Framework and Five Proposed Dimensions (Republication of the 21 February 2026 First Edition)",
+        "url": "https://zenodo.org/records/22211952",
+        "identifier": "10.5281/zenodo.22211952",
+        "creator": {
+          "@id": "https://orcid.org/0009-0006-3773-7796"
+        },
+        "about": {
+          "@type": "Thing",
+          "name": "Continuation of thought"
+        },
+        "datePublished": "2026-02-21",
+        "genre": "Working paper"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "CreativeWork",
+        "@id": "https://doi.org/10.5281/zenodo.21990198",
+        "name": "Swarms and Multi-Agent Collectives: Why the Measurement Line Decides Success or Mismeasurement (Conceptual Note, EN/DE)",
+        "url": "https://zenodo.org/records/21990198",
+        "identifier": "10.5281/zenodo.21990198",
+        "creator": {
+          "@id": "https://orcid.org/0009-0006-3773-7796"
+        },
+        "about": {
+          "@type": "Thing",
+          "name": "Multi-agent systems"
+        },
+        "datePublished": "2026-08-18",
+        "genre": "Working paper"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "item": {
+        "@type": "CreativeWork",
+        "@id": "https://doi.org/10.5281/zenodo.21990196",
+        "name": "The Robot-Fleet Operator Unit: Embodied Machines as Standing Parts, Physical Contact as Independent Reply (Conceptual Note, EN/DE)",
+        "url": "https://zenodo.org/records/21990196",
+        "identifier": "10.5281/zenodo.21990196",
+        "creator": {
+          "@id": "https://orcid.org/0009-0006-3773-7796"
+        },
+        "about": {
+          "@type": "Thing",
+          "name": "Robotics and operator systems"
+        },
+        "datePublished": "2026-08-18",
+        "genre": "Working paper"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "item": {
+        "@type": "CreativeWork",
+        "@id": "https://doi.org/10.5281/zenodo.21990194",
+        "name": "Drawing the Measurement Line Around a Sport-Training and Performance Team (Conceptual Note, EN/DE)",
+        "url": "https://zenodo.org/records/21990194",
+        "identifier": "10.5281/zenodo.21990194",
+        "creator": {
+          "@id": "https://orcid.org/0009-0006-3773-7796"
+        },
+        "about": {
+          "@type": "Thing",
+          "name": "Sport and performance teams"
+        },
+        "datePublished": "2026-08-18",
+        "genre": "Working paper"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "item": {
+        "@type": "CreativeWork",
+        "@id": "https://doi.org/10.5281/zenodo.21990192",
+        "name": "The Software Development Work Unit: Code as External Memory, Tests and Users as Independent Reply (Conceptual Note, EN/DE)",
+        "url": "https://zenodo.org/records/21990192",
+        "identifier": "10.5281/zenodo.21990192",
+        "creator": {
+          "@id": "https://orcid.org/0009-0006-3773-7796"
+        },
+        "about": {
+          "@type": "Thing",
+          "name": "Software development"
+        },
+        "datePublished": "2026-08-18",
+        "genre": "Working paper"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "item": {
+        "@type": "CreativeWork",
+        "@id": "https://doi.org/10.5281/zenodo.21990190",
+        "name": "The Individual Knowledge-Work Unit: Boundary, Constituent Parts, and Failure Conditions (Conceptual Note, EN/DE)",
+        "url": "https://zenodo.org/records/21990190",
+        "identifier": "10.5281/zenodo.21990190",
+        "creator": {
+          "@id": "https://orcid.org/0009-0006-3773-7796"
+        },
+        "about": {
+          "@type": "Thing",
+          "name": "Knowledge work"
+        },
+        "datePublished": "2026-08-18",
+        "genre": "Working paper"
+      }
+    }
+  ]
+}

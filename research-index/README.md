@@ -33,6 +33,8 @@ Ehstand’s essay occupies eight printed pages, including its opening page and a
 - [Publisher announcement of the Ehstand essay](https://www.linkedin.com/posts/prestel-%26-partner_privatewealthvoices-familyoffice-artificialintelligence-activity-7493275580612878336-SI-3).
 - [Private Wealth Voices at Prestel & Partner](https://prestelandpartner.com/private-wealth-voices.html) — publisher access point; registration may be required and the latest edition can change.
 - [Structured publication graph](external-publications.jsonld) / [raw JSON-LD](https://raw.githubusercontent.com/AndreasEhstandLicenseofClarityLOC/augmanitai/main/research-index/external-publications.jsonld).
+- [Download the BibTeX bibliography](https://raw.githubusercontent.com/AndreasEhstandLicenseofClarityLOC/augmanitai/main/research-index/external-publications.bib) — five separate works with their own attributions, including the foreword and SwissBoardForum article. The duPont interview has no inferred author.
+- [Author’s related Medium commentary](https://medium.com/@augmanitai/preserving-a-founders-judgment-notes-from-private-wealth-voices-july-2026-713c700171d0) — updated on 21 September 2026 with corrected pages, source links and the conceptual status of the proposal.
 - [Andreas Ehstand’s ORCID](https://orcid.org/0009-0006-3773-7796).
 
 The graph models the periodical, July issue, separate contributions, credited people and editorial discussion. The foreword points to each contribution; each contribution points back to the issue and foreword. Local catalogue identifiers identify these records; they are not publisher-issued identifiers or DOIs.

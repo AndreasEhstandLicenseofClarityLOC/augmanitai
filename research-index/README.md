@@ -1,8 +1,3 @@
----
-title: "Andreas Ehstand — Research and publications"
-description: "Source-linked research notes, external publications, terminology and creative work by Andreas Ehstand. Reading paths across human-AI interaction, language, performance and robotics."
----
-
 # AUGMANITAI — Research Index
 
 ## Latest public updates — 21 September 2026

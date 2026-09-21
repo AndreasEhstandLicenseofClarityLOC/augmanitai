@@ -33,3 +33,13 @@ For scholarly discussion, refer to a specific work, question or passage when [co
 ## Auf Deutsch
 
 Die Übersicht zeigt die thematische Breite der öffentlich zugänglichen Arbeiten. Sie führt von Erfahrungen im Umgang mit KI über Begriffe und Kunst zu Gedankenfortführung, Agenten, Robotik, Sport, Software und Wissensarbeit. Viele Quellen sind konzeptionelle Beiträge. Ihre Veröffentlichung ist noch kein Nachweis praktischer Wirksamkeit oder unabhängiger fachlicher Anerkennung.
+
+## Machine-readable sources
+
+AI-generated source guide:
+
+- [Nine reading paths as JSON-LD](reading-paths.jsonld): exact work titles, DOI identifiers, author ORCID, topic labels, publication dates and document types from public repository metadata.
+- [101-term bilingual public lexicon — JSON file](https://zenodo.org/api/records/22228966/files/terms.json/content): the existing archived term data, including German and English labels and definitions. Cite the [published lexicon record](https://doi.org/10.5281/zenodo.22228966) for this snapshot.
+- [Lexicon scope and source information](https://zenodo.org/api/records/22228966/files/README.md/content).
+
+The lexicon is the public selection, not the private working collection or an independently certified terminology standard. The source declares CC BY-NC-ND 4.0; linking it grants no additional reuse rights. These access points do not establish inclusion in a search index or model training data.

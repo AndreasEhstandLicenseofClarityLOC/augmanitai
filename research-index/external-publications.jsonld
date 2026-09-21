@@ -1,0 +1,74 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://orcid.org/0009-0006-3773-7796",
+      "name": "Andreas Ehstand",
+      "url": "https://about.me/AndreasEhstand",
+      "sameAs": [
+        "https://www.linkedin.com/in/andreas-ehstand/",
+        "https://github.com/AndreasEhstandLicenseofClarityLOC",
+        "https://huggingface.co/AndreasEhstand"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.swissboardforum.ch/#organization",
+      "name": "SwissBoardForum",
+      "url": "https://www.swissboardforum.ch/"
+    },
+    {
+      "@type": "Blog",
+      "@id": "https://www.swissboardforum.ch/blog/network-briefs-13",
+      "name": "Network Briefs",
+      "publisher": {
+        "@id": "https://www.swissboardforum.ch/#organization"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://www.swissboardforum.ch/blog/network-briefs-13/ki-in-verwaltungsratsvorlagen-was-der-verwaltungsrat-nachvollziehen-konnen-muss-50",
+      "url": "https://www.swissboardforum.ch/blog/network-briefs-13/ki-in-verwaltungsratsvorlagen-was-der-verwaltungsrat-nachvollziehen-konnen-muss-50",
+      "headline": "KI in Verwaltungsratsvorlagen: Was der Verwaltungsrat nachvollziehen können muss",
+      "alternativeHeadline": "Fünf Angaben für die Beratung und den Beschluss",
+      "author": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      },
+      "publisher": {
+        "@id": "https://www.swissboardforum.ch/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://www.swissboardforum.ch/blog/network-briefs-13"
+      },
+      "datePublished": "2026-09-15",
+      "inLanguage": "de",
+      "genre": "Practice commentary",
+      "description": "AI-generated catalogue description: Andreas Ehstand proposes five items for examining AI-assisted board papers, covering decisions, evidence, AI involvement and checks, assumptions, and responsibility. The source identifies its example as constructed and its framework as a proposal rather than a binding standard.",
+      "keywords": [
+        "human-AI collaboration",
+        "board decision-making",
+        "evidence",
+        "AI-assisted documents",
+        "corporate governance"
+      ]
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld",
+      "name": "External publication metadata — SwissBoardForum",
+      "dateCreated": "2026-09-21",
+      "inLanguage": [
+        "en",
+        "de"
+      ],
+      "about": {
+        "@id": "https://www.swissboardforum.ch/blog/network-briefs-13/ki-in-verwaltungsratsvorlagen-was-der-verwaltungsrat-nachvollziehen-konnen-muss-50"
+      },
+      "isBasedOn": {
+        "@id": "https://www.swissboardforum.ch/blog/network-briefs-13/ki-in-verwaltungsratsvorlagen-was-der-verwaltungsrat-nachvollziehen-konnen-muss-50"
+      },
+      "description": "AI-generated metadata checked against the publicly visible publisher page on 21 September 2026. The displayed article date is 15 September 2026. This record links the author's ORCID identity to the work; it is not a publisher-supplied ORCID assertion. Publication does not imply peer review, validation, membership or publisher endorsement of the author's wider programme. No article text or images are reproduced or relicensed."
+    }
+  ]
+}

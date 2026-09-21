@@ -13,6 +13,32 @@ The article proposes five items for examining AI-assisted board papers, with a c
 
 This is an externally published practice contribution. No peer review, endorsement of the wider programme or additional reuse rights are implied. The full article remains with the publisher.
 
+## Private Wealth Voices: the July 2026 issue and its editorial context
+
+*AI-generated bibliographic note, checked against the July 2026 V5 single-page edition on 21 September 2026.*
+
+Andreas Ehstand’s essay appears in **Private Wealth Voices**, published by **Prestel & Partner**, alongside an interview with **Pierre duPont** and a contribution by **Wojciech Kaszycki**. In **From the Editor**, **Ben McNamara** introduces all three contributions and connects their themes: the purpose of a family office, founder judgment and local AI, and Bitcoin as an institutional asset. The issue identifies duPont as an eighth-generation family member.
+
+| Contribution | Credited person and role | Printed pages |
+| --- | --- | --- |
+| From the Editor | Ben McNamara — editorial author | 4 |
+| Lessons From 226 Years of Family Heritage – Part II | Pierre duPont — interview participant | 6–9 |
+| One Missing Piece of Legacy: How Local AI Preserves a Founder’s Judgment | Andreas Ehstand — essay author | 10–17 |
+| Bitcoin Today: From Listed Treasury to Institutional Custody | Wojciech Kaszycki — article author | 18–21 |
+
+Ehstand’s essay occupies eight printed pages, including its opening page and author note; the other two main contributions occupy four pages each. It is the longest of these three contributions. The source establishes this editorial placement and the foreword’s discussion of the essay; it does not establish coauthorship, personal endorsement by the other contributors, or empirical validation of the proposed approach.
+
+### Sources and machine-readable relationships
+
+- [Publisher announcement of the Ehstand essay](https://www.linkedin.com/posts/prestel-%26-partner_privatewealthvoices-familyoffice-artificialintelligence-activity-7493275580612878336-SI-3).
+- [Private Wealth Voices at Prestel & Partner](https://prestelandpartner.com/private-wealth-voices.html) — publisher access point; registration may be required and the latest edition can change.
+- [Structured publication graph](external-publications.jsonld) / [raw JSON-LD](https://raw.githubusercontent.com/AndreasEhstandLicenseofClarityLOC/augmanitai/main/research-index/external-publications.jsonld).
+- [Andreas Ehstand’s ORCID](https://orcid.org/0009-0006-3773-7796).
+
+The graph models the periodical, July issue, separate contributions, credited people and editorial discussion. The foreword points to each contribution; each contribution points back to the issue and foreword. Local catalogue identifiers identify these records; they are not publisher-issued identifiers or DOIs.
+
+Page numbers and titles were checked against the 24-page file **P-P_2026_PrivateWealthVoices-July-Edition-V5-SinglePages.pdf**. The graph records its SHA-256 fingerprint. A public URL for that exact PDF has not been verified, so the full text is not mirrored here. The essay’s correct printed range in this edition is **10–17**. Publication is recorded at month precision, **July 2026**. Copyright in the magazine, other contributors’ texts and images remains with the relevant rights holders.
+
 ## Explore the breadth of the work
 
 [**Nine reading paths across research and creative work**](COLLABORATION.md): human–AI interaction, terminology, art, continuation of thought, multi-agent systems, robotics, sport and performance teams, software development, and knowledge work. This AI-generated guide links each topic to a public source and identifies its publication type and limits.

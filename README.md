@@ -1,5 +1,19 @@
 # AUGMANITAI
 
+## Explore the public work
+
+*AI-generated navigation guide, added 21 September 2026.*
+
+- [Nine reading paths](research-index/COLLABORATION.md) connect selected public sources across human–AI interaction, terminology, creative work, multi-agent systems, robotics and other topics.
+- [101-term lexicon quickstart](research-index/LEXICON_QUICKSTART.md) shows how to look up German–English entries by identifier and cite the archived source, with a tested Python example.
+- [Open conceptual paper and provisional codebook](research-index/#new-reading-guide-and-codebook) explore the distinction between an AI reply and a person's reported experience of feeling understood. No empirical validation is claimed.
+- [Research index and bibliography](research-index/) provide source links and publication-status notes; [structured reading paths](research-index/reading-paths.jsonld) make nine selected source references available as JSON-LD.
+- [Creative works catalogue on Hugging Face](https://huggingface.co/datasets/AndreasEhstand/augmanitai-public-works) links concepts, visual art, AI-generated films and interaction research.
+
+**Deutsch:** Einstieg in die öffentlichen Arbeiten von Andreas Ehstand: Themenübersicht, Begriffe, konzeptionelle Texte und kreative Arbeiten. Angaben zu Quellen, Lizenzen und Grenzen stehen bei den jeweiligen Materialien.
+
+---
+
 > A terminology framework for human–AI interaction. 1000 curated terms, informed by ISO 704 / ISO 1087 / ISO 30042 (ISO-inspired, not ISO-certified), Semantic Web native.
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20161494-blue)](https://doi.org/10.5281/zenodo.20161494)

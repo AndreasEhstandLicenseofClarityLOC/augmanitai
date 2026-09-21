@@ -1,0 +1,177 @@
+{
+  "format_version": "1.0",
+  "title": "Feeling Understood by Conversational AI: A Provisional Taxonomy and a Recognition–Disclosure Hypothesis",
+  "author": {
+    "name": "Andreas Ehstand",
+    "orcid": "0009-0006-3773-7796",
+    "orcid_url": "https://orcid.org/0009-0006-3773-7796"
+  },
+  "version_date": "2026-09-21",
+  "status": "machine-readable companion to an openly deposited, unvalidated conceptual working paper",
+  "source_manuscript": {
+    "title": "Feeling Understood by Conversational AI: A Provisional Taxonomy and a Recognition–Disclosure Hypothesis",
+    "doi": "10.5281/zenodo.22871354",
+    "url": "https://zenodo.org/records/22871354",
+    "pdf_sha256": "aeac80a630bfde67c6d9a9a3324a0b6a22bb9851c46d62f6103b0b0efb13400c",
+    "note": "Conceptual paper dated 15 September 2026; reference correction published 21 September 2026. Code definitions unchanged."
+  },
+  "ai_disclosure": "AI-generated draft: This manuscript was generated and revised with AI from Andreas Ehstand’s March 2026 source manuscript. The coding criteria and research protocol are proposals developed in this revision. No participant study was conducted for this paper, and no human substantive or editorial review of this version is claimed.",
+  "methodological_provenance": "The names of the six codes and the background phase headings originate in Ehstand's March 2026 manuscript, which was read without modification. OpenAI Codex generated and revised the present text; AI agents assisted with literature checks and critical review. The comparison matrix, coding criteria, synthetic examples, formulation of H1, and prospective analysis procedure were developed during this revision and should not be attributed to the original observations. This conceptual paper has no associated participant dataset.",
+  "empirical_status": {
+    "validation_conducted_for_this_paper": false,
+    "validated_psychological_scale": false,
+    "participant_dataset": false,
+    "all_examples": "constructed, not participant quotations or observations"
+  },
+  "shared_evidence_rules": {
+    "codes_are_non_exclusive": true,
+    "insufficient_evidence_is_allowed": true,
+    "unclassified_experiences_are_allowed": true,
+    "evidence_layers": [
+      "System or interface trace",
+      "Participant account",
+      "Analyst code with explicit justification"
+    ],
+    "temporal_comparison": "An episode can precede a separate interval. Overlapping or uncertain intervals cannot establish precedence. No order among all six codes is imposed.",
+    "annotation_fields": [
+      "episode identifier",
+      "relative time",
+      "task context",
+      "source excerpt",
+      "participant wording",
+      "proposed code",
+      "supporting passage",
+      "counterevidence",
+      "uncertainty"
+    ]
+  },
+  "codes": [
+    {
+      "id": "blank_cursor",
+      "name": "The Blank Cursor",
+      "source_section": "4.1",
+      "definition": "experienced difficulty initiating an exchange",
+      "inclusion": "The participant reports having an intended topic or outcome but difficulty turning it into an initial request. The difficulty concerns beginning the interaction, and is experienced by the participant rather than inferred from a delay.",
+      "example": {
+        "kind": "constructed",
+        "empirical_observation": false,
+        "text": "A person wants help expressing a disagreement. Looking at the input field, they report: “I knew what I wanted to discuss, but I could not find a way to start asking.”"
+      },
+      "counterexample": {
+        "kind": "constructed",
+        "empirical_observation": false,
+        "text": "The person has already formulated the request and waits for a connection to return. The delay is technical and supplies no evidence of initiation difficulty."
+      },
+      "boundaries": "A follow-up inquiry can distinguish uncertainty about wording, appropriateness, capability, and disclosure without presuming anxiety or low competence. Record submission, abandonment, or postponement separately; submission is not inherently a better outcome.",
+      "observation_unit": "episode",
+      "time_scale": "Participant-delimited interaction episode; no fixed duration is specified."
+    },
+    {
+      "id": "seen_feeling",
+      "name": "The Seen Feeling",
+      "source_section": "4.2",
+      "definition": "reported personal recognition in a response",
+      "inclusion": "The participant experiences a response as recognising or fitting a personally meaningful concern, perspective, or way of expressing something. The report concerns being understood as a participant in that moment, beyond a judgement of generic fluency or task correctness.",
+      "example": {
+        "kind": "constructed",
+        "empirical_observation": false,
+        "text": "After explaining a difficult choice, the person reports: “The reply picked up the conflict I was struggling to put into words; I felt understood.”"
+      },
+      "counterexample": {
+        "kind": "constructed",
+        "empirical_observation": false,
+        "text": "The system correctly converts a unit of measurement, and the person says only that the answer is useful. Correctness and usefulness do not by themselves meet the criterion."
+      },
+      "boundaries": "Warmth, agreement, surprise, and relief may accompany the experience but are not sufficient conditions. Perceived recognition is separable from the truth of a response and from the system’s underlying capacities. Comparison with established measures of feeling heard is necessary before claiming that this label captures an additional dimension.",
+      "observation_unit": "episode",
+      "time_scale": "Participant-delimited interaction episode; no fixed duration is specified."
+    },
+    {
+      "id": "digital_confidant_drift",
+      "name": "Digital Confidant Drift",
+      "source_section": "4.3",
+      "definition": "reported change in the destination of disclosure",
+      "inclusion": "The participant reports a change across time towards directing personally significant reflection to an AI system. “Drift” requires a temporal comparison; repeated visits or one personal prompt alone are insufficient. The record should identify the earlier and later pattern as reported by the participant.",
+      "example": {
+        "kind": "constructed",
+        "empirical_observation": false,
+        "text": "Across two diary intervals, a person describes moving from occasional practical questions to using the system first when considering personal concerns, and explicitly identifies this as a change."
+      },
+      "counterexample": {
+        "kind": "constructed",
+        "empirical_observation": false,
+        "text": "A novelist repeatedly asks the system to generate fictional confessions for a character. Personal subject matter in the text does not establish the user’s own disclosure pattern."
+      },
+      "boundaries": "A reported shift does not demonstrate displacement of human relationships, dependency, benefit, or harm. Those require separate measures. One retrospective statement can generate a candidate interval code, but a prospective trajectory claim should require corroborating reports across distinct observation points.",
+      "observation_unit": "interval",
+      "time_scale": "Reported change across time; requires an earlier/later comparison. Prospective trajectory claims require corroborating reports across distinct observation points."
+    },
+    {
+      "id": "parasocial_slip",
+      "name": "The Parasocial Slip",
+      "source_section": "4.4",
+      "definition": "a self-noticed discrepancy in social orientation",
+      "inclusion": "The participant reports orienting towards the system as a social interlocutor and explicitly notices a discrepancy with their usual understanding of it, or notices a change between interaction roles. Both the orientation and the participant's recognition of the discrepancy or change are required.",
+      "example": {
+        "kind": "constructed",
+        "empirical_observation": false,
+        "text": "A person reports: “I expected it to be pleased by my thanks, then noticed I was treating it differently from how I normally think about the software.”"
+      },
+      "counterexample": {
+        "kind": "constructed",
+        "empirical_observation": false,
+        "text": "A person describes the exchange as talking to a friend but reports no discrepancy or change of role. This is a socially oriented moment, not evidence for the narrower code. Habitual courtesy is also insufficient."
+      },
+      "boundaries": "The inherited word “slip” names a participant-noticed contrast, not an analyst's judgement of error or pathology. Without that contrast, retain a neutral description such as “socially oriented moment.” Deliberate role-play receives a separate context marker. Neither description alone establishes a lasting parasocial relationship.",
+      "observation_unit": "episode",
+      "time_scale": "Participant-delimited interaction episode; no fixed duration is specified."
+    },
+    {
+      "id": "origin_doubt",
+      "name": "The Origin Doubt",
+      "source_section": "4.5",
+      "definition": "uncertainty about the source of a formulation",
+      "inclusion": "The participant is uncertain whether a particular idea or wording originated in their own prior contribution or in an AI contribution. A specific object of uncertainty must be identifiable; a general statement that AI influences thinking is insufficient.",
+      "example": {
+        "kind": "constructed",
+        "empirical_observation": false,
+        "text": "While revising a paragraph, the person reports: “I cannot remember whether that distinction was already mine or first appeared in the reply.”"
+      },
+      "counterexample": {
+        "kind": "constructed",
+        "empirical_observation": false,
+        "text": "The person intentionally adopts a sentence from a visible model response and accurately identifies its source. Adoption is not itself uncertainty."
+      },
+      "boundaries": "The code records experienced source uncertainty. It neither establishes incorrect attribution nor determines authorship or ownership. Where participants consent and the relevant history exists, comparison with the interaction record can separately assess attribution accuracy. Cases with missing records remain unresolved rather than being classified as model-originated by default.",
+      "observation_unit": "episode",
+      "time_scale": "Participant-delimited interaction episode; no fixed duration is specified."
+    },
+    {
+      "id": "still_here",
+      "name": "Still Here",
+      "source_section": "4.6",
+      "definition": "reported reassertion of personal decision-making",
+      "inclusion": "The participant explicitly describes recognising their own role in accepting, modifying, rejecting, or suspending a system’s contribution. The account concerns agency within the exchange rather than a generic assertion of independence unrelated to an event.",
+      "example": {
+        "kind": "constructed",
+        "empirical_observation": false,
+        "text": "After considering a suggested interpretation, a person reports: “I can use part of this, but I am choosing a different explanation for my own reasons.”"
+      },
+      "counterexample": {
+        "kind": "constructed",
+        "empirical_observation": false,
+        "text": "The system prints “You remain in control,” and the participant provides no corresponding account. The system’s reassurance is not evidence that the participant experienced reasserted agency."
+      },
+      "boundaries": "The code does not imply recovery from pathology, freedom from influence, or better judgement. It can occur early, recur, or coexist with strong attachment. Record the reported stance separately from whether a choice changed and whether the participant can explain that choice.",
+      "observation_unit": "episode",
+      "time_scale": "Participant-delimited interaction episode; no fixed duration is specified."
+    }
+  ],
+  "license": "CC-BY-NC-ND-4.0",
+  "evidence_check": {
+    "date": "2026-09-21",
+    "checked_passages": 24,
+    "result": "All six inclusion rules, boundaries, examples and counterexamples match the published manuscript text after Unicode normalization and removal of Markdown bold markers.",
+    "scope": "Transcription check only; not empirical validation."
+  }
+}

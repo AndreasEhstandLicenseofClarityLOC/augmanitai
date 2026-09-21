@@ -1,5 +1,14 @@
 # AUGMANITAI — Research Index
 
+## New: reading guide and codebook
+
+AI-generated companions to the openly deposited conceptual paper:
+
+- [A warm AI reply is not evidence that someone felt understood](READING_INTERACTION_EVIDENCE.md) — an illustrated reading guide with a German summary.
+- [Machine-readable provisional codebook](feeling-understood-codebook.json) — six proposed codes, inclusion criteria, boundaries and constructed examples.
+
+These companions report no participant study or empirical validation. The codebook identifies its source DOI and the source paper's licence.
+
 ## Start here — 21 September 2026
 
 **AI-generated reading guide and catalogue update.**

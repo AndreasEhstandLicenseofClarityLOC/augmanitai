@@ -1,5 +1,12 @@
 # AUGMANITAI — Research Index
 
+## Open abstract and publication feed — 22 September 2026
+
+*AI-generated catalogue update.*
+
+- [Read the full abstract and citation metadata for Feeling Understood by Conversational AI](https://andreasehstandlicenseofclarityloc.github.io/augmanitai/research-index/feeling-understood.html). The linked source is a conceptual working paper; no participant study or empirical validation is reported.
+- [Subscribe to selected publication updates (RSS)](https://andreasehstandlicenseofclarityloc.github.io/augmanitai/research-index/updates.xml). The feed links to original publications and retains their source dates.
+
 ## Latest public updates — 21 September 2026
 
 *AI-generated navigation note. These links lead to separate works and source records.*

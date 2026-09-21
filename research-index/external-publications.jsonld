@@ -78,8 +78,14 @@
           "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026-source-pdf"
         }
       ],
-      "description": "AI-generated metadata checked against the publicly visible publisher page on 21 September 2026. The displayed article date is 15 September 2026. This record links the author's ORCID identity to the work; it is not a publisher-supplied ORCID assertion. Publication does not imply peer review, validation, membership or publisher endorsement of the author's wider programme. No article text or images are reproduced or relicensed. The Private Wealth Voices records are an AI-generated, source-checked bibliographic transcription by the author’s catalogue, not publisher-issued metadata. Fragment identifiers in this file are local catalogue identifiers, not DOIs or external authority identifiers. The foreword discusses three separate contributions; this does not assert coauthorship, collaboration, or personal endorsement. Month precision is retained because no exact publication day was independently confirmed. Printed pages for the Ehstand essay are 10–17 in V5.",
-      "dateModified": "2026-09-21"
+      "description": "AI-generated metadata checked against the publicly visible publisher page on 21 September 2026. The displayed article date is 15 September 2026. This record links the author's ORCID identity to the work; it is not a publisher-supplied ORCID assertion. Publication does not imply peer review, validation, membership or publisher endorsement of the author's wider programme. No article text or images are reproduced or relicensed. The Private Wealth Voices records are an AI-generated, source-checked bibliographic transcription by the author’s catalogue, not publisher-issued metadata. Fragment identifiers in this file are local catalogue identifiers, not DOIs or external authority identifiers. The foreword discusses three separate contributions; this does not assert coauthorship, collaboration, or personal endorsement. Month precision is retained because no exact publication day was independently confirmed. Printed pages for the Ehstand essay are 10–17 in V5. Public profile sources checked on 21 September 2026 support person disambiguation; their inclusion does not imply a relationship between Ehstand and the named firms.",
+      "dateModified": "2026-09-21",
+      "citation": [
+        "https://ceritypartners.com/team/pierre-dupont/",
+        "https://www.prestelandpartner.com/family-office-forum-new-york.html",
+        "https://www.prestelandpartner.com/aboutus.html",
+        "https://www.prestelandpartner.com/familyofficeforumlondon.html"
+      ]
     },
     {
       "@type": "Organization",
@@ -137,21 +143,42 @@
       "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pierre-dupont",
       "name": "Pierre duPont",
       "description": "Interview participant, identified in the July 2026 issue as an eighth-generation family member.",
-      "subjectOf": {
-        "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026-dupont"
-      }
+      "subjectOf": [
+        {
+          "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026-dupont"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://www.prestelandpartner.com/family-office-forum-new-york.html",
+          "name": "Prestel & Partner New York speaker biography — Pierre duPont"
+        }
+      ],
+      "url": "https://ceritypartners.com/team/pierre-dupont/",
+      "sameAs": [
+        "https://ceritypartners.com/team/pierre-dupont/"
+      ]
     },
     {
       "@type": "Person",
       "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#wojciech-kaszycki",
       "name": "Wojciech Kaszycki",
-      "description": "Contributor to the July 2026 issue, identified there as Principal, ClearLedger Investment Management (FZCO)."
+      "description": "Contributor to the July 2026 issue, identified there as Principal, ClearLedger Investment Management (FZCO).",
+      "subjectOf": {
+        "@type": "WebPage",
+        "url": "https://www.prestelandpartner.com/familyofficeforumlondon.html",
+        "name": "Prestel & Partner London speaker biography — Wojciech Kaszycki"
+      }
     },
     {
       "@type": "Person",
       "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#ben-mcnamara",
       "name": "Ben McNamara",
-      "description": "Author of the July 2026 foreword, signed Event Director & Editor, Prestel & Partner."
+      "description": "Author of the July 2026 foreword, signed Event Director & Editor, Prestel & Partner.",
+      "subjectOf": {
+        "@type": "WebPage",
+        "url": "https://www.prestelandpartner.com/aboutus.html",
+        "name": "Prestel & Partner team page — Ben McNamara"
+      }
     },
     {
       "@type": "Article",

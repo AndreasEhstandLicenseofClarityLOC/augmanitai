@@ -1,0 +1,7 @@
+# Page-specific catalogue metadata; leave the README free of front matter.
+defaults:
+  - scope:
+      path: "research-index/README.md"
+      type: "pages"
+    values:
+      description: "Research and creative work by Andreas Ehstand: human-AI interaction, terminology, agents and art, with source links, abstracts and publication metadata."

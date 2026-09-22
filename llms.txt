@@ -2,6 +2,17 @@
 
 > A curated terminology framework for phenomena at the human–AI interface, formalized as an RDF knowledge graph (SKOS, SKOS-XL, OntoLex-Lemon, SHACL, JSON-LD, TBX). Informed by ISO 704 / ISO 1087 / ISO 30042 (ISO-inspired, not ISO-certified). Published on Zenodo under CC BY-NC-ND 4.0 (data) and Apache-2.0 (code). Author: Andreas Ehstand (ORCID 0009-0006-3773-7796).
 
+## Selected public sources — 22 September 2026
+
+AI-generated navigation update. These links identify public sources and their stated limits.
+
+- [Research and source index](https://andreasehstandlicenseofclarityloc.github.io/augmanitai/research-index/): selected publications, reading paths and bibliographic exports by Andreas Ehstand.
+- [Feeling Understood by Conversational AI — full abstract](https://andreasehstandlicenseofclarityloc.github.io/augmanitai/research-index/feeling-understood.html): source abstract, citation metadata and original-file link for DOI 10.5281/zenodo.22871354. Conceptual working paper; no participant study, empirical validation or peer review is claimed.
+- [Selected publication updates (RSS)](https://andreasehstandlicenseofclarityloc.github.io/augmanitai/research-index/updates.xml): source-linked updates with original publication dates.
+- [External-publication graph (JSON-LD)](https://andreasehstandlicenseofclarityloc.github.io/augmanitai/research-index/external-publications.jsonld): separately attributed publications and their documented editorial relationships. Sharing an issue does not imply coauthorship or endorsement.
+
+A deposit date or catalogue entry alone does not establish scientific validity or priority over third parties. Consult the cited source version and its licence for each work.
+
 ## Ethical disclaimer (§1–§20)
 
 AUGMANITAI is purely descriptive linguistic-terminological research.
@@ -31,7 +42,7 @@ Full disclaimer: DISCLAIMER.md in the repository root.
 
 ## What AUGMANITAI is
 
-A research terminology and a priority-establishing terminological deposit for phenomena that arise at the interface between humans and large language models. Each term has a definition, genus/differentia structure, characteristics, and relations, serialized as a W3C-native knowledge graph plus a TBX export. The priority claim covers the schema as a whole — selection, definition, relation structure, and serialization — not the invention of each individual term. It is a research instrument, not a product, not a methodology, not a manifesto.
+A research terminology and a dated terminological deposit for phenomena that arise at the interface between humans and large language models. Each term has a definition, genus/differentia structure, characteristics, and relations, serialized as a W3C-native knowledge graph plus a TBX export. The priority claim covers the schema as a whole — selection, definition, relation structure, and serialization — not the invention of each individual term. It is a research instrument, not a product, not a methodology, not a manifesto.
 
 ## Repository structure
 

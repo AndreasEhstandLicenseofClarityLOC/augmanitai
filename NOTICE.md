@@ -27,8 +27,8 @@ Commercial licensing inquiries regarding the **data layer**: contact the author 
 
 - **AUGMANITAI** is a project word mark identifying this terminology compendium and tooling.
   See `licensing/TRADEMARK.md` for permitted/prohibited uses.
-- **License of Clarity** is a registered trademark (EUIPO **019206780**), held within the
-  License of Clarity / Leomanitai context. Use of that mark is governed separately.
+- **License of Clarity** is a registered trademark (EUIPO **019206780**).
+  Use of that mark is governed separately.
 
 ## Disclaimer pointer
 

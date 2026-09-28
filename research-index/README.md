@@ -1,5 +1,15 @@
 # AUGMANITAI — Research Index
 
+## Public commentary — 28 September 2026
+
+*AI-generated navigation note. These are short social posts, separate from the source publications and from the newsletter issues below.*
+
+- [LinkedIn: Which new information would change this decision?](https://www.linkedin.com/feed/update/urn:li:activity:7510239374509228033/) — German commentary on assumptions and evidence in AI-assisted recommendations, linked to the SwissBoardForum article.
+- [X: What new evidence would change this decision?](https://x.com/Augmanitai/status/2104472353262706761) — a short English introduction to the same published practice proposal.
+- [Facebook: Does an AI suggestion preserve the original idea?](https://www.facebook.com/Andy.Ehs/posts/pfbid0275px5NFawzroizbKt43Sorgb4vpzpk7F4Yg3Sv4NYr7Mt83dBMw4J3Xa2hXq6wBRl) — a constructed creative example linked to the published diary issue.
+
+The posts disclose AI-generated text. Their examples and proposals are not empirical findings. These links record public commentary; they do not announce new research papers.
+
 ## Open abstract and publication feed — 22 September 2026
 
 *AI-generated catalogue update.*
@@ -13,9 +23,9 @@
 
 Three new LinkedIn newsletter issues explore practical questions in human–AI work:
 
-- [Zwei KI-Agenten, eine Aufgabe: Was gehört zur Leistung?](https://www.linkedin.com/pulse/zwei-ki-agenten-eine-aufgabe-geh%25C3%25B6rt-zur-leistung-andreas-ehstand-ex6qe/) — assessing the contribution of agents in a shared task.
-- [Eine Idee in drei Fassungen: Was sich im KI-Dialog verändert](https://www.linkedin.com/pulse/eine-idee-drei-fassungen-sich-im-ki-dialog-ver%25C3%25A4ndert-andreas-ehstand-v0mpe/) — tracing changes to an idea through dialogue.
-- [Eine Quelle ist noch kein Beleg für den ganzen Satz](https://www.linkedin.com/pulse/eine-quelle-ist-noch-kein-beleg-f%25C3%25BCr-den-ganzen-satz-andreas-ehstand-xsvke/) — checking which part of a claim a source supports.
+- [Zwei KI-Agenten, eine Aufgabe: Was gehört zur Leistung?](https://www.linkedin.com/pulse/zwei-ki-agenten-eine-aufgabe-geh%C3%B6rt-zur-leistung-andreas-ehstand-ex6qe/) — assessing the contribution of agents in a shared task.
+- [Eine Idee in drei Fassungen: Was sich im KI-Dialog verändert](https://www.linkedin.com/pulse/eine-idee-drei-fassungen-sich-im-ki-dialog-ver%C3%A4ndert-andreas-ehstand-v0mpe/) — tracing changes to an idea through dialogue.
+- [Eine Quelle ist noch kein Beleg für den ganzen Satz](https://www.linkedin.com/pulse/eine-quelle-ist-noch-kein-beleg-f%C3%BCr-den-ganzen-satz-andreas-ehstand-xsvke/) — checking which part of a claim a source supports.
 
 The source notes below document the SwissBoardForum contribution and the July Private Wealth Voices issue, including its editor’s foreword. The [bibliographic export](external-publications.bib), [publication graph](external-publications.jsonld), [reading guide](READING_INTERACTION_EVIDENCE.md), [about.me profile](https://about.me/AndreasEhstand) and [Hugging Face catalogue](https://huggingface.co/datasets/AndreasEhstand/augmanitai-public-works) provide further routes into the work.
 

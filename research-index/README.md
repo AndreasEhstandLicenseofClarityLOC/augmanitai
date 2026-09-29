@@ -1,5 +1,12 @@
 # AUGMANITAI — Research Index
 
+## Start with a question — 24 entry points
+
+**[24 Einstiege / 24 ways into human–AI work](START_HERE.md)** connects questions about dialogue, thought, art, terminology, agents, robotics, sport, software, evidence and retrieval with public sources. German questions include English labels and a concrete next step. Four working templates help readers trace an idea, check a claim, describe a performance unit and examine a recommendation.
+
+*AI-generated navigation and reading aids, added 29 September 2026. The guide also links the three newsletter issues and Medium article published on 28 September. Conceptual proposals, commentary and empirical evidence remain distinct.*
+
+
 ## Public commentary — 28 September 2026
 
 *AI-generated navigation note. These are short social posts, separate from the source publications and from the newsletter issues below.*

@@ -1,0 +1,57 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://orcid.org/0009-0006-3773-7796",
+      "name": "Andreas Ehstand",
+      "sameAs": [
+        "https://www.linkedin.com/in/andreas-ehstand/"
+      ]
+    },
+    {
+      "@type": "Event",
+      "@id": "https://prestelandpartner.com/familyofficeforumzurich.html",
+      "url": "https://prestelandpartner.com/familyofficeforumzurich.html",
+      "name": "Family Office Forum Zurich 2026",
+      "startDate": "2026-11-10",
+      "endDate": "2026-11-11",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "organizer": {
+        "@type": "Organization",
+        "name": "Prestel & Partner",
+        "url": "https://prestelandpartner.com/"
+      },
+      "location": {
+        "@type": "Place",
+        "name": "The Dolder Grand",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Zürich",
+          "addressCountry": "CH"
+        }
+      },
+      "performer": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      },
+      "subjectOf": {
+        "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/events.jsonld#source-note"
+      },
+      "description": "Upcoming event. The organiser website supports the event dates and venue. Andreas Ehstand's scheduled speaker role is an author-reported statement on his LinkedIn profile; it was checked against non-public organiser confirmation. His name was not found on the public event page on 2 October 2026. No final talk title or completed presentation is asserted."
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/events.jsonld#source-note",
+      "name": "Source note: scheduled Zurich speaker role",
+      "author": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      },
+      "dateModified": "2026-10-02",
+      "isBasedOn": [
+        "https://www.linkedin.com/in/andreas-ehstand/",
+        "https://prestelandpartner.com/familyofficeforumzurich.html"
+      ],
+      "description": "AI-generated, author-maintained event metadata. The LinkedIn profile is the public source for the speaker claim; the organiser page establishes event details only. Private correspondence is not reproduced. This catalogue is not an independent endorsement."
+    }
+  ]
+}

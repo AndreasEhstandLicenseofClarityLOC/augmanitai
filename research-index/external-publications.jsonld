@@ -56,7 +56,7 @@
     {
       "@type": "CreativeWork",
       "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld",
-      "name": "External publication metadata — SwissBoardForum and Private Wealth Voices",
+      "name": "External publication metadata — selected articles and issue context",
       "dateCreated": "2026-09-21",
       "inLanguage": [
         "en",
@@ -68,6 +68,12 @@
         },
         {
           "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026"
+        },
+        {
+          "@id": "https://www.business-wissen.de/artikel/debriefing-wie-sie-erfahrungswissen-uebergeben/"
+        },
+        {
+          "@id": "https://www.business-wissen.de/artikel/ki-einsetzen-so-erkennen-sie-falsche-ki-ergebnisse/"
         }
       ],
       "isBasedOn": [
@@ -76,10 +82,16 @@
         },
         {
           "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/external-publications.jsonld#pwv-july-2026-source-pdf"
+        },
+        {
+          "@id": "https://www.business-wissen.de/artikel/debriefing-wie-sie-erfahrungswissen-uebergeben/"
+        },
+        {
+          "@id": "https://www.business-wissen.de/artikel/ki-einsetzen-so-erkennen-sie-falsche-ki-ergebnisse/"
         }
       ],
-      "description": "AI-generated metadata checked against the publicly visible publisher page on 21 September 2026. The displayed article date is 15 September 2026. This record links the author's ORCID identity to the work; it is not a publisher-supplied ORCID assertion. Publication does not imply peer review, validation, membership or publisher endorsement of the author's wider programme. No article text or images are reproduced or relicensed. The Private Wealth Voices records are an AI-generated, source-checked bibliographic transcription by the author’s catalogue, not publisher-issued metadata. Fragment identifiers in this file are local catalogue identifiers, not DOIs or external authority identifiers. The foreword discusses three separate contributions; this does not assert coauthorship, collaboration, or personal endorsement. Month precision is retained because no exact publication day was independently confirmed. Printed pages for the Ehstand essay are 10–17 in V5. Public profile sources checked on 21 September 2026 support person disambiguation; their inclusion does not imply a relationship between Ehstand and the named firms.",
-      "dateModified": "2026-09-21",
+      "description": "AI-generated metadata checked against the publicly visible publisher page on 21 September 2026. The displayed article date is 15 September 2026. This record links the author's ORCID identity to the work; it is not a publisher-supplied ORCID assertion. Publication does not imply peer review, validation, membership or publisher endorsement of the author's wider programme. No article text or images are reproduced or relicensed. The Private Wealth Voices records are an AI-generated, source-checked bibliographic transcription by the author’s catalogue, not publisher-issued metadata. Fragment identifiers in this file are local catalogue identifiers, not DOIs or external authority identifiers. The foreword discusses three separate contributions; this does not assert coauthorship, collaboration, or personal endorsement. Month precision is retained because no exact publication day was independently confirmed. Printed pages for the Ehstand essay are 10–17 in V5. Public profile sources checked on 21 September 2026 support person disambiguation; their inclusion does not imply a relationship between Ehstand and the named firms. The two business-wissen.de articles were checked on 2 October 2026; the ORCID link is author-maintained attribution, not a publisher-supplied assertion.",
+      "dateModified": "2026-10-02",
       "citation": [
         "https://ceritypartners.com/team/pierre-dupont/",
         "https://www.prestelandpartner.com/family-office-forum-new-york.html",
@@ -88,10 +100,10 @@
       ],
       "encoding": {
         "@type": "MediaObject",
-        "name": "Bibliographic export — five external works and issue contributions",
+        "name": "Bibliographic export — seven external works and issue contributions",
         "encodingFormat": "text/x-bibtex",
         "contentUrl": "https://raw.githubusercontent.com/AndreasEhstandLicenseofClarityLOC/augmanitai/main/research-index/external-publications.bib",
-        "description": "Five separate works with individual attributions. The interview with Pierre duPont has no inferred author. The author’s later Medium commentary is not an additional entry in this export."
+        "description": "Seven separately attributed works, including two business-wissen.de practice articles. Not seven Ehstand works."
       }
     },
     {
@@ -362,6 +374,42 @@
         "https://www.linkedin.com/posts/prestel-%26-partner_privatewealthvoices-familyoffice-artificialintelligence-activity-7493275580612878336-SI-3"
       ],
       "description": "Author-written context on Medium, prepared with AI assistance. Updated with corrected printed pages, links to the publisher and catalogue, and an explicit distinction between a conceptual proposal and demonstrated preservation of judgment. This is separate from the magazine essay and does not constitute a second external editorial publication."
+    },
+    {
+      "@type": "Article",
+      "@id": "https://www.business-wissen.de/artikel/debriefing-wie-sie-erfahrungswissen-uebergeben/",
+      "headline": "Debriefing: Wie Sie Erfahrungswissen übergeben",
+      "datePublished": "2026-09-15",
+      "inLanguage": "de",
+      "genre": "Practice article",
+      "description": "AI-generated catalogue description: A practice article on documenting experience and decision reasons, including a constructed example.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "business-wissen.de",
+        "url": "https://www.business-wissen.de/"
+      },
+      "url": "https://www.business-wissen.de/artikel/debriefing-wie-sie-erfahrungswissen-uebergeben/",
+      "author": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      }
+    },
+    {
+      "@type": "Article",
+      "@id": "https://www.business-wissen.de/artikel/ki-einsetzen-so-erkennen-sie-falsche-ki-ergebnisse/",
+      "headline": "KI einsetzen: So erkennen Sie falsche KI-Ergebnisse",
+      "datePublished": "2026-09-04",
+      "inLanguage": "de",
+      "genre": "Practice article",
+      "description": "AI-generated catalogue description: A practice article on checking AI outputs, sources and errors. Metrics require comparable test conditions and do not alone demonstrate competence loss or implementation success.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "business-wissen.de",
+        "url": "https://www.business-wissen.de/"
+      },
+      "url": "https://www.business-wissen.de/artikel/ki-einsetzen-so-erkennen-sie-falsche-ki-ergebnisse/",
+      "author": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      }
     }
   ]
 }

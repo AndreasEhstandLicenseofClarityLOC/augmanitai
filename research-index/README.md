@@ -1,5 +1,17 @@
 # AUGMANITAI — Research Index
 
+## Publications and scheduled speaking — 2 October 2026
+
+*AI-generated, author-maintained source note.*
+
+- **Upcoming:** Andreas Ehstand reports a confirmed speaker role at the **Family Office Forum Zurich, 10–11 November 2026**. [Author's public profile](https://www.linkedin.com/in/andreas-ehstand/) supplies the role claim; the [organiser page](https://prestelandpartner.com/familyofficeforumzurich.html) confirms dates and venue. His name was not yet found on that page when checked. Final talk title remains open. [Event graph and provenance](events.jsonld).
+- **business-wissen.de:** [Debriefing: Wie Sie Erfahrungswissen übergeben](https://www.business-wissen.de/artikel/debriefing-wie-sie-erfahrungswissen-uebergeben/), 15 September 2026; [KI einsetzen: So erkennen Sie falsche KI-Ergebnisse](https://www.business-wissen.de/artikel/ki-einsetzen-so-erkennen-sie-falsche-ki-ergebnisse/), 4 September 2026. These are practice articles, not new empirical studies.
+- **Robotics:** [The Robot-Fleet Operator Unit](https://doi.org/10.5281/zenodo.21990196), 18 August 2026 — an open conceptual note on the boundary of a combined human, AI and robot work unit; not a deployment report.
+- **Ontologies:** [Cross-Substrate Knowledge Transfer Pathways](https://doi.org/10.5281/zenodo.22212079), 31 August 2026 — public metadata for a restricted deposit. Only the public topic and bibliographic record are referenced; no protected content is reproduced or validation claimed.
+
+[Updated external-publication graph](external-publications.jsonld) · [BibTeX export](external-publications.bib) · [ORCID](https://orcid.org/0009-0006-3773-7796).
+
+
 ## Start with a question — 24 entry points
 
 **[24 Einstiege / 24 ways into human–AI work](START_HERE.md)** connects questions about dialogue, thought, art, terminology, agents, robotics, sport, software, evidence and retrieval with public sources. German questions include English labels and a concrete next step. Four working templates help readers trace an idea, check a claim, describe a performance unit and examine a recommendation.
@@ -69,7 +81,7 @@ Ehstand’s essay occupies eight printed pages, including its opening page and a
 - [Publisher announcement of the Ehstand essay](https://www.linkedin.com/posts/prestel-%26-partner_privatewealthvoices-familyoffice-artificialintelligence-activity-7493275580612878336-SI-3).
 - [Private Wealth Voices at Prestel & Partner](https://prestelandpartner.com/private-wealth-voices.html) — publisher access point; registration may be required and the latest edition can change.
 - [Structured publication graph](external-publications.jsonld) / [raw JSON-LD](https://raw.githubusercontent.com/AndreasEhstandLicenseofClarityLOC/augmanitai/main/research-index/external-publications.jsonld).
-- [Download the BibTeX bibliography](https://raw.githubusercontent.com/AndreasEhstandLicenseofClarityLOC/augmanitai/main/research-index/external-publications.bib) — five separate works with their own attributions, including the foreword and SwissBoardForum article. The duPont interview has no inferred author.
+- [Download the BibTeX bibliography](https://raw.githubusercontent.com/AndreasEhstandLicenseofClarityLOC/augmanitai/main/research-index/external-publications.bib) — seven separate works with their own attributions, including the foreword and SwissBoardForum article. The duPont interview has no inferred author.
 - [Author’s related Medium commentary](https://medium.com/@augmanitai/preserving-a-founders-judgment-notes-from-private-wealth-voices-july-2026-713c700171d0) — updated on 21 September 2026 with corrected pages, source links and the conceptual status of the proposal.
 - [Andreas Ehstand’s ORCID](https://orcid.org/0009-0006-3773-7796).
 

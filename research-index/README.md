@@ -1,5 +1,13 @@
 # AUGMANITAI — Research Index
 
+## Practice example — 9 October 2026
+
+*AI-generated text and synthetic example data; maintained in Andreas Ehstand’s public research index.*
+
+[**Trace an AI correction and its unfinished follow-up**](CORRECTION_RECORD.md) explains a constructed book-exchange example in German, with an English summary. The [self-contained JSON example](correction-record-example.json) preserves the source, earlier output, revised output and an explicitly open follow-up check. It complements the [agent task brief](AGENT_BRIEF.md). This is a practical proposal, not a tested intervention or a W3C PROV implementation.
+
+Related public reading: [Medium: Was eine KI-Korrektur zum Nachlesen braucht](https://medium.com/@augmanitai/was-eine-ki-korrektur-zum-nachlesen-braucht-89cbace519f3) · [The AI Athlete: Gleiche Aufgabe, andere Reihenfolge](https://www.linkedin.com/pulse/gleiche-aufgabe-andere-reihenfolge-bleibt-die-antwort-andreas-ehstand-ikiwe/). These links describe commentary and a constructed exercise, not new empirical findings.
+
 ## Publications and scheduled speaking — 2 October 2026
 
 *AI-generated, author-maintained source note.*
@@ -196,3 +204,4 @@ Both formats describe the linked resources. The original PDFs, Markdown manuscri
 Each primary DOI identifies the specific deposited work version used by this index. Its separately registered concept DOI represents the version family. JSONL records the primary identifier as `self` and the concept relationship as `IsVersionOf`; JSON-LD expresses the latter as `isVersionOf`. These relationships were checked against DataCite and Zenodo. Other DOI references in the source records are outside this index's selected relationship set.
 
 Each JSONL record supplies its Zenodo and DataCite metadata URLs. At the snapshot date, all five source records were openly accessible, both identifiers for every record were registered as findable in DataCite, and at least one public source-file endpoint per work returned HTTP 200. These checks establish metadata consistency and availability, not scholarly endorsement.
+

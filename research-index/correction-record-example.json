@@ -1,0 +1,55 @@
+{
+  "ai_disclosure": "Text und Beispieldaten mit KI erstellt.",
+  "synthetic_example": true,
+  "context": "Konstruiertes Beispiel eines Büchertauschregals. Sämtliche Texte, Kennungen und Versionen sind erfunden.",
+  "sources": [
+    {
+      "id": "aushang-v1",
+      "version": 1,
+      "section": "Annahme",
+      "text": "Wir nehmen nur Bücher an."
+    }
+  ],
+  "outputs": [
+    {
+      "id": "hinweis-v1",
+      "version": 1,
+      "text": "Bücher und Spiele sind willkommen."
+    },
+    {
+      "id": "hinweis-v2",
+      "version": 2,
+      "text": "Bücher sind willkommen."
+    },
+    {
+      "id": "kurzfassung-v1",
+      "version": 1,
+      "text": "Bücher und Spiele willkommen."
+    }
+  ],
+  "correction": {
+    "previous_output": "hinweis-v1",
+    "revised_output": "hinweis-v2",
+    "previous_statement": "Bücher und Spiele sind willkommen.",
+    "trigger": {
+      "kind": "overlooked_source",
+      "source": "aushang-v1",
+      "section": "Annahme",
+      "relevant_text": "Wir nehmen nur Bücher an."
+    },
+    "revised_statement": "Bücher sind willkommen."
+  },
+  "follow_up": [
+    {
+      "output": "kurzfassung-v1",
+      "source": "aushang-v1",
+      "check": "Enthält sie noch die Angabe zu Spielen? Mit dem Aushang vergleichen und nötige Änderung festhalten.",
+      "status": "offen"
+    }
+  ],
+  "scope": "Eigener Vorschlag für einen Korrektureintrag; keine PROV-Implementierung und keine Studie.",
+  "references": {
+    "conceptual_background": "https://www.w3.org/TR/prov-dm/",
+    "companion_article": "https://medium.com/@augmanitai/was-eine-ki-korrektur-zum-nachlesen-braucht-89cbace519f3"
+  }
+}

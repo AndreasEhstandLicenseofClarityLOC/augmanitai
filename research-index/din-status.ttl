@@ -1,0 +1,156 @@
+@prefix : <https://schema.org/> .
+@prefix kg: <urn:augmanitai:catalogue-vocabulary:> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+<https://raw.githubusercontent.com/AndreasEhstandLicenseofClarityLOC/augmanitai/main/research-index/din-status.jsonld#link-lexicon> a kg:EditorialLink ;
+    prov:wasAttributedTo <https://orcid.org/0009-0006-3773-7796> ;
+    :description "Der öffentliche bilinguale Begriffskatalog bietet einen thematischen Bezug zu Terminologie in der Mensch-KI-Interaktion. Eine DIN-konforme Terminologieprüfung oder Nutzung durch DIN wird nicht behauptet." ;
+    :isPartOf <https://raw.githubusercontent.com/AndreasEhstandLicenseofClarityLOC/augmanitai/main/research-index/din-status.jsonld#administrative-admission> ;
+    :name "Redaktioneller Themenbezug: AUGMANITAI Public Lexicon — 101 Bilingual Terms of Human-AI Interaction (Permanent Archival Snapshot of the Open Web Edition)" ;
+    kg:contextCommittee <https://www.din.de/de/mitwirken/normenausschuesse/nat/nationale-gremien/wdc-grem:din21:380893327> ;
+    kg:relationStatus "editorial-thematic-inference" ;
+    kg:topic <https://raw.githubusercontent.com/AndreasEhstandLicenseofClarityLOC/augmanitai/main/research-index/din-status.jsonld#topic-nlp> ;
+    kg:work <https://doi.org/10.5281/zenodo.22228966> .
+
+<https://raw.githubusercontent.com/AndreasEhstandLicenseofClarityLOC/augmanitai/main/research-index/din-status.jsonld#link-meaning-layer> a kg:EditorialLink ;
+    prov:wasAttributedTo <https://orcid.org/0009-0006-3773-7796> ;
+    :description "Das konzeptionelle Papier behandelt eine Bedeutungsschicht zwischen Menschen, Sprachmodellen, Agenten und Robotern. Der Bezug zum NLP-Gremium ist eine redaktionelle Einordnung, kein angenommener Normungsbeitrag." ;
+    :isPartOf <https://raw.githubusercontent.com/AndreasEhstandLicenseofClarityLOC/augmanitai/main/research-index/din-status.jsonld#administrative-admission> ;
+    :name "Redaktioneller Themenbezug: The Universal Concept Layer: Language as Versionable Code — A Meaning Layer between Humans, Language Models, Agents, and Robots" ;
+    kg:contextCommittee <https://www.din.de/de/mitwirken/normenausschuesse/nat/nationale-gremien/wdc-grem:din21:380893327> ;
+    kg:relationStatus "editorial-thematic-inference" ;
+    kg:topic <https://raw.githubusercontent.com/AndreasEhstandLicenseofClarityLOC/augmanitai/main/research-index/din-status.jsonld#topic-nlp> ;
+    kg:work <https://doi.org/10.5281/zenodo.22172128> .
+
+<https://raw.githubusercontent.com/AndreasEhstandLicenseofClarityLOC/augmanitai/main/research-index/din-status.jsonld#link-performance> a kg:EditorialLink ;
+    prov:wasAttributedTo <https://orcid.org/0009-0006-3773-7796> ;
+    :description "Der konzeptionelle Rahmen behandelt Beobachtbarkeit, Messgrenzen und menschlich beeinflussbare Faktoren. Das ist ein thematischer Anschluss an Oversight und Testing, kein validierter Prüfstandard." ;
+    :isPartOf <https://raw.githubusercontent.com/AndreasEhstandLicenseofClarityLOC/augmanitai/main/research-index/din-status.jsonld#administrative-admission> ;
+    :name "Redaktioneller Themenbezug: Four practical questions for analysing your own performance when working with AI" ;
+    kg:contextCommittee <https://www.din.de/de/mitwirken/normenausschuesse/nia/nationale-gremien/wdc-grem:din21:372704974> ;
+    kg:relationStatus "editorial-thematic-inference" ;
+    kg:topic <https://raw.githubusercontent.com/AndreasEhstandLicenseofClarityLOC/augmanitai/main/research-index/din-status.jsonld#topic-human-judgement> ;
+    kg:work <https://doi.org/10.5281/zenodo.20613914> .
+
+<https://raw.githubusercontent.com/AndreasEhstandLicenseofClarityLOC/augmanitai/main/research-index/din-status.jsonld#link-world-feedback> a kg:EditorialLink ;
+    prov:wasAttributedTo <https://orcid.org/0009-0006-3773-7796> ;
+    :description "Der konzeptionelle Vorschlag behandelt menschliches Urteil und Rückkopplung mit der Welt. Der Bezug zu Vertrauenswürdigkeit ist redaktionell; Wirksamkeit oder institutionelle Anerkennung sind nicht nachgewiesen." ;
+    :isPartOf <https://raw.githubusercontent.com/AndreasEhstandLicenseofClarityLOC/augmanitai/main/research-index/din-status.jsonld#administrative-admission> ;
+    :name "Redaktioneller Themenbezug: AUGMANITAI: Definition and Priority Registration of an Internalised, World-Coupled Multi-Model Mode of Thinking" ;
+    kg:contextCommittee <https://www.din.de/de/mitwirken/normenausschuesse/nia/nationale-gremien/wdc-grem:din21:372704974> ;
+    kg:relationStatus "editorial-thematic-inference" ;
+    kg:topic <https://raw.githubusercontent.com/AndreasEhstandLicenseofClarityLOC/augmanitai/main/research-index/din-status.jsonld#topic-human-judgement> ;
+    kg:work <https://doi.org/10.5281/zenodo.23279129> .
+
+<https://doi.org/10.5281/zenodo.20613914> a :CreativeWork ;
+    :creativeWorkStatus "Descriptive practitioner framework with open hypotheses; no independent peer review or measured performance gain established by this catalogue" ;
+    :creator <https://orcid.org/0009-0006-3773-7796> ;
+    :datePublished "2026-06-09" ;
+    :genre "Working paper" ;
+    :identifier [ a :PropertyValue ;
+            :propertyID "DOI" ;
+            :value "10.5281/zenodo.20613914" ] ;
+    :license "https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode" ;
+    :name "Four practical questions for analysing your own performance when working with AI" ;
+    :url "https://zenodo.org/records/20613914" .
+
+<https://doi.org/10.5281/zenodo.22172128> a :CreativeWork ;
+    :creativeWorkStatus "Self-published; peer-review status not established by this catalogue" ;
+    :creator <https://orcid.org/0009-0006-3773-7796> ;
+    :datePublished "2026-08-30" ;
+    :genre "Working paper" ;
+    :identifier [ a :PropertyValue ;
+            :propertyID "DOI" ;
+            :value "10.5281/zenodo.22172128" ] ;
+    :license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
+    :name "The Universal Concept Layer: Language as Versionable Code — A Meaning Layer between Humans, Language Models, Agents, and Robots" ;
+    :url "https://zenodo.org/records/22172128" .
+
+<https://doi.org/10.5281/zenodo.22228966> a :Dataset ;
+    :creativeWorkStatus "Self-published; peer-review status not established by this catalogue" ;
+    :creator <https://orcid.org/0009-0006-3773-7796> ;
+    :datePublished "2026-09-01" ;
+    :genre "Dataset" ;
+    :identifier [ a :PropertyValue ;
+            :propertyID "DOI" ;
+            :value "10.5281/zenodo.22228966" ] ;
+    :license "https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode" ;
+    :name "AUGMANITAI Public Lexicon — 101 Bilingual Terms of Human-AI Interaction (Permanent Archival Snapshot of the Open Web Edition)" ;
+    :url "https://zenodo.org/records/22228966" .
+
+<https://doi.org/10.5281/zenodo.23279129> a :CreativeWork ;
+    :creativeWorkStatus "Self-published conceptual preprint; peer-review status and training efficacy not established by this catalogue" ;
+    :creator <https://orcid.org/0009-0006-3773-7796> ;
+    :datePublished "2026-10-10" ;
+    :genre "Preprint" ;
+    :identifier [ a :PropertyValue ;
+            :propertyID "DOI" ;
+            :value "10.5281/zenodo.23279129" ] ;
+    :license "https://creativecommons.org/licenses/by-nd/4.0/legalcode" ;
+    :name "AUGMANITAI: Definition and Priority Registration of an Internalised, World-Coupled Multi-Model Mode of Thinking" ;
+    :url "https://zenodo.org/records/23279129" .
+
+<https://raw.githubusercontent.com/AndreasEhstandLicenseofClarityLOC/augmanitai/main/research-index/din-status.jsonld#evidence-20260915> a prov:Entity ;
+    :description "Interner Beleg für die vorgesehene Mitarbeit in den zwei benannten Gremien; keine Behauptung einer bereits abgeschlossenen Normungsleistung." ;
+    :name "Privat geprüfte DIN-Korrespondenz vom 15. September 2026" .
+
+<https://raw.githubusercontent.com/AndreasEhstandLicenseofClarityLOC/augmanitai/main/research-index/din-status.jsonld#evidence-20261001> a prov:Entity ;
+    :description "Interner Beleg für die zunächst beschriebene Gastaufnahme auf Antrag im Arbeitskreis Vertrauenswürdigkeit; keine volle Mitgliedschaft aus dem Wort Gast abgeleitet." ;
+    :name "Privat geprüfte DIN-Korrespondenz vom 1. Oktober 2026" .
+
+<https://raw.githubusercontent.com/AndreasEhstandLicenseofClarityLOC/augmanitai/main/research-index/din-status.jsonld#evidence-20261014> a prov:Entity ;
+    :description "Interner Beleg für Eingang des Autorisierungsformulars, Systemaufnahme und die noch ausstehende Voraussetzung für DOCS.DIN. Keine Mail, Namen von Sachbearbeitenden, Adressen, Signaturen oder Anhänge Bestandteil dieses Graphen." ;
+    :name "Privat geprüfte DIN-Korrespondenz vom 14. Oktober 2026" .
+
+<https://raw.githubusercontent.com/AndreasEhstandLicenseofClarityLOC/augmanitai/main/research-index/din-status.jsonld#topic-human-judgement> a :DefinedTerm ;
+    :description "Redaktionell definierter Themenknoten für menschlichen Einfluss, Grenzen der Leistungsanalyse und Rückkopplung mit Ergebnissen außerhalb des Dialogs." ;
+    :name "Menschliches Urteil und überprüfbare Mensch-KI-Arbeit" .
+
+<https://raw.githubusercontent.com/AndreasEhstandLicenseofClarityLOC/augmanitai/main/research-index/din-status.jsonld#topic-nlp> a :DefinedTerm ;
+    :description "Redaktionell definierter Themenknoten für Begriffssysteme und Bedeutungsabstimmung zwischen Menschen, Sprachmodellen, Agenten und Robotern." ;
+    :name "Mensch-KI-Terminologie und gemeinsame Bedeutung" .
+
+<https://www.din.de/> a :Organization ;
+    :name "DIN Deutsches Institut für Normung e. V." ;
+    :url "https://www.din.de/" .
+
+<https://www.din.de/de/mitwirken/normenausschuesse/nat/nationale-gremien/wdc-grem:din21:380893327> a :Organization ;
+    :description "Offizieller DIN-Gremienknoten; die DIN-Seite beschreibt Zuständigkeit und Aufgaben, keine öffentlich bestätigte persönliche Aufnahme von Andreas Ehstand." ;
+    :name "NA 105-00-06-01 GAK – Gemeinschaftsarbeitskreis NAT/NIA: Natural Language Processing" ;
+    :parentOrganization <https://www.din.de/> ;
+    :url "https://www.din.de/de/mitwirken/normenausschuesse/nat/nationale-gremien/wdc-grem:din21:380893327" .
+
+<https://www.din.de/de/mitwirken/normenausschuesse/nia/nationale-gremien/wdc-grem:din21:372704974> a :Organization ;
+    :description "Offizieller DIN-Gremienknoten mit Themen wie Testing, Explainability, Transparency und Oversight; keine Anerkennung oder Anwendung der verknüpften Werke behauptet." ;
+    :name "NA 043-01-42-04 AK – Vertrauenswürdigkeit" ;
+    :parentOrganization <https://www.din.de/> ;
+    :url "https://www.din.de/de/mitwirken/normenausschuesse/nia/nationale-gremien/wdc-grem:din21:372704974" .
+
+<https://raw.githubusercontent.com/AndreasEhstandLicenseofClarityLOC/augmanitai/main/research-index/din-status.jsonld#administrative-admission> a prov:Entity,
+        :Claim ;
+    prov:wasAttributedTo <https://orcid.org/0009-0006-3773-7796> ;
+    prov:wasDerivedFrom <https://raw.githubusercontent.com/AndreasEhstandLicenseofClarityLOC/augmanitai/main/research-index/din-status.jsonld#evidence-20260915>,
+        <https://raw.githubusercontent.com/AndreasEhstandLicenseofClarityLOC/augmanitai/main/research-index/din-status.jsonld#evidence-20261001>,
+        <https://raw.githubusercontent.com/AndreasEhstandLicenseofClarityLOC/augmanitai/main/research-index/din-status.jsonld#evidence-20261014> ;
+    :about <https://orcid.org/0009-0006-3773-7796>,
+        <https://www.din.de/de/mitwirken/normenausschuesse/nat/nationale-gremien/wdc-grem:din21:380893327>,
+        <https://www.din.de/de/mitwirken/normenausschuesse/nia/nationale-gremien/wdc-grem:din21:372704974> ;
+    :alternateName "Andreas Ehstand — DIN registration for planned committee participation, October 2026" ;
+    :creativeWorkStatus "Datierte autorenseitige Statusangabe: administrative Aufnahme bestätigt; vorgesehene Mitarbeit, kein Nachweis bereits geleisteter Normungsarbeit." ;
+    :dateCreated "2026-10-14" ;
+    :dateModified "2026-10-14" ;
+    :description "Stand 14. Oktober 2026: administrative Aufnahme bestätigt; DOCS.DIN noch nicht freigeschaltet. Die vorgesehene Gremienzuordnung stammt aus der DIN-Korrespondenz vom 15. September 2026. Für den Arbeitskreis Vertrauenswürdigkeit wurde am 1. Oktober zunächst eine Gastaufnahme auf Antrag beschrieben. Dieser Eintrag behauptet keine bereits erfolgte Sitzungsteilnahme, aktive Normautorschaft, DIN-Mitgliedschaft, Zertifizierung oder Anerkennung der Arbeiten durch DIN." ;
+    :inLanguage "de",
+        "en" ;
+    :name "Andreas Ehstand – DIN-Registrierung für vorgesehene Gremienarbeit, Oktober 2026" ;
+    :text "Seit Oktober 2026 ist Andreas Ehstand beim Deutschen Institut für Normung (DIN) für die Mitarbeit in zwei Fachgremien zu Natural Language Processing und Vertrauenswürdigkeit registriert." ;
+    :url "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/DIN_STATUS.md" ;
+    :usageInfo "Graphmetadaten und Formulierungen KI-generiert. Öffentliche DIN-Seiten belegen die Gremienaufgaben; der persönliche Aufnahmestatus beruht auf privat geprüfter Originalkorrespondenz." .
+
+<https://orcid.org/0009-0006-3773-7796> a :Person ;
+    :name "Andreas Ehstand" ;
+    :sameAs <https://github.com/AndreasEhstandLicenseofClarityLOC>,
+        <https://www.linkedin.com/in/andreas-ehstand/> ;
+    :subjectOf <https://raw.githubusercontent.com/AndreasEhstandLicenseofClarityLOC/augmanitai/main/research-index/din-status.jsonld#administrative-admission> ;
+    :url "https://orcid.org/0009-0006-3773-7796" .
+

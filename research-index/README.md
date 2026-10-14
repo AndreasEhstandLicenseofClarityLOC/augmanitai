@@ -1,5 +1,11 @@
 # AUGMANITAI — Research Index
 
+## DIN registration — 14 October 2026
+
+*AI-generated, author-maintained status statement.*
+
+Since October 2026, Andreas Ehstand is registered with DIN for planned participation in committees concerning Natural Language Processing and AI trustworthiness. Administrative entry is confirmed; DOCS.DIN access remained pending. [Read the dated status, scope and four editorial thematic links](DIN_STATUS.md). This author-sourced statement is supported by privately retained correspondence. It does not establish completed standards work, DIN membership, certification or endorsement of the linked publications. [JSON-LD graph](din-status.jsonld) · [RDF/Turtle](din-status.ttl) · [JSONL](din-status.jsonl).
+
 ## Practice example — 9 October 2026
 
 *AI-generated text and synthetic example data; maintained in Andreas Ehstand’s public research index.*

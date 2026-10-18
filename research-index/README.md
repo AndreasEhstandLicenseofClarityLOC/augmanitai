@@ -198,16 +198,26 @@ Dates, versions, resource classifications and source licences below follow the p
 
 The listed licences apply to the linked source works, as reported by Zenodo and DataCite. This catalogue does not change their licences or the rights in other material linked from those works. Source publication dates are metadata values and need not equal the creation date of a republication's repository record.
 
-## Structured files
+## Current structured files — 18 October 2026
 
-- [works.jsonl](works.jsonl): exactly five records, with exact titles, work and concept DOIs, source URLs, author ORCID, source date and version, source licence, access status and metadata provenance. Each record explicitly carries `metadata_generated_by_ai: true`.
-- [works.jsonld](works.jsonld): the same five source works represented with Schema.org terms. Their catalogue descriptions and keywords explicitly identify AI-generated metadata.
+- [works.jsonl](works.jsonl): ten selected DOI records, with original titles, DOI, author ORCID, source URL, publication date, version when supplied and source licence.
+- [works.jsonld](works.jsonld): the same ten DOI records using Schema.org terms, with author identity, AI-generated catalogue descriptions and direct DataCite provenance links.
+- [public-graph.jsonld](public-graph.jsonld): author profiles, selected works, original articles, newsletter series and public posts. A catalogue connection records authorship or a source relationship; it does not imply endorsement.
 
-Both formats describe the linked resources. The original PDFs, Markdown manuscripts, lexicon contents and archive files are not mirrored in this folder.
+The ten records include separate text and PDF editions of the same older public paper. They are not ten independent studies. Original source files are not mirrored here.
 
 ## DOI relationships and provenance
 
-Each primary DOI identifies the specific deposited work version used by this index. Its separately registered concept DOI represents the version family. JSONL records the primary identifier as `self` and the concept relationship as `IsVersionOf`; JSON-LD expresses the latter as `isVersionOf`. These relationships were checked against DataCite and Zenodo. Other DOI references in the source records are outside this index's selected relationship set.
+Each primary DOI identifies the deposited edition used in this index. Where a version-family relationship is supplied, JSON-LD expresses it as `dcterms:isVersionOf`, using the Dublin Core namespace. The compact JSONL export does not carry these relationship fields. Use the particular edition DOI when citing a work.
 
-Each JSONL record supplies its Zenodo and DataCite metadata URLs. At the snapshot date, all five source records were openly accessible, both identifiers for every record were registered as findable in DataCite, and at least one public source-file endpoint per work returned HTTP 200. These checks establish metadata consistency and availability, not scholarly endorsement.
+Titles, author ORCID, publication dates, supplied versions and licences for all ten records were checked against public DataCite metadata on 18 October 2026. These are metadata checks, not empirical validation or scholarly endorsement. Source licences remain unchanged. The five-resource overview above describes the historical 15 September selection; the linked machine-readable exports now contain the expanded selection.
 
+<!-- public-catalogue-links-20261018:start -->
+## Public works, author and editions
+
+[**Start with a question: performance, agents, robotics, dialogue and knowledge transfer**](READING_PATHS_PUBLIC.md) groups ten selected public DOI records, including separate text and PDF editions of the same older paper.
+
+[Author profiles](author-links.html) · [Author identity](research-identity.jsonld) · [Linked public works and commentary](public-graph.jsonld) · [Works JSON-LD](works.jsonld) · [BibTeX](works.bib) · [CSL JSON](works.csl.json) · [Reading paths JSON-LD](reading-paths-public.jsonld).
+
+*AI-assisted, author-maintained navigation and metadata. Original editions, dates and source licences are preserved.*
+<!-- public-catalogue-links-20261018:end -->

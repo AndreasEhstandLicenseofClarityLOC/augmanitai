@@ -1,209 +1,346 @@
 {
-  "@context": "https://schema.org",
+  "@context": [
+    "https://schema.org",
+    {
+      "dcterms": "http://purl.org/dc/terms/"
+    }
+  ],
   "@graph": [
     {
-      "@type": "Dataset",
-      "@id": "https://doi.org/10.5281/zenodo.22228966",
-      "name": "AUGMANITAI Public Lexicon — 101 Bilingual Terms of Human-AI Interaction (Permanent Archival Snapshot of the Open Web Edition)",
-      "description": "AI-generated catalogue description: An archived bilingual lexicon of human-AI interaction terms, distributed as a README and a structured JSON file containing 101 entries.",
-      "url": "https://zenodo.org/records/22228966",
+      "@id": "https://doi.org/10.5281/zenodo.20613914",
+      "@type": "CreativeWork",
+      "name": "Four practical questions for analysing your own performance when working with AI",
+      "url": "https://zenodo.org/doi/10.5281/zenodo.20613914",
       "identifier": {
         "@type": "PropertyValue",
         "propertyID": "DOI",
-        "value": "10.5281/zenodo.22228966"
+        "value": "10.5281/zenodo.20613914"
       },
-      "isVersionOf": {
-        "@id": "https://doi.org/10.5281/zenodo.22228965"
-      },
-      "datePublished": "2026-09-01",
       "creator": {
-        "@type": "Person",
-        "@id": "https://orcid.org/0009-0006-3773-7796",
-        "name": "Andreas Ehstand"
+        "@id": "https://orcid.org/0009-0006-3773-7796"
       },
+      "genre": "Working paper",
+      "datePublished": "2026-06-09",
       "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode",
-      "genre": "Dataset",
-      "creativeWorkStatus": "Self-published; peer-review status not established by this catalogue",
-      "keywords": [
-        "AI-generated catalogue metadata",
-        "self-published research output"
+      "description": "AI-generated catalogue description: A descriptive practitioner working paper transferring performance-coaching analysis to human–AI work through observability, decomposition, measurement with limitations and factors within human control. Its predictions are open hypotheses; no validated scoring instrument or measured performance gain is established by this catalogue.",
+      "dcterms:isVersionOf": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.20613913"
+        }
       ],
+      "author": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      },
       "subjectOf": [
         {
           "@type": "CreativeWork",
-          "name": "Zenodo source metadata",
-          "url": "https://zenodo.org/api/records/22228966"
-        },
-        {
-          "@type": "CreativeWork",
-          "name": "DataCite DOI metadata",
-          "url": "https://api.datacite.org/dois/10.5281/zenodo.22228966"
+          "name": "DataCite source metadata",
+          "url": "https://api.datacite.org/dois/10.5281/zenodo.20613914"
         }
-      ],
-      "version": "1.0"
+      ]
     },
     {
+      "@id": "https://doi.org/10.5281/zenodo.21990196",
       "@type": "CreativeWork",
-      "@id": "https://doi.org/10.5281/zenodo.22172128",
-      "name": "The Universal Concept Layer: Language as Versionable Code — A Meaning Layer between Humans, Language Models, Agents, and Robots",
-      "description": "AI-generated catalogue description: A self-published working paper presenting a conceptual meaning layer between people, language models, software agents and robots, with English and German text files.",
-      "url": "https://zenodo.org/records/22172128",
+      "name": "The Robot-Fleet Operator Unit: Embodied Machines as Standing Parts, Physical Contact as Independent Reply (Conceptual Note, EN/DE)",
+      "url": "https://zenodo.org/doi/10.5281/zenodo.21990196",
       "identifier": {
         "@type": "PropertyValue",
         "propertyID": "DOI",
-        "value": "10.5281/zenodo.22172128"
+        "value": "10.5281/zenodo.21990196"
       },
-      "isVersionOf": {
-        "@id": "https://doi.org/10.5281/zenodo.22172127"
-      },
-      "datePublished": "2026-08-30",
       "creator": {
-        "@type": "Person",
-        "@id": "https://orcid.org/0009-0006-3773-7796",
-        "name": "Andreas Ehstand"
+        "@id": "https://orcid.org/0009-0006-3773-7796"
       },
-      "license": "https://creativecommons.org/licenses/by/4.0/legalcode",
       "genre": "Working paper",
-      "creativeWorkStatus": "Self-published; peer-review status not established by this catalogue",
-      "keywords": [
-        "AI-generated catalogue metadata",
-        "self-published research output"
+      "datePublished": "2026-08-18",
+      "license": "https://creativecommons.org/licenses/by/4.0/legalcode",
+      "description": "AI-generated catalogue description: A bilingual conceptual note on defining the combined human, model, software, persistent-record and embodied-machine unit involved in robot-fleet work. Physical contact provides an external observation. It proposes boundaries and conditions under which the descriptive transfer would fail; it reports no robot deployment, measured performance gain or control advice.",
+      "dcterms:isVersionOf": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.21990195"
+        }
       ],
+      "author": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      },
       "subjectOf": [
         {
           "@type": "CreativeWork",
-          "name": "Zenodo source metadata",
-          "url": "https://zenodo.org/api/records/22172128"
-        },
-        {
-          "@type": "CreativeWork",
-          "name": "DataCite DOI metadata",
-          "url": "https://api.datacite.org/dois/10.5281/zenodo.22172128"
+          "name": "DataCite source metadata",
+          "url": "https://api.datacite.org/dois/10.5281/zenodo.21990196"
         }
-      ],
-      "version": "2.1"
+      ]
     },
     {
-      "@type": "CreativeWork",
-      "@id": "https://doi.org/10.5281/zenodo.22211952",
-      "name": "Gedankenvererbungslehre: A Conceptual Framework and Five Proposed Dimensions (Republication of the 21 February 2026 First Edition)",
-      "description": "AI-generated catalogue description: A self-published conceptual framework with five proposed dimensions, made available as a republication of the edition identified in its title.",
-      "url": "https://zenodo.org/records/22211952",
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "DOI",
-        "value": "10.5281/zenodo.22211952"
-      },
-      "isVersionOf": {
-        "@id": "https://doi.org/10.5281/zenodo.22211951"
-      },
-      "datePublished": "2026-02-21",
-      "creator": {
-        "@type": "Person",
-        "@id": "https://orcid.org/0009-0006-3773-7796",
-        "name": "Andreas Ehstand"
-      },
-      "license": "https://creativecommons.org/licenses/by/4.0/legalcode",
-      "genre": "Working paper",
-      "creativeWorkStatus": "Self-published; peer-review status not established by this catalogue",
-      "keywords": [
-        "AI-generated catalogue metadata",
-        "self-published research output"
-      ],
-      "subjectOf": [
-        {
-          "@type": "CreativeWork",
-          "name": "Zenodo source metadata",
-          "url": "https://zenodo.org/api/records/22211952"
-        },
-        {
-          "@type": "CreativeWork",
-          "name": "DataCite DOI metadata",
-          "url": "https://api.datacite.org/dois/10.5281/zenodo.22211952"
-        }
-      ],
-      "version": "1.0"
-    },
-    {
-      "@type": "CreativeWork",
       "@id": "https://doi.org/10.5281/zenodo.21990198",
+      "@type": "CreativeWork",
       "name": "Swarms and Multi-Agent Collectives: Why the Measurement Line Decides Success or Mismeasurement (Conceptual Note, EN/DE)",
-      "description": "AI-generated catalogue description: A self-published conceptual note about the boundary used to describe and assess swarms and multi-agent collectives, distributed as an English/German archive.",
-      "url": "https://zenodo.org/records/21990198",
+      "url": "https://zenodo.org/doi/10.5281/zenodo.21990198",
       "identifier": {
         "@type": "PropertyValue",
         "propertyID": "DOI",
         "value": "10.5281/zenodo.21990198"
       },
-      "isVersionOf": {
-        "@id": "https://doi.org/10.5281/zenodo.21990197"
-      },
-      "datePublished": "2026-08-18",
       "creator": {
-        "@type": "Person",
-        "@id": "https://orcid.org/0009-0006-3773-7796",
-        "name": "Andreas Ehstand"
+        "@id": "https://orcid.org/0009-0006-3773-7796"
       },
-      "license": "https://creativecommons.org/licenses/by/4.0/legalcode",
       "genre": "Working paper",
-      "creativeWorkStatus": "Self-published; peer-review status not established by this catalogue",
-      "keywords": [
-        "AI-generated catalogue metadata",
-        "self-published research output"
+      "datePublished": "2026-08-18",
+      "license": "https://creativecommons.org/licenses/by/4.0/legalcode",
+      "description": "AI-generated catalogue description: A self-published conceptual note about the boundary used to describe and assess swarms and multi-agent collectives, distributed as an English/German archive.",
+      "dcterms:isVersionOf": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.21990197"
+        }
       ],
+      "author": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      },
       "subjectOf": [
         {
           "@type": "CreativeWork",
-          "name": "Zenodo source metadata",
-          "url": "https://zenodo.org/api/records/21990198"
-        },
-        {
-          "@type": "CreativeWork",
-          "name": "DataCite DOI metadata",
+          "name": "DataCite source metadata",
           "url": "https://api.datacite.org/dois/10.5281/zenodo.21990198"
         }
       ]
     },
     {
+      "@id": "https://doi.org/10.5281/zenodo.22172128",
       "@type": "CreativeWork",
+      "name": "The Universal Concept Layer: Language as Versionable Code — A Meaning Layer between Humans, Language Models, Agents, and Robots",
+      "url": "https://zenodo.org/doi/10.5281/zenodo.22172128",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.5281/zenodo.22172128"
+      },
+      "creator": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      },
+      "genre": "Working paper",
+      "datePublished": "2026-08-30",
+      "version": "2.1",
+      "license": "https://creativecommons.org/licenses/by/4.0/legalcode",
+      "description": "AI-generated catalogue description: A self-published working paper presenting a conceptual meaning layer between people, language models, software agents and robots, with English and German text files.",
+      "dcterms:isVersionOf": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.22172127"
+        }
+      ],
+      "author": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      },
+      "subjectOf": [
+        {
+          "@type": "CreativeWork",
+          "name": "DataCite source metadata",
+          "url": "https://api.datacite.org/dois/10.5281/zenodo.22172128"
+        }
+      ]
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.22211952",
+      "@type": "CreativeWork",
+      "name": "Gedankenvererbungslehre: A Conceptual Framework and Five Proposed Dimensions (Republication of the 21 February 2026 First Edition)",
+      "url": "https://zenodo.org/doi/10.5281/zenodo.22211952",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.5281/zenodo.22211952"
+      },
+      "creator": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      },
+      "genre": "Working paper",
+      "datePublished": "2026-02-21",
+      "version": "1.0",
+      "license": "https://creativecommons.org/licenses/by/4.0/legalcode",
+      "description": "AI-generated catalogue description: A self-published conceptual framework with five proposed dimensions, made available as a republication of the edition identified in its title.",
+      "dcterms:isVersionOf": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.22211951"
+        }
+      ],
+      "author": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      },
+      "subjectOf": [
+        {
+          "@type": "CreativeWork",
+          "name": "DataCite source metadata",
+          "url": "https://api.datacite.org/dois/10.5281/zenodo.22211952"
+        }
+      ]
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.22228966",
+      "@type": "Dataset",
+      "name": "AUGMANITAI Public Lexicon — 101 Bilingual Terms of Human-AI Interaction (Permanent Archival Snapshot of the Open Web Edition)",
+      "url": "https://zenodo.org/doi/10.5281/zenodo.22228966",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.5281/zenodo.22228966"
+      },
+      "creator": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      },
+      "genre": "",
+      "datePublished": "2026-09-01",
+      "version": "1.0",
+      "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode",
+      "description": "AI-generated catalogue description: An archived bilingual lexicon of human-AI interaction terms, distributed as a README and a structured JSON file containing 101 entries.",
+      "dcterms:isVersionOf": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.22228965"
+        }
+      ],
+      "author": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      },
+      "subjectOf": [
+        {
+          "@type": "CreativeWork",
+          "name": "DataCite source metadata",
+          "url": "https://api.datacite.org/dois/10.5281/zenodo.22228966"
+        }
+      ]
+    },
+    {
       "@id": "https://doi.org/10.5281/zenodo.22229056",
+      "@type": "CreativeWork",
       "name": "AUG-WP Working Paper Series V3 (2026): Public Title and Abstract Register — 225 Working Papers on Human-AI Interaction",
-      "description": "AI-generated catalogue description: A public title and abstract register for a working-paper series. The register is the indexed work; its title does not establish access to 225 full manuscripts or their peer-review status.",
-      "url": "https://zenodo.org/records/22229056",
+      "url": "https://zenodo.org/doi/10.5281/zenodo.22229056",
       "identifier": {
         "@type": "PropertyValue",
         "propertyID": "DOI",
         "value": "10.5281/zenodo.22229056"
       },
-      "isVersionOf": {
-        "@id": "https://doi.org/10.5281/zenodo.22215732"
-      },
-      "datePublished": "2026-09-01",
       "creator": {
-        "@type": "Person",
-        "@id": "https://orcid.org/0009-0006-3773-7796",
-        "name": "Andreas Ehstand"
+        "@id": "https://orcid.org/0009-0006-3773-7796"
       },
-      "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode",
       "genre": "Other",
-      "creativeWorkStatus": "Self-published; peer-review status not established by this catalogue",
-      "keywords": [
-        "AI-generated catalogue metadata",
-        "self-published research output"
+      "datePublished": "2026-09-01",
+      "version": "1.1",
+      "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode",
+      "description": "AI-generated catalogue description: A public title and abstract register for a working-paper series. The register is the indexed work; its title does not establish access to 225 full manuscripts or their peer-review status.",
+      "dcterms:isVersionOf": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.22215732"
+        }
       ],
+      "author": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      },
       "subjectOf": [
         {
           "@type": "CreativeWork",
-          "name": "Zenodo source metadata",
-          "url": "https://zenodo.org/api/records/22229056"
-        },
-        {
-          "@type": "CreativeWork",
-          "name": "DataCite DOI metadata",
+          "name": "DataCite source metadata",
           "url": "https://api.datacite.org/dois/10.5281/zenodo.22229056"
         }
+      ]
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.22826650",
+      "@type": "CreativeWork",
+      "name": "The Universal Concept Layer: Language as Versionable Code — A Meaning Layer between Humans, Language Models, Agents, and Robots",
+      "url": "https://zenodo.org/doi/10.5281/zenodo.22826650",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.5281/zenodo.22826650"
+      },
+      "creator": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      },
+      "genre": "Working paper",
+      "datePublished": "2026-09-18",
+      "version": "2.1 (PDF edition)",
+      "license": "https://creativecommons.org/licenses/by/4.0/legalcode",
+      "dcterms:isVersionOf": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.22172127"
+        }
       ],
-      "version": "1.1"
+      "author": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      },
+      "subjectOf": [
+        {
+          "@type": "CreativeWork",
+          "name": "DataCite source metadata",
+          "url": "https://api.datacite.org/dois/10.5281/zenodo.22826650"
+        }
+      ]
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.22871354",
+      "@type": "CreativeWork",
+      "name": "Feeling Understood by Conversational AI: A Taxonomy and a Recognition–Disclosure Hypothesis",
+      "url": "https://zenodo.org/doi/10.5281/zenodo.22871354",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.5281/zenodo.22871354"
+      },
+      "creator": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      },
+      "genre": "Working paper",
+      "datePublished": "2026-09-21",
+      "version": "2026-09-21 corrected conceptual draft",
+      "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode",
+      "description": "AI-generated catalogue description: A conceptual working paper specifying six candidate codes for experiences of feeling understood in AI dialogue and a recognition-disclosure hypothesis. Constructed examples and a proposed prospective protocol support future testing; no participant study, validated taxonomy or treatment effect is established.",
+      "dcterms:isVersionOf": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.22871353"
+        }
+      ],
+      "author": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      },
+      "subjectOf": [
+        {
+          "@type": "CreativeWork",
+          "name": "DataCite source metadata",
+          "url": "https://api.datacite.org/dois/10.5281/zenodo.22871354"
+        }
+      ]
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.23279129",
+      "@type": "CreativeWork",
+      "name": "AUGMANITAI: Definition and Priority Registration of an Internalised, World-Coupled Multi-Model Mode of Thinking",
+      "url": "https://zenodo.org/doi/10.5281/zenodo.23279129",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.5281/zenodo.23279129"
+      },
+      "creator": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      },
+      "genre": "",
+      "datePublished": "2026-10-10",
+      "version": "1.0",
+      "license": "https://creativecommons.org/licenses/by-nd/4.0/legalcode",
+      "description": "AI-generated catalogue description: A self-published conceptual preprint proposing a graded mode of thinking involving a plural AI dialogue, planned fading of support, human judgement and coupling to the world. It defines a construct and testable questions; the catalogue does not establish training efficacy, peer review or legal priority.",
+      "dcterms:isVersionOf": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.23279128"
+        }
+      ],
+      "author": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      },
+      "subjectOf": [
+        {
+          "@type": "CreativeWork",
+          "name": "DataCite source metadata",
+          "url": "https://api.datacite.org/dois/10.5281/zenodo.23279129"
+        }
+      ]
     }
   ]
 }

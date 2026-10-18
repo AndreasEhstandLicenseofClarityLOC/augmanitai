@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+type: dataset
+message: Cite individual works by their own DOI. This citation describes the author-maintained
+  metadata index, not every indexed paper.
+title: Andreas Ehstand — Public Works Metadata Index
+authors:
+- family-names: Ehstand
+  given-names: Andreas
+  orcid: https://orcid.org/0009-0006-3773-7796
+url: https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/tree/main/research-index

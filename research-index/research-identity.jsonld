@@ -1,0 +1,120 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@id": "https://orcid.org/0009-0006-3773-7796",
+      "@type": "Person",
+      "name": "Andreas Ehstand",
+      "givenName": "Andreas",
+      "familyName": "Ehstand",
+      "url": "https://orcid.org/0009-0006-3773-7796",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0009-0006-3773-7796"
+      },
+      "sameAs": [
+        "https://github.com/AndreasEhstandLicenseofClarityLOC",
+        "https://huggingface.co/AndreasEhstand",
+        "https://medium.com/@augmanitai",
+        "https://substack.com/@andreasehstand",
+        "https://www.facebook.com/Andy.Ehs",
+        "https://www.instagram.com/augmanitai_/",
+        "https://www.linkedin.com/in/andreas-ehstand/",
+        "https://www.threads.com/@augmanitai_",
+        "https://www.youtube.com/@AugmanitaiLexicon",
+        "https://x.com/Augmanitai"
+      ]
+    },
+    {
+      "@id": "https://www.linkedin.com/in/andreas-ehstand/",
+      "@type": "ProfilePage",
+      "url": "https://www.linkedin.com/in/andreas-ehstand/",
+      "name": "Andreas Ehstand — linkedin",
+      "mainEntity": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      }
+    },
+    {
+      "@id": "https://x.com/Augmanitai",
+      "@type": "ProfilePage",
+      "url": "https://x.com/Augmanitai",
+      "name": "Andreas Ehstand — x",
+      "mainEntity": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      }
+    },
+    {
+      "@id": "https://www.instagram.com/augmanitai_/",
+      "@type": "ProfilePage",
+      "url": "https://www.instagram.com/augmanitai_/",
+      "name": "Andreas Ehstand — instagram",
+      "mainEntity": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      }
+    },
+    {
+      "@id": "https://www.threads.com/@augmanitai_",
+      "@type": "ProfilePage",
+      "url": "https://www.threads.com/@augmanitai_",
+      "name": "Andreas Ehstand — threads",
+      "mainEntity": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      }
+    },
+    {
+      "@id": "https://www.facebook.com/Andy.Ehs",
+      "@type": "ProfilePage",
+      "url": "https://www.facebook.com/Andy.Ehs",
+      "name": "Andreas Ehstand — facebook",
+      "mainEntity": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      }
+    },
+    {
+      "@id": "https://www.youtube.com/@AugmanitaiLexicon",
+      "@type": "ProfilePage",
+      "url": "https://www.youtube.com/@AugmanitaiLexicon",
+      "name": "Andreas Ehstand — youtube",
+      "mainEntity": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      }
+    },
+    {
+      "@id": "https://medium.com/@augmanitai",
+      "@type": "ProfilePage",
+      "url": "https://medium.com/@augmanitai",
+      "name": "Andreas Ehstand — medium",
+      "mainEntity": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      }
+    },
+    {
+      "@id": "https://substack.com/@andreasehstand",
+      "@type": "ProfilePage",
+      "url": "https://substack.com/@andreasehstand",
+      "name": "Andreas Ehstand — substack",
+      "mainEntity": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      }
+    },
+    {
+      "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC",
+      "@type": "ProfilePage",
+      "url": "https://github.com/AndreasEhstandLicenseofClarityLOC",
+      "name": "Andreas Ehstand — github",
+      "mainEntity": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      }
+    },
+    {
+      "@id": "https://huggingface.co/AndreasEhstand",
+      "@type": "ProfilePage",
+      "url": "https://huggingface.co/AndreasEhstand",
+      "name": "Andreas Ehstand — huggingface",
+      "mainEntity": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      }
+    }
+  ]
+}

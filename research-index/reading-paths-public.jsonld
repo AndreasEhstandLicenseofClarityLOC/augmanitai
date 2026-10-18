@@ -1,0 +1,156 @@
+{
+  "@context": [
+    "https://schema.org",
+    {
+      "dcterms": "http://purl.org/dc/terms/"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/reading-paths-public.jsonld",
+      "@type": "Collection",
+      "name": "Andreas Ehstand — public works by question",
+      "creator": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      },
+      "hasPart": [
+        {
+          "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/READING_PATHS_PUBLIC.md#performance"
+        },
+        {
+          "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/READING_PATHS_PUBLIC.md#agents-robotics"
+        },
+        {
+          "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/READING_PATHS_PUBLIC.md#knowledge-transfer"
+        },
+        {
+          "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/READING_PATHS_PUBLIC.md#dialogue"
+        },
+        {
+          "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/READING_PATHS_PUBLIC.md#terms"
+        },
+        {
+          "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/READING_PATHS_PUBLIC.md#working-papers"
+        }
+      ]
+    },
+    {
+      "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/READING_PATHS_PUBLIC.md#performance",
+      "@type": "ItemList",
+      "name": "Performance and judgment / Leistung und Urteil",
+      "numberOfItems": 1,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://doi.org/10.5281/zenodo.20613914"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/READING_PATHS_PUBLIC.md#agents-robotics",
+      "@type": "ItemList",
+      "name": "Agents and robot fleets / Agenten und Roboterflotten",
+      "numberOfItems": 2,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://doi.org/10.5281/zenodo.21990196"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://doi.org/10.5281/zenodo.21990198"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/READING_PATHS_PUBLIC.md#knowledge-transfer",
+      "@type": "ItemList",
+      "name": "Passing on experience / Erfahrungswissen weitergeben",
+      "numberOfItems": 1,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://doi.org/10.5281/zenodo.22211952"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/READING_PATHS_PUBLIC.md#dialogue",
+      "@type": "ItemList",
+      "name": "Human–AI dialogue / Mensch–KI-Dialog",
+      "numberOfItems": 2,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://doi.org/10.5281/zenodo.22871354"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://doi.org/10.5281/zenodo.23279129"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/READING_PATHS_PUBLIC.md#terms",
+      "@type": "ItemList",
+      "name": "Terms and traceable editions / Begriffe und nachvollziehbare Ausgaben",
+      "numberOfItems": 3,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://doi.org/10.5281/zenodo.22228966"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://doi.org/10.5281/zenodo.22172128"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://doi.org/10.5281/zenodo.22826650"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/READING_PATHS_PUBLIC.md#working-papers",
+      "@type": "ItemList",
+      "name": "Working-paper title and abstract register / Titel- und Abstractregister",
+      "numberOfItems": 1,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://doi.org/10.5281/zenodo.22229056"
+          }
+        }
+      ]
+    }
+  ]
+}

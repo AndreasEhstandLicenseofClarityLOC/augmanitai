@@ -1,5 +1,12 @@
 # AUGMANITAI — Research Index
 
+## Explore the whole working process
+
+[**Human–AI work: from a thought to something that changes**](HUMAN_AI_WORK.md) connects multi-model thinking, performance, agent teams, oversight, experiential knowledge, language, dialogue, visual work, robotics and inspectable examples. [Machine-readable map](human-ai-work.jsonld).
+
+*AI-generated navigation to already public works.*
+
+
 ## DIN registration — 14 October 2026
 
 *AI-generated, author-maintained status statement.*

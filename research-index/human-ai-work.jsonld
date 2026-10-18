@@ -1,0 +1,86 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/HUMAN_AI_WORK.md",
+  "url": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/HUMAN_AI_WORK.md",
+  "name": "Human–AI work: from a thought to something that changes",
+  "description": "AI-generated navigation across selected public works by Andreas Ehstand on thinking, performance, agent teams, oversight, experience, language, creativity and robotics.",
+  "inLanguage": "en",
+  "dateModified": "2026-10-18",
+  "about": {
+    "@type": "Person",
+    "@id": "https://orcid.org/0009-0006-3773-7796",
+    "name": "Andreas Ehstand"
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": 10,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Multi-model thinking",
+        "url": "https://doi.org/10.5281/zenodo.23279129"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Human performance in AI work",
+        "url": "https://doi.org/10.5281/zenodo.20613914"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Swarms and multi-agent collectives",
+        "url": "https://doi.org/10.5281/zenodo.21990198"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Human oversight acts",
+        "url": "https://datatracker.ietf.org/doc/draft-ehstand-oversight-acts/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "Experiential knowledge",
+        "url": "https://doi.org/10.5281/zenodo.22211952"
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "name": "Language and definitions",
+        "url": "https://doi.org/10.5281/zenodo.22228966"
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "name": "Experience in human-AI dialogue",
+        "url": "https://doi.org/10.5281/zenodo.22871354"
+      },
+      {
+        "@type": "ListItem",
+        "position": 8,
+        "name": "Visual and interactive work",
+        "url": "https://doi.org/10.5281/zenodo.22763843"
+      },
+      {
+        "@type": "ListItem",
+        "position": 9,
+        "name": "Human-AI-robot work units",
+        "url": "https://doi.org/10.5281/zenodo.21990196"
+      },
+      {
+        "@type": "ListItem",
+        "position": 10,
+        "name": "Inspectable synthetic examples",
+        "url": "https://doi.org/10.5281/zenodo.23414851"
+      }
+    ]
+  },
+  "isPartOf": {
+    "@type": "CollectionPage",
+    "url": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/README.md",
+    "name": "AUGMANITAI Research Index"
+  }
+}

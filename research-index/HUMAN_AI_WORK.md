@@ -75,3 +75,12 @@ Start with the question closest to your work. Read its original source, inspect 
 [Author: ORCID 0009-0006-3773-7796](https://orcid.org/0009-0006-3773-7796) · [Public research index](README.md) · [Structured reading map](human-ai-work.jsonld)
 
 *AI-generated navigation text, compiled from already public sources, 18 October 2026.*
+
+
+## Author context: AI Future Council
+
+Andreas Ehstand is a member of the [AI Future Council at the Swiss Future Institute](https://www.swissfutureinstitute.ch/about/ai-future-council/). His focus includes Human–AI–Robotics Collaboration, knowledge and experience continuity, and AI-supported holistic performance analysis. [Katrin J. Yuan](https://www.linkedin.com/in/katrin-j-yuan/) chairs the Council.
+
+[Membership announcement](https://www.linkedin.com/feed/update/urn:li:activity:7517956306159214592/) · [Author identity: ORCID](https://orcid.org/0009-0006-3773-7796) · [Structured membership context](council-membership.jsonld).
+
+The membership provides author context; it does not constitute institutional endorsement of the works linked in this guide. AI-generated context text, 19 October 2026.

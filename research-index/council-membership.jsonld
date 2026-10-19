@@ -1,0 +1,84 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://orcid.org/0009-0006-3773-7796",
+      "name": "Andreas Ehstand",
+      "sameAs": [
+        "https://www.linkedin.com/in/andreas-ehstand/",
+        "https://github.com/AndreasEhstandLicenseofClarityLOC",
+        "https://huggingface.co/AndreasEhstand"
+      ],
+      "memberOf": {
+        "@id": "https://www.swissfutureinstitute.ch/about/ai-future-council/"
+      },
+      "knowsAbout": [
+        "Human–AI–Robotics Collaboration",
+        "Knowledge and Experience Continuity",
+        "AI-supported Holistic Performance Analysis",
+        "Language and Ontologies",
+        "Human Oversight",
+        "Multi-agent Collaboration"
+      ],
+      "subjectOf": {
+        "@type": "SocialMediaPosting",
+        "url": "https://www.linkedin.com/feed/update/urn:li:activity:7517956306159214592/"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.swissfutureinstitute.ch/about/ai-future-council/",
+      "name": "AI Future Council",
+      "url": "https://www.swissfutureinstitute.ch/about/ai-future-council/",
+      "parentOrganization": {
+        "@id": "https://www.swissfutureinstitute.ch/"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.swissfutureinstitute.ch/",
+      "name": "Swiss Future Institute",
+      "url": "https://www.swissfutureinstitute.ch/",
+      "sameAs": "https://www.linkedin.com/school/swiss-future-institute/"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.linkedin.com/in/katrin-j-yuan/",
+      "name": "Katrin J. Yuan",
+      "description": "Chair of the AI Future Council, as described on the Swiss Future Institute's official Council page.",
+      "memberOf": {
+        "@id": "https://www.swissfutureinstitute.ch/about/ai-future-council/"
+      },
+      "subjectOf": {
+        "@type": "WebPage",
+        "url": "https://www.swissfutureinstitute.ch/about/ai-future-council/",
+        "name": "AI Future Council — Swiss Future Institute"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.20613914",
+      "url": "https://doi.org/10.5281/zenodo.20613914",
+      "creator": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.22211952",
+      "url": "https://doi.org/10.5281/zenodo.22211952",
+      "creator": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://datatracker.ietf.org/doc/draft-ehstand-oversight-acts/",
+      "url": "https://datatracker.ietf.org/doc/draft-ehstand-oversight-acts/",
+      "creator": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      }
+    }
+  ]
+}

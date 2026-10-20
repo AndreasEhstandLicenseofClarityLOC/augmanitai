@@ -21,10 +21,16 @@
         "Human Oversight",
         "Multi-agent Collaboration"
       ],
-      "subjectOf": {
-        "@type": "SocialMediaPosting",
-        "url": "https://www.linkedin.com/feed/update/urn:li:activity:7517956306159214592/"
-      }
+      "subjectOf": [
+        {
+          "@type": "SocialMediaPosting",
+          "url": "https://www.linkedin.com/feed/update/urn:li:activity:7517956306159214592/"
+        },
+        {
+          "@type": "SocialMediaPosting",
+          "url": "https://www.linkedin.com/feed/update/urn:li:activity:7517957565113221120/"
+        }
+      ]
     },
     {
       "@type": "Organization",

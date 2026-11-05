@@ -1,5 +1,15 @@
 # AUGMANITAI — Research Index
 
+## Recent articles by Andreas Ehstand
+
+- 2026-11-04 · The European Scientist · [An AI explanation is not evidence of human review](https://www.europeanscientist.com/en/features/an-ai-explanation-is-not-evidence-of-human-review/). The article distinguishes an explanation of an AI output from a record of what a person observed, checked, decided or authorised.
+- 2026-11-02 · Learning Guild · [Training the Second Skill: Teaching People to Check AI, Not Just Use It](https://www.learningguild.com/articles/training-the-second-skill-teaching-people-to-check-ai-not-just-use-it). The article proposes an exercise for checking AI outputs that records detected errors and unwarranted flags separately.
+- 2026-10-30 · Sports Video Group · [The Approval Click: What Live-Production Review Really Catches](https://www.sportsvideo.org/2026/10/30/the-approval-click-what-live-production-review-really-catches/). An illustrative rehearsal with sports highlights shows how to count detected errors separately from clips held back unnecessarily.
+- 2026-10-28 · International Affairs Forum · [The Forecast Lost Its If](https://www.ia-forum.org/Content/ViewInternalDocument.cfm?ContentID=23552). Using a fictional example, the essay traces how an AI-assisted summary can drop a scenario’s assumptions and turn it into an apparent forecast.
+- 2026-10-21 · Revista Inteligencia Artificial · [Qué significa realmente «supervisión humana» de un agente](https://www.revistainteligenciaartificial.com/2026/10/que-significa-realmente-supervision-humana-de-un-agente/). A fictional insurance case illustrates how a single review label can obscure the distinct human actions involved in handling an AI-generated response.
+
+[Publication metadata](external-publications.jsonld) · [BibTeX bibliography](external-publications.bib)
+
 ## Explore the whole working process
 
 [**Human–AI work: from a thought to something that changes**](HUMAN_AI_WORK.md) connects multi-model thinking, performance, agent teams, oversight, experiential knowledge, language, dialogue, visual work, robotics and inspectable examples. [Machine-readable map](human-ai-work.jsonld).
@@ -102,7 +112,7 @@ Ehstand’s essay occupies eight printed pages, including its opening page and a
 - [Publisher announcement of the Ehstand essay](https://www.linkedin.com/posts/prestel-%26-partner_privatewealthvoices-familyoffice-artificialintelligence-activity-7493275580612878336-SI-3).
 - [Private Wealth Voices at Prestel & Partner](https://prestelandpartner.com/private-wealth-voices.html) — publisher access point; registration may be required and the latest edition can change.
 - [Structured publication graph](external-publications.jsonld) / [raw JSON-LD](https://raw.githubusercontent.com/AndreasEhstandLicenseofClarityLOC/augmanitai/main/research-index/external-publications.jsonld).
-- [Download the BibTeX bibliography](https://raw.githubusercontent.com/AndreasEhstandLicenseofClarityLOC/augmanitai/main/research-index/external-publications.bib) — seven separate works with their own attributions, including the foreword and SwissBoardForum article. The duPont interview has no inferred author.
+- [Download the BibTeX bibliography](https://raw.githubusercontent.com/AndreasEhstandLicenseofClarityLOC/augmanitai/main/research-index/external-publications.bib) — twelve separate works with their own attributions, including the foreword and SwissBoardForum article. The duPont interview has no inferred author.
 - [Author’s related Medium commentary](https://medium.com/@augmanitai/preserving-a-founders-judgment-notes-from-private-wealth-voices-july-2026-713c700171d0) — updated on 21 September 2026 with corrected pages, source links and the conceptual status of the proposal.
 - [Andreas Ehstand’s ORCID](https://orcid.org/0009-0006-3773-7796).
 

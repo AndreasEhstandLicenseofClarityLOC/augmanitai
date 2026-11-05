@@ -74,6 +74,21 @@
         },
         {
           "@id": "https://www.business-wissen.de/artikel/ki-einsetzen-so-erkennen-sie-falsche-ki-ergebnisse/"
+        },
+        {
+          "@id": "https://www.europeanscientist.com/en/features/an-ai-explanation-is-not-evidence-of-human-review/"
+        },
+        {
+          "@id": "https://www.learningguild.com/articles/training-the-second-skill-teaching-people-to-check-ai-not-just-use-it"
+        },
+        {
+          "@id": "https://www.sportsvideo.org/2026/10/30/the-approval-click-what-live-production-review-really-catches/"
+        },
+        {
+          "@id": "https://www.ia-forum.org/Content/ViewInternalDocument.cfm?ContentID=23552"
+        },
+        {
+          "@id": "https://www.revistainteligenciaartificial.com/2026/10/que-significa-realmente-supervision-humana-de-un-agente/"
         }
       ],
       "isBasedOn": [
@@ -88,10 +103,25 @@
         },
         {
           "@id": "https://www.business-wissen.de/artikel/ki-einsetzen-so-erkennen-sie-falsche-ki-ergebnisse/"
+        },
+        {
+          "@id": "https://www.europeanscientist.com/en/features/an-ai-explanation-is-not-evidence-of-human-review/"
+        },
+        {
+          "@id": "https://www.learningguild.com/articles/training-the-second-skill-teaching-people-to-check-ai-not-just-use-it"
+        },
+        {
+          "@id": "https://www.sportsvideo.org/2026/10/30/the-approval-click-what-live-production-review-really-catches/"
+        },
+        {
+          "@id": "https://www.ia-forum.org/Content/ViewInternalDocument.cfm?ContentID=23552"
+        },
+        {
+          "@id": "https://www.revistainteligenciaartificial.com/2026/10/que-significa-realmente-supervision-humana-de-un-agente/"
         }
       ],
-      "description": "AI-generated metadata checked against the publicly visible publisher page on 21 September 2026. The displayed article date is 15 September 2026. This record links the author's ORCID identity to the work; it is not a publisher-supplied ORCID assertion. Publication does not imply peer review, validation, membership or publisher endorsement of the author's wider programme. No article text or images are reproduced or relicensed. The Private Wealth Voices records are an AI-generated, source-checked bibliographic transcription by the author’s catalogue, not publisher-issued metadata. Fragment identifiers in this file are local catalogue identifiers, not DOIs or external authority identifiers. The foreword discusses three separate contributions; this does not assert coauthorship, collaboration, or personal endorsement. Month precision is retained because no exact publication day was independently confirmed. Printed pages for the Ehstand essay are 10–17 in V5. Public profile sources checked on 21 September 2026 support person disambiguation; their inclusion does not imply a relationship between Ehstand and the named firms. The two business-wissen.de articles were checked on 2 October 2026; the ORCID link is author-maintained attribution, not a publisher-supplied assertion.",
-      "dateModified": "2026-10-02",
+      "description": "AI-generated metadata checked against the publicly visible publisher page on 21 September 2026. The displayed article date is 15 September 2026. This record links the author's ORCID identity to the work; it is not a publisher-supplied ORCID assertion. Publication does not imply peer review, validation, membership or publisher endorsement of the author's wider programme. No article text or images are reproduced or relicensed. The Private Wealth Voices records are an AI-generated, source-checked bibliographic transcription by the author’s catalogue, not publisher-issued metadata. Fragment identifiers in this file are local catalogue identifiers, not DOIs or external authority identifiers. The foreword discusses three separate contributions; this does not assert coauthorship, collaboration, or personal endorsement. Month precision is retained because no exact publication day was independently confirmed. Printed pages for the Ehstand essay are 10–17 in V5. Public profile sources checked on 21 September 2026 support person disambiguation; their inclusion does not imply a relationship between Ehstand and the named firms. The two business-wissen.de articles were checked on 2 October 2026; the ORCID link is author-maintained attribution, not a publisher-supplied assertion. The five articles published from 21 October through 4 November 2026 were checked against the publishers’ public pages on 5 November 2026.",
+      "dateModified": "2026-11-05",
       "citation": [
         "https://ceritypartners.com/team/pierre-dupont/",
         "https://www.prestelandpartner.com/family-office-forum-new-york.html",
@@ -100,10 +130,10 @@
       ],
       "encoding": {
         "@type": "MediaObject",
-        "name": "Bibliographic export — seven external works and issue contributions",
+        "name": "Bibliographic export — twelve external works and issue contributions",
         "encodingFormat": "text/x-bibtex",
         "contentUrl": "https://raw.githubusercontent.com/AndreasEhstandLicenseofClarityLOC/augmanitai/main/research-index/external-publications.bib",
-        "description": "Seven separately attributed works, including two business-wissen.de practice articles. Not seven Ehstand works."
+        "description": "Twelve separately attributed works. Five articles by Andreas Ehstand published from 21 October through 4 November 2026 supplement the earlier seven entries."
       }
     },
     {
@@ -410,6 +440,136 @@
       "author": {
         "@id": "https://orcid.org/0009-0006-3773-7796"
       }
+    },
+    {
+      "@type": "Article",
+      "@id": "https://www.europeanscientist.com/en/features/an-ai-explanation-is-not-evidence-of-human-review/",
+      "headline": "An AI explanation is not evidence of human review",
+      "datePublished": "2026-11-04",
+      "inLanguage": "en",
+      "description": [
+        {
+          "@value": "Der Beitrag unterscheidet die Erklärung eines KI-Ergebnisses von der Dokumentation dessen, was ein Mensch beobachtet, geprüft, entschieden oder freigegeben hat.",
+          "@language": "de"
+        },
+        {
+          "@value": "The article distinguishes an explanation of an AI output from a record of what a person observed, checked, decided or authorised.",
+          "@language": "en"
+        }
+      ],
+      "publisher": {
+        "@type": "Organization",
+        "name": "The European Scientist"
+      },
+      "url": "https://www.europeanscientist.com/en/features/an-ai-explanation-is-not-evidence-of-human-review/",
+      "author": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      },
+      "articleSection": "Features"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://www.learningguild.com/articles/training-the-second-skill-teaching-people-to-check-ai-not-just-use-it",
+      "headline": "Training the Second Skill: Teaching People to Check AI, Not Just Use It",
+      "datePublished": "2026-11-02",
+      "inLanguage": "en",
+      "description": [
+        {
+          "@value": "Der Beitrag schlägt eine Übung zur Prüfung von KI-Ausgaben vor. Erkannte Fehler und unbegründete Beanstandungen werden getrennt erfasst.",
+          "@language": "de"
+        },
+        {
+          "@value": "The article proposes an exercise for checking AI outputs that records detected errors and unwarranted flags separately.",
+          "@language": "en"
+        }
+      ],
+      "publisher": {
+        "@type": "Organization",
+        "name": "Learning Guild"
+      },
+      "url": "https://www.learningguild.com/articles/training-the-second-skill-teaching-people-to-check-ai-not-just-use-it",
+      "author": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      },
+      "articleSection": "AI & Automation"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://www.sportsvideo.org/2026/10/30/the-approval-click-what-live-production-review-really-catches/",
+      "headline": "The Approval Click: What Live-Production Review Really Catches",
+      "datePublished": "2026-10-30",
+      "inLanguage": "en",
+      "description": [
+        {
+          "@value": "Eine konstruierte Sendungsprobe mit Sportclips zeigt, wie entdeckte Fehler und zu Unrecht zurückgehaltene Clips getrennt erfasst werden können.",
+          "@language": "de"
+        },
+        {
+          "@value": "An illustrative rehearsal with sports highlights shows how to count detected errors separately from clips held back unnecessarily.",
+          "@language": "en"
+        }
+      ],
+      "publisher": {
+        "@type": "Organization",
+        "name": "Sports Video Group"
+      },
+      "url": "https://www.sportsvideo.org/2026/10/30/the-approval-click-what-live-production-review-really-catches/",
+      "author": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      },
+      "articleSection": "Op-Ed"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://www.ia-forum.org/Content/ViewInternalDocument.cfm?ContentID=23552",
+      "headline": "The Forecast Lost Its If",
+      "datePublished": "2026-10-28",
+      "inLanguage": "en",
+      "description": [
+        {
+          "@value": "An einem erfundenen Beispiel zeigt der Essay, wie bei einer KI-gestützten Zusammenfassung die Annahmen eines Szenarios verloren gehen und eine scheinbar eindeutige Prognose zurückbleibt.",
+          "@language": "de"
+        },
+        {
+          "@value": "Using a fictional example, the essay traces how an AI-assisted summary can drop a scenario’s assumptions and turn it into an apparent forecast.",
+          "@language": "en"
+        }
+      ],
+      "publisher": {
+        "@type": "Organization",
+        "name": "International Affairs Forum"
+      },
+      "url": "https://www.ia-forum.org/Content/ViewInternalDocument.cfm?ContentID=23552",
+      "author": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      },
+      "citation": "https://www.ia-forum.org/"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://www.revistainteligenciaartificial.com/2026/10/que-significa-realmente-supervision-humana-de-un-agente/",
+      "headline": "Qué significa realmente «supervisión humana» de un agente",
+      "datePublished": "2026-10-21",
+      "inLanguage": "es",
+      "description": [
+        {
+          "@value": "Ein fiktiver Versicherungsfall zeigt, wie ein einziger Prüfvermerk unterschiedliche Handlungen bei der Bearbeitung einer KI-generierten Antwort verdecken kann.",
+          "@language": "de"
+        },
+        {
+          "@value": "A fictional insurance case illustrates how a single review label can obscure the distinct human actions involved in handling an AI-generated response.",
+          "@language": "en"
+        }
+      ],
+      "publisher": {
+        "@type": "Organization",
+        "name": "Revista Inteligencia Artificial"
+      },
+      "url": "https://www.revistainteligenciaartificial.com/2026/10/que-significa-realmente-supervision-humana-de-un-agente/",
+      "author": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      },
+      "articleSection": "Opinión"
     }
   ]
 }

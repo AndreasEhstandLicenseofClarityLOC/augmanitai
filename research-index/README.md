@@ -1,5 +1,9 @@
 # AUGMANITAI — Research Index
 
+## Research programme
+
+- 2026-11-23 · [AUGMANITAI Poweruser-Forschung / AUGMANITAI Power User Research](https://doi.org/10.5281/zenodo.24471266) · v1.0. Andreas Ehstand founded this programme to study intensive AI practice. It asks which capabilities emerge when people, teams, AI models, agents and robots work together, including in swarms, and which practices other teams can learn and repeat. *AI-assisted catalogue description.*
+
 ## Recent articles by Andreas Ehstand
 
 - 2026-11-04 · The European Scientist · [An AI explanation is not evidence of human review](https://www.europeanscientist.com/en/features/an-ai-explanation-is-not-evidence-of-human-review/). The article distinguishes an explanation of an AI output from a record of what a person observed, checked, decided or authorised.

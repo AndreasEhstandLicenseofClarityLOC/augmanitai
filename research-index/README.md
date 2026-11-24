@@ -104,17 +104,17 @@ Andreas Ehstand’s essay appears in **Private Wealth Voices**, published by **P
 
 | Contribution | Credited person and role | Printed pages |
 | --- | --- | --- |
-| From the Editor | Ben McNamara — editorial author | 4 |
-| Lessons From 226 Years of Family Heritage – Part II | Pierre duPont — interview participant | 6–9 |
-| One Missing Piece of Legacy: How Local AI Preserves a Founder’s Judgment | Andreas Ehstand — essay author | 10–17 |
-| Bitcoin Today: From Listed Treasury to Institutional Custody | Wojciech Kaszycki — article author | 18–21 |
+| From the Editor | Ben McNamara — editorial author | [4](https://prestelandpartner.com/pdf/p-and-p-2026-privatewealthvoices-july-edition-v5-singlepages.pdf#page=4) |
+| Lessons From 226 Years of Family Heritage – Part II | Pierre duPont — interview participant | [6–9](https://prestelandpartner.com/pdf/p-and-p-2026-privatewealthvoices-july-edition-v5-singlepages.pdf#page=6) |
+| One Missing Piece of Legacy: How Local AI Preserves a Founder’s Judgment | Andreas Ehstand — essay author | [10–17](https://prestelandpartner.com/pdf/p-and-p-2026-privatewealthvoices-july-edition-v5-singlepages.pdf#page=10) |
+| Bitcoin Today: From Listed Treasury to Institutional Custody | Wojciech Kaszycki — article author | [18–21](https://prestelandpartner.com/pdf/p-and-p-2026-privatewealthvoices-july-edition-v5-singlepages.pdf#page=18) |
 
 Ehstand’s essay occupies eight printed pages, including its opening page and author note; the other two main contributions occupy four pages each. It is the longest of these three contributions. The source establishes this editorial placement and the foreword’s discussion of the essay; it does not establish coauthorship, personal endorsement by the other contributors, or empirical validation of the proposed approach.
 
 ### Sources and machine-readable relationships
 
 - [Publisher announcement of the Ehstand essay](https://www.linkedin.com/posts/prestel-%26-partner_privatewealthvoices-familyoffice-artificialintelligence-activity-7493275580612878336-SI-3).
-- [Private Wealth Voices at Prestel & Partner](https://prestelandpartner.com/private-wealth-voices.html) — publisher access point; registration may be required and the latest edition can change.
+- [Complete July 2026 issue from Prestel & Partner](https://prestelandpartner.com/pdf/p-and-p-2026-privatewealthvoices-july-edition-v5-singlepages.pdf) · [Wayback copy, 24 November 2026](https://web.archive.org/web/20261124065157/https://prestelandpartner.com/pdf/p-and-p-2026-privatewealthvoices-july-edition-v5-singlepages.pdf).
 - [Structured publication graph](external-publications.jsonld) / [raw JSON-LD](https://raw.githubusercontent.com/AndreasEhstandLicenseofClarityLOC/augmanitai/main/research-index/external-publications.jsonld).
 - [Download the BibTeX bibliography](https://raw.githubusercontent.com/AndreasEhstandLicenseofClarityLOC/augmanitai/main/research-index/external-publications.bib) — twelve separate works with their own attributions, including the foreword and SwissBoardForum article. The duPont interview has no inferred author.
 - [Author’s related Medium commentary](https://medium.com/@augmanitai/preserving-a-founders-judgment-notes-from-private-wealth-voices-july-2026-713c700171d0) — updated on 21 September 2026 with corrected pages, source links and the conceptual status of the proposal.
@@ -122,7 +122,7 @@ Ehstand’s essay occupies eight printed pages, including its opening page and a
 
 The graph models the periodical, July issue, separate contributions, credited people and editorial discussion. The foreword points to each contribution; each contribution points back to the issue and foreword. Local catalogue identifiers identify these records; they are not publisher-issued identifiers or DOIs.
 
-Page numbers and titles were checked against the 24-page file **P-P_2026_PrivateWealthVoices-July-Edition-V5-SinglePages.pdf**. The graph records its SHA-256 fingerprint. A public URL for that exact PDF has not been verified, so the full text is not mirrored here. The essay’s correct printed range in this edition is **10–17**. Publication is recorded at month precision, **July 2026**. Copyright in the magazine, other contributors’ texts and images remains with the relevant rights holders.
+Page numbers and titles were checked against the 24-page file **P-P_2026_PrivateWealthVoices-July-Edition-V5-SinglePages.pdf**. The graph records its SHA-256 fingerprint. The publisher’s PDF and its Wayback copy were checked on 24 November 2026. Both have the same SHA-256 fingerprint as the edition used for this index. The essay’s correct printed range in this edition is **10–17**. Publication is recorded at month precision, **July 2026**. Copyright in the magazine, other contributors’ texts and images remains with the relevant rights holders.
 
 ## Explore the breadth of the work
 

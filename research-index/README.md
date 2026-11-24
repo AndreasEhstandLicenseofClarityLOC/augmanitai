@@ -2,7 +2,7 @@
 
 ## Research programme
 
-- 2026-11-23 · [AUGMANITAI Poweruser-Forschung / AUGMANITAI Power User Research](https://doi.org/10.5281/zenodo.24471266) · v1.0. Andreas Ehstand founded this programme to study intensive AI practice. It asks which capabilities emerge when people, teams, AI models, agents and robots work together, including in swarms, and which practices other teams can learn and repeat. *AI-assisted catalogue description.*
+- 2026-11-23 · [AUGMANITAI Poweruser-Forschung / AUGMANITAI Power User Research](https://doi.org/10.5281/zenodo.24471266) · v1.0. Andreas Ehstand founded this programme to learn from highly experienced AI practitioners worldwide. What do they still learn at the frontier of their own practice, and which of their decisions can another team learn to make? The programme studies how to develop the capabilities of individual people, models, agents and robots, and how changes in their roles and interactions affect the performance of teams, swarms and the whole system. By November 2026 Ehstand had reached [around 500,000 human–AI dialogue turns by his own count](https://www.swissfutureinstitute.ch/about/ai-future-council/#cc-m-12601324693). *AI-assisted catalogue description.*
 
 ## Recent articles by Andreas Ehstand
 

@@ -11,12 +11,11 @@
     },
     {
       "@type": "Event",
-      "@id": "https://prestelandpartner.com/familyofficeforumzurich.html",
-      "url": "https://prestelandpartner.com/familyofficeforumzurich.html",
+      "@id": "https://andreasehstandlicenseofclarityloc.github.io/augmanitai/research-index/events.jsonld#zurich-2026",
+      "url": "https://prestelandpartner.com/pdf/p-and-p-2026-zurich-agenda-73-singlepages.pdf#page=11",
       "name": "Family Office Forum Zurich 2026",
       "startDate": "2026-11-10",
       "endDate": "2026-11-11",
-      "eventStatus": "https://schema.org/EventScheduled",
       "organizer": {
         "@type": "Organization",
         "name": "Prestel & Partner",
@@ -37,21 +36,47 @@
       "subjectOf": {
         "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/events.jsonld#source-note"
       },
-      "description": "Upcoming event. The organiser website supports the event dates and venue. Andreas Ehstand's scheduled speaker role is an author-reported statement on his LinkedIn profile; it was checked against non-public organiser confirmation. His name was not found on the public event page on 2 October 2026. No final talk title or completed presentation is asserted."
+      "description": "Prestel & Partner held its Family Office Forum in Zurich on 10 and 11 November 2026. The programme lists Andreas Ehstand as a speaker on 11 November.",
+      "subEvent": {
+        "@id": "https://andreasehstandlicenseofclarityloc.github.io/augmanitai/research-index/events.jsonld#ehstand-talk"
+      }
     },
     {
       "@type": "CreativeWork",
       "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/events.jsonld#source-note",
-      "name": "Source note: scheduled Zurich speaker role",
+      "name": "Andreas Ehstand at the Family Office Forum Zurich 2026",
       "author": {
         "@id": "https://orcid.org/0009-0006-3773-7796"
       },
-      "dateModified": "2026-10-02",
+      "dateModified": "2026-11-27",
       "isBasedOn": [
-        "https://www.linkedin.com/in/andreas-ehstand/",
-        "https://prestelandpartner.com/familyofficeforumzurich.html"
+        "https://prestelandpartner.com/pdf/p-and-p-2026-zurich-agenda-73-singlepages.pdf#page=11",
+        "https://augmanitai.com/en/decision/#stage-plan-or-promise"
       ],
-      "description": "AI-generated, author-maintained event metadata. The LinkedIn profile is the public source for the speaker claim; the organiser page establishes event details only. Private correspondence is not reproduced. This catalogue is not an independent endorsement."
+      "description": "AI-assisted source note maintained by the author. Page 11 of the programme names the speaker and the talk. The author's stage excerpt includes the original English audio, a transcript and an editing note.",
+      "url": "https://andreasehstandlicenseofclarityloc.github.io/augmanitai/research-index/zurich-2026.html"
+    },
+    {
+      "@type": "Event",
+      "@id": "https://andreasehstandlicenseofclarityloc.github.io/augmanitai/research-index/events.jsonld#ehstand-talk",
+      "name": "The Execution Advantage: Making AI Work for Your Family Office",
+      "startDate": "2026-11-11",
+      "url": "https://prestelandpartner.com/pdf/p-and-p-2026-zurich-agenda-73-singlepages.pdf#page=11",
+      "performer": {
+        "@id": "https://orcid.org/0009-0006-3773-7796"
+      },
+      "superEvent": {
+        "@id": "https://andreasehstandlicenseofclarityloc.github.io/augmanitai/research-index/events.jsonld#zurich-2026"
+      },
+      "subjectOf": [
+        {
+          "@id": "https://github.com/AndreasEhstandLicenseofClarityLOC/augmanitai/blob/main/research-index/events.jsonld#source-note"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://augmanitai.com/en/decision/#stage-plan-or-promise"
+        }
+      ]
     }
   ]
 }
